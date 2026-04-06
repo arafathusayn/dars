@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "vite dev --port 3000",
-    "build": "bun run validate && vite build",
+    "build": "bun run validate && vite build && bun scripts/generate-sw.ts",
     "preview": "vite preview",
     "test": "vitest run",
     "lint": "eslint .",
@@ -58,6 +58,7 @@
     "vite": "^7.3.1",
     "vite-tsconfig-paths": "^5.1.4",
     "vitest": "^3.0.5",
+    "workbox-build": "^7.4.0",
     "wrangler": "^4.80.0"
   },
   "pnpm": {

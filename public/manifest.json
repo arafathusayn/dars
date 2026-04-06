@@ -1,6 +1,8 @@
 {
-  "short_name": "TanStack App",
-  "name": "Create TanStack App Sample",
+  "id": "/",
+  "short_name": "Dars",
+  "name": "Dars — Arabic Vocabulary",
+  "description": "Interactive Arabic vocabulary app with quizzes, flashcards, and Bengali/English i18n",
   "icons": [
     {
       "src": "favicon.ico",
@@ -10,16 +12,22 @@
     {
       "src": "logo192.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "192x192",
+      "purpose": "any"
     },
     {
       "src": "logo512.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "purpose": "maskable"
     }
   ],
   "start_url": ".",
+  "scope": "/",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "orientation": "portrait",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "dir": "ltr",
+  "categories": ["education"]
 }

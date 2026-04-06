@@ -210,6 +210,9 @@ export function useQuiz() {
     const resolved_ = theme === "system" ? (sysDark ? "dark" : "light") : theme;
     document.documentElement.setAttribute("data-theme", resolved_);
     document.documentElement.style.colorScheme = resolved_;
+    document
+      .querySelector('meta[name="theme-color"]')
+      ?.setAttribute("content", resolved_ === "dark" ? "#1c1c1e" : "#ffffff");
   }, [theme, sysDark]);
 
   // Close menu on outside click
