@@ -17,7 +17,8 @@
     "check": "bun run validate && bun run typecheck && bun run format && bun run lint",
     "fix": "bun run format:fix && bun run lint:fix",
     "validate": "bun scripts/validate-messages.ts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "deploy": "wrangler deploy"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.18",
@@ -45,6 +46,7 @@
     "@tanstack/eslint-config": "latest",
     "@testing-library/dom": "^10.4.1",
     "@testing-library/react": "^16.3.0",
+    "@types/bun": "latest",
     "@types/node": "^22.10.2",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
@@ -56,7 +58,7 @@
     "vite": "^7.3.1",
     "vite-tsconfig-paths": "^5.1.4",
     "vitest": "^3.0.5",
-    "@types/bun": "latest"
+    "wrangler": "^4.80.0"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
