@@ -54,12 +54,12 @@ export function Results({
       className="asi rounded-3xl overflow-hidden"
       style={{ background: "var(--surface)", boxShadow: "var(--sh-card)" }}
     >
-      <div className="pt-10 pb-8 flex flex-col items-center">
+      <div className="pt-8 sm:pt-10 pb-6 sm:pb-8 flex flex-col items-center">
         <div
           className="relative mb-5"
-          style={{ width: 140, height: 140, "--rc": C } as React.CSSProperties}
+          style={{ width: 120, height: 120, "--rc": C } as React.CSSProperties}
         >
-          <svg viewBox="0 0 140 140" width={140} height={140}>
+          <svg viewBox="0 0 140 140" width="100%" height="100%">
             <circle
               cx="70"
               cy="70"
@@ -104,8 +104,8 @@ export function Results({
         </p>
       </div>
 
-      <div className="px-6 pb-7">
-        <div className="flex gap-3 mb-7">
+      <div className="px-4 sm:px-6 pb-7">
+        <div className="flex gap-2 sm:gap-3 mb-7">
           {[
             { n: ok, l: m.correct(), c: "var(--ok)", s: "var(--ok-s)" },
             { n: er, l: m.wrong(), c: "var(--err)", s: "var(--err-s)" },

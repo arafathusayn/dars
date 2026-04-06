@@ -167,7 +167,7 @@ export function QuizView(props: QuizViewProps) {
             }}
           />
           <div
-            className="px-6 pt-5 pb-1 flex items-center justify-between"
+            className="px-4 sm:px-6 pt-5 pb-1 flex items-center justify-between"
             style={{ minHeight: 36 }}
           >
             <span
@@ -187,15 +187,15 @@ export function QuizView(props: QuizViewProps) {
               {i + 1} / {tot}
             </span>
           </div>
-          <div className="px-6 pt-3 pb-5" style={{ minHeight: 80 }}>
+          <div className="px-4 sm:px-6 pt-3 pb-5" style={{ minHeight: 80 }}>
             <h2
-              className="text-xl font-semibold"
+              className="text-lg sm:text-xl font-semibold"
               style={{ lineHeight: 1.55, letterSpacing: "-.01em" }}
             >
               {cur.q}
             </h2>
           </div>
-          <div className="px-5 pb-3 flex flex-col gap-2.5">
+          <div className="px-3.5 sm:px-5 pb-3 flex flex-col gap-2.5">
             {cur.opts.map((opt, oi) => (
               <Option
                 key={oi}
@@ -209,7 +209,7 @@ export function QuizView(props: QuizViewProps) {
               />
             ))}
           </div>
-          <div className="px-5 pt-1 pb-1" style={{ minHeight: 48 }}>
+          <div className="px-3.5 sm:px-5 pt-1 pb-1" style={{ minHeight: 48 }}>
             {lk && (
               <div
                 className="au px-4 py-3 rounded-xl flex items-center gap-2"
@@ -230,7 +230,7 @@ export function QuizView(props: QuizViewProps) {
               </div>
             )}
           </div>
-          <div className="px-5 pb-6 pt-1">
+          <div className="px-3.5 sm:px-5 pb-6 pt-1">
             <Nav
               locked={lk}
               selected={sel}

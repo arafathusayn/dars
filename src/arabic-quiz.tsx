@@ -99,7 +99,7 @@ export default function App() {
               </p>
               <h1
                 style={{
-                  fontSize: 28,
+                  fontSize: "clamp(22px, 6.5vw, 28px)",
                   fontWeight: 700,
                   letterSpacing: "-.025em",
                   lineHeight: 1.1,
@@ -162,7 +162,7 @@ export default function App() {
             >
               <span
                 style={{
-                  fontSize: 17,
+                  fontSize: "clamp(14px, 4.5vw, 17px)",
                   fontWeight: 600,
                   letterSpacing: "-.01em",
                   opacity: compact ? 1 : 0,
@@ -173,6 +173,7 @@ export default function App() {
                   alignItems: "baseline",
                   gap: 6,
                   whiteSpace: "nowrap",
+                  overflow: "hidden",
                 }}
               >
                 {m.body_parts()}

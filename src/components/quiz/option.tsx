@@ -55,13 +55,13 @@ export function Option({
     <button
       disabled={locked}
       onClick={() => onSelect(opt)}
-      className={`ob ${anim} w-full rounded-2xl flex items-center gap-3`}
+      className={`ob ${anim} w-full rounded-2xl flex items-center gap-2.5 sm:gap-3`}
       style={{
         background: bg,
         border: `1.5px solid ${bdr}`,
         color: tx,
-        minHeight: 54,
-        padding: "13px 16px",
+        minHeight: 50,
+        padding: "12px 14px",
       }}
     >
       <span
