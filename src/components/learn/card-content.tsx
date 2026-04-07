@@ -17,6 +17,7 @@ const GENDER_ICON = { M: "♂", F: "♀" } as const;
 
 export function CardContent({ v, accent }: CardContentProps) {
   const gc = v.g === "M" ? accent : "#FF9500";
+  const bc = v.g === "M" ? "#3478F6" : "#E8447A";
   const r = v.ref;
   const meaning = getMeaning(v);
   const pr = getPronunciation(v);
@@ -32,7 +33,7 @@ export function CardContent({ v, accent }: CardContentProps) {
     >
       <div className="flex items-stretch h-full">
         <div className="w-1 shrink-0" style={{ background: gc }} />
-        <div className="flex-1 p-4 flex flex-col">
+        <div className="flex-1 p-4 flex flex-col min-h-0">
           <div className="flex items-start justify-between gap-3">
             <div>
               <p
@@ -56,11 +57,19 @@ export function CardContent({ v, accent }: CardContentProps) {
                 {meaning}
               </p>
               <span
-                className="mt-0.5 w-6 h-6 rounded-md inline-flex items-center justify-center text-sm font-bold"
-                style={{ background: `${gc}1A`, color: gc }}
-                aria-label={v.g === "M" ? m.masculine() : m.feminine()}
+                className="mt-1.5 rounded-md inline-flex items-center gap-0.5"
+                style={{
+                  background: `${bc}14`,
+                  color: bc,
+                  fontSize: 10,
+                  fontWeight: 600,
+                  letterSpacing: ".02em",
+                  padding: "3px 6px",
+                  lineHeight: 1,
+                }}
               >
-                {GENDER_ICON[v.g]}
+                {GENDER_ICON[v.g]}{" "}
+                {v.g === "M" ? m.masculine() : m.feminine()}
               </span>
             </div>
           </div>
@@ -83,10 +92,10 @@ export function CardContent({ v, accent }: CardContentProps) {
 
           {r && (
             <div
-              className="mt-3 rounded-xl px-3.5 py-3 flex-1 flex flex-col"
+              className="mt-3 rounded-xl px-3.5 py-3 flex-1 flex flex-col min-h-0 overflow-hidden"
               style={{ background: "var(--fill)" }}
             >
-              <div className="flex-1 overflow-y-auto">
+              <div className="flex-1 overflow-y-auto min-h-0">
                 <p
                   className="text-xs leading-relaxed"
                   style={{ color: "var(--t2)" }}
