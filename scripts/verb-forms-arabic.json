@@ -1,0 +1,5934 @@
+{
+  "1": [
+    {
+      "ar": "قَالَ",
+      "tr": "qaAla",
+      "roman": "qāla",
+      "ty": "perfect",
+      "n": 414
+    },
+    {
+      "ar": "قُل",
+      "tr": "qulo",
+      "roman": "qul",
+      "ty": "imperative",
+      "n": 263
+    },
+    {
+      "ar": "قَالُو",
+      "tr": "qaAluwA@",
+      "roman": "qālūā",
+      "ty": "perfect",
+      "n": 250
+    },
+    {
+      "ar": "وَقَالَ",
+      "tr": "waqaAla",
+      "roman": "waqāla",
+      "ty": "perfect",
+      "n": 86
+    },
+    {
+      "ar": "وَقَالُو",
+      "tr": "waqaAluwA@",
+      "roman": "waqālūā",
+      "ty": "perfect",
+      "n": 60
+    },
+    {
+      "ar": "يَقُولُونَ",
+      "tr": "yaquwluwna",
+      "roman": "yaqūlūna",
+      "ty": "imperfect",
+      "n": 51
+    },
+    {
+      "ar": "يَقُولُ",
+      "tr": "yaquwlu",
+      "roman": "yaqūlu",
+      "ty": "imperfect",
+      "n": 35
+    },
+    {
+      "ar": "قِيلَ",
+      "tr": "qiyla",
+      "roman": "qīla",
+      "ty": "passive",
+      "n": 34
+    },
+    {
+      "ar": "قُلِ",
+      "tr": "quli",
+      "roman": "quli",
+      "ty": "imperative",
+      "n": 30
+    },
+    {
+      "ar": "وَيَقُولُونَ",
+      "tr": "wayaquwluwna",
+      "roman": "wayaqūlūna",
+      "ty": "imperfect",
+      "n": 28
+    },
+    {
+      "ar": "فَقَالَ",
+      "tr": "faqaAla",
+      "roman": "faqāla",
+      "ty": "perfect",
+      "n": 27
+    },
+    {
+      "ar": "قَالَت",
+      "tr": "qaAlato",
+      "roman": "qālat",
+      "ty": "perfect",
+      "n": 24
+    },
+    {
+      "ar": "فَقَالُو",
+      "tr": "faqaAluwA@",
+      "roman": "faqālūā",
+      "ty": "perfect",
+      "n": 18
+    },
+    {
+      "ar": "وَقُل",
+      "tr": "waqul",
+      "roman": "waqul",
+      "ty": "imperative",
+      "n": 17
+    },
+    {
+      "ar": "فَقُل",
+      "tr": "faqulo",
+      "roman": "faqul",
+      "ty": "imperative",
+      "n": 16
+    },
+    {
+      "ar": "وَقِيلَ",
+      "tr": "waqiyla",
+      "roman": "waqīla",
+      "ty": "passive",
+      "n": 15
+    },
+    {
+      "ar": "قُلنَ",
+      "tr": "qulonaA",
+      "roman": "qulnā",
+      "ty": "perfect",
+      "n": 15
+    },
+    {
+      "ar": "تَقُولُو",
+      "tr": "taquwluwA@",
+      "roman": "taqūlūā",
+      "ty": "jussive",
+      "n": 15
+    },
+    {
+      "ar": "فَيَقُولُ",
+      "tr": "fayaquwlu",
+      "roman": "fayaqūlu",
+      "ty": "imperfect",
+      "n": 12
+    },
+    {
+      "ar": "وَيَقُولُ",
+      "tr": "wayaquwlu",
+      "roman": "wayaqūlu",
+      "ty": "imperfect",
+      "n": 11
+    },
+    {
+      "ar": "يَقُولُو",
+      "tr": "yaquwluwA@",
+      "roman": "yaqūlūā",
+      "ty": "jussive",
+      "n": 11
+    },
+    {
+      "ar": "لَيَقُولُنَّ",
+      "tr": "layaquwlun~a",
+      "roman": "layaqūluna",
+      "ty": "imperfect",
+      "n": 9
+    },
+    {
+      "ar": "قُلتُم",
+      "tr": "qulotumo",
+      "roman": "qultum",
+      "ty": "perfect",
+      "n": 9
+    },
+    {
+      "ar": "وَقَالَتِ",
+      "tr": "waqaAlati",
+      "roman": "waqālati",
+      "ty": "perfect",
+      "n": 8
+    },
+    {
+      "ar": "وَقُولُو",
+      "tr": "waquwluwA@",
+      "roman": "waqūlūā",
+      "ty": "imperative",
+      "n": 8
+    },
+    {
+      "ar": "وَقُلنَ",
+      "tr": "waqulonaA",
+      "roman": "waqulnā",
+      "ty": "perfect",
+      "n": 8
+    },
+    {
+      "ar": "أَقُولُ",
+      "tr": ">aquwlu",
+      "roman": "ʾāqūlu",
+      "ty": "imperfect",
+      "n": 7
+    },
+    {
+      "ar": "فَقُلنَ",
+      "tr": "faqulonaA",
+      "roman": "faqulnā",
+      "ty": "perfect",
+      "n": 6
+    },
+    {
+      "ar": "تَقُولُونَ",
+      "tr": "taquwluwna",
+      "roman": "taqūlūna",
+      "ty": "imperfect",
+      "n": 6
+    },
+    {
+      "ar": "نَقُولُ",
+      "tr": "naquwlu",
+      "roman": "naqūlu",
+      "ty": "imperfect",
+      "n": 6
+    },
+    {
+      "ar": "تَقُولَ",
+      "tr": "taquwla",
+      "roman": "taqūla",
+      "ty": "subjunctive",
+      "n": 6
+    },
+    {
+      "ar": "قَالَتِ",
+      "tr": "qaAlati",
+      "roman": "qālati",
+      "ty": "perfect",
+      "n": 5
+    },
+    {
+      "ar": "أَقُل",
+      "tr": ">aqul",
+      "roman": "ʾāqul",
+      "ty": "jussive",
+      "n": 5
+    },
+    {
+      "ar": "يَقُولَ",
+      "tr": "yaquwla",
+      "roman": "yaqūla",
+      "ty": "subjunctive",
+      "n": 5
+    },
+    {
+      "ar": "وَقَالَت",
+      "tr": "waqaAlato",
+      "roman": "waqālat",
+      "ty": "perfect",
+      "n": 5
+    },
+    {
+      "ar": "سَيَقُولُ",
+      "tr": "sayaquwlu",
+      "roman": "sayaqūlu",
+      "ty": "imperfect",
+      "n": 4
+    },
+    {
+      "ar": "تَقُولُ",
+      "tr": "taquwlu",
+      "roman": "taqūlu",
+      "ty": "imperfect",
+      "n": 4
+    },
+    {
+      "ar": "لَيَقُولَنَّ",
+      "tr": "layaquwlan~a",
+      "roman": "layaqūlana",
+      "ty": "imperfect",
+      "n": 4
+    },
+    {
+      "ar": "قُلتَ",
+      "tr": "qulota",
+      "roman": "qulta",
+      "ty": "perfect",
+      "n": 4
+    },
+    {
+      "ar": "وَقُلِ",
+      "tr": "waquli",
+      "roman": "waquli",
+      "ty": "imperative",
+      "n": 4
+    },
+    {
+      "ar": "فَسَيَقُولُونَ",
+      "tr": "fasayaquwluwna",
+      "roman": "fasayaqūlūna",
+      "ty": "imperfect",
+      "n": 4
+    },
+    {
+      "ar": "سَيَقُولُونَ",
+      "tr": "sayaquwluwna",
+      "roman": "sayaqūlūna",
+      "ty": "imperfect",
+      "n": 4
+    },
+    {
+      "ar": "قَٰلَ",
+      "tr": "qa`la",
+      "roman": "qāla",
+      "ty": "perfect",
+      "n": 4
+    },
+    {
+      "ar": "لَيَقُولُونَ",
+      "tr": "layaquwluwna",
+      "roman": "layaqūlūna",
+      "ty": "imperfect",
+      "n": 4
+    },
+    {
+      "ar": "أَتَقُولُونَ",
+      "tr": ">ataquwluwna",
+      "roman": "ʾātaqūlūna",
+      "ty": "imperfect",
+      "n": 3
+    },
+    {
+      "ar": "يُقَالُ",
+      "tr": "yuqaAlu",
+      "roman": "yuqālu",
+      "ty": "passive",
+      "n": 3
+    },
+    {
+      "ar": "فَقُولَ",
+      "tr": "faquwlaA^",
+      "roman": "faqūlā",
+      "ty": "imperative",
+      "n": 3
+    },
+    {
+      "ar": "قُولُو",
+      "tr": "quwluw^A@",
+      "roman": "qūlūā",
+      "ty": "imperative",
+      "n": 2
+    },
+    {
+      "ar": "فَقُولُو",
+      "tr": "faquwluwA@",
+      "roman": "faqūlūā",
+      "ty": "imperative",
+      "n": 2
+    },
+    {
+      "ar": "وَنَقُولُ",
+      "tr": "wanaquwlu",
+      "roman": "wanaqūlu",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "ar": "أَقُولَ",
+      "tr": ">aquwla",
+      "roman": "ʾāqūla",
+      "ty": "subjunctive",
+      "n": 2
+    },
+    {
+      "ar": "فَقُلِ",
+      "tr": "faquli",
+      "roman": "faquli",
+      "ty": "imperative",
+      "n": 2
+    },
+    {
+      "ar": "فَيَقُولُو",
+      "tr": "fayaquwluwA@",
+      "roman": "fayaqūlūā",
+      "ty": "subjunctive",
+      "n": 2
+    },
+    {
+      "ar": "لَقَالُو",
+      "tr": "laqaAluw^A@",
+      "roman": "laqālūā",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "قَالَتَ",
+      "tr": "qaAlataA",
+      "roman": "qālatā",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "فَيَقُولُونَ",
+      "tr": "fayaquwluwna",
+      "roman": "fayaqūlūna",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "وَليَقُولُو",
+      "tr": "waloyaquwluwA@",
+      "roman": "walyaqūlūā",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "ar": "قُلتُهُ,",
+      "tr": "qulotuhu,",
+      "roman": "qultuhu,",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "قُلتُ",
+      "tr": "qulotu",
+      "roman": "qultu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "لَقَالَ",
+      "tr": "laqaAla",
+      "roman": "laqāla",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "لِّيَقُولُو",
+      "tr": "l~iyaquwluw^A@",
+      "roman": "līaqūlūā",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "وَلِيَقُولُو",
+      "tr": "waliyaquwluwA@",
+      "roman": "walīaqūlūā",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "وَأَقُل",
+      "tr": "wa>aqul",
+      "roman": "waʾāqul",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "ar": "وَّقَالُو",
+      "tr": "w~aqaAluwA@",
+      "roman": "waqālūā",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "لَقُلنَ",
+      "tr": "laqulonaA",
+      "roman": "laqulnā",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "لَّيَقُولُنَّ",
+      "tr": "l~ayaquwlun~a",
+      "roman": "layaqūluna",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "نَّقُولُ",
+      "tr": "n~aquwlu",
+      "roman": "naqūlu",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "نَّقُولَ",
+      "tr": "n~aquwla",
+      "roman": "naqūla",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "تَقُل",
+      "tr": "taqul",
+      "roman": "taqul",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "ar": "لَتَقُولُونَ",
+      "tr": "lataquwluwna",
+      "roman": "lataqūlūna",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "تَقُولَنَّ",
+      "tr": "taquwlan~a",
+      "roman": "taqūlana",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "ar": "وَسَنَقُولُ",
+      "tr": "wasanaquwlu",
+      "roman": "wasanaqūlu",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "فَقُولِى",
+      "tr": "faquwliY^",
+      "roman": "faqūliā",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "ar": "فَتَقُولُ",
+      "tr": "fataquwlu",
+      "roman": "fataqūlu",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "يَقُل",
+      "tr": "yaqulo",
+      "roman": "yaqul",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "ar": "وَتَقُولُونَ",
+      "tr": "wataquwluwna",
+      "roman": "wataqūlūna",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "لَنَقُولَنَّ",
+      "tr": "lanaquwlan~a",
+      "roman": "lanaqūlana",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "فَقَالَت",
+      "tr": "faqaAlato",
+      "roman": "faqālat",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "لَّيَقُولَنَّ",
+      "tr": "l~ayaquwlan~a",
+      "roman": "layaqūlana",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "قَالَهَ",
+      "tr": "qaAlahaA",
+      "roman": "qālahā",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "لَّقَالُو",
+      "tr": "l~aqaAluwA@",
+      "roman": "laqālūā",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "وَتَقُولُو",
+      "tr": "wataquwluwA@",
+      "roman": "wataqūlūā",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "وَتَقُولُ",
+      "tr": "wataquwlu",
+      "roman": "wataqūlu",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "وَيَقُولُو",
+      "tr": "wayaquwluwA@",
+      "roman": "wayaqūlūā",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "فَيَقُولَ",
+      "tr": "fayaquwla",
+      "roman": "fayaqūla",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "فَقُلتُ",
+      "tr": "faqulotu",
+      "roman": "faqultu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "وَلِيَقُولَ",
+      "tr": "waliyaquwla",
+      "roman": "walīaqūla",
+      "ty": "subjunctive",
+      "n": 1
+    }
+  ],
+  "2": [
+    {
+      "ar": "كَانَ",
+      "tr": "kaAna",
+      "roman": "kāna",
+      "ty": "perfect",
+      "n": 325
+    },
+    {
+      "ar": "كَانُو",
+      "tr": "kaAnuwA@",
+      "roman": "kānūā",
+      "ty": "perfect",
+      "n": 229
+    },
+    {
+      "ar": "كُنتُم",
+      "tr": "kuntumo",
+      "roman": "kuntum",
+      "ty": "perfect",
+      "n": 188
+    },
+    {
+      "ar": "وَكَانَ",
+      "tr": "wakaAna",
+      "roman": "wakāna",
+      "ty": "perfect",
+      "n": 84
+    },
+    {
+      "ar": "كُنَّ",
+      "tr": "kun~aA",
+      "roman": "kunā",
+      "ty": "perfect",
+      "n": 66
+    },
+    {
+      "ar": "كُنتَ",
+      "tr": "kunta",
+      "roman": "kunta",
+      "ty": "perfect",
+      "n": 35
+    },
+    {
+      "ar": "وَكَانُو",
+      "tr": "wakaAnuwA@",
+      "roman": "wakānūā",
+      "ty": "perfect",
+      "n": 32
+    },
+    {
+      "ar": "يَكُن",
+      "tr": "yakun",
+      "roman": "yakun",
+      "ty": "jussive",
+      "n": 27
+    },
+    {
+      "ar": "كَانَت",
+      "tr": "kaAnato",
+      "roman": "kānat",
+      "ty": "perfect",
+      "n": 27
+    },
+    {
+      "ar": "تَكُونُو",
+      "tr": "takuwnuwA@",
+      "roman": "takūnūā",
+      "ty": "jussive",
+      "n": 21
+    },
+    {
+      "ar": "يَكُونُ",
+      "tr": "yakuwnu",
+      "roman": "yakūnu",
+      "ty": "imperfect",
+      "n": 18
+    },
+    {
+      "ar": "يَكُونَ",
+      "tr": "yakuwna",
+      "roman": "yakūna",
+      "ty": "subjunctive",
+      "n": 18
+    },
+    {
+      "ar": "تَكُن",
+      "tr": "takun",
+      "roman": "takun",
+      "ty": "jussive",
+      "n": 18
+    },
+    {
+      "ar": "وَكُنَّ",
+      "tr": "wakun~aA",
+      "roman": "wakunā",
+      "ty": "perfect",
+      "n": 16
+    },
+    {
+      "ar": "تَكُونَ",
+      "tr": "takuwna",
+      "roman": "takūna",
+      "ty": "subjunctive",
+      "n": 16
+    },
+    {
+      "ar": "كُنتُ",
+      "tr": "kuntu",
+      "roman": "kuntu",
+      "ty": "perfect",
+      "n": 15
+    },
+    {
+      "ar": "يَكُونُو",
+      "tr": "yakuwnuwA@",
+      "roman": "yakūnūā",
+      "ty": "subjunctive",
+      "n": 13
+    },
+    {
+      "ar": "تَكُونُ",
+      "tr": "takuwnu",
+      "roman": "takūnu",
+      "ty": "imperfect",
+      "n": 11
+    },
+    {
+      "ar": "أَكُونَ",
+      "tr": ">akuwna",
+      "roman": "ʾākūna",
+      "ty": "subjunctive",
+      "n": 9
+    },
+    {
+      "ar": "فَيَكُونُ",
+      "tr": "fayakuwnu",
+      "roman": "fayakūnu",
+      "ty": "imperfect",
+      "n": 9
+    },
+    {
+      "ar": "تَكُونَنَّ",
+      "tr": "takuwnan~a",
+      "roman": "takūnana",
+      "ty": "imperfect",
+      "n": 9
+    },
+    {
+      "ar": "كُونُو",
+      "tr": "kuwnuwA@",
+      "roman": "kūnūā",
+      "ty": "imperative",
+      "n": 9
+    },
+    {
+      "ar": "كُن",
+      "tr": "kun",
+      "roman": "kun",
+      "ty": "imperative",
+      "n": 8
+    },
+    {
+      "ar": "فَكَانَ",
+      "tr": "fakaAna",
+      "roman": "fakāna",
+      "ty": "perfect",
+      "n": 8
+    },
+    {
+      "ar": "يَكُ",
+      "tr": "yaku",
+      "roman": "yaku",
+      "ty": "jussive",
+      "n": 8
+    },
+    {
+      "ar": "وَكُنتُم",
+      "tr": "wakuntumo",
+      "roman": "wakuntum",
+      "ty": "perfect",
+      "n": 8
+    },
+    {
+      "ar": "فَتَكُونَ",
+      "tr": "fatakuwna",
+      "roman": "fatakūna",
+      "ty": "subjunctive",
+      "n": 8
+    },
+    {
+      "ar": "تَكُ",
+      "tr": "taku",
+      "roman": "taku",
+      "ty": "jussive",
+      "n": 7
+    },
+    {
+      "ar": "لَكَانَ",
+      "tr": "lakaAna",
+      "roman": "lakāna",
+      "ty": "perfect",
+      "n": 6
+    },
+    {
+      "ar": "فَكَانُو",
+      "tr": "fakaAnuwA@",
+      "roman": "fakānūā",
+      "ty": "perfect",
+      "n": 5
+    },
+    {
+      "ar": "فَكَانَت",
+      "tr": "fakaAnato",
+      "roman": "fakānat",
+      "ty": "perfect",
+      "n": 5
+    },
+    {
+      "ar": "يَكُنِ",
+      "tr": "yakuni",
+      "roman": "yakuni",
+      "ty": "jussive",
+      "n": 4
+    },
+    {
+      "ar": "نَكُن",
+      "tr": "nakun",
+      "roman": "nakun",
+      "ty": "jussive",
+      "n": 4
+    },
+    {
+      "ar": "لَنَكُونَنَّ",
+      "tr": "lanakuwnan~a",
+      "roman": "lanakūnana",
+      "ty": "imperfect",
+      "n": 4
+    },
+    {
+      "ar": "لِيَكُونَ",
+      "tr": "liyakuwna",
+      "roman": "līakūna",
+      "ty": "subjunctive",
+      "n": 4
+    },
+    {
+      "ar": "وَّكَانُو",
+      "tr": "w~akaAnuwA@",
+      "roman": "wakānūā",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "ar": "وَيَكُونَ",
+      "tr": "wayakuwna",
+      "roman": "wayakūna",
+      "ty": "subjunctive",
+      "n": 3
+    },
+    {
+      "ar": "أَكُن",
+      "tr": ">akun",
+      "roman": "ʾākun",
+      "ty": "jussive",
+      "n": 3
+    },
+    {
+      "ar": "كَانَتَ",
+      "tr": "kaAnataA",
+      "roman": "kānatā",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "ar": "وَنَكُونَ",
+      "tr": "wanakuwna",
+      "roman": "wanakūna",
+      "ty": "subjunctive",
+      "n": 3
+    },
+    {
+      "ar": "وَكُن",
+      "tr": "wakun",
+      "roman": "wakun",
+      "ty": "imperative",
+      "n": 3
+    },
+    {
+      "ar": "لِتَكُونَ",
+      "tr": "litakuwna",
+      "roman": "litakūna",
+      "ty": "subjunctive",
+      "n": 3
+    },
+    {
+      "ar": "وَكَانَتِ",
+      "tr": "wakaAnati",
+      "roman": "wakānati",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "ar": "لَكُنَّ",
+      "tr": "lakun~aA",
+      "roman": "lakunā",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "ar": "وَكُنتُ",
+      "tr": "wakuntu",
+      "roman": "wakuntu",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "نَّكُونَ",
+      "tr": "n~akuwna",
+      "roman": "nakūna",
+      "ty": "subjunctive",
+      "n": 2
+    },
+    {
+      "ar": "وَكُنتَ",
+      "tr": "wakunta",
+      "roman": "wakunta",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "وَتَكُونُو",
+      "tr": "watakuwnuwA@",
+      "roman": "watakūnūā",
+      "ty": "jussive",
+      "n": 2
+    },
+    {
+      "ar": "وَأَكُن",
+      "tr": "wa>akun",
+      "roman": "waʾākun",
+      "ty": "jussive",
+      "n": 2
+    },
+    {
+      "ar": "لَتَكُونَنَّ",
+      "tr": "latakuwnan~a",
+      "roman": "latakūnana",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "ar": "كُنتُنَّ",
+      "tr": "kuntun~a",
+      "roman": "kuntuna",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "لَكُنتُ",
+      "tr": "lakuntu",
+      "roman": "lakuntu",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "وَتَكُونُ",
+      "tr": "watakuwnu",
+      "roman": "watakūnu",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "ar": "نَكُ",
+      "tr": "naku",
+      "roman": "naku",
+      "ty": "jussive",
+      "n": 2
+    },
+    {
+      "ar": "فَكُنتُم",
+      "tr": "fakuntumo",
+      "roman": "fakuntum",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "لَكُنتُم",
+      "tr": "lakuntum",
+      "roman": "lakuntum",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "لِّتَكُونُو",
+      "tr": "l~itakuwnuwA@",
+      "roman": "litakūnūā",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "وَلتَكُن",
+      "tr": "walotakun",
+      "roman": "waltakun",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "ar": "تَكُن[",
+      "tr": "takun[",
+      "roman": "takun[",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "ar": "فَتَكُونُونَ",
+      "tr": "fatakuwnuwna",
+      "roman": "fatakūnūna",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "فَليَكُونُو",
+      "tr": "faloyakuwnuwA@",
+      "roman": "falyakūnūā",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "ar": "فَتَكُونُ",
+      "tr": "fatakuwnu",
+      "roman": "fatakūnu",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "وَلِيَكُونَ",
+      "tr": "waliyakuwna",
+      "roman": "walīakūna",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "لَأَكُونَنَّ",
+      "tr": "la>akuwnan~a",
+      "roman": "laʾākūnana",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "لَّنَكُونَنَّ",
+      "tr": "l~anakuwnan~a",
+      "roman": "lanakūnana",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "وَلَنَكُونَنَّ",
+      "tr": "walanakuwnan~a",
+      "roman": "walanakūnana",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "وَكُونُو",
+      "tr": "wakuwnuwA@",
+      "roman": "wakūnūā",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "ar": "أَكَانَ",
+      "tr": ">akaAna",
+      "roman": "ʾākāna",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "وَتَكُونَ",
+      "tr": "watakuwna",
+      "roman": "watakūna",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "كُنتِ",
+      "tr": "kunti",
+      "roman": "kunti",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "وَلَيَكُونً",
+      "tr": "walayakuwnFA",
+      "roman": "walayakūnanā",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "أَكُن[",
+      "tr": ">akun[",
+      "roman": "ʾākun[",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "ar": "أَكُ",
+      "tr": ">aku",
+      "roman": "ʾāku",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "ar": "لِّيَكُونُو",
+      "tr": "l~iyakuwnuwA@",
+      "roman": "līakūnūā",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "وَيَكُونُونَ",
+      "tr": "wayakuwnuwna",
+      "roman": "wayakūnūna",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "كُونِى",
+      "tr": "kuwniY",
+      "roman": "kūniā",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "ar": "فَيَكُونَ",
+      "tr": "fayakuwna",
+      "roman": "fayakūna",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "فَنَكُونَ",
+      "tr": "fanakuwna",
+      "roman": "fanakūna",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "فَتَكُن",
+      "tr": "fatakun",
+      "roman": "fatakun",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "ar": "لِيَكُونُو",
+      "tr": "liyakuwnuwA@",
+      "roman": "līakūnūā",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "لَّيَكُونُنَّ",
+      "tr": "l~ayakuwnun~a",
+      "roman": "layakūnuna",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "فَأَكُونَ",
+      "tr": "fa>akuwna",
+      "roman": "faʾākūna",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "وَلَتَكُونَنَّ",
+      "tr": "walatakuwnan~a",
+      "roman": "walatakūnana",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "لِتَكُونُو",
+      "tr": "litakuwnuwA@",
+      "roman": "litakūnūā",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "وَلِتَكُونَ",
+      "tr": "walitakuwna",
+      "roman": "walitakūna",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "يَكُنَّ",
+      "tr": "yakun~a",
+      "roman": "yakuna",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "وَكَانَت",
+      "tr": "wakaAnato",
+      "roman": "wakānat",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "كَانَتِ",
+      "tr": "kaAnati",
+      "roman": "kānati",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "يَكُونُونَ",
+      "tr": "yakuwnuwna",
+      "roman": "yakūnūna",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "سَيَكُونُ",
+      "tr": "sayakuwnu",
+      "roman": "sayakūnu",
+      "ty": "imperfect",
+      "n": 1
+    }
+  ],
+  "3": [
+    {
+      "ar": "ءَامَنُو",
+      "tr": "'aAmanuwA@",
+      "roman": "ʾāmanūā",
+      "ty": "perfect",
+      "n": 253
+    },
+    {
+      "ar": "يُؤمِنُونَ",
+      "tr": "yu&ominuwna",
+      "roman": "yuʾuminūna",
+      "ty": "imperfect",
+      "n": 86
+    },
+    {
+      "ar": "ءَامَنَّ",
+      "tr": "'aAman~aA",
+      "roman": "ʾāmanā",
+      "ty": "perfect",
+      "n": 31
+    },
+    {
+      "ar": "ءَامَنَ",
+      "tr": "'aAmana",
+      "roman": "ʾāmana",
+      "ty": "perfect",
+      "n": 26
+    },
+    {
+      "ar": "يُؤمِنُ",
+      "tr": "yu&ominu",
+      "roman": "yuʾuminu",
+      "ty": "imperfect",
+      "n": 18
+    },
+    {
+      "ar": "يُؤمِنُو",
+      "tr": "yu&ominuwA@",
+      "roman": "yuʾuminūā",
+      "ty": "subjunctive",
+      "n": 12
+    },
+    {
+      "ar": "ءَامِنُو",
+      "tr": "'aAminuwA@",
+      "roman": "ʾāminūā",
+      "ty": "imperative",
+      "n": 10
+    },
+    {
+      "ar": "تُؤمِنُو",
+      "tr": "tu&ominuwA@",
+      "roman": "tuʾuminūā",
+      "ty": "jussive",
+      "n": 9
+    },
+    {
+      "ar": "ءَامَنتُم",
+      "tr": "'aAmantum",
+      "roman": "ʾāmantum",
+      "ty": "perfect",
+      "n": 8
+    },
+    {
+      "ar": "نُّؤمِنَ",
+      "tr": "n~u&omina",
+      "roman": "nuʾumina",
+      "ty": "subjunctive",
+      "n": 6
+    },
+    {
+      "ar": "يُؤمِن[",
+      "tr": "yu&omin[",
+      "roman": "yuʾumin[",
+      "ty": "jussive",
+      "n": 6
+    },
+    {
+      "ar": "فَـَامِنُو",
+      "tr": "fa_#aAminuwA@",
+      "roman": "faāminūā",
+      "ty": "imperative",
+      "n": 5
+    },
+    {
+      "ar": "تُؤمِنُونَ",
+      "tr": "tu&ominuwna",
+      "roman": "tuʾuminūna",
+      "ty": "imperfect",
+      "n": 5
+    },
+    {
+      "ar": "ءَامَنَت",
+      "tr": "'aAmanato",
+      "roman": "ʾāmanat",
+      "ty": "perfect",
+      "n": 4
+    },
+    {
+      "ar": "وَءَامَنَ",
+      "tr": "wa'aAmana",
+      "roman": "waʾāmana",
+      "ty": "perfect",
+      "n": 4
+    },
+    {
+      "ar": "لِيُؤمِنُو",
+      "tr": "liyu&ominuwA@",
+      "roman": "līuʾuminūā",
+      "ty": "subjunctive",
+      "n": 4
+    },
+    {
+      "ar": "أَنُؤمِنُ",
+      "tr": ">anu&ominu",
+      "roman": "ʾānuʾuminu",
+      "ty": "imperfect",
+      "n": 3
+    },
+    {
+      "ar": "وَءَامِنُو",
+      "tr": "wa'aAminuwA@",
+      "roman": "waʾāminūā",
+      "ty": "imperative",
+      "n": 3
+    },
+    {
+      "ar": "نُؤمِنُ",
+      "tr": "nu&ominu",
+      "roman": "nuʾuminu",
+      "ty": "imperfect",
+      "n": 3
+    },
+    {
+      "ar": "ءَامَنتُ",
+      "tr": "'aAmantu",
+      "roman": "ʾāmantu",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "ar": "يُؤمِنَّ",
+      "tr": "yu&omin~a",
+      "roman": "yuʾumina",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "ar": "تُؤمِن",
+      "tr": "tu&omin",
+      "roman": "tuʾumin",
+      "ty": "jussive",
+      "n": 2
+    },
+    {
+      "ar": "وَتُؤمِنُونَ",
+      "tr": "watu&ominuwna",
+      "roman": "watuʾuminūna",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "ar": "فَـَامَنَّ",
+      "tr": "fa_#aAman~aA",
+      "roman": "faāmanā",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "وَّءَامَنُو",
+      "tr": "w~a'aAmanuwA@",
+      "roman": "waʾāmanūā",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "فَـَامَنَ",
+      "tr": "fa_#aAmana",
+      "roman": "faāmana",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "لِتُؤمِنُو",
+      "tr": "litu&ominuwA@",
+      "roman": "lituʾuminūā",
+      "ty": "subjunctive",
+      "n": 2
+    },
+    {
+      "ar": "وَءَامَنتُم",
+      "tr": "wa'aAmantumo",
+      "roman": "waʾāmantum",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "وَءَامَنُو",
+      "tr": "wa'aAmanuw^A@",
+      "roman": "waʾāmanūā",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "أَفَتُؤمِنُونَ",
+      "tr": ">afatu&ominuwna",
+      "roman": "ʾāfatuʾuminūna",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "وَليُؤمِنُو",
+      "tr": "waloyu&ominuwA@",
+      "roman": "walyuʾuminūā",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "ar": "وَيُؤمِن[",
+      "tr": "wayu&omin[",
+      "roman": "wayuʾumin[",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "ar": "لَتُؤمِنُنَّ",
+      "tr": "latu&ominun~a",
+      "roman": "latuʾuminuna",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "نُؤمِنَ",
+      "tr": "nu&omina",
+      "roman": "nuʾumina",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "لَيُؤمِنَنَّ",
+      "tr": "layu&ominan~a",
+      "roman": "layuʾuminana",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "لَّيُؤمِنُنَّ",
+      "tr": "l~ayu&ominun~a",
+      "roman": "layuʾuminuna",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "لَنُؤمِنَنَّ",
+      "tr": "lanu&ominan~a",
+      "roman": "lanuʾuminana",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "وَيُؤمِنُ",
+      "tr": "wayu&ominu",
+      "roman": "wayuʾuminu",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "لَءَامَنَ",
+      "tr": "la'aAmana",
+      "roman": "laʾāmana",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "تُؤمِنَ",
+      "tr": "tu&omina",
+      "roman": "tuʾumina",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "يُؤمِنَ",
+      "tr": "yu&omina",
+      "roman": "yuʾumina",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "فَليُؤمِن",
+      "tr": "faloyu&omin",
+      "roman": "falyuʾumin",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "ar": "فَيُؤمِنُو",
+      "tr": "fayu&ominuwA@",
+      "roman": "fayuʾuminūā",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "فَـَامَنُو",
+      "tr": "fa_#aAmanuwA@",
+      "roman": "faāmanūā",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "وَيُؤمِنُونَ",
+      "tr": "wayu&ominuwna",
+      "roman": "wayuʾuminūna",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "ءَامِن",
+      "tr": "'aAmino",
+      "roman": "ʾāmin",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "ar": "لِّتُؤمِنُو",
+      "tr": "l~itu&ominuwA@",
+      "roman": "lituʾuminūā",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "فَـَامَنَت",
+      "tr": "fa_#aAmanat",
+      "roman": "faāmanat",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "وَءَامَنَهُم",
+      "tr": "wa'aAmanahum",
+      "roman": "waʾāmanahum",
+      "ty": "perfect",
+      "n": 1
+    }
+  ],
+  "4": [
+    {
+      "ar": "يَعلَمُونَ",
+      "tr": "yaEolamuwna",
+      "roman": "yaʿlamūna",
+      "ty": "imperfect",
+      "n": 81
+    },
+    {
+      "ar": "يَعلَمُ",
+      "tr": "yaEolamu",
+      "roman": "yaʿlamu",
+      "ty": "imperfect",
+      "n": 62
+    },
+    {
+      "ar": "تَعلَمُونَ",
+      "tr": "taEolamuwna",
+      "roman": "taʿlamūna",
+      "ty": "imperfect",
+      "n": 54
+    },
+    {
+      "ar": "وَٱعلَمُو",
+      "tr": "wa{Eolamuw^A@",
+      "roman": "waʿlamūā",
+      "ty": "imperative",
+      "n": 18
+    },
+    {
+      "ar": "وَيَعلَمُ",
+      "tr": "wayaEolamu",
+      "roman": "wayaʿlamu",
+      "ty": "imperfect",
+      "n": 10
+    },
+    {
+      "ar": "عَلِمَ",
+      "tr": "Ealima",
+      "roman": "ʿalima",
+      "ty": "perfect",
+      "n": 9
+    },
+    {
+      "ar": "أَعلَمُ",
+      "tr": ">aEolamu",
+      "roman": "ʾāʿlamu",
+      "ty": "imperfect",
+      "n": 8
+    },
+    {
+      "ar": "فَٱعلَمُو",
+      "tr": "fa{Eolamuw^A@",
+      "roman": "faʿlamūā",
+      "ty": "imperative",
+      "n": 6
+    },
+    {
+      "ar": "وَلِيَعلَمَ",
+      "tr": "waliyaEolama",
+      "roman": "walīaʿlama",
+      "ty": "subjunctive",
+      "n": 6
+    },
+    {
+      "ar": "عَلِمنَ",
+      "tr": "EalimonaA",
+      "roman": "ʿalimnā",
+      "ty": "perfect",
+      "n": 6
+    },
+    {
+      "ar": "نَعلَمُ",
+      "tr": "naEolamu",
+      "roman": "naʿlamu",
+      "ty": "imperfect",
+      "n": 5
+    },
+    {
+      "ar": "تَعلَمُ",
+      "tr": "taEolamu",
+      "roman": "taʿlamu",
+      "ty": "imperfect",
+      "n": 5
+    },
+    {
+      "ar": "يَعلَمُو",
+      "tr": "yaEolamuw^A@",
+      "roman": "yaʿlamūā",
+      "ty": "jussive",
+      "n": 5
+    },
+    {
+      "ar": "تَعلَمُو",
+      "tr": "taEolamuw^A@",
+      "roman": "taʿlamūā",
+      "ty": "jussive",
+      "n": 5
+    },
+    {
+      "ar": "تَعلَم",
+      "tr": "taEolamo",
+      "roman": "taʿlam",
+      "ty": "jussive",
+      "n": 4
+    },
+    {
+      "ar": "وَأَعلَمُ",
+      "tr": "wa>aEolamu",
+      "roman": "waʾāʿlamu",
+      "ty": "imperfect",
+      "n": 3
+    },
+    {
+      "ar": "لِنَعلَمَ",
+      "tr": "linaEolama",
+      "roman": "linaʿlama",
+      "ty": "subjunctive",
+      "n": 3
+    },
+    {
+      "ar": "يَعلَمِ",
+      "tr": "yaEolami",
+      "roman": "yaʿlami",
+      "ty": "jussive",
+      "n": 3
+    },
+    {
+      "ar": "فَٱعلَم",
+      "tr": "fa{Eolamo",
+      "roman": "faʿlam",
+      "ty": "imperative",
+      "n": 3
+    },
+    {
+      "ar": "ٱعلَمُو",
+      "tr": "{Eolamuw^A@",
+      "roman": "ʿlamūā",
+      "ty": "imperative",
+      "n": 3
+    },
+    {
+      "ar": "يَعلَمُهُم",
+      "tr": "yaEolamuhumo",
+      "roman": "yaʿlamuhum",
+      "ty": "imperfect",
+      "n": 3
+    },
+    {
+      "ar": "عَلِمتَ",
+      "tr": "Ealimota",
+      "roman": "ʿalimta",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "ar": "يَعلَمَ",
+      "tr": "yaEolama",
+      "roman": "yaʿlama",
+      "ty": "subjunctive",
+      "n": 3
+    },
+    {
+      "ar": "فَسَتَعلَمُونَ",
+      "tr": "fasataEolamuwna",
+      "roman": "fasataʿlamūna",
+      "ty": "imperfect",
+      "n": 3
+    },
+    {
+      "ar": "وَلَيَعلَمَنَّ",
+      "tr": "walayaEolaman~a",
+      "roman": "walayaʿlamana",
+      "ty": "imperfect",
+      "n": 3
+    },
+    {
+      "ar": "سَيَعلَمُونَ",
+      "tr": "sayaEolamuwna",
+      "roman": "sayaʿlamūna",
+      "ty": "imperfect",
+      "n": 3
+    },
+    {
+      "ar": "لِتَعلَمُو",
+      "tr": "litaEolamuw^A@",
+      "roman": "litaʿlamūā",
+      "ty": "subjunctive",
+      "n": 3
+    },
+    {
+      "ar": "عَلِمتُم",
+      "tr": "Ealimotum",
+      "roman": "ʿalimtum",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "ar": "يَعلَم",
+      "tr": "yaEolamo",
+      "roman": "yaʿlam",
+      "ty": "jussive",
+      "n": 3
+    },
+    {
+      "ar": "عَلِمتُمُ",
+      "tr": "Ealimotumu",
+      "roman": "ʿalimtumu",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "يَعلَمهُ",
+      "tr": "yaEolamohu",
+      "roman": "yaʿlamhu",
+      "ty": "jussive",
+      "n": 2
+    },
+    {
+      "ar": "وَيَعلَمَ",
+      "tr": "wayaEolama",
+      "roman": "wayaʿlama",
+      "ty": "subjunctive",
+      "n": 2
+    },
+    {
+      "ar": "لِيَعلَمَ",
+      "tr": "liyaEolama",
+      "roman": "līaʿlama",
+      "ty": "subjunctive",
+      "n": 2
+    },
+    {
+      "ar": "وَسَيَعلَمُ",
+      "tr": "wasayaEolamu",
+      "roman": "wasayaʿlamu",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "ar": "فَسَيَعلَمُونَ",
+      "tr": "fasayaEolamuwna",
+      "roman": "fasayaʿlamūna",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "ar": "وَلَتَعلَمُنَّ",
+      "tr": "walataEolamun~a",
+      "roman": "walataʿlamuna",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "ar": "وَيَعلَمُونَ",
+      "tr": "wayaEolamuwna",
+      "roman": "wayaʿlamūna",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "ar": "فَعَلِمَ",
+      "tr": "faEalima",
+      "roman": "faʿalima",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "عَلِمَت",
+      "tr": "Ealimato",
+      "roman": "ʿalimat",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "يَعلَمُهَ",
+      "tr": "yaEolamuhaA^",
+      "roman": "yaʿlamuhā",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "ar": "فَيَعلَمُونَ",
+      "tr": "fayaEolamuwna",
+      "roman": "fayaʿlamūna",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "عَلِمُو",
+      "tr": "EalimuwA@",
+      "roman": "ʿalimūā",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "لَيَعلَمُونَ",
+      "tr": "layaEolamuwna",
+      "roman": "layaʿlamūna",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "وَٱعلَم",
+      "tr": "wa{Eolamo",
+      "roman": "waʿlam",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "ar": "يَعلَمُهُ,",
+      "tr": "yaEolamuhu,",
+      "roman": "yaʿlamuhu,",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "لَعَلِمَهُ",
+      "tr": "laEalimahu",
+      "roman": "laʿalimahu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "وَنَعلَمَ",
+      "tr": "wanaEolama",
+      "roman": "wanaʿlama",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "عَلِمتَهُ,",
+      "tr": "Ealimotahu,",
+      "roman": "ʿalimtahu,",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "أَتَعلَمُونَ",
+      "tr": ">ataEolamuwna",
+      "roman": "ʾātaʿlamūna",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "تَعلَمُونَهُمُ",
+      "tr": "taEolamuwnahumu",
+      "roman": "taʿlamūnahumu",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "وَعَلِمَ",
+      "tr": "waEalima",
+      "roman": "waʿalima",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "وَتَعلَمَ",
+      "tr": "wataEolama",
+      "roman": "wataʿlama",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "تَعلَمُهُم",
+      "tr": "taEolamuhumo",
+      "roman": "taʿlamuhum",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "نَعلَمُهُم",
+      "tr": "naEolamuhumo",
+      "roman": "naʿlamuhum",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "تَعلَمُهَ",
+      "tr": "taEolamuhaA^",
+      "roman": "taʿlamuhā",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "لَتَعلَمُ",
+      "tr": "lataEolamu",
+      "roman": "lataʿlamu",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "وَلِيَعلَمُو",
+      "tr": "waliyaEolamuw^A@",
+      "roman": "walīaʿlamūā",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "وَلِتَعلَمُو",
+      "tr": "walitaEolamuwA@",
+      "roman": "walitaʿlamūā",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "لِيَعلَمُو",
+      "tr": "liyaEolamuw^A@",
+      "roman": "līaʿlamūā",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "لِيُعلَمَ",
+      "tr": "liyuEolama",
+      "roman": "līuʿlama",
+      "ty": "passive",
+      "n": 1
+    },
+    {
+      "ar": "يَعلَمَهُ,",
+      "tr": "yaEolamahu,",
+      "roman": "yaʿlamahu,",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "لَيَعلَمُ",
+      "tr": "layaEolamu",
+      "roman": "layaʿlamu",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "وَلِتَعلَمَ",
+      "tr": "walitaEolama",
+      "roman": "walitaʿlama",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "عَلِمتُ",
+      "tr": "Ealimotu",
+      "roman": "ʿalimtu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "فَعَلِمُو",
+      "tr": "faEalimuw^A@",
+      "roman": "faʿalimūā",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "فَلَيَعلَمَنَّ",
+      "tr": "falayaEolaman~a",
+      "roman": "falayaʿlamana",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "عَلِمَتِ",
+      "tr": "Ealimati",
+      "roman": "ʿalimati",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "نَعلَمَ",
+      "tr": "naEolama",
+      "roman": "naʿlama",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "تَعلَمُوهُم",
+      "tr": "taEolamuwhumo",
+      "roman": "taʿlamūhum",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "ar": "وَنَعلَمُ",
+      "tr": "wanaEolamu",
+      "roman": "wanaʿlamu",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "عَلِمتُمُوهُنَّ",
+      "tr": "Ealimotumuwhun~a",
+      "roman": "ʿalimtumūhuna",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "تَّعلَمُونَ",
+      "tr": "t~aEolamuwna",
+      "roman": "taʿlamūna",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "لَنَعلَمُ",
+      "tr": "lanaEolamu",
+      "roman": "lanaʿlamu",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "لِّيَعلَمَ",
+      "tr": "l~iyaEolama",
+      "roman": "līaʿlama",
+      "ty": "subjunctive",
+      "n": 1
+    }
+  ],
+  "5": [
+    {
+      "ar": "جَعَلَ",
+      "tr": "jaEala",
+      "roman": "jaʿala",
+      "ty": "perfect",
+      "n": 45
+    },
+    {
+      "ar": "وَجَعَلنَ",
+      "tr": "wajaEalonaA",
+      "roman": "wajaʿalnā",
+      "ty": "perfect",
+      "n": 37
+    },
+    {
+      "ar": "وَجَعَلَ",
+      "tr": "wajaEala",
+      "roman": "wajaʿala",
+      "ty": "perfect",
+      "n": 29
+    },
+    {
+      "ar": "جَعَلنَ",
+      "tr": "jaEalonaA",
+      "roman": "jaʿalnā",
+      "ty": "perfect",
+      "n": 29
+    },
+    {
+      "ar": "وَجَعَلُو",
+      "tr": "wajaEaluwA@",
+      "roman": "wajaʿalūā",
+      "ty": "perfect",
+      "n": 8
+    },
+    {
+      "ar": "جَعَلنَٰهُ",
+      "tr": "jaEalona`hu",
+      "roman": "jaʿalnāhu",
+      "ty": "perfect",
+      "n": 7
+    },
+    {
+      "ar": "جَعَلَكُم",
+      "tr": "jaEalakumo",
+      "roman": "jaʿalakum",
+      "ty": "perfect",
+      "n": 6
+    },
+    {
+      "ar": "يَجعَل",
+      "tr": "yajoEal",
+      "roman": "yajʿal",
+      "ty": "jussive",
+      "n": 6
+    },
+    {
+      "ar": "ٱجعَل",
+      "tr": "{joEalo",
+      "roman": "jʿal",
+      "ty": "imperative",
+      "n": 6
+    },
+    {
+      "ar": "تَجعَلُو",
+      "tr": "tajoEaluwA@",
+      "roman": "tajʿalūā",
+      "ty": "jussive",
+      "n": 5
+    },
+    {
+      "ar": "وَٱجعَل",
+      "tr": "wa{joEal",
+      "roman": "wajʿal",
+      "ty": "imperative",
+      "n": 5
+    },
+    {
+      "ar": "وَجَعَلنَٰهُم",
+      "tr": "wajaEalona`humo",
+      "roman": "wajaʿalnāhum",
+      "ty": "perfect",
+      "n": 5
+    },
+    {
+      "ar": "يَجعَلَ",
+      "tr": "yajoEala",
+      "roman": "yajʿala",
+      "ty": "subjunctive",
+      "n": 4
+    },
+    {
+      "ar": "يَجعَلُ",
+      "tr": "yajoEalu",
+      "roman": "yajʿalu",
+      "ty": "imperfect",
+      "n": 4
+    },
+    {
+      "ar": "تَجعَل",
+      "tr": "tajoEalo",
+      "roman": "tajʿal",
+      "ty": "jussive",
+      "n": 4
+    },
+    {
+      "ar": "وَجَعَلَنِى",
+      "tr": "wajaEalaniY",
+      "roman": "wajaʿalaniā",
+      "ty": "perfect",
+      "n": 4
+    },
+    {
+      "ar": "وَيَجعَل",
+      "tr": "wayajoEal",
+      "roman": "wayajʿal",
+      "ty": "jussive",
+      "n": 4
+    },
+    {
+      "ar": "جَعَلنَٰكَ",
+      "tr": "jaEalona`ka",
+      "roman": "jaʿalnāka",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "ar": "تَجعَلنَ",
+      "tr": "tajoEalonaA",
+      "roman": "tajʿalnā",
+      "ty": "jussive",
+      "n": 3
+    },
+    {
+      "ar": "جَعَلَهُ,",
+      "tr": "jaEalahu,",
+      "roman": "jaʿalahu,",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "ar": "وَيَجعَلُونَ",
+      "tr": "wayajoEaluwna",
+      "roman": "wayajʿalūna",
+      "ty": "imperfect",
+      "n": 3
+    },
+    {
+      "ar": "وَجَعَلنَٰهُ",
+      "tr": "wajaEalona`hu",
+      "roman": "wajaʿalnāhu",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "ar": "نَجعَل",
+      "tr": "najoEal",
+      "roman": "najʿal",
+      "ty": "jussive",
+      "n": 3
+    },
+    {
+      "ar": "نَجعَلُ",
+      "tr": "najoEalu",
+      "roman": "najʿalu",
+      "ty": "imperfect",
+      "n": 3
+    },
+    {
+      "ar": "جَعَلنَٰهَ",
+      "tr": "jaEalona`haA",
+      "roman": "jaʿalnāhā",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "ar": "فَجَعَلنَٰهُم",
+      "tr": "fajaEalona`humo",
+      "roman": "fajaʿalnāhum",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "ar": "فَجَعَلنَٰهُ",
+      "tr": "fajaEalona`hu",
+      "roman": "fajaʿalnāhu",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "ar": "فَجَعَلَهُ,",
+      "tr": "fajaEalahu,",
+      "roman": "fajaʿalahu,",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "ar": "جَعَلُو",
+      "tr": "jaEaluwA@",
+      "roman": "jaʿalūā",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "ar": "فَٱجعَل",
+      "tr": "fa{joEalo",
+      "roman": "fajʿal",
+      "ty": "imperative",
+      "n": 3
+    },
+    {
+      "ar": "وَجَعَلنَٰهَ",
+      "tr": "wajaEalona`haA",
+      "roman": "wajaʿalnāhā",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "ar": "يَجعَلُونَ",
+      "tr": "yajoEaluwna",
+      "roman": "yajʿalūna",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "ar": "فَجَعَلنَٰهَ",
+      "tr": "fajaEalona`haA",
+      "roman": "fajaʿalnāhā",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "وَٱجعَلنَ",
+      "tr": "wa{joEalonaA",
+      "roman": "wajʿalnā",
+      "ty": "imperative",
+      "n": 2
+    },
+    {
+      "ar": "جَعَلنَٰكُم",
+      "tr": "jaEalona`kumo",
+      "roman": "jaʿalnākum",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "جَعَلَهُ",
+      "tr": "jaEalahu",
+      "roman": "jaʿalahu",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "لِيَجعَلَ",
+      "tr": "liyajoEala",
+      "roman": "līajʿala",
+      "ty": "subjunctive",
+      "n": 2
+    },
+    {
+      "ar": "وَيَجعَلَ",
+      "tr": "wayajoEala",
+      "roman": "wayajʿala",
+      "ty": "subjunctive",
+      "n": 2
+    },
+    {
+      "ar": "لَجَعَلَكُم",
+      "tr": "lajaEalakumo",
+      "roman": "lajaʿalakum",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "تَجعَلنِى",
+      "tr": "tajoEaloniY",
+      "roman": "tajʿalniā",
+      "ty": "jussive",
+      "n": 2
+    },
+    {
+      "ar": "وَيَجعَلُ",
+      "tr": "wayajoEalu",
+      "roman": "wayajʿalu",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "ar": "ٱجعَلنِى",
+      "tr": "{joEaloniY",
+      "roman": "jʿalniā",
+      "ty": "imperative",
+      "n": 2
+    },
+    {
+      "ar": "وَجَعَلنَٰكُم",
+      "tr": "wajaEalona`kumo",
+      "roman": "wajaʿalnākum",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "سَيَجعَلُ",
+      "tr": "sayajoEalu",
+      "roman": "sayajʿalu",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "ar": "جَعَلنَٰهُم",
+      "tr": "jaEalona`humo",
+      "roman": "jaʿalnāhum",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "فَجَعَلَهُم",
+      "tr": "fajaEalahumo",
+      "roman": "fajaʿalahum",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "فَجَعَلنَٰهُمُ",
+      "tr": "fajaEalona`humu",
+      "roman": "fajaʿalnāhumu",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "يَجعَلُهُ,",
+      "tr": "yajoEaluhu,",
+      "roman": "yajʿaluhu,",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "ar": "وَتَجعَلُونَ",
+      "tr": "watajoEaluwna",
+      "roman": "watajʿalūna",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "ar": "فَجَعَلَ",
+      "tr": "fajaEala",
+      "roman": "fajaʿala",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "نَجعَلِ",
+      "tr": "najoEali",
+      "roman": "najʿali",
+      "ty": "jussive",
+      "n": 2
+    },
+    {
+      "ar": "أَتَجعَلُ",
+      "tr": ">atajoEalu",
+      "roman": "ʾātajʿalu",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "وَلِنَجعَلَكَ",
+      "tr": "walinajoEalaka",
+      "roman": "walinajʿalaka",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "فَنَجعَل",
+      "tr": "fanajoEal",
+      "roman": "fanajʿal",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "ar": "وَجَعَلَكُم",
+      "tr": "wajaEalakum",
+      "roman": "wajaʿalakum",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "لَّجَعَلنَٰهُ",
+      "tr": "l~ajaEalona`hu",
+      "roman": "lajaʿalnāhu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "يَجعَلهُ",
+      "tr": "yajoEalohu",
+      "roman": "yajʿalhu",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "ar": "تَجعَلُونَهُ,",
+      "tr": "tajoEaluwnahu,",
+      "roman": "tajʿalūnahu,",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "فَيَجعَلَهُ,",
+      "tr": "fayajoEalahu,",
+      "roman": "fayajʿalahu,",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "أَجَعَلتُم",
+      "tr": ">ajaEalotumo",
+      "roman": "ʾājaʿaltum",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "فَجَعَلتُم",
+      "tr": "fajaEalotum",
+      "roman": "fajaʿaltum",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "وَٱجعَلُو",
+      "tr": "wa{joEaluwA@",
+      "roman": "wajʿalūā",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "ar": "لَجَعَلَ",
+      "tr": "lajaEala",
+      "roman": "lajaʿala",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "يَجعَلُوهُ",
+      "tr": "yajoEaluwhu",
+      "roman": "yajʿalūhu",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "ٱجعَلُو",
+      "tr": "{joEaluwA@",
+      "roman": "jʿalūā",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "ar": "جَعَلَهَ",
+      "tr": "jaEalahaA",
+      "roman": "jaʿalahā",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "فَجَعَلنَ",
+      "tr": "fajaEalonaA",
+      "roman": "fajaʿalnā",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "جَعَلتُمُ",
+      "tr": "jaEalotumu",
+      "roman": "jaʿaltumu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "جُعِلَ",
+      "tr": "juEila",
+      "roman": "juʿila",
+      "ty": "passive",
+      "n": 1
+    },
+    {
+      "ar": "نَّجعَلَ",
+      "tr": "n~ajoEala",
+      "roman": "najʿala",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "تَجعَلَ",
+      "tr": "tajoEala",
+      "roman": "tajʿala",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "أَجعَل",
+      "tr": ">ajoEalo",
+      "roman": "ʾājʿal",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "ar": "وَٱجعَلهُ",
+      "tr": "wa{joEalohu",
+      "roman": "wajʿalhu",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "ar": "وَلِنَجعَلَهُ,",
+      "tr": "walinajoEalahu,^",
+      "roman": "walinajʿalahu,",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "يَجعَلنِى",
+      "tr": "yajoEaloniY",
+      "roman": "yajʿalniā",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "ar": "لِّيَجعَلَ",
+      "tr": "l~iyajoEala",
+      "roman": "līajʿala",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "يَجعَلِ",
+      "tr": "yajoEali",
+      "roman": "yajʿali",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "ar": "لَجَعَلَهُ,",
+      "tr": "lajaEalahu,",
+      "roman": "lajaʿalahu,",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "لَأَجعَلَنَّكَ",
+      "tr": "la>ajoEalan~aka",
+      "roman": "laʾājʿalanaka",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "وَٱجعَلنِى",
+      "tr": "wa{joEaloniY",
+      "roman": "wajʿalniā",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "ar": "وَيَجعَلُكُم",
+      "tr": "wayajoEalukumo",
+      "roman": "wayajʿalukum",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "وَنَجعَلَهُم",
+      "tr": "wanajoEalahumo",
+      "roman": "wanajʿalahum",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "وَنَجعَلَهُمُ",
+      "tr": "wanajoEalahumu",
+      "roman": "wanajʿalahumu",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "وَنَجعَلُ",
+      "tr": "wanajoEalu",
+      "roman": "wanajʿalu",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "نَجعَلُهَ",
+      "tr": "najoEaluhaA",
+      "roman": "najʿaluhā",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "وَيَجعَلُهُ,",
+      "tr": "wayajoEaluhu,",
+      "roman": "wayajʿaluhu,",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "وَنَجعَلَ",
+      "tr": "wanajoEala",
+      "roman": "wanajʿala",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "أَجَعَلَ",
+      "tr": ">ajaEala",
+      "roman": "ʾājaʿala",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "نَجعَلهُمَ",
+      "tr": "najoEalohumaA",
+      "roman": "najʿalhumā",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "ar": "لَجَعَلَهُم",
+      "tr": "lajaEalahumo",
+      "roman": "lajaʿalahum",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "وَجَعَلَهَ",
+      "tr": "wajaEalahaA",
+      "roman": "wajaʿalahā",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "لَّجَعَلنَ",
+      "tr": "l~ajaEalonaA",
+      "roman": "lajaʿalnā",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "أَجَعَلنَ",
+      "tr": ">ajaEalonaA",
+      "roman": "ʾājaʿalnā",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "لَجَعَلنَ",
+      "tr": "lajaEalonaA",
+      "roman": "lajaʿalnā",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "نَّجعَلَهُم",
+      "tr": "n~ajoEalahumo",
+      "roman": "najʿalahum",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "جَعَلَتهُ",
+      "tr": "jaEalatohu",
+      "roman": "jaʿalathu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "فَجَعَلنَٰهُنَّ",
+      "tr": "fajaEalona`hun~a",
+      "roman": "fajaʿalnāhuna",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "لَجَعَلنَٰهُ",
+      "tr": "lajaEalona`hu",
+      "roman": "lajaʿalnāhu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "أَفَنَجعَلُ",
+      "tr": ">afanajoEalu",
+      "roman": "ʾāfanajʿalu",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "لِنَجعَلَهَ",
+      "tr": "linajoEalahaA",
+      "roman": "linajʿalahā",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "وَجَعَلتُ",
+      "tr": "wajaEalotu",
+      "roman": "wajaʿaltu",
+      "ty": "perfect",
+      "n": 1
+    }
+  ],
+  "6": [
+    {
+      "ar": "كَفَرُو",
+      "tr": "kafaruwA@",
+      "roman": "kafarūā",
+      "ty": "perfect",
+      "n": 189
+    },
+    {
+      "ar": "كَفَرَ",
+      "tr": "kafara",
+      "roman": "kafara",
+      "ty": "perfect",
+      "n": 18
+    },
+    {
+      "ar": "يَكفُرُونَ",
+      "tr": "yakofuruwna",
+      "roman": "yakfurūna",
+      "ty": "imperfect",
+      "n": 12
+    },
+    {
+      "ar": "تَكفُرُونَ",
+      "tr": "takofuruwna",
+      "roman": "takfurūna",
+      "ty": "imperfect",
+      "n": 11
+    },
+    {
+      "ar": "يَكفُر",
+      "tr": "yakofuro",
+      "roman": "yakfur",
+      "ty": "jussive",
+      "n": 8
+    },
+    {
+      "ar": "كَفَرتُم",
+      "tr": "kafarotumo",
+      "roman": "kafartum",
+      "ty": "perfect",
+      "n": 6
+    },
+    {
+      "ar": "تَكفُرُو",
+      "tr": "takofuruwA@",
+      "roman": "takfurūā",
+      "ty": "jussive",
+      "n": 4
+    },
+    {
+      "ar": "يَكفُرُو",
+      "tr": "yakofuruwA@",
+      "roman": "yakfurūā",
+      "ty": "subjunctive",
+      "n": 3
+    },
+    {
+      "ar": "يَكفُرُ",
+      "tr": "yakofuru",
+      "roman": "yakfuru",
+      "ty": "imperfect",
+      "n": 3
+    },
+    {
+      "ar": "لِيَكفُرُو",
+      "tr": "liyakofuruwA@",
+      "roman": "līakfurūā",
+      "ty": "subjunctive",
+      "n": 3
+    },
+    {
+      "ar": "فَكَفَرُو",
+      "tr": "fakafaruwA@",
+      "roman": "fakafarūā",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "ar": "وَكَفَرُو",
+      "tr": "wakafaruwA@",
+      "roman": "wakafarūā",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "كَفَرنَ",
+      "tr": "kafaronaA",
+      "roman": "kafarnā",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "وَتَكفُرُونَ",
+      "tr": "watakofuruwna",
+      "roman": "watakfurūna",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "وَيَكفُرُونَ",
+      "tr": "wayakofuruwna",
+      "roman": "wayakfurūna",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "تَكفُر",
+      "tr": "takofuro",
+      "roman": "takfur",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "ar": "تَكفُرُونِ",
+      "tr": "takofuruwni",
+      "roman": "takfurūni",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "ar": "وَٱكفُرُو",
+      "tr": "wa{kofuruw^A@",
+      "roman": "wakfurūā",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "ar": "أَكَفَرتُم",
+      "tr": ">akafarotum",
+      "roman": "ʾākafartum",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "يُكفَرُوهُ",
+      "tr": "yukofaruwhu",
+      "roman": "yukfarūhu",
+      "ty": "passive",
+      "n": 1
+    },
+    {
+      "ar": "يُكفَرُ",
+      "tr": "yukofaru",
+      "roman": "yukfaru",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "وَنَكفُرُ",
+      "tr": "wanakofuru",
+      "roman": "wanakfuru",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "كَفَرتُ",
+      "tr": "kafarotu",
+      "roman": "kafartu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "فَكَفَرَت",
+      "tr": "fakafarato",
+      "roman": "fakafarat",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "فَليَكفُر",
+      "tr": "faloyakofuro",
+      "roman": "falyakfur",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "ar": "أَكَفَرتَ",
+      "tr": ">akafarota",
+      "roman": "ʾākafarta",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "سَيَكفُرُونَ",
+      "tr": "sayakofuruwna",
+      "roman": "sayakfurūna",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "أَكفُرُ",
+      "tr": ">akofuru",
+      "roman": "ʾākfuru",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "نَّكفُرَ",
+      "tr": "n~akofura",
+      "roman": "nakfura",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "فَتَكفُرُونَ",
+      "tr": "fatakofuruwna",
+      "roman": "fatakfurūna",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "لِأَكفُرَ",
+      "tr": "li>akofura",
+      "roman": "liʾākfura",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "وَكَفَرنَ",
+      "tr": "wakafaronaA",
+      "roman": "wakafarnā",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "لَتَكفُرُونَ",
+      "tr": "latakofuruwna",
+      "roman": "latakfurūna",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "وَكَفَرتُم",
+      "tr": "wakafarotum",
+      "roman": "wakafartum",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "كُفِرَ",
+      "tr": "kufira",
+      "roman": "kufira",
+      "ty": "passive",
+      "n": 1
+    },
+    {
+      "ar": "ٱكفُر",
+      "tr": "{kofuro",
+      "roman": "kfur",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "ar": "وَكَفَرَت",
+      "tr": "wakafarat",
+      "roman": "wakafarat",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "وَكَفَرَ",
+      "tr": "wakafara",
+      "roman": "wakafara",
+      "ty": "perfect",
+      "n": 1
+    }
+  ],
+  "7": [
+    {
+      "ar": "جَاءَ",
+      "tr": "jaA^'a",
+      "roman": "jāʾa",
+      "ty": "perfect",
+      "n": 57
+    },
+    {
+      "ar": "جَاءَهُم",
+      "tr": "jaA^'ahumo",
+      "roman": "jāʾahum",
+      "ty": "perfect",
+      "n": 30
+    },
+    {
+      "ar": "جَاءَكُم",
+      "tr": "jaA^'akumo",
+      "roman": "jāʾakum",
+      "ty": "perfect",
+      "n": 21
+    },
+    {
+      "ar": "جَاءَكَ",
+      "tr": "jaA^'aka",
+      "roman": "jāʾaka",
+      "ty": "perfect",
+      "n": 11
+    },
+    {
+      "ar": "جَاءَهُمُ",
+      "tr": "jaA^'ahumu",
+      "roman": "jāʾahumu",
+      "ty": "perfect",
+      "n": 11
+    },
+    {
+      "ar": "جَاءَتهُم",
+      "tr": "jaA^'atohumo",
+      "roman": "jāʾathum",
+      "ty": "perfect",
+      "n": 11
+    },
+    {
+      "ar": "وَجَاءَ",
+      "tr": "wajaA^'a",
+      "roman": "wajāʾa",
+      "ty": "perfect",
+      "n": 10
+    },
+    {
+      "ar": "جَاءَت",
+      "tr": "jaA^'ato",
+      "roman": "jāʾat",
+      "ty": "perfect",
+      "n": 8
+    },
+    {
+      "ar": "جَاءَتهُمُ",
+      "tr": "jaA^'atohumu",
+      "roman": "jāʾathumu",
+      "ty": "perfect",
+      "n": 7
+    },
+    {
+      "ar": "جَاءُو",
+      "tr": "jaA^'uw",
+      "roman": "jāʾū",
+      "ty": "perfect",
+      "n": 6
+    },
+    {
+      "ar": "جَاءَنَ",
+      "tr": "jaA^'anaA",
+      "roman": "jāʾanā",
+      "ty": "perfect",
+      "n": 6
+    },
+    {
+      "ar": "جِئتَ",
+      "tr": "ji}ota",
+      "roman": "jiʾta",
+      "ty": "perfect",
+      "n": 5
+    },
+    {
+      "ar": "جَاءُوكَ",
+      "tr": "jaA^'uwka",
+      "roman": "jāʾūka",
+      "ty": "perfect",
+      "n": 5
+    },
+    {
+      "ar": "أَجِئتَنَ",
+      "tr": ">aji}otanaA",
+      "roman": "ʾājiʾtanā",
+      "ty": "perfect",
+      "n": 5
+    },
+    {
+      "ar": "جَاءَهُ,",
+      "tr": "jaA^'ahu,",
+      "roman": "jāʾahu,",
+      "ty": "perfect",
+      "n": 5
+    },
+    {
+      "ar": "جِئتُكُم",
+      "tr": "ji}otukum",
+      "roman": "jiʾtukum",
+      "ty": "perfect",
+      "n": 4
+    },
+    {
+      "ar": "جِئنَ",
+      "tr": "ji}onaA",
+      "roman": "jiʾnā",
+      "ty": "perfect",
+      "n": 4
+    },
+    {
+      "ar": "جَاءَكُمُ",
+      "tr": "jaA^'akumu",
+      "roman": "jāʾakumu",
+      "ty": "perfect",
+      "n": 4
+    },
+    {
+      "ar": "جَاءَتكُم",
+      "tr": "jaA^'atokum",
+      "roman": "jāʾatkum",
+      "ty": "perfect",
+      "n": 4
+    },
+    {
+      "ar": "وَجِئنَ",
+      "tr": "waji}onaA",
+      "roman": "wajiʾnā",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "ar": "وَجَاءَت",
+      "tr": "wajaA^'ato",
+      "roman": "wajāʾat",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "ar": "جِئنَٰكَ",
+      "tr": "ji}ona`ka",
+      "roman": "jiʾnāka",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "ar": "جَاءُوهَ",
+      "tr": "jaA^'uwhaA",
+      "roman": "jāʾūhā",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "ar": "جَاءُوكُم",
+      "tr": "jaA^'uwkumo",
+      "roman": "jāʾūkum",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "ar": "وَجَاءُو",
+      "tr": "wajaA^'uw",
+      "roman": "wajāʾū",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "ar": "وَجَاءَهُمُ",
+      "tr": "wajaA^'ahumu",
+      "roman": "wajāʾahumu",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "جِئتَهُم",
+      "tr": "ji}otahum",
+      "roman": "jiʾtahum",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "جِئتُمُونَ",
+      "tr": "ji}otumuwnaA",
+      "roman": "jiʾtumūnā",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "جِئتَنَ",
+      "tr": "ji}otanaA",
+      "roman": "jiʾtanā",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "وَجَاءَتهُم",
+      "tr": "wajaA^'atohumo",
+      "roman": "wajāʾathum",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "فَجَاءُوهُم",
+      "tr": "fajaA^'uwhum",
+      "roman": "fajāʾūhum",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "جَاءَهُ",
+      "tr": "jaA^'ahu",
+      "roman": "jāʾahu",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "جَاءَنِى",
+      "tr": "jaA^'aniY",
+      "roman": "jāʾaniā",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "جَاءَهَ",
+      "tr": "jaA^'ahaA",
+      "roman": "jāʾahā",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "وَجِاىءَ",
+      "tr": "wajiA@Y^'a",
+      "roman": "wajiāāʾa",
+      "ty": "passive",
+      "n": 2
+    },
+    {
+      "ar": "جَاءَتِ",
+      "tr": "jaA^'ati",
+      "roman": "jāʾati",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "جِئتُم",
+      "tr": "ji}otum",
+      "roman": "jiʾtum",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "جَاءَتكُمُ",
+      "tr": "jaA^'atokumu",
+      "roman": "jāʾatkumu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "جَاءَتهُ",
+      "tr": "jaA^'atohu",
+      "roman": "jāʾathu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "وَجِئتُكُم",
+      "tr": "waji}otukum",
+      "roman": "wajiʾtukum",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "فَجَاءَهَ",
+      "tr": "fajaA^'ahaA",
+      "roman": "fajāʾahā",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "جِئنَٰهُم",
+      "tr": "ji}ona`hum",
+      "roman": "jiʾnāhum",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "جَاءَتنَ",
+      "tr": "jaA^'atonaA",
+      "roman": "jāʾatnā",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "جَاءَتهَ",
+      "tr": "jaA^'atohaA",
+      "roman": "jāʾathā",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "وَجَاءَتهُ",
+      "tr": "wajaA^'atohu",
+      "roman": "wajāʾathu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "وَجَاءَهُ,",
+      "tr": "wajaA^'ahu,",
+      "roman": "wajāʾahu,",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "وَجَاءَكَ",
+      "tr": "wajaA^'aka",
+      "roman": "wajāʾaka",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "فَأَجَاءَهَ",
+      "tr": "fa>ajaA^'ahaA",
+      "roman": "faʾājāʾahā",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "جِئتِ",
+      "tr": "ji}oti",
+      "roman": "jiʾti",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "جِئتُكَ",
+      "tr": "ji}otuka",
+      "roman": "jiʾtuka",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "وَجِئتُكَ",
+      "tr": "waji}otuka",
+      "roman": "wajiʾtuka",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "فَجَاءَتهُ",
+      "tr": "fajaA^'atohu",
+      "roman": "fajāʾathu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "لَّجَاءَهُمُ",
+      "tr": "l~ajaA^'ahumu",
+      "roman": "lajāʾahumu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "وَجَاءَكُمُ",
+      "tr": "wajaA^'akumu",
+      "roman": "wajāʾakumu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "جَاءَتكَ",
+      "tr": "jaA^'atoka",
+      "roman": "jāʾatka",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "جَاءَنِىَ",
+      "tr": "jaA^'aniYa",
+      "roman": "jāʾaniāa",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "جِئنَٰكُم",
+      "tr": "ji}ona`kum",
+      "roman": "jiʾnākum",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "وَجَاءَهُم",
+      "tr": "wajaA^'ahumo",
+      "roman": "wajāʾahum",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "فَجَاءَ",
+      "tr": "fajaA^'a",
+      "roman": "fajāʾa",
+      "ty": "perfect",
+      "n": 1
+    }
+  ],
+  "8": [
+    {
+      "ar": "تَعمَلُونَ",
+      "tr": "taEomaluwna",
+      "roman": "taʿmalūna",
+      "ty": "imperfect",
+      "n": 83
+    },
+    {
+      "ar": "يَعمَلُونَ",
+      "tr": "yaEomaluwna",
+      "roman": "yaʿmalūna",
+      "ty": "imperfect",
+      "n": 56
+    },
+    {
+      "ar": "وَعَمِلُو",
+      "tr": "waEamiluwA@",
+      "roman": "waʿamilūā",
+      "ty": "perfect",
+      "n": 53
+    },
+    {
+      "ar": "عَمِلُو",
+      "tr": "EamiluwA@",
+      "roman": "ʿamilūā",
+      "ty": "perfect",
+      "n": 20
+    },
+    {
+      "ar": "وَعَمِلَ",
+      "tr": "waEamila",
+      "roman": "waʿamila",
+      "ty": "perfect",
+      "n": 11
+    },
+    {
+      "ar": "عَمِلَ",
+      "tr": "Eamila",
+      "roman": "ʿamila",
+      "ty": "perfect",
+      "n": 8
+    },
+    {
+      "ar": "يَعمَل",
+      "tr": "yaEomalo",
+      "roman": "yaʿmal",
+      "ty": "jussive",
+      "n": 7
+    },
+    {
+      "ar": "ٱعمَلُو",
+      "tr": "{EomaluwA@",
+      "roman": "ʿmalūā",
+      "ty": "imperative",
+      "n": 7
+    },
+    {
+      "ar": "عَمِلَت",
+      "tr": "Eamilato",
+      "roman": "ʿamilat",
+      "ty": "perfect",
+      "n": 5
+    },
+    {
+      "ar": "نَعمَلُ",
+      "tr": "naEomalu",
+      "roman": "naʿmalu",
+      "ty": "imperfect",
+      "n": 3
+    },
+    {
+      "ar": "يَعمَلُ",
+      "tr": "yaEomalu",
+      "roman": "yaʿmalu",
+      "ty": "imperfect",
+      "n": 3
+    },
+    {
+      "ar": "أَعمَلُ",
+      "tr": ">aEomalu",
+      "roman": "ʾāʿmalu",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "ar": "وَٱعمَلُو",
+      "tr": "wa{EomaluwA@",
+      "roman": "waʿmalūā",
+      "ty": "imperative",
+      "n": 2
+    },
+    {
+      "ar": "أَعمَلَ",
+      "tr": ">aEomala",
+      "roman": "ʾāʿmala",
+      "ty": "subjunctive",
+      "n": 2
+    },
+    {
+      "ar": "نَعمَل",
+      "tr": "naEomalo",
+      "roman": "naʿmal",
+      "ty": "jussive",
+      "n": 2
+    },
+    {
+      "ar": "وَيَعمَل",
+      "tr": "wayaEomalo",
+      "roman": "wayaʿmal",
+      "ty": "jussive",
+      "n": 2
+    },
+    {
+      "ar": "فَنَعمَلَ",
+      "tr": "fanaEomala",
+      "roman": "fanaʿmala",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "فَليَعمَل",
+      "tr": "faloyaEomalo",
+      "roman": "falyaʿmal",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "ar": "تَّعمَلُ",
+      "tr": "t~aEomalu",
+      "roman": "taʿmalu",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "وَيَعمَلُونَ",
+      "tr": "wayaEomaluwna",
+      "roman": "wayaʿmalūna",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "وَتَعمَل",
+      "tr": "wataEomalo",
+      "roman": "wataʿmal",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "ar": "ٱعمَل",
+      "tr": "{Eomalo",
+      "roman": "ʿmal",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "ar": "عَمِلَتهُ",
+      "tr": "Eamilatohu",
+      "roman": "ʿamilathu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "فَليَعمَلِ",
+      "tr": "faloyaEomali",
+      "roman": "falyaʿmali",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "ar": "فَٱعمَل",
+      "tr": "fa{Eomalo",
+      "roman": "faʿmal",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "ar": "عَمِلتُم",
+      "tr": "Eamilotumo",
+      "roman": "ʿamiltum",
+      "ty": "perfect",
+      "n": 1
+    }
+  ],
+  "9": [
+    {
+      "ar": "أُوتُو",
+      "tr": ">uwtuwA@",
+      "roman": "ʾaūtūā",
+      "ty": "passive",
+      "n": 32
+    },
+    {
+      "ar": "ءَاتَينَ",
+      "tr": "'aAtayonaA",
+      "roman": "ʾātaynā",
+      "ty": "perfect",
+      "n": 19
+    },
+    {
+      "ar": "أُوتِىَ",
+      "tr": ">uwtiYa",
+      "roman": "ʾaūtiāa",
+      "ty": "passive",
+      "n": 14
+    },
+    {
+      "ar": "وَءَاتُو",
+      "tr": "wa'aAtuwA@",
+      "roman": "waʾātūā",
+      "ty": "imperative",
+      "n": 11
+    },
+    {
+      "ar": "وَءَاتَينَٰهُ",
+      "tr": "wa'aAtayona`hu",
+      "roman": "waʾātaynāhu",
+      "ty": "perfect",
+      "n": 9
+    },
+    {
+      "ar": "ءَاتَينَٰهُمُ",
+      "tr": "'aAtayona`humu",
+      "roman": "ʾātaynāhumu",
+      "ty": "perfect",
+      "n": 8
+    },
+    {
+      "ar": "ءَاتَينَٰهُم",
+      "tr": "'aAtayona`humo",
+      "roman": "ʾātaynāhum",
+      "ty": "perfect",
+      "n": 8
+    },
+    {
+      "ar": "وَءَاتَينَ",
+      "tr": "wa'aAtayonaA",
+      "roman": "waʾātaynā",
+      "ty": "perfect",
+      "n": 7
+    },
+    {
+      "ar": "يُؤتِيهِ",
+      "tr": "yu&otiyhi",
+      "roman": "yuʾutīhi",
+      "ty": "imperfect",
+      "n": 5
+    },
+    {
+      "ar": "ءَاتَىٰهُمُ",
+      "tr": "'aAtaY`humu",
+      "roman": "ʾātāāhumu",
+      "ty": "perfect",
+      "n": 5
+    },
+    {
+      "ar": "وَيُؤتُونَ",
+      "tr": "wayu&otuwna",
+      "roman": "wayuʾutūna",
+      "ty": "imperfect",
+      "n": 5
+    },
+    {
+      "ar": "ءَاتَينَٰهُ",
+      "tr": "'aAtayona`hu",
+      "roman": "ʾātaynāhu",
+      "ty": "perfect",
+      "n": 5
+    },
+    {
+      "ar": "ءَاتَىٰكُم",
+      "tr": "'aAtaY`kumo",
+      "roman": "ʾātāākum",
+      "ty": "perfect",
+      "n": 5
+    },
+    {
+      "ar": "أُوتِيتُم",
+      "tr": ">uwtiytum",
+      "roman": "ʾaūtītum",
+      "ty": "passive",
+      "n": 5
+    },
+    {
+      "ar": "ءَاتِنَ",
+      "tr": "'aAtinaA",
+      "roman": "ʾātinā",
+      "ty": "imperative",
+      "n": 4
+    },
+    {
+      "ar": "ءَاتَيتُمُوهُنَّ",
+      "tr": "'aAtayotumuwhun~a",
+      "roman": "ʾātaytumūhuna",
+      "ty": "perfect",
+      "n": 4
+    },
+    {
+      "ar": "وَءَاتَوُ",
+      "tr": "wa'aAtawuA@",
+      "roman": "waʾātawuā",
+      "ty": "perfect",
+      "n": 4
+    },
+    {
+      "ar": "وَءَاتَينَٰهُم",
+      "tr": "wa'aAtayona`hum",
+      "roman": "waʾātaynāhum",
+      "ty": "perfect",
+      "n": 4
+    },
+    {
+      "ar": "ءَاتَينَٰكُم",
+      "tr": "'aAtayona`kum",
+      "roman": "ʾātaynākum",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "ar": "وَءَاتَى",
+      "tr": "wa'aAtaY",
+      "roman": "waʾātā",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "ar": "ءَاتَيتُم",
+      "tr": "'aAtayotum",
+      "roman": "ʾātaytum",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "ar": "يُؤتِى",
+      "tr": "yu&otiY",
+      "roman": "yuʾutiā",
+      "ty": "imperfect",
+      "n": 3
+    },
+    {
+      "ar": "نُؤتِهِ.",
+      "tr": "nu&otihi.",
+      "roman": "nuʾutihi.",
+      "ty": "jussive",
+      "n": 3
+    },
+    {
+      "ar": "يُؤتُونَ",
+      "tr": "yu&otuwna",
+      "roman": "yuʾutūna",
+      "ty": "imperfect",
+      "n": 3
+    },
+    {
+      "ar": "يُؤتِكُم",
+      "tr": "yu&otikumo",
+      "roman": "yuʾutikum",
+      "ty": "jussive",
+      "n": 3
+    },
+    {
+      "ar": "ءَاتَىٰهُم",
+      "tr": "'aAtaY`humo",
+      "roman": "ʾātāāhum",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "ar": "يُؤتَ",
+      "tr": "yu&ota",
+      "roman": "yuʾuta",
+      "ty": "passive",
+      "n": 2
+    },
+    {
+      "ar": "ءَاتَىٰهُ",
+      "tr": "'aAtaY`hu",
+      "roman": "ʾātāāhu",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "فَـَاتُوهُنَّ",
+      "tr": "fa_#aAtuwhun~a",
+      "roman": "faātūhuna",
+      "ty": "imperative",
+      "n": 2
+    },
+    {
+      "ar": "وَيُؤتِ",
+      "tr": "wayu&oti",
+      "roman": "wayuʾuti",
+      "ty": "jussive",
+      "n": 2
+    },
+    {
+      "ar": "نُؤتِيهِ",
+      "tr": "nu&otiyhi",
+      "roman": "nuʾutīhi",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "ar": "يُؤتِ",
+      "tr": "yu&oti",
+      "roman": "yuʾuti",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "ar": "وَءَاتَىٰكُم",
+      "tr": "wa'aAtaY`kum",
+      "roman": "waʾātāākum",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "ءَاتَىٰهُمَ",
+      "tr": "'aAtaY`humaA",
+      "roman": "ʾātāāhumā",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "ar": "ءَاتَيتَ",
+      "tr": "'aAtayota",
+      "roman": "ʾātayta",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "وَءَاتَىٰنِى",
+      "tr": "wa'aAtaY`niY",
+      "roman": "waʾātāāniā",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "ءَاتَينَٰكَ",
+      "tr": "'aAtayona`ka",
+      "roman": "ʾātaynāka",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "وَءَاتُوهُم",
+      "tr": "wa'aAtuwhum",
+      "roman": "waʾātūhum",
+      "ty": "imperative",
+      "n": 2
+    },
+    {
+      "ar": "وَأُوتِينَ",
+      "tr": "wa>uwtiynaA",
+      "roman": "waʾaūtīnā",
+      "ty": "passive",
+      "n": 2
+    },
+    {
+      "ar": "أُوتِيتُهُ,",
+      "tr": ">uwtiytuhu,",
+      "roman": "ʾaūtītuhu,",
+      "ty": "passive",
+      "n": 2
+    },
+    {
+      "ar": "تُؤتِى",
+      "tr": "tu&otiY",
+      "roman": "tuʾutiā",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "ar": "يُؤتَىٰ",
+      "tr": "yu&otaY`^",
+      "roman": "yuʾutāā",
+      "ty": "passive",
+      "n": 2
+    },
+    {
+      "ar": "ءَاتُونِى",
+      "tr": "'aAtuwniY",
+      "roman": "ʾātūniā",
+      "ty": "imperative",
+      "n": 2
+    },
+    {
+      "ar": "أُوتُوهُ",
+      "tr": ">uwtuwhu",
+      "roman": "ʾaūtūhu",
+      "ty": "passive",
+      "n": 1
+    },
+    {
+      "ar": "وَءَاتَىٰهُ",
+      "tr": "wa'aAtaY`hu",
+      "roman": "waʾātāāhu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "فَـَاتَت",
+      "tr": "fa_#aAtato",
+      "roman": "faātat",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "وَتُؤتُوهَ",
+      "tr": "watu&otuwhaA",
+      "roman": "watuʾutūhā",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "ar": "يُؤتِيَهُ",
+      "tr": "yu&otiyahu",
+      "roman": "yuʾutīahu",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "ءَاتَيتُكُم",
+      "tr": "'aAtayotukum",
+      "roman": "ʾātaytukum",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "فَـَاتَىٰهُمُ",
+      "tr": "fa_#aAtaY`humu",
+      "roman": "faātāāhumu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "وَءَاتِنَ",
+      "tr": "wa'aAtinaA",
+      "roman": "waʾātinā",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "ar": "تُؤتُو",
+      "tr": "tu&otuwA@",
+      "roman": "tuʾutūā",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "ar": "وَءَاتَيتُم",
+      "tr": "wa'aAtayotumo",
+      "roman": "waʾātaytum",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "وَءَاتُوهُنَّ",
+      "tr": "wa'aAtuwhun~a",
+      "roman": "waʾātūhuna",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "ar": "فَـَاتُوهُم",
+      "tr": "fa_#aAtuwhumo",
+      "roman": "faātūhum",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "ar": "لَّءَاتَينَٰهُم",
+      "tr": "l~a'aAtayona`hum",
+      "roman": "laʾātaynāhum",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "تُؤتُونَهُنَّ",
+      "tr": "tu&otuwnahun~a",
+      "roman": "tuʾutūnahuna",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "يُؤتِيهِم",
+      "tr": "yu&otiyhimo",
+      "roman": "yuʾutīhim",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "سَنُؤتِيهِم",
+      "tr": "sanu&otiyhimo",
+      "roman": "sanuʾutīhim",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "وَءَاتَيتُمُ",
+      "tr": "wa'aAtayotumu",
+      "roman": "waʾātaytumu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "تُؤتَوهُ",
+      "tr": "tu&otawohu",
+      "roman": "tuʾutawhu",
+      "ty": "passive",
+      "n": 1
+    },
+    {
+      "ar": "ءَاتَينَٰهَ",
+      "tr": "'aAtayona`haA^",
+      "roman": "ʾātaynāhā",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "نُؤتَىٰ",
+      "tr": "nu&otaY`",
+      "roman": "nuʾutāā",
+      "ty": "passive",
+      "n": 1
+    },
+    {
+      "ar": "فَـَاتِهِم",
+      "tr": "fa_#aAtihimo",
+      "roman": "faātihim",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "ar": "ءَاتَيتُكَ",
+      "tr": "'aAtayotuka",
+      "roman": "ʾātaytuka",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "ءَاتَيتَنَ",
+      "tr": "'aAtayotanaA",
+      "roman": "ʾātaytanā",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "سَيُؤتِينَ",
+      "tr": "sayu&otiynaA",
+      "roman": "sayuʾutīnā",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "ءَاتَىٰنَ",
+      "tr": "'aAtaY`naA",
+      "roman": "ʾātāānā",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "يُؤتِيَهُمُ",
+      "tr": "yu&otiyahumu",
+      "roman": "yuʾutīahumu",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "وَءَاتَت",
+      "tr": "wa'aAtato",
+      "roman": "waʾātat",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "تُؤتُونِ",
+      "tr": "tu&otuwni",
+      "roman": "tuʾutūni",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "ءَاتَوهُ",
+      "tr": "'aAtawohu",
+      "roman": "ʾātawhu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "ءَاتَيتَنِى",
+      "tr": "'aAtayotaniY",
+      "roman": "ʾātaytaniā",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "وَءَاتِ",
+      "tr": "wa'aAti",
+      "roman": "waʾāti",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "ar": "ءَاتَت",
+      "tr": "'aAtato",
+      "roman": "ʾātat",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "يُؤتِيَنِ",
+      "tr": "yu&otiyani",
+      "roman": "yuʾutīani",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "ءَاتَىٰنِىَ",
+      "tr": "'aAtaY`niYa",
+      "roman": "ʾātāāniāa",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "لَأُوتَيَنَّ",
+      "tr": "la>uwtayan~a",
+      "roman": "laʾaūtayana",
+      "ty": "passive",
+      "n": 1
+    },
+    {
+      "ar": "أُوتِيتَ",
+      "tr": ">uwtiyta",
+      "roman": "ʾaūtīta",
+      "ty": "passive",
+      "n": 1
+    },
+    {
+      "ar": "ءَاتَو",
+      "tr": "'aAtawA@",
+      "roman": "ʾātawā",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "يُؤتُو",
+      "tr": "yu&otuw^A@",
+      "roman": "yuʾutūā",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "وَأُوتِيَت",
+      "tr": "wa>uwtiyato",
+      "roman": "waʾaūtīat",
+      "ty": "passive",
+      "n": 1
+    },
+    {
+      "ar": "ءَاتَىٰنِ.َ",
+      "tr": "'aAtaY`ni.a",
+      "roman": "ʾātāāni.a",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "يُؤتَونَ",
+      "tr": "yu&otawona",
+      "roman": "yuʾutawna",
+      "ty": "passive",
+      "n": 1
+    },
+    {
+      "ar": "ءَاتَىٰكَ",
+      "tr": "'aAtaY`ka",
+      "roman": "ʾātāāka",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "فَـَاتِ",
+      "tr": "fa_#aAti",
+      "roman": "faāti",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "ar": "لَءَاتَينَ",
+      "tr": "la'aAtayonaA",
+      "roman": "laʾātaynā",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "لَءَاتَوهَ",
+      "tr": "la'aAtawohaA",
+      "roman": "laʾātawhā",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "نُّؤتِهَ",
+      "tr": "n~u&otihaA^",
+      "roman": "nuʾutihā",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "ar": "وَءَاتِينَ",
+      "tr": "wa'aAtiyna",
+      "roman": "waʾātīna",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "ar": "ءَاتَيتَهُنَّ",
+      "tr": "'aAtayotahun~a",
+      "roman": "ʾātaytahuna",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "ءَاتِهِم",
+      "tr": "'aAtihimo",
+      "roman": "ʾātihim",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "ar": "وَءَاتَينَٰهُمَ",
+      "tr": "wa'aAtayona`humaA",
+      "roman": "waʾātaynāhumā",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "وَءَاتَىٰهُم",
+      "tr": "wa'aAtaY`humo",
+      "roman": "waʾātāāhum",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "فَسَيُؤتِيهِ",
+      "tr": "fasayu&otiyhi",
+      "roman": "fasayuʾutīhi",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "يُؤتِكُمُ",
+      "tr": "yu&otikumu",
+      "roman": "yuʾutikumu",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "ar": "فَـَاتَينَ",
+      "tr": "fa_#aAtayonaA",
+      "roman": "faātaynā",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "ءَاتَىٰكُمُ",
+      "tr": "'aAtaY`kumu",
+      "roman": "ʾātāākumu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "فَـَاتُو",
+      "tr": "fa_#aAtuwA@",
+      "roman": "faātūā",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "ar": "ءَاتَىٰهَ",
+      "tr": "'aAtaY`haA",
+      "roman": "ʾātāāhā",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "أُوتَ",
+      "tr": ">uwta",
+      "roman": "ʾaūta",
+      "ty": "passive",
+      "n": 1
+    },
+    {
+      "ar": "وَيُؤتُو",
+      "tr": "wayu&otuwA@",
+      "roman": "wayuʾutūā",
+      "ty": "subjunctive",
+      "n": 1
+    }
+  ],
+  "10": [
+    {
+      "ar": "تَرَ",
+      "tr": "tara",
+      "roman": "tara",
+      "ty": "jussive",
+      "n": 31
+    },
+    {
+      "ar": "يَرَو",
+      "tr": "yarawoA@",
+      "roman": "yarawā",
+      "ty": "jussive",
+      "n": 24
+    },
+    {
+      "ar": "أَرَءَيتُم",
+      "tr": ">ara'ayotumo",
+      "roman": "ʾāraʾaytum",
+      "ty": "perfect",
+      "n": 14
+    },
+    {
+      "ar": "تَرَىٰ",
+      "tr": "taraY`^",
+      "roman": "tarāā",
+      "ty": "imperfect",
+      "n": 14
+    },
+    {
+      "ar": "وَتَرَى",
+      "tr": "wataraY",
+      "roman": "watarā",
+      "ty": "imperfect",
+      "n": 10
+    },
+    {
+      "ar": "رَءَ",
+      "tr": "ra'aA",
+      "roman": "raʾā",
+      "ty": "perfect",
+      "n": 9
+    },
+    {
+      "ar": "يَرَونَ",
+      "tr": "yarawona",
+      "roman": "yarawna",
+      "ty": "imperfect",
+      "n": 8
+    },
+    {
+      "ar": "أَرَءَيتَ",
+      "tr": ">ara'ayota",
+      "roman": "ʾāraʾayta",
+      "ty": "perfect",
+      "n": 6
+    },
+    {
+      "ar": "رَأَو",
+      "tr": "ra>awoA@",
+      "roman": "raʾāwā",
+      "ty": "perfect",
+      "n": 6
+    },
+    {
+      "ar": "نَرَىٰ",
+      "tr": "naraY`",
+      "roman": "narāā",
+      "ty": "imperfect",
+      "n": 5
+    },
+    {
+      "ar": "رَأَيتَ",
+      "tr": "ra>ayota",
+      "roman": "raʾāyta",
+      "ty": "perfect",
+      "n": 5
+    },
+    {
+      "ar": "فَتَرَى",
+      "tr": "fataraY",
+      "roman": "fatarā",
+      "ty": "imperfect",
+      "n": 5
+    },
+    {
+      "ar": "تَرَى",
+      "tr": "taraY",
+      "roman": "tarā",
+      "ty": "imperfect",
+      "n": 5
+    },
+    {
+      "ar": "أَرَىٰ",
+      "tr": ">araY`",
+      "roman": "ʾārāā",
+      "ty": "imperfect",
+      "n": 4
+    },
+    {
+      "ar": "رَأَوُ",
+      "tr": "ra>awuA@",
+      "roman": "raʾāwuā",
+      "ty": "perfect",
+      "n": 4
+    },
+    {
+      "ar": "نَرَىٰكَ",
+      "tr": "naraY`ka",
+      "roman": "narāāka",
+      "ty": "subjunctive",
+      "n": 4
+    },
+    {
+      "ar": "أَفَرَءَيتَ",
+      "tr": ">afara'ayota",
+      "roman": "ʾāfaraʾayta",
+      "ty": "perfect",
+      "n": 4
+    },
+    {
+      "ar": "رَأَيتَهُم",
+      "tr": "ra>ayotahumo",
+      "roman": "raʾāytahum",
+      "ty": "perfect",
+      "n": 4
+    },
+    {
+      "ar": "أَفَرَءَيتُم",
+      "tr": ">afara'ayotum",
+      "roman": "ʾāfaraʾaytum",
+      "ty": "perfect",
+      "n": 4
+    },
+    {
+      "ar": "يَرَىٰ",
+      "tr": "yaraY`",
+      "roman": "yarāā",
+      "ty": "subjunctive",
+      "n": 4
+    },
+    {
+      "ar": "أَرَىٰكُم",
+      "tr": ">araY`kum",
+      "roman": "ʾārāākum",
+      "ty": "perfect",
+      "n": 4
+    },
+    {
+      "ar": "لَنَرَىٰكَ",
+      "tr": "lanaraY`ka",
+      "roman": "lanarāāka",
+      "ty": "imperfect",
+      "n": 3
+    },
+    {
+      "ar": "تَرَوهَ",
+      "tr": "tarawohaA",
+      "roman": "tarawhā",
+      "ty": "jussive",
+      "n": 3
+    },
+    {
+      "ar": "يَرَوُ",
+      "tr": "yarawuA@",
+      "roman": "yarawuā",
+      "ty": "subjunctive",
+      "n": 3
+    },
+    {
+      "ar": "تَرَونَهَ",
+      "tr": "tarawonahaA",
+      "roman": "tarawnahā",
+      "ty": "imperfect",
+      "n": 3
+    },
+    {
+      "ar": "رَءَاهُ",
+      "tr": "ra'aAhu",
+      "roman": "raʾāhu",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "ar": "أَفَرَءَيتُمُ",
+      "tr": ">afara'ayotumu",
+      "roman": "ʾāfaraʾaytumu",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "ar": "يَرَهُ,",
+      "tr": "yarahu,",
+      "roman": "yarahu,",
+      "ty": "jussive",
+      "n": 3
+    },
+    {
+      "ar": "وَرَأَوُ",
+      "tr": "wara>awuA@",
+      "roman": "waraʾāwuā",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "أَرَىٰكَ",
+      "tr": ">araY`ka",
+      "roman": "ʾārāāka",
+      "ty": "subjunctive",
+      "n": 2
+    },
+    {
+      "ar": "وَتَرَىٰ",
+      "tr": "wataraY`",
+      "roman": "watarāā",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "ar": "أَرَءَيتَكُم",
+      "tr": ">ara'ayotakumo",
+      "roman": "ʾāraʾaytakum",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "تَرَىٰنِى",
+      "tr": "taraY`niY",
+      "roman": "tarāāniā",
+      "ty": "subjunctive",
+      "n": 2
+    },
+    {
+      "ar": "وَتَرَىٰهُم",
+      "tr": "wataraY`humo",
+      "roman": "watarāāhum",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "ar": "تَرَونَ",
+      "tr": "tarawona",
+      "roman": "tarawna",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "ar": "أَرَىٰنِى",
+      "tr": ">araY`niY^",
+      "roman": "ʾārāāniā",
+      "ty": "subjunctive",
+      "n": 2
+    },
+    {
+      "ar": "يَرَ",
+      "tr": "yara",
+      "roman": "yara",
+      "ty": "jussive",
+      "n": 2
+    },
+    {
+      "ar": "يَرَونَهَ",
+      "tr": "yarawonahaA",
+      "roman": "yarawnahā",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "ar": "رَءَاهَ",
+      "tr": "ra'aAhaA",
+      "roman": "raʾāhā",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "تَرَو",
+      "tr": "tarawoA@",
+      "roman": "tarawā",
+      "ty": "jussive",
+      "n": 2
+    },
+    {
+      "ar": "فَرَءَاهُ",
+      "tr": "fara'aAhu",
+      "roman": "faraʾāhu",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "فَتَرَىٰهُ",
+      "tr": "fataraY`hu",
+      "roman": "fatarāāhu",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "ar": "رَأَوهُ",
+      "tr": "ra>awohu",
+      "roman": "raʾāwhu",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "يَرَىٰكُم",
+      "tr": "yaraY`kumo",
+      "roman": "yarāākum",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "ar": "يُرَىٰ",
+      "tr": "yuraY`^",
+      "roman": "yurāā",
+      "ty": "passive",
+      "n": 2
+    },
+    {
+      "ar": "رَأَىٰ",
+      "tr": "ra>aY`^",
+      "roman": "raʾaāā",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "نَرَى",
+      "tr": "naraY",
+      "roman": "narā",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "يَرَى",
+      "tr": "yaraY",
+      "roman": "yarā",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "يَرَونَهُم",
+      "tr": "yarawonahum",
+      "roman": "yarawnahum",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "رَأَيتُمُوهُ",
+      "tr": "ra>ayotumuwhu",
+      "roman": "raʾāytumūhu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "تَرَونَهُم",
+      "tr": "tarawonahumo",
+      "roman": "tarawnahum",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "وَرَأَو",
+      "tr": "wara>awoA@",
+      "roman": "waraʾāwā",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "أَرَىٰكَهُم",
+      "tr": ">araY`kahumo",
+      "roman": "ʾārāākahum",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "وَسَيَرَى",
+      "tr": "wasayaraY",
+      "roman": "wasayarā",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "فَسَيَرَى",
+      "tr": "fasayaraY",
+      "roman": "fasayarā",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "رَأَيتُ",
+      "tr": "ra>ayotu",
+      "roman": "raʾāytu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "رَأَيتُهُم",
+      "tr": "ra>ayotuhumo",
+      "roman": "raʾāytuhum",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "رَّءَ",
+      "tr": "r~a'aA",
+      "roman": "raʾā",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "لَنَرَىٰهَ",
+      "tr": "lanaraY`haA",
+      "roman": "lanarāāhā",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "رَأَينَهُ,",
+      "tr": "ra>ayonahu,^",
+      "roman": "raʾāynahu,",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "أَرَءَيتَكَ",
+      "tr": ">ara'ayotaka",
+      "roman": "ʾāraʾaytaka",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "تَرَنِ",
+      "tr": "tarani",
+      "roman": "tarani",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "ar": "وَرَءَ",
+      "tr": "wara'aA",
+      "roman": "waraʾā",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "تَرَيِنَّ",
+      "tr": "tarayin~a",
+      "roman": "tarayina",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "وَأَرَىٰ",
+      "tr": "wa>araY`",
+      "roman": "waʾārāā",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "رَءَاكَ",
+      "tr": "ra'aAka",
+      "roman": "raʾāka",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "يَرَىٰهَ",
+      "tr": "yaraY`haA",
+      "roman": "yarāāhā",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "رَأَتهُم",
+      "tr": "ra>atohum",
+      "roman": "raʾāthum",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "رَأَوكَ",
+      "tr": "ra>awoka",
+      "roman": "raʾāwka",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "يَرَىٰكَ",
+      "tr": "yaraY`ka",
+      "roman": "yarāāka",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "أَرَى",
+      "tr": ">araY",
+      "roman": "ʾārā",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "رَأَتهُ",
+      "tr": "ra>atohu",
+      "roman": "raʾāthu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "فَرَأَوهُ",
+      "tr": "fara>awohu",
+      "roman": "faraʾāwhu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "وَيَرَى",
+      "tr": "wayaraY",
+      "roman": "wayarā",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "تَرَىٰهُم",
+      "tr": "taraY`humo",
+      "roman": "tarāāhum",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "لَّرَأَيتَهُ,",
+      "tr": "l~ara>ayotahu,",
+      "roman": "laraʾāytahu,",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "وَرَأَيتَهُم",
+      "tr": "wara>ayotahumo",
+      "roman": "waraʾāytahum",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "رَأَوهَ",
+      "tr": "ra>awohaA",
+      "roman": "raʾāwhā",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "يَرَونَهُ,",
+      "tr": "yarawonahu,",
+      "roman": "yarawnahu,",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "وَنَرَىٰهُ",
+      "tr": "wanaraY`hu",
+      "roman": "wanarāāhu",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "فَأَرَىٰهُ",
+      "tr": "fa>araY`hu",
+      "roman": "faʾārāāhu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "رَأَوهُم",
+      "tr": "ra>awohumo",
+      "roman": "raʾāwhum",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "رَّءَاهُ",
+      "tr": "r~a'aAhu",
+      "roman": "raʾāhu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "لَتَرَوُنَّ",
+      "tr": "latarawun~a",
+      "roman": "latarawuna",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "لَتَرَوُنَّهَ",
+      "tr": "latarawun~ahaA",
+      "roman": "latarawunahā",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "وَرَأَيتَ",
+      "tr": "wara>ayota",
+      "roman": "waraʾāyta",
+      "ty": "perfect",
+      "n": 1
+    }
+  ],
+  "11": [
+    {
+      "ar": "يَأتِىَ",
+      "tr": "ya>otiYa",
+      "roman": "yaʾatiāa",
+      "ty": "subjunctive",
+      "n": 14
+    },
+    {
+      "ar": "يَأتِ",
+      "tr": "ya>oti",
+      "roman": "yaʾati",
+      "ty": "jussive",
+      "n": 10
+    },
+    {
+      "ar": "فَأتُو",
+      "tr": "fa>otuwA@",
+      "roman": "faʾatūā",
+      "ty": "imperative",
+      "n": 9
+    },
+    {
+      "ar": "يَأتِى",
+      "tr": "ya>otiY",
+      "roman": "yaʾatiā",
+      "ty": "imperfect",
+      "n": 8
+    },
+    {
+      "ar": "يَأتِيهِم",
+      "tr": "ya>otiyhim",
+      "roman": "yaʾatīhim",
+      "ty": "imperfect",
+      "n": 7
+    },
+    {
+      "ar": "أَتَىٰكَ",
+      "tr": ">ataY`ka",
+      "roman": "ʾātāāka",
+      "ty": "perfect",
+      "n": 6
+    },
+    {
+      "ar": "يَأتِينَ",
+      "tr": "ya>otiyna",
+      "roman": "yaʾatīna",
+      "ty": "imperfect",
+      "n": 6
+    },
+    {
+      "ar": "يَأتِكُم",
+      "tr": "ya>otikumo",
+      "roman": "yaʾatikum",
+      "ty": "jussive",
+      "n": 6
+    },
+    {
+      "ar": "يَأتِيكُم",
+      "tr": "ya>otiykum",
+      "roman": "yaʾatīkum",
+      "ty": "imperfect",
+      "n": 5
+    },
+    {
+      "ar": "تَأتِيَهُمُ",
+      "tr": "ta>otiyahumu",
+      "roman": "taʾatīahumu",
+      "ty": "subjunctive",
+      "n": 5
+    },
+    {
+      "ar": "ٱئتُونِى",
+      "tr": "{}otuwniY",
+      "roman": "ʾtūniā",
+      "ty": "imperative",
+      "n": 5
+    },
+    {
+      "ar": "يَأتُو",
+      "tr": "ya>otuwA@",
+      "roman": "yaʾatūā",
+      "ty": "subjunctive",
+      "n": 5
+    },
+    {
+      "ar": "تَأتِيهِم",
+      "tr": "ta>otiyhim",
+      "roman": "taʾatīhim",
+      "ty": "imperfect",
+      "n": 5
+    },
+    {
+      "ar": "أَتَىٰهُم",
+      "tr": ">ataY`humo",
+      "roman": "ʾātāāhum",
+      "ty": "perfect",
+      "n": 5
+    },
+    {
+      "ar": "فَأتِ",
+      "tr": "fa>oti",
+      "roman": "faʾati",
+      "ty": "imperative",
+      "n": 4
+    },
+    {
+      "ar": "يَأتُوكَ",
+      "tr": "ya>otuwka",
+      "roman": "yaʾatūka",
+      "ty": "jussive",
+      "n": 4
+    },
+    {
+      "ar": "ٱئتِنَ",
+      "tr": "{}otinaA",
+      "roman": "ʾtinā",
+      "ty": "imperative",
+      "n": 4
+    },
+    {
+      "ar": "لَتَأتُونَ",
+      "tr": "lata>otuwna",
+      "roman": "lataʾatūna",
+      "ty": "imperfect",
+      "n": 4
+    },
+    {
+      "ar": "يَأتُونَ",
+      "tr": "ya>otuwna",
+      "roman": "yaʾatūna",
+      "ty": "imperfect",
+      "n": 4
+    },
+    {
+      "ar": "يَأتِيهِ",
+      "tr": "ya>otiyhi",
+      "roman": "yaʾatīhi",
+      "ty": "imperfect",
+      "n": 4
+    },
+    {
+      "ar": "ءَاتِيكُم",
+      "tr": "'aAtiykum",
+      "roman": "ʾātīkum",
+      "ty": "imperfect",
+      "n": 4
+    },
+    {
+      "ar": "أَتَىٰ",
+      "tr": ">ataY`",
+      "roman": "ʾātāā",
+      "ty": "perfect",
+      "n": 4
+    },
+    {
+      "ar": "يَأتِيَهُم",
+      "tr": "ya>otiyahum",
+      "roman": "yaʾatīahum",
+      "ty": "subjunctive",
+      "n": 4
+    },
+    {
+      "ar": "تَأتِيَهُم",
+      "tr": "ta>otiyahumo",
+      "roman": "taʾatīahum",
+      "ty": "subjunctive",
+      "n": 4
+    },
+    {
+      "ar": "يَأتِيَهُمُ",
+      "tr": "ya>otiyahumu",
+      "roman": "yaʾatīahumu",
+      "ty": "subjunctive",
+      "n": 3
+    },
+    {
+      "ar": "يَأتِيَكُمُ",
+      "tr": "ya>otiyakumu",
+      "roman": "yaʾatīakumu",
+      "ty": "subjunctive",
+      "n": 3
+    },
+    {
+      "ar": "وَيَأتِ",
+      "tr": "waya>oti",
+      "roman": "wayaʾati",
+      "ty": "jussive",
+      "n": 3
+    },
+    {
+      "ar": "أَتَىٰكُم",
+      "tr": ">ataY`kumo",
+      "roman": "ʾātāākum",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "ar": "فَأتِنَ",
+      "tr": "fa>otinaA",
+      "roman": "faʾatinā",
+      "ty": "imperative",
+      "n": 3
+    },
+    {
+      "ar": "أَتَأتُونَ",
+      "tr": ">ata>otuwna",
+      "roman": "ʾātaʾatūna",
+      "ty": "imperfect",
+      "n": 3
+    },
+    {
+      "ar": "يَأتِهِم",
+      "tr": "ya>otihimo",
+      "roman": "yaʾatihim",
+      "ty": "jussive",
+      "n": 3
+    },
+    {
+      "ar": "يَأتِيَنَّكُم",
+      "tr": "ya>otiyan~akum",
+      "roman": "yaʾatīanakum",
+      "ty": "imperfect",
+      "n": 3
+    },
+    {
+      "ar": "تَأتِينَ",
+      "tr": "ta>otiynaA",
+      "roman": "taʾatīnā",
+      "ty": "imperfect",
+      "n": 3
+    },
+    {
+      "ar": "أَتَىٰهَ",
+      "tr": ">ataY`haA",
+      "roman": "ʾātāāhā",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "ar": "أَتَينَ",
+      "tr": ">atayonaA",
+      "roman": "ʾātaynā",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "ar": "أَتَو",
+      "tr": ">atawoA@",
+      "roman": "ʾātawā",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "ar": "تَأتِيكُم",
+      "tr": "ta>otiykumo",
+      "roman": "taʾatīkum",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "ar": "تَأتِهِم",
+      "tr": "ta>otihim",
+      "roman": "taʾatihim",
+      "ty": "jussive",
+      "n": 2
+    },
+    {
+      "ar": "ٱئتِ",
+      "tr": "{}oti",
+      "roman": "ʾti",
+      "ty": "imperative",
+      "n": 2
+    },
+    {
+      "ar": "وَأتُونِى",
+      "tr": "wa>otuwniY",
+      "roman": "waʾatūniā",
+      "ty": "imperative",
+      "n": 2
+    },
+    {
+      "ar": "نَأتِى",
+      "tr": "na>otiY",
+      "roman": "naʾatiā",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "ar": "تَأتِى",
+      "tr": "ta>otiY",
+      "roman": "taʾatiā",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "ar": "ٱئتُو",
+      "tr": "{}otuwA@",
+      "roman": "ʾtūā",
+      "ty": "imperative",
+      "n": 2
+    },
+    {
+      "ar": "أَتَينَٰهُم",
+      "tr": ">atayona`hum",
+      "roman": "ʾātaynāhum",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "أَتَى",
+      "tr": ">ataY",
+      "roman": "ʾātā",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "ءَاتِيكَ",
+      "tr": "'aAtiyka",
+      "roman": "ʾātīka",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "ar": "فَأَتَىٰهُمُ",
+      "tr": "fa>ataY`humu",
+      "roman": "faʾātāāhumu",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "تَّأتِيهِم",
+      "tr": "t~a>otiyhimo",
+      "roman": "taʾatīhim",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "ar": "فَليَأتُو",
+      "tr": "faloya>otuwA@",
+      "roman": "falyaʾatūā",
+      "ty": "jussive",
+      "n": 2
+    },
+    {
+      "ar": "وَأُتُو",
+      "tr": "wa>utuwA@",
+      "roman": "waʾautūā",
+      "ty": "passive",
+      "n": 1
+    },
+    {
+      "ar": "يَأتُوكُم",
+      "tr": "ya>otuwkumo",
+      "roman": "yaʾatūkum",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "نَأتِ",
+      "tr": "na>oti",
+      "roman": "naʾati",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "ar": "أَتَيتَ",
+      "tr": ">atayota",
+      "roman": "ʾātayta",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "تَأتُو",
+      "tr": "ta>otuwA@",
+      "roman": "taʾatūā",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "وَأتُو",
+      "tr": "wa>otuwA@",
+      "roman": "waʾatūā",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "ar": "فَأتُوهُنَّ",
+      "tr": "fa>otuwhun~a",
+      "roman": "faʾatūhuna",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "ar": "يَأتِينَكَ",
+      "tr": "ya>otiynaka",
+      "roman": "yaʾatīnaka",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "وَيَأتُوكُم",
+      "tr": "waya>otuwkum",
+      "roman": "wayaʾatūkum",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "ar": "يَأتِيَنَ",
+      "tr": "ya>otiyanaA",
+      "roman": "yaʾatīanā",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "يَأتِيَٰنِهَ",
+      "tr": "ya>otiya`nihaA",
+      "roman": "yaʾatīānihā",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "وَلتَأتِ",
+      "tr": "walota>oti",
+      "roman": "waltaʾati",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "ar": "فَتَأتِيَهُم",
+      "tr": "fata>otiyahum",
+      "roman": "fataʾatīahum",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "أَتَتكُمُ",
+      "tr": ">atatokumu",
+      "roman": "ʾātatkumu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "لَءَاتِيَنَّهُم",
+      "tr": "la'aAtiyan~ahum",
+      "roman": "laʾātīanahum",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "تَأتِيَنَ",
+      "tr": "ta>otiyanaA",
+      "roman": "taʾatīanā",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "تَأتِنَ",
+      "tr": "ta>otinaA",
+      "roman": "taʾatinā",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "ar": "فَأَتَو",
+      "tr": "fa>atawoA@",
+      "roman": "faʾātawā",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "أَتَتهُم",
+      "tr": ">atatohumo",
+      "roman": "ʾātathum",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "أَتَوكَ",
+      "tr": ">atawoka",
+      "roman": "ʾātawka",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "يَأتِيكُمَ",
+      "tr": "ya>otiykumaA",
+      "roman": "yaʾatīkumā",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "يَأتِيَكُمَ",
+      "tr": "ya>otiyakumaA",
+      "roman": "yaʾatīakumā",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "تَأتُونِى",
+      "tr": "ta>otuwniY",
+      "roman": "taʾatūniā",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "ar": "لَتَأتُنَّنِى",
+      "tr": "lata>otun~aniY",
+      "roman": "lataʾatunaniā",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "يَأتِيَنِى",
+      "tr": "ya>otiyaniY",
+      "roman": "yaʾatīaniā",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "فَأتُونَ",
+      "tr": "fa>otuwnaA",
+      "roman": "faʾatūnā",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "ar": "نَّأتِيَكُم",
+      "tr": "n~a>otiyakum",
+      "roman": "naʾatīakum",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "وَيَأتِيهِ",
+      "tr": "waya>otiyhi",
+      "roman": "wayaʾatīhi",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "يَأتِيهِمُ",
+      "tr": "ya>otiyhimu",
+      "roman": "yaʾatīhimu",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "وَأَتَينَٰكَ",
+      "tr": "wa>atayona`ka",
+      "roman": "waʾātaynāka",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "يَأتِيَكَ",
+      "tr": "ya>otiyaka",
+      "roman": "yaʾatīaka",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "فَأَتَى",
+      "tr": "fa>ataY",
+      "roman": "faʾātā",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "وَأَتَىٰهُمُ",
+      "tr": "wa>ataY`humu",
+      "roman": "waʾātāāhumu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "يَأتِيهَ",
+      "tr": "ya>otiyhaA",
+      "roman": "yaʾatīhā",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "تَأتِىَ",
+      "tr": "ta>otiYa",
+      "roman": "taʾatiāa",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "فَليَأتِكُم",
+      "tr": "faloya>otikum",
+      "roman": "falyaʾatikum",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "ar": "أَتَيَ",
+      "tr": ">atayaA^",
+      "roman": "ʾātayā",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "فَأَتَت",
+      "tr": "fa>atato",
+      "roman": "faʾātat",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "يَأتُونَنَ",
+      "tr": "ya>otuwnanaA",
+      "roman": "yaʾatūnanā",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "يَأتِكَ",
+      "tr": "ya>otika",
+      "roman": "yaʾatika",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "ar": "وَيَأتِينَ",
+      "tr": "waya>otiynaA",
+      "roman": "wayaʾatīnā",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "فَأتِيَاهُ",
+      "tr": "fa>otiyaAhu",
+      "roman": "faʾatīāhu",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "ar": "فَلَنَأتِيَنَّكَ",
+      "tr": "falana>otiyan~aka",
+      "roman": "falanaʾatīanaka",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "يَأتِهِ.",
+      "tr": "ya>otihi.",
+      "roman": "yaʾatihi.",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "ar": "أَتَتكَ",
+      "tr": ">atatoka",
+      "roman": "ʾātatka",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "أَفَتَأتُونَ",
+      "tr": ">afata>otuwna",
+      "roman": "ʾāfataʾatūna",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "فَليَأتِنَ",
+      "tr": "faloya>otinaA",
+      "roman": "falyaʾatinā",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "ar": "يَأتُونَكَ",
+      "tr": "ya>otuwnaka",
+      "roman": "yaʾatūnaka",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "فَسَيَأتِيهِم",
+      "tr": "fasaya>otiyhimo",
+      "roman": "fasayaʾatīhim",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "فَأتِيَ",
+      "tr": "fa>otiyaA",
+      "roman": "faʾatīā",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "ar": "فَيَأتِيَهُم",
+      "tr": "faya>otiyahum",
+      "roman": "fayaʾatīahum",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "سَـَاتِيكُم",
+      "tr": "sa_#aAtiykum",
+      "roman": "saātīkum",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "لَيَأتِيَنِّى",
+      "tr": "laya>otiyan~iY",
+      "roman": "layaʾatīaniā",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "فَلَنَأتِيَنَّهُم",
+      "tr": "falana>otiyan~ahum",
+      "roman": "falanaʾatīanahum",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "يَأتِينِى",
+      "tr": "ya>otiyniY",
+      "roman": "yaʾatīniā",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "يَأتُونِى",
+      "tr": "ya>otuwniY",
+      "roman": "yaʾatūniā",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "ar": "أَتَوهُ",
+      "tr": ">atawohu",
+      "roman": "ʾātawhu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "وَتَأتُونَ",
+      "tr": "wata>otuwna",
+      "roman": "wataʾatūna",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "وَلَيَأتِيَنَّهُم",
+      "tr": "walaya>otiyan~ahum",
+      "roman": "walayaʾatīanahum",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "لَتَأتِيَنَّكُم",
+      "tr": "lata>otiyan~akumo",
+      "roman": "lataʾatīanakum",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "تَأتُونَنَ",
+      "tr": "ta>otuwnanaA",
+      "roman": "taʾatūnanā",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "ٱئتِيَ",
+      "tr": "{}otiyaA",
+      "roman": "ʾtīā",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "ar": "أَتَت",
+      "tr": ">atato",
+      "roman": "ʾātat",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "فَليَأتِ",
+      "tr": "faloya>oti",
+      "roman": "falyaʾati",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "ar": "أَتَىٰنَ",
+      "tr": ">ataY`naA",
+      "roman": "ʾātāānā",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "ar": "فَتَأتُونَ",
+      "tr": "fata>otuwna",
+      "roman": "fataʾatūna",
+      "ty": "imperfect",
+      "n": 1
+    }
+  ],
+  "12": [
+    {
+      "ar": "يَشَاءُ",
+      "tr": "ya$aA^'u",
+      "roman": "yashāʾu",
+      "ty": "imperfect",
+      "n": 108
+    },
+    {
+      "ar": "شَاءَ",
+      "tr": "$aA^'a",
+      "roman": "shāʾa",
+      "ty": "perfect",
+      "n": 56
+    },
+    {
+      "ar": "نَشَاءُ",
+      "tr": "na$aA^'u",
+      "roman": "nashāʾu",
+      "ty": "imperfect",
+      "n": 11
+    },
+    {
+      "ar": "تَشَاءُ",
+      "tr": "ta$aA^'u",
+      "roman": "tashāʾu",
+      "ty": "imperfect",
+      "n": 9
+    },
+    {
+      "ar": "يَشَأ",
+      "tr": "ya$a>o",
+      "roman": "yashaʾa",
+      "ty": "jussive",
+      "n": 8
+    },
+    {
+      "ar": "يَشَاءَ",
+      "tr": "ya$aA^'a",
+      "roman": "yashāʾa",
+      "ty": "subjunctive",
+      "n": 8
+    },
+    {
+      "ar": "نَّشَاءُ",
+      "tr": "n~a$aA^'u",
+      "roman": "nashāʾu",
+      "ty": "imperfect",
+      "n": 7
+    },
+    {
+      "ar": "شِئنَ",
+      "tr": "$i}onaA",
+      "roman": "shiʾnā",
+      "ty": "perfect",
+      "n": 5
+    },
+    {
+      "ar": "يَشَاءُونَ",
+      "tr": "ya$aA^'uwna",
+      "roman": "yashāʾūna",
+      "ty": "imperfect",
+      "n": 5
+    },
+    {
+      "ar": "شِئتُم",
+      "tr": "$i}otumo",
+      "roman": "shiʾtum",
+      "ty": "perfect",
+      "n": 5
+    },
+    {
+      "ar": "شِئتَ",
+      "tr": "$i}ota",
+      "roman": "shiʾta",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "ar": "نَّشَأ",
+      "tr": "n~a$a>o",
+      "roman": "nashaʾa",
+      "ty": "jussive",
+      "n": 3
+    },
+    {
+      "ar": "شِئتُمَ",
+      "tr": "$i}otumaA",
+      "roman": "shiʾtumā",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "ar": "يَشَإِ",
+      "tr": "ya$a<i",
+      "roman": "yashaʾii",
+      "ty": "jussive",
+      "n": 2
+    },
+    {
+      "ar": "تَشَاءُونَ",
+      "tr": "ta$aA^'uwna",
+      "roman": "tashāʾūna",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "ar": "أَشَاءُ",
+      "tr": ">a$aA^'u",
+      "roman": "ʾāshāʾu",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "ar": "نَشَٰؤُ",
+      "tr": "na$a`^&uA@",
+      "roman": "nashāʾuuā",
+      "ty": "imperfect",
+      "n": 1
+    }
+  ]
+}

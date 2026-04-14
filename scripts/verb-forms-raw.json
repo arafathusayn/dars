@@ -1,0 +1,4801 @@
+{
+  "1": [
+    {
+      "tr": "qaAla",
+      "ty": "perfect",
+      "n": 412
+    },
+    {
+      "tr": "qulo",
+      "ty": "imperative",
+      "n": 218
+    },
+    {
+      "tr": "qaAluwA@",
+      "ty": "perfect",
+      "n": 173
+    },
+    {
+      "tr": "waqaAla",
+      "ty": "perfect",
+      "n": 85
+    },
+    {
+      "tr": "qaAluw^A@",
+      "ty": "perfect",
+      "n": 77
+    },
+    {
+      "tr": "yaquwluwna",
+      "ty": "imperfect",
+      "n": 51
+    },
+    {
+      "tr": "waqaAluwA@",
+      "ty": "perfect",
+      "n": 49
+    },
+    {
+      "tr": "qul",
+      "ty": "imperative",
+      "n": 45
+    },
+    {
+      "tr": "yaquwlu",
+      "ty": "imperfect",
+      "n": 35
+    },
+    {
+      "tr": "qiyla",
+      "ty": "passive",
+      "n": 34
+    },
+    {
+      "tr": "quli",
+      "ty": "imperative",
+      "n": 30
+    },
+    {
+      "tr": "wayaquwluwna",
+      "ty": "imperfect",
+      "n": 28
+    },
+    {
+      "tr": "faqaAla",
+      "ty": "perfect",
+      "n": 27
+    },
+    {
+      "tr": "qaAlato",
+      "ty": "perfect",
+      "n": 23
+    },
+    {
+      "tr": "waqiyla",
+      "ty": "passive",
+      "n": 15
+    },
+    {
+      "tr": "qulonaA",
+      "ty": "perfect",
+      "n": 13
+    },
+    {
+      "tr": "taquwluwA@",
+      "ty": "jussive",
+      "n": 13
+    },
+    {
+      "tr": "faqulo",
+      "ty": "imperative",
+      "n": 12
+    },
+    {
+      "tr": "waqul",
+      "ty": "imperative",
+      "n": 12
+    },
+    {
+      "tr": "fayaquwlu",
+      "ty": "imperfect",
+      "n": 12
+    },
+    {
+      "tr": "wayaquwlu",
+      "ty": "imperfect",
+      "n": 11
+    },
+    {
+      "tr": "faqaAluwA@",
+      "ty": "perfect",
+      "n": 11
+    },
+    {
+      "tr": "waqaAluw^A@",
+      "ty": "perfect",
+      "n": 11
+    },
+    {
+      "tr": "yaquwluwA@",
+      "ty": "jussive",
+      "n": 10
+    },
+    {
+      "tr": "layaquwlun~a",
+      "ty": "imperfect",
+      "n": 9
+    },
+    {
+      "tr": "waqaAlati",
+      "ty": "perfect",
+      "n": 8
+    },
+    {
+      "tr": "qulotumo",
+      "ty": "perfect",
+      "n": 7
+    },
+    {
+      "tr": "waquwluwA@",
+      "ty": "imperative",
+      "n": 7
+    },
+    {
+      "tr": "faqaAluw^A@",
+      "ty": "perfect",
+      "n": 7
+    },
+    {
+      "tr": ">aquwlu",
+      "ty": "imperfect",
+      "n": 7
+    },
+    {
+      "tr": "waqulonaA",
+      "ty": "perfect",
+      "n": 6
+    },
+    {
+      "tr": "faqulonaA",
+      "ty": "perfect",
+      "n": 6
+    },
+    {
+      "tr": "taquwluwna",
+      "ty": "imperfect",
+      "n": 6
+    },
+    {
+      "tr": "naquwlu",
+      "ty": "imperfect",
+      "n": 6
+    },
+    {
+      "tr": "taquwla",
+      "ty": "subjunctive",
+      "n": 6
+    },
+    {
+      "tr": "qaAlati",
+      "ty": "perfect",
+      "n": 5
+    },
+    {
+      "tr": "waqulo",
+      "ty": "imperative",
+      "n": 5
+    },
+    {
+      "tr": ">aqul",
+      "ty": "jussive",
+      "n": 4
+    },
+    {
+      "tr": "sayaquwlu",
+      "ty": "imperfect",
+      "n": 4
+    },
+    {
+      "tr": "yaquwla",
+      "ty": "subjunctive",
+      "n": 4
+    },
+    {
+      "tr": "taquwlu",
+      "ty": "imperfect",
+      "n": 4
+    },
+    {
+      "tr": "layaquwlan~a",
+      "ty": "imperfect",
+      "n": 4
+    },
+    {
+      "tr": "qulota",
+      "ty": "perfect",
+      "n": 4
+    },
+    {
+      "tr": "faqul",
+      "ty": "imperative",
+      "n": 4
+    },
+    {
+      "tr": "waqaAlato",
+      "ty": "perfect",
+      "n": 4
+    },
+    {
+      "tr": "waquli",
+      "ty": "imperative",
+      "n": 4
+    },
+    {
+      "tr": "fasayaquwluwna",
+      "ty": "imperfect",
+      "n": 4
+    },
+    {
+      "tr": "sayaquwluwna",
+      "ty": "imperfect",
+      "n": 4
+    },
+    {
+      "tr": "qa`la",
+      "ty": "perfect",
+      "n": 4
+    },
+    {
+      "tr": "layaquwluwna",
+      "ty": "imperfect",
+      "n": 4
+    },
+    {
+      "tr": ">ataquwluwna",
+      "ty": "imperfect",
+      "n": 3
+    },
+    {
+      "tr": "yuqaAlu",
+      "ty": "passive",
+      "n": 3
+    },
+    {
+      "tr": "quwluw^A@",
+      "ty": "imperative",
+      "n": 2
+    },
+    {
+      "tr": "faquwluwA@",
+      "ty": "imperative",
+      "n": 2
+    },
+    {
+      "tr": "wanaquwlu",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "tr": ">aquwla",
+      "ty": "subjunctive",
+      "n": 2
+    },
+    {
+      "tr": "taquwluw^A@",
+      "ty": "subjunctive",
+      "n": 2
+    },
+    {
+      "tr": "qaAlaA",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "waqulona",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "faquwlaA^",
+      "ty": "imperative",
+      "n": 2
+    },
+    {
+      "tr": "faquli",
+      "ty": "imperative",
+      "n": 2
+    },
+    {
+      "tr": "qulotum",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "fayaquwluwA@",
+      "ty": "subjunctive",
+      "n": 2
+    },
+    {
+      "tr": "fayaquwluwna",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "yaquwlaA^",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "waqaAlat",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "waloyaquwluwA@",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "tr": "qulotuhu,",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "qulotu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "laqaAla",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "l~iyaquwluw^A@",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "waliyaquwluwA@",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "wa>aqul",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "tr": "w~aqaAluwA@",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "laqulonaA",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "l~ayaquwlun~a",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "n~aquwlu",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "qulona",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "laqaAluw^A@",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "n~aquwla",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "taqul",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "tr": "lataquwluwna",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "qulonaA^",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "taquwlan~a",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "tr": ">aqulo",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "tr": "wasanaquwlu",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "faquwliY^",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "tr": "fataquwlu",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "faquwlaA",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "tr": "laqaAluwA@",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "yaqulo",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "tr": "wataquwluwna",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "waqaAlaA",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "lanaquwlan~a",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "faqaAlato",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "qaAlataA",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "yaquwluw^A@",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "waquwluw^A@",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "tr": "l~ayaquwlan~a",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "qaAlat",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "qaAlahaA",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "qaAlataA^",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "l~aqaAluwA@",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "wataquwluwA@",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "wataquwlu",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "wayaquwluwA@",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "fayaquwla",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "faqulotu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "waliyaquwla",
+      "ty": "subjunctive",
+      "n": 1
+    }
+  ],
+  "2": [
+    {
+      "tr": "kaAna",
+      "ty": "perfect",
+      "n": 323
+    },
+    {
+      "tr": "kaAnuwA@",
+      "ty": "perfect",
+      "n": 210
+    },
+    {
+      "tr": "kuntumo",
+      "ty": "perfect",
+      "n": 152
+    },
+    {
+      "tr": "wakaAna",
+      "ty": "perfect",
+      "n": 84
+    },
+    {
+      "tr": "kun~aA",
+      "ty": "perfect",
+      "n": 62
+    },
+    {
+      "tr": "kuntum",
+      "ty": "perfect",
+      "n": 36
+    },
+    {
+      "tr": "kunta",
+      "ty": "perfect",
+      "n": 35
+    },
+    {
+      "tr": "wakaAnuwA@",
+      "ty": "perfect",
+      "n": 30
+    },
+    {
+      "tr": "yakun",
+      "ty": "jussive",
+      "n": 24
+    },
+    {
+      "tr": "kaAnato",
+      "ty": "perfect",
+      "n": 23
+    },
+    {
+      "tr": "kaAnuw^A@",
+      "ty": "perfect",
+      "n": 19
+    },
+    {
+      "tr": "takuwnuwA@",
+      "ty": "jussive",
+      "n": 19
+    },
+    {
+      "tr": "yakuwnu",
+      "ty": "imperfect",
+      "n": 18
+    },
+    {
+      "tr": "yakuwna",
+      "ty": "subjunctive",
+      "n": 17
+    },
+    {
+      "tr": "wakun~aA",
+      "ty": "perfect",
+      "n": 16
+    },
+    {
+      "tr": "kuntu",
+      "ty": "perfect",
+      "n": 15
+    },
+    {
+      "tr": "takuwna",
+      "ty": "subjunctive",
+      "n": 14
+    },
+    {
+      "tr": "takun",
+      "ty": "jussive",
+      "n": 14
+    },
+    {
+      "tr": "yakuwnuwA@",
+      "ty": "subjunctive",
+      "n": 12
+    },
+    {
+      "tr": "takuwnu",
+      "ty": "imperfect",
+      "n": 11
+    },
+    {
+      "tr": ">akuwna",
+      "ty": "subjunctive",
+      "n": 9
+    },
+    {
+      "tr": "fayakuwnu",
+      "ty": "imperfect",
+      "n": 9
+    },
+    {
+      "tr": "takuwnan~a",
+      "ty": "imperfect",
+      "n": 9
+    },
+    {
+      "tr": "kuwnuwA@",
+      "ty": "imperative",
+      "n": 8
+    },
+    {
+      "tr": "kun",
+      "ty": "imperative",
+      "n": 8
+    },
+    {
+      "tr": "fakaAna",
+      "ty": "perfect",
+      "n": 8
+    },
+    {
+      "tr": "yaku",
+      "ty": "jussive",
+      "n": 8
+    },
+    {
+      "tr": "wakuntumo",
+      "ty": "perfect",
+      "n": 7
+    },
+    {
+      "tr": "taku",
+      "ty": "jussive",
+      "n": 7
+    },
+    {
+      "tr": "lakaAna",
+      "ty": "perfect",
+      "n": 6
+    },
+    {
+      "tr": "fatakuwna",
+      "ty": "subjunctive",
+      "n": 6
+    },
+    {
+      "tr": "fakaAnuwA@",
+      "ty": "perfect",
+      "n": 5
+    },
+    {
+      "tr": "fakaAnato",
+      "ty": "perfect",
+      "n": 5
+    },
+    {
+      "tr": "yakuni",
+      "ty": "jussive",
+      "n": 4
+    },
+    {
+      "tr": "takuno",
+      "ty": "jussive",
+      "n": 4
+    },
+    {
+      "tr": "nakun",
+      "ty": "jussive",
+      "n": 4
+    },
+    {
+      "tr": "lanakuwnan~a",
+      "ty": "imperfect",
+      "n": 4
+    },
+    {
+      "tr": "kaAnat",
+      "ty": "perfect",
+      "n": 4
+    },
+    {
+      "tr": "w~akaAnuwA@",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "tr": "wayakuwna",
+      "ty": "subjunctive",
+      "n": 3
+    },
+    {
+      "tr": "yakuno",
+      "ty": "jussive",
+      "n": 3
+    },
+    {
+      "tr": "kun~a",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "tr": ">akun",
+      "ty": "jussive",
+      "n": 3
+    },
+    {
+      "tr": "kaAnataA",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "tr": "wanakuwna",
+      "ty": "subjunctive",
+      "n": 3
+    },
+    {
+      "tr": "wakun",
+      "ty": "imperative",
+      "n": 3
+    },
+    {
+      "tr": "litakuwna",
+      "ty": "subjunctive",
+      "n": 3
+    },
+    {
+      "tr": "wakaAnati",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "tr": "liyakuwna",
+      "ty": "subjunctive",
+      "n": 3
+    },
+    {
+      "tr": "fatakuwnaA",
+      "ty": "subjunctive",
+      "n": 2
+    },
+    {
+      "tr": "kaAnaA",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "takuwnuw^A@",
+      "ty": "jussive",
+      "n": 2
+    },
+    {
+      "tr": "wakuntu",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "takuwnaA",
+      "ty": "subjunctive",
+      "n": 2
+    },
+    {
+      "tr": "n~akuwna",
+      "ty": "subjunctive",
+      "n": 2
+    },
+    {
+      "tr": "wakunta",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "watakuwnuwA@",
+      "ty": "jussive",
+      "n": 2
+    },
+    {
+      "tr": "wa>akun",
+      "ty": "jussive",
+      "n": 2
+    },
+    {
+      "tr": "latakuwnan~a",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "tr": "kuntun~a",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "lakun~aA",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "wakaAnuw^A@",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "lakuntu",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "watakuwnu",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "tr": "naku",
+      "ty": "jussive",
+      "n": 2
+    },
+    {
+      "tr": "lakuntum",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "l~itakuwnuwA@",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "yakuwnaA",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "tr": "walotakun",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "tr": "takun[",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "tr": "fatakuwnuwna",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "faloyakuwnuwA@",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "tr": "fatakuwnu",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "waliyakuwna",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "la>akuwnan~a",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "lakun~aA^",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "l~anakuwnan~a",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "walanakuwnan~a",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "wakuwnuwA@",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "tr": ">akaAna",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "watakuwna",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "kunti",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "walayakuwnFA",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": ">akun[",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "tr": ">aku",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "tr": "l~iyakuwnuwA@",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "wayakuwnuwna",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "kuwniY",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "tr": "fakuntumo",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "fakuntum",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "wakuntum",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "fayakuwna",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "kun~aA^",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "fanakuwna",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "fatakun",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "tr": "liyakuwnuwA@",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "l~ayakuwnun~a",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "fa>akuwna",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "walatakuwnan~a",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "litakuwnuwA@",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "liyakuwnaA",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "yakuwnuw^A@",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "tr": "walitakuwna",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "yakun~a",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "kuwnuw^A@",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "tr": "wakaAnato",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "kaAnati",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "yakuwnuwna",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "sayakuwnu",
+      "ty": "imperfect",
+      "n": 1
+    }
+  ],
+  "3": [
+    {
+      "tr": "'aAmanuwA@",
+      "ty": "perfect",
+      "n": 212
+    },
+    {
+      "tr": "yu&ominuwna",
+      "ty": "imperfect",
+      "n": 86
+    },
+    {
+      "tr": "'aAmanuw^A@",
+      "ty": "perfect",
+      "n": 41
+    },
+    {
+      "tr": "'aAman~aA",
+      "ty": "perfect",
+      "n": 31
+    },
+    {
+      "tr": "'aAmana",
+      "ty": "perfect",
+      "n": 26
+    },
+    {
+      "tr": "yu&ominu",
+      "ty": "imperfect",
+      "n": 18
+    },
+    {
+      "tr": "'aAminuwA@",
+      "ty": "imperative",
+      "n": 10
+    },
+    {
+      "tr": "yu&ominuwA@",
+      "ty": "subjunctive",
+      "n": 10
+    },
+    {
+      "tr": "tu&ominuwA@",
+      "ty": "jussive",
+      "n": 7
+    },
+    {
+      "tr": "n~u&omina",
+      "ty": "subjunctive",
+      "n": 6
+    },
+    {
+      "tr": "'aAmantum",
+      "ty": "perfect",
+      "n": 6
+    },
+    {
+      "tr": "yu&omin[",
+      "ty": "jussive",
+      "n": 6
+    },
+    {
+      "tr": "fa_#aAminuwA@",
+      "ty": "imperative",
+      "n": 5
+    },
+    {
+      "tr": "tu&ominuwna",
+      "ty": "imperfect",
+      "n": 5
+    },
+    {
+      "tr": "'aAmanato",
+      "ty": "perfect",
+      "n": 4
+    },
+    {
+      "tr": "wa'aAmana",
+      "ty": "perfect",
+      "n": 4
+    },
+    {
+      "tr": ">anu&ominu",
+      "ty": "imperfect",
+      "n": 3
+    },
+    {
+      "tr": "wa'aAminuwA@",
+      "ty": "imperative",
+      "n": 3
+    },
+    {
+      "tr": "nu&ominu",
+      "ty": "imperfect",
+      "n": 3
+    },
+    {
+      "tr": "liyu&ominuwA@",
+      "ty": "subjunctive",
+      "n": 3
+    },
+    {
+      "tr": "'aAmantu",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "tr": "yu&omin~a",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "tr": "tu&omin",
+      "ty": "jussive",
+      "n": 2
+    },
+    {
+      "tr": "tu&ominuw^A@",
+      "ty": "jussive",
+      "n": 2
+    },
+    {
+      "tr": "watu&ominuwna",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "tr": "fa_#aAman~aA",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "w~a'aAmanuwA@",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "yu&ominuw^A@",
+      "ty": "subjunctive",
+      "n": 2
+    },
+    {
+      "tr": "'aAmantumo",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "fa_#aAmana",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "litu&ominuwA@",
+      "ty": "subjunctive",
+      "n": 2
+    },
+    {
+      "tr": ">afatu&ominuwna",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "waloyu&ominuwA@",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "tr": "wayu&omin[",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "tr": "latu&ominun~a",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "nu&omina",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "wa'aAmantumo",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "layu&ominan~a",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "wa'aAmantum",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "l~ayu&ominun~a",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "liyu&ominuw^A@",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "lanu&ominan~a",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "wa'aAmanuw^A@",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "wayu&ominu",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "la'aAmana",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "tu&omina",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "yu&omina",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "faloyu&omin",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "tr": "fayu&ominuwA@",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "fa_#aAmanuwA@",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "wayu&ominuwna",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "'aAmino",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "tr": "wa'aAmanuwA@",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "l~itu&ominuwA@",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "fa_#aAmanat",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "wa'aAmanahum",
+      "ty": "perfect",
+      "n": 1
+    }
+  ],
+  "4": [
+    {
+      "tr": "yaEolamuwna",
+      "ty": "imperfect",
+      "n": 81
+    },
+    {
+      "tr": "yaEolamu",
+      "ty": "imperfect",
+      "n": 62
+    },
+    {
+      "tr": "taEolamuwna",
+      "ty": "imperfect",
+      "n": 54
+    },
+    {
+      "tr": "wa{Eolamuw^A@",
+      "ty": "imperative",
+      "n": 18
+    },
+    {
+      "tr": "wayaEolamu",
+      "ty": "imperfect",
+      "n": 10
+    },
+    {
+      "tr": "Ealima",
+      "ty": "perfect",
+      "n": 9
+    },
+    {
+      "tr": ">aEolamu",
+      "ty": "imperfect",
+      "n": 8
+    },
+    {
+      "tr": "fa{Eolamuw^A@",
+      "ty": "imperative",
+      "n": 6
+    },
+    {
+      "tr": "waliyaEolama",
+      "ty": "subjunctive",
+      "n": 6
+    },
+    {
+      "tr": "EalimonaA",
+      "ty": "perfect",
+      "n": 6
+    },
+    {
+      "tr": "naEolamu",
+      "ty": "imperfect",
+      "n": 5
+    },
+    {
+      "tr": "taEolamu",
+      "ty": "imperfect",
+      "n": 5
+    },
+    {
+      "tr": "taEolamo",
+      "ty": "jussive",
+      "n": 4
+    },
+    {
+      "tr": "yaEolamuw^A@",
+      "ty": "jussive",
+      "n": 4
+    },
+    {
+      "tr": "wa>aEolamu",
+      "ty": "imperfect",
+      "n": 3
+    },
+    {
+      "tr": "linaEolama",
+      "ty": "subjunctive",
+      "n": 3
+    },
+    {
+      "tr": "yaEolami",
+      "ty": "jussive",
+      "n": 3
+    },
+    {
+      "tr": "fa{Eolamo",
+      "ty": "imperative",
+      "n": 3
+    },
+    {
+      "tr": "{Eolamuw^A@",
+      "ty": "imperative",
+      "n": 3
+    },
+    {
+      "tr": "taEolamuw^A@",
+      "ty": "jussive",
+      "n": 3
+    },
+    {
+      "tr": "yaEolamuhumo",
+      "ty": "imperfect",
+      "n": 3
+    },
+    {
+      "tr": "Ealimota",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "tr": "yaEolama",
+      "ty": "subjunctive",
+      "n": 3
+    },
+    {
+      "tr": "fasataEolamuwna",
+      "ty": "imperfect",
+      "n": 3
+    },
+    {
+      "tr": "walayaEolaman~a",
+      "ty": "imperfect",
+      "n": 3
+    },
+    {
+      "tr": "sayaEolamuwna",
+      "ty": "imperfect",
+      "n": 3
+    },
+    {
+      "tr": "Ealimotumu",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "yaEolamohu",
+      "ty": "jussive",
+      "n": 2
+    },
+    {
+      "tr": "wayaEolama",
+      "ty": "subjunctive",
+      "n": 2
+    },
+    {
+      "tr": "taEolamuwA@",
+      "ty": "subjunctive",
+      "n": 2
+    },
+    {
+      "tr": "liyaEolama",
+      "ty": "subjunctive",
+      "n": 2
+    },
+    {
+      "tr": "litaEolamuw^A@",
+      "ty": "subjunctive",
+      "n": 2
+    },
+    {
+      "tr": "Ealimotum",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "wasayaEolamu",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "tr": "fasayaEolamuwna",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "tr": "walataEolamun~a",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "tr": "wayaEolamuwna",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "tr": "yaEolamo",
+      "ty": "jussive",
+      "n": 2
+    },
+    {
+      "tr": "faEalima",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "Ealimato",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "fayaEolamuwna",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "EalimuwA@",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "layaEolamuwna",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "wa{Eolamo",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "tr": "yaEolamuhu,",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "laEalimahu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "wanaEolama",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "Ealimotahu,",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "yaEolamuhaA^",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "yaEolamuhaA",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": ">ataEolamuwna",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "taEolamuwnahumu",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "waEalima",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "wataEolama",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "yaEolamuwA@",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "taEolamuhumo",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "naEolamuhumo",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "litaEolamuwA@",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "taEolamuhaA^",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "lataEolamu",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "waliyaEolamuw^A@",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "walitaEolamuwA@",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "liyaEolamuw^A@",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "liyuEolama",
+      "ty": "passive",
+      "n": 1
+    },
+    {
+      "tr": "Ealimotumo",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "yaEolamahu,",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "layaEolamu",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "walitaEolama",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "Ealimotu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "faEalimuw^A@",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "falayaEolaman~a",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "Ealimati",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "naEolama",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "taEolamuwhumo",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "tr": "wanaEolamu",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "Ealimotumuwhun~a",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "t~aEolamuwna",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "lanaEolamu",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "l~iyaEolama",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "yaEolam",
+      "ty": "jussive",
+      "n": 1
+    }
+  ],
+  "5": [
+    {
+      "tr": "jaEala",
+      "ty": "perfect",
+      "n": 44
+    },
+    {
+      "tr": "wajaEalonaA",
+      "ty": "perfect",
+      "n": 36
+    },
+    {
+      "tr": "wajaEala",
+      "ty": "perfect",
+      "n": 29
+    },
+    {
+      "tr": "jaEalonaA",
+      "ty": "perfect",
+      "n": 28
+    },
+    {
+      "tr": "jaEalona`hu",
+      "ty": "perfect",
+      "n": 7
+    },
+    {
+      "tr": "wajaEaluwA@",
+      "ty": "perfect",
+      "n": 7
+    },
+    {
+      "tr": "tajoEaluwA@",
+      "ty": "jussive",
+      "n": 5
+    },
+    {
+      "tr": "wa{joEal",
+      "ty": "imperative",
+      "n": 5
+    },
+    {
+      "tr": "jaEalakumo",
+      "ty": "perfect",
+      "n": 5
+    },
+    {
+      "tr": "wajaEalona`humo",
+      "ty": "perfect",
+      "n": 5
+    },
+    {
+      "tr": "yajoEala",
+      "ty": "subjunctive",
+      "n": 4
+    },
+    {
+      "tr": "yajoEalu",
+      "ty": "imperfect",
+      "n": 4
+    },
+    {
+      "tr": "yajoEal",
+      "ty": "jussive",
+      "n": 4
+    },
+    {
+      "tr": "tajoEalo",
+      "ty": "jussive",
+      "n": 4
+    },
+    {
+      "tr": "wajaEalaniY",
+      "ty": "perfect",
+      "n": 4
+    },
+    {
+      "tr": "wayajoEal",
+      "ty": "jussive",
+      "n": 4
+    },
+    {
+      "tr": "{joEalo",
+      "ty": "imperative",
+      "n": 3
+    },
+    {
+      "tr": "{joEal",
+      "ty": "imperative",
+      "n": 3
+    },
+    {
+      "tr": "jaEalona`ka",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "tr": "tajoEalonaA",
+      "ty": "jussive",
+      "n": 3
+    },
+    {
+      "tr": "jaEalahu,",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "tr": "wayajoEaluwna",
+      "ty": "imperfect",
+      "n": 3
+    },
+    {
+      "tr": "wajaEalona`hu",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "tr": "najoEal",
+      "ty": "jussive",
+      "n": 3
+    },
+    {
+      "tr": "najoEalu",
+      "ty": "imperfect",
+      "n": 3
+    },
+    {
+      "tr": "jaEalona`haA",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "tr": "fajaEalona`humo",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "tr": "fajaEalona`hu",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "tr": "fajaEalahu,",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "tr": "yajoEaluwna",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "tr": "fajaEalona`haA",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "wa{joEalonaA",
+      "ty": "imperative",
+      "n": 2
+    },
+    {
+      "tr": "jaEalona`kumo",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "jaEalahu",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "liyajoEala",
+      "ty": "subjunctive",
+      "n": 2
+    },
+    {
+      "tr": "wayajoEala",
+      "ty": "subjunctive",
+      "n": 2
+    },
+    {
+      "tr": "lajaEalakumo",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "yajoEalo",
+      "ty": "jussive",
+      "n": 2
+    },
+    {
+      "tr": "tajoEaloniY",
+      "ty": "jussive",
+      "n": 2
+    },
+    {
+      "tr": "wayajoEalu",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "tr": "{joEaloniY",
+      "ty": "imperative",
+      "n": 2
+    },
+    {
+      "tr": "jaEaluwA@",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "fa{joEalo",
+      "ty": "imperative",
+      "n": 2
+    },
+    {
+      "tr": "wajaEalona`kumo",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "sayajoEalu",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "tr": "jaEalona`humo",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "fajaEalahumo",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "fajaEalona`humu",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "wajaEalona`haA",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "yajoEaluhu,",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "tr": "watajoEaluwna",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "tr": "fajaEala",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "najoEali",
+      "ty": "jussive",
+      "n": 2
+    },
+    {
+      "tr": ">atajoEalu",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "walinajoEalaka",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "fanajoEal",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "tr": "wajaEalakum",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "l~ajaEalona`hu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "yajoEalohu",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "tr": "tajoEaluwnahu,",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "jaEalaA",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "fayajoEalahu,",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": ">ajaEalotumo",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "fajaEalotum",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "wa{joEaluwA@",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "tr": "lajaEala",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "yajoEaluwhu",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "{joEaluwA@",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "tr": "jaEalahaA",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "fajaEalonaA",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "jaEalotumu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "juEila",
+      "ty": "passive",
+      "n": 1
+    },
+    {
+      "tr": "wajaEalonaA^",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "n~ajoEala",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "tajoEala",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": ">ajoEalo",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "tr": "wa{joEalohu",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "tr": "walinajoEalahu,^",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "yajoEaloniY",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "tr": "l~iyajoEala",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "yajoEali",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "tr": "lajaEalahu,",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "la>ajoEalan~aka",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "wa{joEaloniY",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "tr": "wajaEaluw^A@",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "wayajoEalukumo",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "wanajoEalahumo",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "wanajoEalahumu",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "wanajoEalu",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "fa{joEal",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "tr": "najoEaluhaA",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "wajaEalona`haA^",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "wayajoEaluhu,",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "wanajoEala",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": ">ajaEala",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "najoEalohumaA",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "tr": "lajaEalahumo",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "wajaEalahaA",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "l~ajaEalonaA",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": ">ajaEalonaA",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "lajaEalonaA",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "n~ajoEalahumo",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "jaEalatohu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "fajaEalona`hun~a",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "lajaEalona`hu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "jaEalakum",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": ">afanajoEalu",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "linajoEalahaA",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "jaEaluw^A@",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "wajaEalotu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "jaEalonaA^",
+      "ty": "perfect",
+      "n": 1
+    }
+  ],
+  "6": [
+    {
+      "tr": "kafaruwA@",
+      "ty": "perfect",
+      "n": 166
+    },
+    {
+      "tr": "kafaruw^A@",
+      "ty": "perfect",
+      "n": 23
+    },
+    {
+      "tr": "kafara",
+      "ty": "perfect",
+      "n": 18
+    },
+    {
+      "tr": "yakofuruwna",
+      "ty": "imperfect",
+      "n": 12
+    },
+    {
+      "tr": "takofuruwna",
+      "ty": "imperfect",
+      "n": 11
+    },
+    {
+      "tr": "yakofuro",
+      "ty": "jussive",
+      "n": 8
+    },
+    {
+      "tr": "kafarotumo",
+      "ty": "perfect",
+      "n": 4
+    },
+    {
+      "tr": "yakofuruwA@",
+      "ty": "subjunctive",
+      "n": 3
+    },
+    {
+      "tr": "yakofuru",
+      "ty": "imperfect",
+      "n": 3
+    },
+    {
+      "tr": "takofuruwA@",
+      "ty": "jussive",
+      "n": 3
+    },
+    {
+      "tr": "liyakofuruwA@",
+      "ty": "subjunctive",
+      "n": 3
+    },
+    {
+      "tr": "fakafaruwA@",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "tr": "kafarotum",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "wakafaruwA@",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "kafaronaA",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "watakofuruwna",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "wayakofuruwna",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "takofuro",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "tr": "takofuruwni",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "tr": "wa{kofuruw^A@",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "tr": ">akafarotum",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "yukofaruwhu",
+      "ty": "passive",
+      "n": 1
+    },
+    {
+      "tr": "yukofaru",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "wanakofuru",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "takofuruw^A@",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "kafarotu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "fakafarato",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "faloyakofuro",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "tr": ">akafarota",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "sayakofuruwna",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": ">akofuru",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "n~akofura",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "fatakofuruwna",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "li>akofura",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "wakafaronaA",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "latakofuruwna",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "wakafarotum",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "kufira",
+      "ty": "passive",
+      "n": 1
+    },
+    {
+      "tr": "{kofuro",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "tr": "wakafarat",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "wakafara",
+      "ty": "perfect",
+      "n": 1
+    }
+  ],
+  "7": [
+    {
+      "tr": "jaA^'a",
+      "ty": "perfect",
+      "n": 57
+    },
+    {
+      "tr": "jaA^'ahumo",
+      "ty": "perfect",
+      "n": 15
+    },
+    {
+      "tr": "jaA^'ahum",
+      "ty": "perfect",
+      "n": 15
+    },
+    {
+      "tr": "jaA^'akumo",
+      "ty": "perfect",
+      "n": 11
+    },
+    {
+      "tr": "jaA^'aka",
+      "ty": "perfect",
+      "n": 11
+    },
+    {
+      "tr": "jaA^'ahumu",
+      "ty": "perfect",
+      "n": 11
+    },
+    {
+      "tr": "jaA^'atohumo",
+      "ty": "perfect",
+      "n": 11
+    },
+    {
+      "tr": "jaA^'akum",
+      "ty": "perfect",
+      "n": 10
+    },
+    {
+      "tr": "wajaA^'a",
+      "ty": "perfect",
+      "n": 10
+    },
+    {
+      "tr": "jaA^'ato",
+      "ty": "perfect",
+      "n": 8
+    },
+    {
+      "tr": "jaA^'atohumu",
+      "ty": "perfect",
+      "n": 7
+    },
+    {
+      "tr": "jaA^'uw",
+      "ty": "perfect",
+      "n": 6
+    },
+    {
+      "tr": "jaA^'anaA",
+      "ty": "perfect",
+      "n": 6
+    },
+    {
+      "tr": "ji}ota",
+      "ty": "perfect",
+      "n": 5
+    },
+    {
+      "tr": "jaA^'uwka",
+      "ty": "perfect",
+      "n": 5
+    },
+    {
+      "tr": ">aji}otanaA",
+      "ty": "perfect",
+      "n": 5
+    },
+    {
+      "tr": "ji}otukum",
+      "ty": "perfect",
+      "n": 4
+    },
+    {
+      "tr": "ji}onaA",
+      "ty": "perfect",
+      "n": 4
+    },
+    {
+      "tr": "jaA^'akumu",
+      "ty": "perfect",
+      "n": 4
+    },
+    {
+      "tr": "jaA^'ahu,",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "tr": "waji}onaA",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "tr": "jaA^'atokum",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "tr": "wajaA^'ato",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "tr": "ji}ona`ka",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "tr": "jaA^'uwhaA",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "tr": "wajaA^'ahumu",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "jaA^'uwkumo",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "ji}otahum",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "ji}otumuwnaA",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "wajaA^'uw",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "ji}otanaA",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "wajaA^'atohumo",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "fajaA^'uwhum",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "jaA^'ahu",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "jaA^'aniY",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "jaA^'ahaA",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "jaA^'ahu,^",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "wajiA@Y^'a",
+      "ty": "passive",
+      "n": 2
+    },
+    {
+      "tr": "jaA^'ati",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "jaA^'atokumu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "jaA^'atohu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "waji}otukum",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "fajaA^'ahaA",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "ji}ona`hum",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "jaA^'atonaA",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "jaA^'atohaA",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "ji}otum",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "wajaA^'atohu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "wajaA^'ahu,",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "wajaA^'aka",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "wajaA^'uw^",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "fa>ajaA^'ahaA",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "ji}oti",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "ji}otumo",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "ji}otuka",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "waji}otuka",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "fajaA^'atohu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "l~ajaA^'ahumu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "jaA^'atokumo",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "jaA^'uwkum",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "wajaA^'akumu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "jaA^'atoka",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "jaA^'aniYa",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "ji}ona`kum",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "wajaA^'ahumo",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "fajaA^'a",
+      "ty": "perfect",
+      "n": 1
+    }
+  ],
+  "8": [
+    {
+      "tr": "taEomaluwna",
+      "ty": "imperfect",
+      "n": 83
+    },
+    {
+      "tr": "yaEomaluwna",
+      "ty": "imperfect",
+      "n": 56
+    },
+    {
+      "tr": "waEamiluwA@",
+      "ty": "perfect",
+      "n": 53
+    },
+    {
+      "tr": "EamiluwA@",
+      "ty": "perfect",
+      "n": 18
+    },
+    {
+      "tr": "waEamila",
+      "ty": "perfect",
+      "n": 11
+    },
+    {
+      "tr": "Eamila",
+      "ty": "perfect",
+      "n": 8
+    },
+    {
+      "tr": "yaEomalo",
+      "ty": "jussive",
+      "n": 7
+    },
+    {
+      "tr": "{EomaluwA@",
+      "ty": "imperative",
+      "n": 6
+    },
+    {
+      "tr": "Eamilato",
+      "ty": "perfect",
+      "n": 5
+    },
+    {
+      "tr": "naEomalu",
+      "ty": "imperfect",
+      "n": 3
+    },
+    {
+      "tr": "yaEomalu",
+      "ty": "imperfect",
+      "n": 3
+    },
+    {
+      "tr": ">aEomalu",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "tr": "wa{EomaluwA@",
+      "ty": "imperative",
+      "n": 2
+    },
+    {
+      "tr": ">aEomala",
+      "ty": "subjunctive",
+      "n": 2
+    },
+    {
+      "tr": "Eamiluw^A@",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "naEomalo",
+      "ty": "jussive",
+      "n": 2
+    },
+    {
+      "tr": "wayaEomalo",
+      "ty": "jussive",
+      "n": 2
+    },
+    {
+      "tr": "fanaEomala",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "faloyaEomalo",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "tr": "t~aEomalu",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "wayaEomaluwna",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "wataEomalo",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "tr": "{Eomalo",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "tr": "{Eomaluw^A@",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "tr": "Eamilatohu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "faloyaEomali",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "tr": "fa{Eomalo",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "tr": "Eamilotumo",
+      "ty": "perfect",
+      "n": 1
+    }
+  ],
+  "9": [
+    {
+      "tr": ">uwtuwA@",
+      "ty": "passive",
+      "n": 31
+    },
+    {
+      "tr": "'aAtayonaA",
+      "ty": "perfect",
+      "n": 17
+    },
+    {
+      "tr": ">uwtiYa",
+      "ty": "passive",
+      "n": 14
+    },
+    {
+      "tr": "wa'aAtuwA@",
+      "ty": "imperative",
+      "n": 11
+    },
+    {
+      "tr": "wa'aAtayona`hu",
+      "ty": "perfect",
+      "n": 9
+    },
+    {
+      "tr": "'aAtayona`humu",
+      "ty": "perfect",
+      "n": 8
+    },
+    {
+      "tr": "wa'aAtayonaA",
+      "ty": "perfect",
+      "n": 7
+    },
+    {
+      "tr": "'aAtayona`humo",
+      "ty": "perfect",
+      "n": 6
+    },
+    {
+      "tr": "yu&otiyhi",
+      "ty": "imperfect",
+      "n": 5
+    },
+    {
+      "tr": "'aAtaY`humu",
+      "ty": "perfect",
+      "n": 5
+    },
+    {
+      "tr": "wayu&otuwna",
+      "ty": "imperfect",
+      "n": 5
+    },
+    {
+      "tr": "'aAtayona`hu",
+      "ty": "perfect",
+      "n": 5
+    },
+    {
+      "tr": "'aAtinaA",
+      "ty": "imperative",
+      "n": 4
+    },
+    {
+      "tr": "'aAtayotumuwhun~a",
+      "ty": "perfect",
+      "n": 4
+    },
+    {
+      "tr": "wa'aAtawuA@",
+      "ty": "perfect",
+      "n": 4
+    },
+    {
+      "tr": "'aAtaY`kumo",
+      "ty": "perfect",
+      "n": 4
+    },
+    {
+      "tr": "'aAtayona`kum",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "tr": "wa'aAtaY",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "tr": "'aAtayotum",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "tr": "yu&otiY",
+      "ty": "imperfect",
+      "n": 3
+    },
+    {
+      "tr": "nu&otihi.",
+      "ty": "jussive",
+      "n": 3
+    },
+    {
+      "tr": "yu&otuwna",
+      "ty": "imperfect",
+      "n": 3
+    },
+    {
+      "tr": "wa'aAtayona`hum",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "tr": "yu&otikumo",
+      "ty": "jussive",
+      "n": 3
+    },
+    {
+      "tr": ">uwtiytum",
+      "ty": "passive",
+      "n": 3
+    },
+    {
+      "tr": "'aAtayona`hum",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "yu&ota",
+      "ty": "passive",
+      "n": 2
+    },
+    {
+      "tr": "'aAtaY`hu",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": ">uwtiytumo",
+      "ty": "passive",
+      "n": 2
+    },
+    {
+      "tr": "fa_#aAtuwhun~a",
+      "ty": "imperative",
+      "n": 2
+    },
+    {
+      "tr": "wayu&oti",
+      "ty": "jussive",
+      "n": 2
+    },
+    {
+      "tr": "'aAtayonaA^",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "nu&otiyhi",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "tr": "yu&oti",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "tr": "wa'aAtaY`kum",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "'aAtaY`humaA",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "tr": "'aAtayota",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "wa'aAtaY`niY",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "'aAtayona`ka",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "wa'aAtuwhum",
+      "ty": "imperative",
+      "n": 2
+    },
+    {
+      "tr": "wa>uwtiynaA",
+      "ty": "passive",
+      "n": 2
+    },
+    {
+      "tr": ">uwtiytuhu,",
+      "ty": "passive",
+      "n": 2
+    },
+    {
+      "tr": "'aAtaY`humo",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": ">uwtuwhu",
+      "ty": "passive",
+      "n": 1
+    },
+    {
+      "tr": "wa'aAtaY`hu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "fa_#aAtato",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "watu&otuwhaA",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "tr": "tu&otiY",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "yu&otaY`^",
+      "ty": "passive",
+      "n": 1
+    },
+    {
+      "tr": "yu&otiyahu",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "'aAtayotukum",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "fa_#aAtaY`humu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "wa'aAtinaA",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "tr": "tu&otuwA@",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "tr": "wa'aAtayotumo",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "wa'aAtuwhun~a",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "tr": "fa_#aAtuwhumo",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "tr": "l~a'aAtayona`hum",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "tu&otuwnahun~a",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "yu&otiyhimo",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "sanu&otiyhimo",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "wa'aAtayotumu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "tu&otawohu",
+      "ty": "passive",
+      "n": 1
+    },
+    {
+      "tr": ">uwtuw^A@",
+      "ty": "passive",
+      "n": 1
+    },
+    {
+      "tr": "'aAtayona`haA^",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "nu&otaY`",
+      "ty": "passive",
+      "n": 1
+    },
+    {
+      "tr": "fa_#aAtihimo",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "tr": "'aAtayotuka",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "'aAtayotanaA",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "sayu&otiynaA",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "'aAtaY`naA",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "'aAtaY`hum",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "yu&otiyahumu",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "wa'aAtato",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "tu&otuwni",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "'aAtawohu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "'aAtayotaniY",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "tu&otiY^",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "wa'aAtayona`humo",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "wa'aAti",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "tr": "'aAtato",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "yu&otiyani",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "'aAtuwniY",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "tr": "'aAtuwniY^",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "tr": "'aAtaY`niYa",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "la>uwtayan~a",
+      "ty": "passive",
+      "n": 1
+    },
+    {
+      "tr": ">uwtiyta",
+      "ty": "passive",
+      "n": 1
+    },
+    {
+      "tr": "'aAtawA@",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "yu&otuw^A@",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "wa>uwtiyato",
+      "ty": "passive",
+      "n": 1
+    },
+    {
+      "tr": "'aAtaY`ni.a",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "'aAtaY`kum",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "yu&otawona",
+      "ty": "passive",
+      "n": 1
+    },
+    {
+      "tr": "'aAtaY`ka",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "fa_#aAti",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "tr": "la'aAtayonaA",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "la'aAtawohaA",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "n~u&otihaA^",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "tr": "wa'aAtiyna",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "tr": "'aAtayotahun~a",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "'aAtihimo",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "tr": "wa'aAtayona`humaA",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "wa'aAtaY`humo",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "fasayu&otiyhi",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "yu&otikumu",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "tr": "fa_#aAtayonaA",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "'aAtaY`kumu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "fa_#aAtuwA@",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "tr": "'aAtaY`haA",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": ">uwta",
+      "ty": "passive",
+      "n": 1
+    },
+    {
+      "tr": "yu&otaY`",
+      "ty": "passive",
+      "n": 1
+    },
+    {
+      "tr": "wayu&otuwA@",
+      "ty": "subjunctive",
+      "n": 1
+    }
+  ],
+  "10": [
+    {
+      "tr": "tara",
+      "ty": "jussive",
+      "n": 31
+    },
+    {
+      "tr": "yarawoA@",
+      "ty": "jussive",
+      "n": 24
+    },
+    {
+      "tr": ">ara'ayotumo",
+      "ty": "perfect",
+      "n": 12
+    },
+    {
+      "tr": "wataraY",
+      "ty": "imperfect",
+      "n": 10
+    },
+    {
+      "tr": "yarawona",
+      "ty": "imperfect",
+      "n": 8
+    },
+    {
+      "tr": "taraY`^",
+      "ty": "imperfect",
+      "n": 8
+    },
+    {
+      "tr": "ra'aA",
+      "ty": "perfect",
+      "n": 8
+    },
+    {
+      "tr": "taraY`",
+      "ty": "imperfect",
+      "n": 6
+    },
+    {
+      "tr": ">ara'ayota",
+      "ty": "perfect",
+      "n": 6
+    },
+    {
+      "tr": "ra>awoA@",
+      "ty": "perfect",
+      "n": 6
+    },
+    {
+      "tr": "naraY`",
+      "ty": "imperfect",
+      "n": 5
+    },
+    {
+      "tr": "ra>ayota",
+      "ty": "perfect",
+      "n": 5
+    },
+    {
+      "tr": "fataraY",
+      "ty": "imperfect",
+      "n": 5
+    },
+    {
+      "tr": "taraY",
+      "ty": "imperfect",
+      "n": 5
+    },
+    {
+      "tr": ">araY`",
+      "ty": "imperfect",
+      "n": 4
+    },
+    {
+      "tr": "ra>awuA@",
+      "ty": "perfect",
+      "n": 4
+    },
+    {
+      "tr": "naraY`ka",
+      "ty": "subjunctive",
+      "n": 4
+    },
+    {
+      "tr": ">afara'ayota",
+      "ty": "perfect",
+      "n": 4
+    },
+    {
+      "tr": "ra>ayotahumo",
+      "ty": "perfect",
+      "n": 4
+    },
+    {
+      "tr": ">afara'ayotum",
+      "ty": "perfect",
+      "n": 4
+    },
+    {
+      "tr": "lanaraY`ka",
+      "ty": "imperfect",
+      "n": 3
+    },
+    {
+      "tr": "tarawohaA",
+      "ty": "jussive",
+      "n": 3
+    },
+    {
+      "tr": "yarawuA@",
+      "ty": "subjunctive",
+      "n": 3
+    },
+    {
+      "tr": "tarawonahaA",
+      "ty": "imperfect",
+      "n": 3
+    },
+    {
+      "tr": "ra'aAhu",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "tr": "yaraY`",
+      "ty": "subjunctive",
+      "n": 3
+    },
+    {
+      "tr": ">afara'ayotumu",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "tr": "wara>awuA@",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": ">araY`kum",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": ">araY`ka",
+      "ty": "subjunctive",
+      "n": 2
+    },
+    {
+      "tr": "wataraY`",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "tr": ">ara'ayotakumo",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "taraY`niY",
+      "ty": "subjunctive",
+      "n": 2
+    },
+    {
+      "tr": "wataraY`humo",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "tr": "tarawona",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "tr": ">ara'ayotum",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": ">araY`kumo",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "tr": ">araY`niY^",
+      "ty": "subjunctive",
+      "n": 2
+    },
+    {
+      "tr": "yara",
+      "ty": "jussive",
+      "n": 2
+    },
+    {
+      "tr": "yarawonahaA",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "tr": "ra'aAhaA",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "tarawoA@",
+      "ty": "jussive",
+      "n": 2
+    },
+    {
+      "tr": "fara'aAhu",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "fataraY`hu",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "tr": "ra>awohu",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "yarahu,",
+      "ty": "jussive",
+      "n": 2
+    },
+    {
+      "tr": "naraY",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "yaraY",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "yarawonahum",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "ra>ayotumuwhu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "yaraY`kumo",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "tarawonahumo",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "wara>awoA@",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": ">araY`kahumo",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "wasayaraY",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "fasayaraY",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "yaraY`kum",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "ra'aA^",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "ra>ayotu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "ra>ayotuhumo",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "r~a'aA",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "lanaraY`haA",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "ra>ayonahu,^",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": ">ara'ayotaka",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "tarani",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "tr": "wara'aA",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "tarayin~a",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "wa>araY`",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "ra'aAka",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "yaraY`haA",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "ra>atohum",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "ra>awoka",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "yaraY`ka",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": ">araY",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "ra>atohu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "fara>awohu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "wayaraY",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "yuraY`^",
+      "ty": "passive",
+      "n": 1
+    },
+    {
+      "tr": "taraY`humo",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "ra>aY`^",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "ra>aY`",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "yaraY`^",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "yuraY`",
+      "ty": "passive",
+      "n": 1
+    },
+    {
+      "tr": "l~ara>ayotahu,",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "wara>ayotahumo",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "ra>awohaA",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "yarawonahu,",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "wanaraY`hu",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "fa>araY`hu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "ra>awohumo",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "yarahu,^",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "tr": "r~a'aAhu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "latarawun~a",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "latarawun~ahaA",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "wara>ayota",
+      "ty": "perfect",
+      "n": 1
+    }
+  ],
+  "11": [
+    {
+      "tr": "ya>otiYa",
+      "ty": "subjunctive",
+      "n": 14
+    },
+    {
+      "tr": "ya>oti",
+      "ty": "jussive",
+      "n": 10
+    },
+    {
+      "tr": "fa>otuwA@",
+      "ty": "imperative",
+      "n": 9
+    },
+    {
+      "tr": "ya>otiY",
+      "ty": "imperfect",
+      "n": 7
+    },
+    {
+      "tr": ">ataY`ka",
+      "ty": "perfect",
+      "n": 6
+    },
+    {
+      "tr": "ya>otiyna",
+      "ty": "imperfect",
+      "n": 5
+    },
+    {
+      "tr": "ya>otiykum",
+      "ty": "imperfect",
+      "n": 5
+    },
+    {
+      "tr": "ya>otikumo",
+      "ty": "jussive",
+      "n": 5
+    },
+    {
+      "tr": "ta>otiyahumu",
+      "ty": "subjunctive",
+      "n": 5
+    },
+    {
+      "tr": "{}otuwniY",
+      "ty": "imperative",
+      "n": 5
+    },
+    {
+      "tr": "ya>otiyhim",
+      "ty": "imperfect",
+      "n": 5
+    },
+    {
+      "tr": "fa>oti",
+      "ty": "imperative",
+      "n": 4
+    },
+    {
+      "tr": "ya>otuwka",
+      "ty": "jussive",
+      "n": 4
+    },
+    {
+      "tr": "ya>otuwA@",
+      "ty": "subjunctive",
+      "n": 4
+    },
+    {
+      "tr": "{}otinaA",
+      "ty": "imperative",
+      "n": 4
+    },
+    {
+      "tr": "lata>otuwna",
+      "ty": "imperfect",
+      "n": 4
+    },
+    {
+      "tr": "ya>otuwna",
+      "ty": "imperfect",
+      "n": 4
+    },
+    {
+      "tr": "ya>otiyhi",
+      "ty": "imperfect",
+      "n": 4
+    },
+    {
+      "tr": "'aAtiykum",
+      "ty": "imperfect",
+      "n": 4
+    },
+    {
+      "tr": "ya>otiyahumu",
+      "ty": "subjunctive",
+      "n": 3
+    },
+    {
+      "tr": "ya>otiyakumu",
+      "ty": "subjunctive",
+      "n": 3
+    },
+    {
+      "tr": "waya>oti",
+      "ty": "jussive",
+      "n": 3
+    },
+    {
+      "tr": "ta>otiyhim",
+      "ty": "imperfect",
+      "n": 3
+    },
+    {
+      "tr": ">ataY`humo",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "tr": ">ataY`kumo",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "tr": "fa>otinaA",
+      "ty": "imperative",
+      "n": 3
+    },
+    {
+      "tr": ">ata>otuwna",
+      "ty": "imperfect",
+      "n": 3
+    },
+    {
+      "tr": "ya>otihimo",
+      "ty": "jussive",
+      "n": 3
+    },
+    {
+      "tr": ">ataY`",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "tr": "ya>otiyan~akum",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "tr": "ya>otiyhimo",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "tr": "ya>otiyahum",
+      "ty": "subjunctive",
+      "n": 2
+    },
+    {
+      "tr": "ta>otiyhimo",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "tr": "ta>otiykumo",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "tr": "ta>otihim",
+      "ty": "jussive",
+      "n": 2
+    },
+    {
+      "tr": "{}oti",
+      "ty": "imperative",
+      "n": 2
+    },
+    {
+      "tr": "wa>otuwniY",
+      "ty": "imperative",
+      "n": 2
+    },
+    {
+      "tr": "ta>otiyahumo",
+      "ty": "subjunctive",
+      "n": 2
+    },
+    {
+      "tr": "na>otiY",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "tr": "ta>otiynaA",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "tr": "ta>otiY",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "tr": ">ataY`haA",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "{}otuwA@",
+      "ty": "imperative",
+      "n": 2
+    },
+    {
+      "tr": ">atayonaA",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "ya>otiyahumo",
+      "ty": "subjunctive",
+      "n": 2
+    },
+    {
+      "tr": ">atayona`hum",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": ">atawoA@",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": ">ataY",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "'aAtiyka",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "tr": ">ataY`hum",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "fa>ataY`humu",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "t~a>otiyhimo",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "tr": "ta>otiyahum",
+      "ty": "subjunctive",
+      "n": 2
+    },
+    {
+      "tr": "faloya>otuwA@",
+      "ty": "jussive",
+      "n": 2
+    },
+    {
+      "tr": "wa>utuwA@",
+      "ty": "passive",
+      "n": 1
+    },
+    {
+      "tr": "ya>otuwkumo",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "na>oti",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "tr": "ta>otiynaA^",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": ">atayota",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "ta>otuwA@",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "wa>otuwA@",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "tr": "ya>otikum",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "tr": "fa>otuwhun~a",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "tr": "ya>otiynaka",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "waya>otuwkum",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "tr": "ya>otiyanaA",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": ">atawA@",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "ya>otiya`nihaA",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": ">atayona",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "walota>oti",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "tr": "fata>otiyahum",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": ">atatokumu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "la'aAtiyan~ahum",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "ya>otiyan~akumo",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "ta>otiyanaA",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "ta>otinaA",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "tr": "fa>atawoA@",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": ">atatohumo",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": ">atawoka",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": ">ataY`haA^",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "ya>otiykumaA",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "ya>otiyakumaA",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "ta>otuwniY",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "tr": "lata>otun~aniY",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "ya>otiyaniY",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "fa>otuwnaA",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "tr": "n~a>otiyakum",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "waya>otiyhi",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "ya>otiyhimu",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "wa>atayona`ka",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "ya>otiyaka",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": ">ataY`^",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "fa>ataY",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "wa>ataY`humu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "ya>otiyhaA",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "ta>otiYa",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "faloya>otikum",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "tr": ">atayaA^",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "fa>atato",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "ya>otuwnanaA",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "ya>otika",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "tr": "waya>otiynaA",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "fa>otiyaAhu",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "tr": "falana>otiyan~aka",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "ya>otihi.",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "tr": ">atatoka",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "ya>otiynaA",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": ">afata>otuwna",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "faloya>otinaA",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "tr": "ya>otuw^A@",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "ya>otuwnaka",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "fasaya>otiyhimo",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "fa>otiyaA",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "tr": "faya>otiyahum",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": "sa_#aAtiykum",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "laya>otiyan~iY",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "falana>otiyan~ahum",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "ya>otiyniY",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "ya>otuwniY",
+      "ty": "subjunctive",
+      "n": 1
+    },
+    {
+      "tr": ">atawohu",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "wata>otuwna",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "walaya>otiyan~ahum",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "lata>otiyan~akumo",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "ta>otuwnanaA",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "{}otiyaA",
+      "ty": "imperative",
+      "n": 1
+    },
+    {
+      "tr": "ya>otiY^",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": ">atato",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "faloya>oti",
+      "ty": "jussive",
+      "n": 1
+    },
+    {
+      "tr": ">ataY`naA",
+      "ty": "perfect",
+      "n": 1
+    },
+    {
+      "tr": "fata>otuwna",
+      "ty": "imperfect",
+      "n": 1
+    }
+  ],
+  "12": [
+    {
+      "tr": "ya$aA^'u",
+      "ty": "imperfect",
+      "n": 108
+    },
+    {
+      "tr": "$aA^'a",
+      "ty": "perfect",
+      "n": 56
+    },
+    {
+      "tr": "na$aA^'u",
+      "ty": "imperfect",
+      "n": 11
+    },
+    {
+      "tr": "ta$aA^'u",
+      "ty": "imperfect",
+      "n": 9
+    },
+    {
+      "tr": "ya$a>o",
+      "ty": "jussive",
+      "n": 8
+    },
+    {
+      "tr": "ya$aA^'a",
+      "ty": "subjunctive",
+      "n": 8
+    },
+    {
+      "tr": "n~a$aA^'u",
+      "ty": "imperfect",
+      "n": 7
+    },
+    {
+      "tr": "$i}onaA",
+      "ty": "perfect",
+      "n": 5
+    },
+    {
+      "tr": "ya$aA^'uwna",
+      "ty": "imperfect",
+      "n": 5
+    },
+    {
+      "tr": "$i}otumo",
+      "ty": "perfect",
+      "n": 4
+    },
+    {
+      "tr": "$i}ota",
+      "ty": "perfect",
+      "n": 3
+    },
+    {
+      "tr": "n~a$a>o",
+      "ty": "jussive",
+      "n": 3
+    },
+    {
+      "tr": "$i}otumaA",
+      "ty": "perfect",
+      "n": 2
+    },
+    {
+      "tr": "ya$a<i",
+      "ty": "jussive",
+      "n": 2
+    },
+    {
+      "tr": "ta$aA^'uwna",
+      "ty": "imperfect",
+      "n": 2
+    },
+    {
+      "tr": ">a$aA^'u",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "na$a`^&uA@",
+      "ty": "imperfect",
+      "n": 1
+    },
+    {
+      "tr": "$i}otum",
+      "ty": "perfect",
+      "n": 1
+    }
+  ]
+}

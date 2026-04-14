@@ -22,6 +22,9 @@ function localizePages(paths: string[]) {
 }
 
 const config = defineConfig({
+  server: {
+    allowedHosts: true,
+  },
   plugins: [
     devtools(),
     paraglideVitePlugin({

@@ -1,0 +1,8466 @@
+{
+  "1": [
+    {
+      "ar": "قَالَ",
+      "tr": "qāla",
+      "ty": "perfect",
+      "n": 414,
+      "mn": {
+        "en": "he said",
+        "bn": "সে বলেছে"
+      }
+    },
+    {
+      "ar": "قُل",
+      "tr": "qul",
+      "ty": "imperative",
+      "n": 263,
+      "mn": {
+        "en": "say!",
+        "bn": "বলো!"
+      }
+    },
+    {
+      "ar": "قَالُو",
+      "tr": "qālūā",
+      "ty": "perfect",
+      "n": 250,
+      "mn": {
+        "en": "they said",
+        "bn": "তারা বলেছে"
+      }
+    },
+    {
+      "ar": "وَقَالَ",
+      "tr": "waqāla",
+      "ty": "perfect",
+      "n": 86,
+      "mn": {
+        "en": "and he said",
+        "bn": "এবং সে বলেছে"
+      }
+    },
+    {
+      "ar": "وَقَالُو",
+      "tr": "waqālūā",
+      "ty": "perfect",
+      "n": 60,
+      "mn": {
+        "en": "and they said",
+        "bn": "এবং তারা বলেছে"
+      }
+    },
+    {
+      "ar": "يَقُولُونَ",
+      "tr": "yaqūlūna",
+      "ty": "imperfect",
+      "n": 51,
+      "mn": {
+        "en": "they say",
+        "bn": "তারা বলে"
+      }
+    },
+    {
+      "ar": "يَقُولُ",
+      "tr": "yaqūlu",
+      "ty": "imperfect",
+      "n": 35,
+      "mn": {
+        "en": "he says",
+        "bn": "সে বলে"
+      }
+    },
+    {
+      "ar": "قِيلَ",
+      "tr": "qīla",
+      "ty": "passive",
+      "n": 34,
+      "mn": {
+        "en": "it was said",
+        "bn": "বলা হয়েছে"
+      }
+    },
+    {
+      "ar": "قُلِ",
+      "tr": "quli",
+      "ty": "imperative",
+      "n": 30,
+      "mn": {
+        "en": "say!",
+        "bn": "বলো!"
+      }
+    },
+    {
+      "ar": "وَيَقُولُونَ",
+      "tr": "wayaqūlūna",
+      "ty": "imperfect",
+      "n": 28,
+      "mn": {
+        "en": "and they say",
+        "bn": "এবং তারা বলে"
+      }
+    },
+    {
+      "ar": "فَقَالَ",
+      "tr": "faqāla",
+      "ty": "perfect",
+      "n": 27,
+      "mn": {
+        "en": "then he said",
+        "bn": "তারপর সে বলেছে"
+      }
+    },
+    {
+      "ar": "قَالَت",
+      "tr": "qālat",
+      "ty": "perfect",
+      "n": 24,
+      "mn": {
+        "en": "she said",
+        "bn": "সে বলেছে"
+      }
+    },
+    {
+      "ar": "فَقَالُو",
+      "tr": "faqālūā",
+      "ty": "perfect",
+      "n": 18,
+      "mn": {
+        "en": "then they said",
+        "bn": "তারপর তারা বলেছে"
+      }
+    },
+    {
+      "ar": "وَقُل",
+      "tr": "waqul",
+      "ty": "imperative",
+      "n": 17,
+      "mn": {
+        "en": "and say!",
+        "bn": "এবং বলো!"
+      }
+    },
+    {
+      "ar": "فَقُل",
+      "tr": "faqul",
+      "ty": "imperative",
+      "n": 16,
+      "mn": {
+        "en": "then say!",
+        "bn": "তারপর বলো!"
+      }
+    },
+    {
+      "ar": "وَقِيلَ",
+      "tr": "waqīla",
+      "ty": "passive",
+      "n": 15,
+      "mn": {
+        "en": "it was said",
+        "bn": "বলা হয়েছে"
+      }
+    },
+    {
+      "ar": "قُلنَ",
+      "tr": "qulnā",
+      "ty": "perfect",
+      "n": 15,
+      "mn": {
+        "en": "we said",
+        "bn": "আমরা বলেছি"
+      }
+    },
+    {
+      "ar": "تَقُولُو",
+      "tr": "taqūlūā",
+      "ty": "jussive",
+      "n": 15,
+      "mn": {
+        "en": "you (pl.) say",
+        "bn": "তোমরা বলো"
+      }
+    },
+    {
+      "ar": "فَيَقُولُ",
+      "tr": "fayaqūlu",
+      "ty": "imperfect",
+      "n": 12,
+      "mn": {
+        "en": "then he says",
+        "bn": "তারপর সে বলে"
+      }
+    },
+    {
+      "ar": "وَيَقُولُ",
+      "tr": "wayaqūlu",
+      "ty": "imperfect",
+      "n": 11,
+      "mn": {
+        "en": "and he says",
+        "bn": "এবং সে বলে"
+      }
+    },
+    {
+      "ar": "يَقُولُو",
+      "tr": "yaqūlūā",
+      "ty": "jussive",
+      "n": 11,
+      "mn": {
+        "en": "they say",
+        "bn": "তারা বলে"
+      }
+    },
+    {
+      "ar": "لَيَقُولُنَّ",
+      "tr": "layaqūluna",
+      "ty": "imperfect",
+      "n": 9,
+      "mn": {
+        "en": "surely he says",
+        "bn": "অবশ্যই সে বলে"
+      }
+    },
+    {
+      "ar": "قُلتُم",
+      "tr": "qultum",
+      "ty": "perfect",
+      "n": 9,
+      "mn": {
+        "en": "you (pl.) said",
+        "bn": "তোমরা বলেছ"
+      }
+    },
+    {
+      "ar": "وَقَالَتِ",
+      "tr": "waqālati",
+      "ty": "perfect",
+      "n": 8,
+      "mn": {
+        "en": "and she said",
+        "bn": "এবং সে বলেছে"
+      }
+    },
+    {
+      "ar": "وَقُولُو",
+      "tr": "waqūlūā",
+      "ty": "imperative",
+      "n": 8,
+      "mn": {
+        "en": "and say! (pl.)",
+        "bn": "এবং বলো!"
+      }
+    },
+    {
+      "ar": "وَقُلنَ",
+      "tr": "waqulnā",
+      "ty": "perfect",
+      "n": 8,
+      "mn": {
+        "en": "and we said",
+        "bn": "এবং আমরা বলেছি"
+      }
+    },
+    {
+      "ar": "أَقُولُ",
+      "tr": "ʾāqūlu",
+      "ty": "imperfect",
+      "n": 7,
+      "mn": {
+        "en": "I say",
+        "bn": "আমি বলি"
+      }
+    },
+    {
+      "ar": "فَقُلنَ",
+      "tr": "faqulnā",
+      "ty": "perfect",
+      "n": 6,
+      "mn": {
+        "en": "then we said",
+        "bn": "তারপর আমরা বলেছি"
+      }
+    },
+    {
+      "ar": "تَقُولُونَ",
+      "tr": "taqūlūna",
+      "ty": "imperfect",
+      "n": 6,
+      "mn": {
+        "en": "you (pl.) say",
+        "bn": "তোমরা বলো"
+      }
+    },
+    {
+      "ar": "نَقُولُ",
+      "tr": "naqūlu",
+      "ty": "imperfect",
+      "n": 6,
+      "mn": {
+        "en": "we say",
+        "bn": "আমরা বলি"
+      }
+    },
+    {
+      "ar": "تَقُولَ",
+      "tr": "taqūla",
+      "ty": "subjunctive",
+      "n": 6,
+      "mn": {
+        "en": "you say",
+        "bn": "তুমি বলো"
+      }
+    },
+    {
+      "ar": "قَالَتِ",
+      "tr": "qālati",
+      "ty": "perfect",
+      "n": 5,
+      "mn": {
+        "en": "she said",
+        "bn": "সে বলেছে"
+      }
+    },
+    {
+      "ar": "أَقُل",
+      "tr": "ʾāqul",
+      "ty": "jussive",
+      "n": 5,
+      "mn": {
+        "en": "I say",
+        "bn": "আমি বলি"
+      }
+    },
+    {
+      "ar": "يَقُولَ",
+      "tr": "yaqūla",
+      "ty": "subjunctive",
+      "n": 5,
+      "mn": {
+        "en": "he says",
+        "bn": "সে বলে"
+      }
+    },
+    {
+      "ar": "وَقَالَت",
+      "tr": "waqālat",
+      "ty": "perfect",
+      "n": 5,
+      "mn": {
+        "en": "and she said",
+        "bn": "এবং সে বলেছে"
+      }
+    },
+    {
+      "ar": "سَيَقُولُ",
+      "tr": "sayaqūlu",
+      "ty": "imperfect",
+      "n": 4,
+      "mn": {
+        "en": "will he says",
+        "bn": "শীঘ্রই সে বলে"
+      }
+    },
+    {
+      "ar": "تَقُولُ",
+      "tr": "taqūlu",
+      "ty": "imperfect",
+      "n": 4,
+      "mn": {
+        "en": "you say",
+        "bn": "তুমি বলো"
+      }
+    },
+    {
+      "ar": "لَيَقُولَنَّ",
+      "tr": "layaqūlana",
+      "ty": "imperfect",
+      "n": 4,
+      "mn": {
+        "en": "surely he says",
+        "bn": "অবশ্যই সে বলে"
+      }
+    },
+    {
+      "ar": "قُلتَ",
+      "tr": "qulta",
+      "ty": "perfect",
+      "n": 4,
+      "mn": {
+        "en": "you said",
+        "bn": "তুমি বলেছ"
+      }
+    },
+    {
+      "ar": "وَقُلِ",
+      "tr": "waquli",
+      "ty": "imperative",
+      "n": 4,
+      "mn": {
+        "en": "and say!",
+        "bn": "এবং বলো!"
+      }
+    },
+    {
+      "ar": "فَسَيَقُولُونَ",
+      "tr": "fasayaqūlūna",
+      "ty": "imperfect",
+      "n": 4,
+      "mn": {
+        "en": "then will they say",
+        "bn": "তারপর শীঘ্রই তারা বলে"
+      }
+    },
+    {
+      "ar": "سَيَقُولُونَ",
+      "tr": "sayaqūlūna",
+      "ty": "imperfect",
+      "n": 4,
+      "mn": {
+        "en": "will they say",
+        "bn": "শীঘ্রই তারা বলে"
+      }
+    },
+    {
+      "ar": "قَٰلَ",
+      "tr": "qāla",
+      "ty": "perfect",
+      "n": 4,
+      "mn": {
+        "en": "he said",
+        "bn": "সে বলেছে"
+      }
+    },
+    {
+      "ar": "لَيَقُولُونَ",
+      "tr": "layaqūlūna",
+      "ty": "imperfect",
+      "n": 4,
+      "mn": {
+        "en": "surely they say",
+        "bn": "অবশ্যই তারা বলে"
+      }
+    },
+    {
+      "ar": "أَتَقُولُونَ",
+      "tr": "ʾātaqūlūna",
+      "ty": "imperfect",
+      "n": 3,
+      "mn": {
+        "en": "do you (pl.) say",
+        "bn": "কি তোমরা বলো"
+      }
+    },
+    {
+      "ar": "يُقَالُ",
+      "tr": "yuqālu",
+      "ty": "passive",
+      "n": 3,
+      "mn": {
+        "en": "it was said",
+        "bn": "বলা হয়েছে"
+      }
+    },
+    {
+      "ar": "فَقُولَ",
+      "tr": "faqūlā",
+      "ty": "imperative",
+      "n": 3,
+      "mn": {
+        "en": "then say! (dual)",
+        "bn": "তারপর বলো!"
+      }
+    },
+    {
+      "ar": "قُولُو",
+      "tr": "qūlūā",
+      "ty": "imperative",
+      "n": 2,
+      "mn": {
+        "en": "say! (pl.)",
+        "bn": "বলো!"
+      }
+    },
+    {
+      "ar": "فَقُولُو",
+      "tr": "faqūlūā",
+      "ty": "imperative",
+      "n": 2,
+      "mn": {
+        "en": "then say! (pl.)",
+        "bn": "তারপর বলো!"
+      }
+    },
+    {
+      "ar": "وَنَقُولُ",
+      "tr": "wanaqūlu",
+      "ty": "imperfect",
+      "n": 2,
+      "mn": {
+        "en": "and we say",
+        "bn": "এবং আমরা বলি"
+      }
+    },
+    {
+      "ar": "أَقُولَ",
+      "tr": "ʾāqūla",
+      "ty": "subjunctive",
+      "n": 2,
+      "mn": {
+        "en": "I say",
+        "bn": "আমি বলি"
+      }
+    },
+    {
+      "ar": "فَقُلِ",
+      "tr": "faquli",
+      "ty": "imperative",
+      "n": 2,
+      "mn": {
+        "en": "then say!",
+        "bn": "তারপর বলো!"
+      }
+    },
+    {
+      "ar": "فَيَقُولُو",
+      "tr": "fayaqūlūā",
+      "ty": "subjunctive",
+      "n": 2,
+      "mn": {
+        "en": "then they say",
+        "bn": "তারপর তারা বলে"
+      }
+    },
+    {
+      "ar": "لَقَالُو",
+      "tr": "laqālūā",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "he said",
+        "bn": "সে বলেছে"
+      }
+    },
+    {
+      "ar": "قَالَتَ",
+      "tr": "qālatā",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "they said",
+        "bn": "তারা বলেছে"
+      }
+    },
+    {
+      "ar": "فَيَقُولُونَ",
+      "tr": "fayaqūlūna",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "then they say",
+        "bn": "তারপর তারা বলে"
+      }
+    },
+    {
+      "ar": "وَليَقُولُو",
+      "tr": "walyaqūlūā",
+      "ty": "jussive",
+      "n": 1,
+      "mn": {
+        "en": "and so that they say",
+        "bn": "এবং যাতে তারা বলে"
+      }
+    },
+    {
+      "ar": "قُلتُهُ,",
+      "tr": "qultuhu,",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "I said him",
+        "bn": "আমি বলেছি তাকে"
+      }
+    },
+    {
+      "ar": "قُلتُ",
+      "tr": "qultu",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "I said",
+        "bn": "আমি বলেছি"
+      }
+    },
+    {
+      "ar": "لَقَالَ",
+      "tr": "laqāla",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "he said",
+        "bn": "সে বলেছে"
+      }
+    },
+    {
+      "ar": "لِّيَقُولُو",
+      "tr": "līaqūlūā",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "so that they say",
+        "bn": "যাতে তারা বলে"
+      }
+    },
+    {
+      "ar": "وَلِيَقُولُو",
+      "tr": "walīaqūlūā",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "and so that they say",
+        "bn": "এবং যাতে তারা বলে"
+      }
+    },
+    {
+      "ar": "وَأَقُل",
+      "tr": "waʾāqul",
+      "ty": "jussive",
+      "n": 1,
+      "mn": {
+        "en": "and I say",
+        "bn": "এবং আমি বলি"
+      }
+    },
+    {
+      "ar": "وَّقَالُو",
+      "tr": "waqālūā",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "and they said",
+        "bn": "এবং তারা বলেছে"
+      }
+    },
+    {
+      "ar": "لَقُلنَ",
+      "tr": "laqulnā",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "we said",
+        "bn": "আমরা বলেছি"
+      }
+    },
+    {
+      "ar": "لَّيَقُولُنَّ",
+      "tr": "layaqūluna",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "surely he says",
+        "bn": "অবশ্যই সে বলে"
+      }
+    },
+    {
+      "ar": "نَّقُولُ",
+      "tr": "naqūlu",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "we say",
+        "bn": "আমরা বলি"
+      }
+    },
+    {
+      "ar": "نَّقُولَ",
+      "tr": "naqūla",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "we say",
+        "bn": "আমরা বলি"
+      }
+    },
+    {
+      "ar": "تَقُل",
+      "tr": "taqul",
+      "ty": "jussive",
+      "n": 1,
+      "mn": {
+        "en": "you say",
+        "bn": "তুমি বলো"
+      }
+    },
+    {
+      "ar": "لَتَقُولُونَ",
+      "tr": "lataqūlūna",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "surely you (pl.) say",
+        "bn": "অবশ্যই তোমরা বলো"
+      }
+    },
+    {
+      "ar": "تَقُولَنَّ",
+      "tr": "taqūlana",
+      "ty": "jussive",
+      "n": 1,
+      "mn": {
+        "en": "you say",
+        "bn": "তুমি বলো"
+      }
+    },
+    {
+      "ar": "وَسَنَقُولُ",
+      "tr": "wasanaqūlu",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "and will we say",
+        "bn": "এবং শীঘ্রই আমরা বলি"
+      }
+    },
+    {
+      "ar": "فَقُولِى",
+      "tr": "faqūliā",
+      "ty": "imperative",
+      "n": 1,
+      "mn": {
+        "en": "then say! (f.)",
+        "bn": "তারপর বলো!"
+      }
+    },
+    {
+      "ar": "فَتَقُولُ",
+      "tr": "fataqūlu",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "then you say",
+        "bn": "তারপর তুমি বলো"
+      }
+    },
+    {
+      "ar": "يَقُل",
+      "tr": "yaqul",
+      "ty": "jussive",
+      "n": 1,
+      "mn": {
+        "en": "he says",
+        "bn": "সে বলে"
+      }
+    },
+    {
+      "ar": "وَتَقُولُونَ",
+      "tr": "wataqūlūna",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "and you (pl.) say",
+        "bn": "এবং তোমরা বলো"
+      }
+    },
+    {
+      "ar": "لَنَقُولَنَّ",
+      "tr": "lanaqūlana",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "surely we say",
+        "bn": "অবশ্যই আমরা বলি"
+      }
+    },
+    {
+      "ar": "فَقَالَت",
+      "tr": "faqālat",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "then she said",
+        "bn": "তারপর সে বলেছে"
+      }
+    },
+    {
+      "ar": "لَّيَقُولَنَّ",
+      "tr": "layaqūlana",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "surely he says",
+        "bn": "অবশ্যই সে বলে"
+      }
+    },
+    {
+      "ar": "قَالَهَ",
+      "tr": "qālahā",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "he said it",
+        "bn": "সে বলেছে তা"
+      }
+    },
+    {
+      "ar": "لَّقَالُو",
+      "tr": "laqālūā",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "they said",
+        "bn": "তারা বলেছে"
+      }
+    },
+    {
+      "ar": "وَتَقُولُو",
+      "tr": "wataqūlūā",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "and you (pl.) say",
+        "bn": "এবং তোমরা বলো"
+      }
+    },
+    {
+      "ar": "وَتَقُولُ",
+      "tr": "wataqūlu",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "and you say",
+        "bn": "এবং তুমি বলো"
+      }
+    },
+    {
+      "ar": "وَيَقُولُو",
+      "tr": "wayaqūlūā",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "and they say",
+        "bn": "এবং তারা বলে"
+      }
+    },
+    {
+      "ar": "فَيَقُولَ",
+      "tr": "fayaqūla",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "then he says",
+        "bn": "তারপর সে বলে"
+      }
+    },
+    {
+      "ar": "فَقُلتُ",
+      "tr": "faqultu",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "then I said",
+        "bn": "তারপর আমি বলেছি"
+      }
+    },
+    {
+      "ar": "وَلِيَقُولَ",
+      "tr": "walīaqūla",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "and so that he says",
+        "bn": "এবং যাতে সে বলে"
+      }
+    }
+  ],
+  "2": [
+    {
+      "ar": "كَانَ",
+      "tr": "kāna",
+      "ty": "perfect",
+      "n": 325,
+      "mn": {
+        "en": "he was",
+        "bn": "সে ছিল"
+      }
+    },
+    {
+      "ar": "كَانُو",
+      "tr": "kānūā",
+      "ty": "perfect",
+      "n": 229,
+      "mn": {
+        "en": "they were",
+        "bn": "তারা ছিল"
+      }
+    },
+    {
+      "ar": "كُنتُم",
+      "tr": "kuntum",
+      "ty": "perfect",
+      "n": 188,
+      "mn": {
+        "en": "you (pl.) were",
+        "bn": "তোমরা ছিলে"
+      }
+    },
+    {
+      "ar": "وَكَانَ",
+      "tr": "wakāna",
+      "ty": "perfect",
+      "n": 84,
+      "mn": {
+        "en": "and he was",
+        "bn": "এবং সে ছিল"
+      }
+    },
+    {
+      "ar": "كُنَّ",
+      "tr": "kunā",
+      "ty": "perfect",
+      "n": 66,
+      "mn": {
+        "en": "we were",
+        "bn": "আমরা ছিলাম"
+      }
+    },
+    {
+      "ar": "كُنتَ",
+      "tr": "kunta",
+      "ty": "perfect",
+      "n": 35,
+      "mn": {
+        "en": "you were",
+        "bn": "তুমি ছিলে"
+      }
+    },
+    {
+      "ar": "وَكَانُو",
+      "tr": "wakānūā",
+      "ty": "perfect",
+      "n": 32,
+      "mn": {
+        "en": "and they were",
+        "bn": "এবং তারা ছিল"
+      }
+    },
+    {
+      "ar": "يَكُن",
+      "tr": "yakun",
+      "ty": "jussive",
+      "n": 27,
+      "mn": {
+        "en": "he is",
+        "bn": "সে হয়"
+      }
+    },
+    {
+      "ar": "كَانَت",
+      "tr": "kānat",
+      "ty": "perfect",
+      "n": 27,
+      "mn": {
+        "en": "she was",
+        "bn": "সে ছিল"
+      }
+    },
+    {
+      "ar": "تَكُونُو",
+      "tr": "takūnūā",
+      "ty": "jussive",
+      "n": 21,
+      "mn": {
+        "en": "you (pl.) are",
+        "bn": "তোমরা হও"
+      }
+    },
+    {
+      "ar": "يَكُونُ",
+      "tr": "yakūnu",
+      "ty": "imperfect",
+      "n": 18,
+      "mn": {
+        "en": "he is",
+        "bn": "সে হয়"
+      }
+    },
+    {
+      "ar": "يَكُونَ",
+      "tr": "yakūna",
+      "ty": "subjunctive",
+      "n": 18,
+      "mn": {
+        "en": "they are",
+        "bn": "তারা হয়"
+      }
+    },
+    {
+      "ar": "تَكُن",
+      "tr": "takun",
+      "ty": "jussive",
+      "n": 18,
+      "mn": {
+        "en": "you are",
+        "bn": "তুমি হও"
+      }
+    },
+    {
+      "ar": "وَكُنَّ",
+      "tr": "wakunā",
+      "ty": "perfect",
+      "n": 16,
+      "mn": {
+        "en": "and we were",
+        "bn": "এবং আমরা ছিলাম"
+      }
+    },
+    {
+      "ar": "تَكُونَ",
+      "tr": "takūna",
+      "ty": "subjunctive",
+      "n": 16,
+      "mn": {
+        "en": "you (pl.) are",
+        "bn": "তোমরা হও"
+      }
+    },
+    {
+      "ar": "كُنتُ",
+      "tr": "kuntu",
+      "ty": "perfect",
+      "n": 15,
+      "mn": {
+        "en": "I was",
+        "bn": "আমি ছিলাম"
+      }
+    },
+    {
+      "ar": "يَكُونُو",
+      "tr": "yakūnūā",
+      "ty": "subjunctive",
+      "n": 13,
+      "mn": {
+        "en": "they are",
+        "bn": "তারা হয়"
+      }
+    },
+    {
+      "ar": "تَكُونُ",
+      "tr": "takūnu",
+      "ty": "imperfect",
+      "n": 11,
+      "mn": {
+        "en": "you are",
+        "bn": "তুমি হও"
+      }
+    },
+    {
+      "ar": "أَكُونَ",
+      "tr": "ʾākūna",
+      "ty": "subjunctive",
+      "n": 9,
+      "mn": {
+        "en": "I am",
+        "bn": "আমি হই"
+      }
+    },
+    {
+      "ar": "فَيَكُونُ",
+      "tr": "fayakūnu",
+      "ty": "imperfect",
+      "n": 9,
+      "mn": {
+        "en": "then he is",
+        "bn": "তারপর সে হয়"
+      }
+    },
+    {
+      "ar": "تَكُونَنَّ",
+      "tr": "takūnana",
+      "ty": "imperfect",
+      "n": 9,
+      "mn": {
+        "en": "you are",
+        "bn": "তুমি হও"
+      }
+    },
+    {
+      "ar": "كُونُو",
+      "tr": "kūnūā",
+      "ty": "imperative",
+      "n": 9,
+      "mn": {
+        "en": "be! (pl.)",
+        "bn": "হও!"
+      }
+    },
+    {
+      "ar": "كُن",
+      "tr": "kun",
+      "ty": "imperative",
+      "n": 8,
+      "mn": {
+        "en": "be!",
+        "bn": "হও!"
+      }
+    },
+    {
+      "ar": "فَكَانَ",
+      "tr": "fakāna",
+      "ty": "perfect",
+      "n": 8,
+      "mn": {
+        "en": "then he was",
+        "bn": "তারপর সে ছিল"
+      }
+    },
+    {
+      "ar": "يَكُ",
+      "tr": "yaku",
+      "ty": "jussive",
+      "n": 8,
+      "mn": {
+        "en": "he is",
+        "bn": "সে হয়"
+      }
+    },
+    {
+      "ar": "وَكُنتُم",
+      "tr": "wakuntum",
+      "ty": "perfect",
+      "n": 8,
+      "mn": {
+        "en": "and you (pl.) were",
+        "bn": "এবং তোমরা ছিলে"
+      }
+    },
+    {
+      "ar": "فَتَكُونَ",
+      "tr": "fatakūna",
+      "ty": "subjunctive",
+      "n": 8,
+      "mn": {
+        "en": "then you (pl.) are",
+        "bn": "তারপর তোমরা হও"
+      }
+    },
+    {
+      "ar": "تَكُ",
+      "tr": "taku",
+      "ty": "jussive",
+      "n": 7,
+      "mn": {
+        "en": "you are",
+        "bn": "তুমি হও"
+      }
+    },
+    {
+      "ar": "لَكَانَ",
+      "tr": "lakāna",
+      "ty": "perfect",
+      "n": 6,
+      "mn": {
+        "en": "he was",
+        "bn": "সে ছিল"
+      }
+    },
+    {
+      "ar": "فَكَانُو",
+      "tr": "fakānūā",
+      "ty": "perfect",
+      "n": 5,
+      "mn": {
+        "en": "then they were",
+        "bn": "তারপর তারা ছিল"
+      }
+    },
+    {
+      "ar": "فَكَانَت",
+      "tr": "fakānat",
+      "ty": "perfect",
+      "n": 5,
+      "mn": {
+        "en": "then she was",
+        "bn": "তারপর সে ছিল"
+      }
+    },
+    {
+      "ar": "يَكُنِ",
+      "tr": "yakuni",
+      "ty": "jussive",
+      "n": 4,
+      "mn": {
+        "en": "he is",
+        "bn": "সে হয়"
+      }
+    },
+    {
+      "ar": "نَكُن",
+      "tr": "nakun",
+      "ty": "jussive",
+      "n": 4,
+      "mn": {
+        "en": "we are",
+        "bn": "আমরা হই"
+      }
+    },
+    {
+      "ar": "لَنَكُونَنَّ",
+      "tr": "lanakūnana",
+      "ty": "imperfect",
+      "n": 4,
+      "mn": {
+        "en": "surely we are",
+        "bn": "অবশ্যই আমরা হই"
+      }
+    },
+    {
+      "ar": "لِيَكُونَ",
+      "tr": "līakūna",
+      "ty": "subjunctive",
+      "n": 4,
+      "mn": {
+        "en": "so that they are",
+        "bn": "যাতে তারা হয়"
+      }
+    },
+    {
+      "ar": "وَّكَانُو",
+      "tr": "wakānūā",
+      "ty": "perfect",
+      "n": 3,
+      "mn": {
+        "en": "and they were",
+        "bn": "এবং তারা ছিল"
+      }
+    },
+    {
+      "ar": "وَيَكُونَ",
+      "tr": "wayakūna",
+      "ty": "subjunctive",
+      "n": 3,
+      "mn": {
+        "en": "and they are",
+        "bn": "এবং তারা হয়"
+      }
+    },
+    {
+      "ar": "أَكُن",
+      "tr": "ʾākun",
+      "ty": "jussive",
+      "n": 3,
+      "mn": {
+        "en": "I am",
+        "bn": "আমি হই"
+      }
+    },
+    {
+      "ar": "كَانَتَ",
+      "tr": "kānatā",
+      "ty": "perfect",
+      "n": 3,
+      "mn": {
+        "en": "they were",
+        "bn": "তারা ছিল"
+      }
+    },
+    {
+      "ar": "وَنَكُونَ",
+      "tr": "wanakūna",
+      "ty": "subjunctive",
+      "n": 3,
+      "mn": {
+        "en": "and we are",
+        "bn": "এবং আমরা হই"
+      }
+    },
+    {
+      "ar": "وَكُن",
+      "tr": "wakun",
+      "ty": "imperative",
+      "n": 3,
+      "mn": {
+        "en": "and be!",
+        "bn": "এবং হও!"
+      }
+    },
+    {
+      "ar": "لِتَكُونَ",
+      "tr": "litakūna",
+      "ty": "subjunctive",
+      "n": 3,
+      "mn": {
+        "en": "so that you (pl.) are",
+        "bn": "যাতে তোমরা হও"
+      }
+    },
+    {
+      "ar": "وَكَانَتِ",
+      "tr": "wakānati",
+      "ty": "perfect",
+      "n": 3,
+      "mn": {
+        "en": "and she was",
+        "bn": "এবং সে ছিল"
+      }
+    },
+    {
+      "ar": "لَكُنَّ",
+      "tr": "lakunā",
+      "ty": "perfect",
+      "n": 3,
+      "mn": {
+        "en": "we were",
+        "bn": "আমরা ছিলাম"
+      }
+    },
+    {
+      "ar": "وَكُنتُ",
+      "tr": "wakuntu",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "and I was",
+        "bn": "এবং আমি ছিলাম"
+      }
+    },
+    {
+      "ar": "نَّكُونَ",
+      "tr": "nakūna",
+      "ty": "subjunctive",
+      "n": 2,
+      "mn": {
+        "en": "we are",
+        "bn": "আমরা হই"
+      }
+    },
+    {
+      "ar": "وَكُنتَ",
+      "tr": "wakunta",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "and you were",
+        "bn": "এবং তুমি ছিলে"
+      }
+    },
+    {
+      "ar": "وَتَكُونُو",
+      "tr": "watakūnūā",
+      "ty": "jussive",
+      "n": 2,
+      "mn": {
+        "en": "and you (pl.) are",
+        "bn": "এবং তোমরা হও"
+      }
+    },
+    {
+      "ar": "وَأَكُن",
+      "tr": "waʾākun",
+      "ty": "jussive",
+      "n": 2,
+      "mn": {
+        "en": "and I am",
+        "bn": "এবং আমি হই"
+      }
+    },
+    {
+      "ar": "لَتَكُونَنَّ",
+      "tr": "latakūnana",
+      "ty": "imperfect",
+      "n": 2,
+      "mn": {
+        "en": "surely you are",
+        "bn": "অবশ্যই তুমি হও"
+      }
+    },
+    {
+      "ar": "كُنتُنَّ",
+      "tr": "kuntuna",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "he was",
+        "bn": "সে ছিল"
+      }
+    },
+    {
+      "ar": "لَكُنتُ",
+      "tr": "lakuntu",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "I was",
+        "bn": "আমি ছিলাম"
+      }
+    },
+    {
+      "ar": "وَتَكُونُ",
+      "tr": "watakūnu",
+      "ty": "imperfect",
+      "n": 2,
+      "mn": {
+        "en": "and you are",
+        "bn": "এবং তুমি হও"
+      }
+    },
+    {
+      "ar": "نَكُ",
+      "tr": "naku",
+      "ty": "jussive",
+      "n": 2,
+      "mn": {
+        "en": "we are",
+        "bn": "আমরা হই"
+      }
+    },
+    {
+      "ar": "فَكُنتُم",
+      "tr": "fakuntum",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "then you (pl.) were",
+        "bn": "তারপর তোমরা ছিলে"
+      }
+    },
+    {
+      "ar": "لَكُنتُم",
+      "tr": "lakuntum",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "you (pl.) were",
+        "bn": "তোমরা ছিলে"
+      }
+    },
+    {
+      "ar": "لِّتَكُونُو",
+      "tr": "litakūnūā",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "so that you (pl.) are",
+        "bn": "যাতে তোমরা হও"
+      }
+    },
+    {
+      "ar": "وَلتَكُن",
+      "tr": "waltakun",
+      "ty": "jussive",
+      "n": 1,
+      "mn": {
+        "en": "and so that you are",
+        "bn": "এবং যাতে তুমি হও"
+      }
+    },
+    {
+      "ar": "تَكُن[",
+      "tr": "takun[",
+      "ty": "jussive",
+      "n": 1,
+      "mn": {
+        "en": "you are",
+        "bn": "তুমি হও"
+      }
+    },
+    {
+      "ar": "فَتَكُونُونَ",
+      "tr": "fatakūnūna",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "then you (pl.) are",
+        "bn": "তারপর তোমরা হও"
+      }
+    },
+    {
+      "ar": "فَليَكُونُو",
+      "tr": "falyakūnūā",
+      "ty": "jussive",
+      "n": 1,
+      "mn": {
+        "en": "then so that they are",
+        "bn": "তারপর যাতে তারা হয়"
+      }
+    },
+    {
+      "ar": "فَتَكُونُ",
+      "tr": "fatakūnu",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "then you are",
+        "bn": "তারপর তুমি হও"
+      }
+    },
+    {
+      "ar": "وَلِيَكُونَ",
+      "tr": "walīakūna",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "and so that they are",
+        "bn": "এবং যাতে তারা হয়"
+      }
+    },
+    {
+      "ar": "لَأَكُونَنَّ",
+      "tr": "laʾākūnana",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "surely I am",
+        "bn": "অবশ্যই আমি হই"
+      }
+    },
+    {
+      "ar": "لَّنَكُونَنَّ",
+      "tr": "lanakūnana",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "surely we are",
+        "bn": "অবশ্যই আমরা হই"
+      }
+    },
+    {
+      "ar": "وَلَنَكُونَنَّ",
+      "tr": "walanakūnana",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "and surely we are",
+        "bn": "এবং অবশ্যই আমরা হই"
+      }
+    },
+    {
+      "ar": "وَكُونُو",
+      "tr": "wakūnūā",
+      "ty": "imperative",
+      "n": 1,
+      "mn": {
+        "en": "and be! (pl.)",
+        "bn": "এবং হও!"
+      }
+    },
+    {
+      "ar": "أَكَانَ",
+      "tr": "ʾākāna",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "he was",
+        "bn": "সে ছিল"
+      }
+    },
+    {
+      "ar": "وَتَكُونَ",
+      "tr": "watakūna",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "and you (pl.) are",
+        "bn": "এবং তোমরা হও"
+      }
+    },
+    {
+      "ar": "كُنتِ",
+      "tr": "kunti",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "he was",
+        "bn": "সে ছিল"
+      }
+    },
+    {
+      "ar": "وَلَيَكُونً",
+      "tr": "walayakūnanā",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "and surely he is",
+        "bn": "এবং অবশ্যই সে হয়"
+      }
+    },
+    {
+      "ar": "أَكُن[",
+      "tr": "ʾākun[",
+      "ty": "jussive",
+      "n": 1,
+      "mn": {
+        "en": "I am",
+        "bn": "আমি হই"
+      }
+    },
+    {
+      "ar": "أَكُ",
+      "tr": "ʾāku",
+      "ty": "jussive",
+      "n": 1,
+      "mn": {
+        "en": "I am",
+        "bn": "আমি হই"
+      }
+    },
+    {
+      "ar": "لِّيَكُونُو",
+      "tr": "līakūnūā",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "so that they are",
+        "bn": "যাতে তারা হয়"
+      }
+    },
+    {
+      "ar": "وَيَكُونُونَ",
+      "tr": "wayakūnūna",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "and they are",
+        "bn": "এবং তারা হয়"
+      }
+    },
+    {
+      "ar": "كُونِى",
+      "tr": "kūniā",
+      "ty": "imperative",
+      "n": 1,
+      "mn": {
+        "en": "be! me",
+        "bn": "হও! আমাকে"
+      }
+    },
+    {
+      "ar": "فَيَكُونَ",
+      "tr": "fayakūna",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "then they are",
+        "bn": "তারপর তারা হয়"
+      }
+    },
+    {
+      "ar": "فَنَكُونَ",
+      "tr": "fanakūna",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "then we are",
+        "bn": "তারপর আমরা হই"
+      }
+    },
+    {
+      "ar": "فَتَكُن",
+      "tr": "fatakun",
+      "ty": "jussive",
+      "n": 1,
+      "mn": {
+        "en": "then you are",
+        "bn": "তারপর তুমি হও"
+      }
+    },
+    {
+      "ar": "لِيَكُونُو",
+      "tr": "līakūnūā",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "so that they are",
+        "bn": "যাতে তারা হয়"
+      }
+    },
+    {
+      "ar": "لَّيَكُونُنَّ",
+      "tr": "layakūnuna",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "surely he is",
+        "bn": "অবশ্যই সে হয়"
+      }
+    },
+    {
+      "ar": "فَأَكُونَ",
+      "tr": "faʾākūna",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "then I am",
+        "bn": "তারপর আমি হই"
+      }
+    },
+    {
+      "ar": "وَلَتَكُونَنَّ",
+      "tr": "walatakūnana",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "and surely you are",
+        "bn": "এবং অবশ্যই তুমি হও"
+      }
+    },
+    {
+      "ar": "لِتَكُونُو",
+      "tr": "litakūnūā",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "so that you (pl.) are",
+        "bn": "যাতে তোমরা হও"
+      }
+    },
+    {
+      "ar": "وَلِتَكُونَ",
+      "tr": "walitakūna",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "and so that you (pl.) are",
+        "bn": "এবং যাতে তোমরা হও"
+      }
+    },
+    {
+      "ar": "يَكُنَّ",
+      "tr": "yakuna",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "he is",
+        "bn": "সে হয়"
+      }
+    },
+    {
+      "ar": "وَكَانَت",
+      "tr": "wakānat",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "and she was",
+        "bn": "এবং সে ছিল"
+      }
+    },
+    {
+      "ar": "كَانَتِ",
+      "tr": "kānati",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "she was",
+        "bn": "সে ছিল"
+      }
+    },
+    {
+      "ar": "يَكُونُونَ",
+      "tr": "yakūnūna",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "they are",
+        "bn": "তারা হয়"
+      }
+    },
+    {
+      "ar": "سَيَكُونُ",
+      "tr": "sayakūnu",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "will he is",
+        "bn": "শীঘ্রই সে হয়"
+      }
+    }
+  ],
+  "3": [
+    {
+      "ar": "ءَامَنُو",
+      "tr": "ʾāmanūā",
+      "ty": "perfect",
+      "n": 253,
+      "mn": {
+        "en": "they believed",
+        "bn": "তারা ঈমান এনেছে"
+      }
+    },
+    {
+      "ar": "يُؤمِنُونَ",
+      "tr": "yuʾuminūna",
+      "ty": "imperfect",
+      "n": 86,
+      "mn": {
+        "en": "they believe",
+        "bn": "তারা ঈমান আনে"
+      }
+    },
+    {
+      "ar": "ءَامَنَّ",
+      "tr": "ʾāmanā",
+      "ty": "perfect",
+      "n": 31,
+      "mn": {
+        "en": "we believed",
+        "bn": "আমরা ঈমান এনেছি"
+      }
+    },
+    {
+      "ar": "ءَامَنَ",
+      "tr": "ʾāmana",
+      "ty": "perfect",
+      "n": 26,
+      "mn": {
+        "en": "he believed",
+        "bn": "সে ঈমান এনেছে"
+      }
+    },
+    {
+      "ar": "يُؤمِنُ",
+      "tr": "yuʾuminu",
+      "ty": "imperfect",
+      "n": 18,
+      "mn": {
+        "en": "he believes",
+        "bn": "সে ঈমান আনে"
+      }
+    },
+    {
+      "ar": "يُؤمِنُو",
+      "tr": "yuʾuminūā",
+      "ty": "subjunctive",
+      "n": 12,
+      "mn": {
+        "en": "they believe",
+        "bn": "তারা ঈমান আনে"
+      }
+    },
+    {
+      "ar": "ءَامِنُو",
+      "tr": "ʾāminūā",
+      "ty": "imperative",
+      "n": 10,
+      "mn": {
+        "en": "believe! (pl.)",
+        "bn": "ঈমান আনো!"
+      }
+    },
+    {
+      "ar": "تُؤمِنُو",
+      "tr": "tuʾuminūā",
+      "ty": "jussive",
+      "n": 9,
+      "mn": {
+        "en": "you (pl.) believe",
+        "bn": "তোমরা ঈমান আনো"
+      }
+    },
+    {
+      "ar": "ءَامَنتُم",
+      "tr": "ʾāmantum",
+      "ty": "perfect",
+      "n": 8,
+      "mn": {
+        "en": "you (pl.) believed",
+        "bn": "তোমরা ঈমান এনেছ"
+      }
+    },
+    {
+      "ar": "نُّؤمِنَ",
+      "tr": "nuʾumina",
+      "ty": "subjunctive",
+      "n": 6,
+      "mn": {
+        "en": "we believe",
+        "bn": "আমরা ঈমান আনি"
+      }
+    },
+    {
+      "ar": "يُؤمِن[",
+      "tr": "yuʾumin[",
+      "ty": "jussive",
+      "n": 6,
+      "mn": {
+        "en": "he believes",
+        "bn": "সে ঈমান আনে"
+      }
+    },
+    {
+      "ar": "فَـَامِنُو",
+      "tr": "faāminūā",
+      "ty": "imperative",
+      "n": 5,
+      "mn": {
+        "en": "believe! (pl.)",
+        "bn": "ঈমান আনো!"
+      }
+    },
+    {
+      "ar": "تُؤمِنُونَ",
+      "tr": "tuʾuminūna",
+      "ty": "imperfect",
+      "n": 5,
+      "mn": {
+        "en": "you (pl.) believe",
+        "bn": "তোমরা ঈমান আনো"
+      }
+    },
+    {
+      "ar": "ءَامَنَت",
+      "tr": "ʾāmanat",
+      "ty": "perfect",
+      "n": 4,
+      "mn": {
+        "en": "she believed",
+        "bn": "সে ঈমান এনেছে"
+      }
+    },
+    {
+      "ar": "وَءَامَنَ",
+      "tr": "waʾāmana",
+      "ty": "perfect",
+      "n": 4,
+      "mn": {
+        "en": "and he believed",
+        "bn": "এবং সে ঈমান এনেছে"
+      }
+    },
+    {
+      "ar": "لِيُؤمِنُو",
+      "tr": "līuʾuminūā",
+      "ty": "subjunctive",
+      "n": 4,
+      "mn": {
+        "en": "so that they believe",
+        "bn": "যাতে তারা ঈমান আনে"
+      }
+    },
+    {
+      "ar": "أَنُؤمِنُ",
+      "tr": "ʾānuʾuminu",
+      "ty": "imperfect",
+      "n": 3,
+      "mn": {
+        "en": "I believe",
+        "bn": "আমি ঈমান আনি"
+      }
+    },
+    {
+      "ar": "وَءَامِنُو",
+      "tr": "waʾāminūā",
+      "ty": "imperative",
+      "n": 3,
+      "mn": {
+        "en": "and believe! (pl.)",
+        "bn": "এবং ঈমান আনো!"
+      }
+    },
+    {
+      "ar": "نُؤمِنُ",
+      "tr": "nuʾuminu",
+      "ty": "imperfect",
+      "n": 3,
+      "mn": {
+        "en": "we believe",
+        "bn": "আমরা ঈমান আনি"
+      }
+    },
+    {
+      "ar": "ءَامَنتُ",
+      "tr": "ʾāmantu",
+      "ty": "perfect",
+      "n": 3,
+      "mn": {
+        "en": "I believed",
+        "bn": "আমি ঈমান এনেছি"
+      }
+    },
+    {
+      "ar": "يُؤمِنَّ",
+      "tr": "yuʾumina",
+      "ty": "imperfect",
+      "n": 2,
+      "mn": {
+        "en": "he believes",
+        "bn": "সে ঈমান আনে"
+      }
+    },
+    {
+      "ar": "تُؤمِن",
+      "tr": "tuʾumin",
+      "ty": "jussive",
+      "n": 2,
+      "mn": {
+        "en": "you believe",
+        "bn": "তুমি ঈমান আনো"
+      }
+    },
+    {
+      "ar": "وَتُؤمِنُونَ",
+      "tr": "watuʾuminūna",
+      "ty": "imperfect",
+      "n": 2,
+      "mn": {
+        "en": "and you (pl.) believe",
+        "bn": "এবং তোমরা ঈমান আনো"
+      }
+    },
+    {
+      "ar": "فَـَامَنَّ",
+      "tr": "faāmanā",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "we believed",
+        "bn": "আমরা ঈমান এনেছি"
+      }
+    },
+    {
+      "ar": "وَّءَامَنُو",
+      "tr": "waʾāmanūā",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "and they believed",
+        "bn": "এবং তারা ঈমান এনেছে"
+      }
+    },
+    {
+      "ar": "فَـَامَنَ",
+      "tr": "faāmana",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "he believed",
+        "bn": "সে ঈমান এনেছে"
+      }
+    },
+    {
+      "ar": "لِتُؤمِنُو",
+      "tr": "lituʾuminūā",
+      "ty": "subjunctive",
+      "n": 2,
+      "mn": {
+        "en": "so that you (pl.) believe",
+        "bn": "যাতে তোমরা ঈমান আনো"
+      }
+    },
+    {
+      "ar": "وَءَامَنتُم",
+      "tr": "waʾāmantum",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "and you (pl.) believed",
+        "bn": "এবং তোমরা ঈমান এনেছ"
+      }
+    },
+    {
+      "ar": "وَءَامَنُو",
+      "tr": "waʾāmanūā",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "and he believed",
+        "bn": "এবং সে ঈমান এনেছে"
+      }
+    },
+    {
+      "ar": "أَفَتُؤمِنُونَ",
+      "tr": "ʾāfatuʾuminūna",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "do then you (pl.) believe",
+        "bn": "কি তারপর তোমরা ঈমান আনো"
+      }
+    },
+    {
+      "ar": "وَليُؤمِنُو",
+      "tr": "walyuʾuminūā",
+      "ty": "jussive",
+      "n": 1,
+      "mn": {
+        "en": "and so that they believe",
+        "bn": "এবং যাতে তারা ঈমান আনে"
+      }
+    },
+    {
+      "ar": "وَيُؤمِن[",
+      "tr": "wayuʾumin[",
+      "ty": "jussive",
+      "n": 1,
+      "mn": {
+        "en": "and he believes",
+        "bn": "এবং সে ঈমান আনে"
+      }
+    },
+    {
+      "ar": "لَتُؤمِنُنَّ",
+      "tr": "latuʾuminuna",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "surely you believe",
+        "bn": "অবশ্যই তুমি ঈমান আনো"
+      }
+    },
+    {
+      "ar": "نُؤمِنَ",
+      "tr": "nuʾumina",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "we believe",
+        "bn": "আমরা ঈমান আনি"
+      }
+    },
+    {
+      "ar": "لَيُؤمِنَنَّ",
+      "tr": "layuʾuminana",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "surely he believes",
+        "bn": "অবশ্যই সে ঈমান আনে"
+      }
+    },
+    {
+      "ar": "لَّيُؤمِنُنَّ",
+      "tr": "layuʾuminuna",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "surely he believes",
+        "bn": "অবশ্যই সে ঈমান আনে"
+      }
+    },
+    {
+      "ar": "لَنُؤمِنَنَّ",
+      "tr": "lanuʾuminana",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "surely we believe",
+        "bn": "অবশ্যই আমরা ঈমান আনি"
+      }
+    },
+    {
+      "ar": "وَيُؤمِنُ",
+      "tr": "wayuʾuminu",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "and he believes",
+        "bn": "এবং সে ঈমান আনে"
+      }
+    },
+    {
+      "ar": "لَءَامَنَ",
+      "tr": "laʾāmana",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "surely he believed",
+        "bn": "অবশ্যই সে ঈমান এনেছে"
+      }
+    },
+    {
+      "ar": "تُؤمِنَ",
+      "tr": "tuʾumina",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "you believe",
+        "bn": "তুমি ঈমান আনো"
+      }
+    },
+    {
+      "ar": "يُؤمِنَ",
+      "tr": "yuʾumina",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "they believe",
+        "bn": "তারা ঈমান আনে"
+      }
+    },
+    {
+      "ar": "فَليُؤمِن",
+      "tr": "falyuʾumin",
+      "ty": "jussive",
+      "n": 1,
+      "mn": {
+        "en": "then so that he believes",
+        "bn": "তারপর যাতে সে ঈমান আনে"
+      }
+    },
+    {
+      "ar": "فَيُؤمِنُو",
+      "tr": "fayuʾuminūā",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "then they believe",
+        "bn": "তারপর তারা ঈমান আনে"
+      }
+    },
+    {
+      "ar": "فَـَامَنُو",
+      "tr": "faāmanūā",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "they believed",
+        "bn": "তারা ঈমান এনেছে"
+      }
+    },
+    {
+      "ar": "وَيُؤمِنُونَ",
+      "tr": "wayuʾuminūna",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "and they believe",
+        "bn": "এবং তারা ঈমান আনে"
+      }
+    },
+    {
+      "ar": "ءَامِن",
+      "tr": "ʾāmin",
+      "ty": "imperative",
+      "n": 1,
+      "mn": {
+        "en": "believe!",
+        "bn": "ঈমান আনো!"
+      }
+    },
+    {
+      "ar": "لِّتُؤمِنُو",
+      "tr": "lituʾuminūā",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "so that you (pl.) believe",
+        "bn": "যাতে তোমরা ঈমান আনো"
+      }
+    },
+    {
+      "ar": "فَـَامَنَت",
+      "tr": "faāmanat",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "she believed",
+        "bn": "সে ঈমান এনেছে"
+      }
+    },
+    {
+      "ar": "وَءَامَنَهُم",
+      "tr": "waʾāmanahum",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "and he believed them",
+        "bn": "এবং সে ঈমান এনেছে তাদের"
+      }
+    }
+  ],
+  "4": [
+    {
+      "ar": "يَعلَمُونَ",
+      "tr": "yaʿlamūna",
+      "ty": "imperfect",
+      "n": 81,
+      "mn": {
+        "en": "they know",
+        "bn": "তারা জানে"
+      }
+    },
+    {
+      "ar": "يَعلَمُ",
+      "tr": "yaʿlamu",
+      "ty": "imperfect",
+      "n": 62,
+      "mn": {
+        "en": "he knows",
+        "bn": "সে জানে"
+      }
+    },
+    {
+      "ar": "تَعلَمُونَ",
+      "tr": "taʿlamūna",
+      "ty": "imperfect",
+      "n": 54,
+      "mn": {
+        "en": "you (pl.) know",
+        "bn": "তোমরা জানো"
+      }
+    },
+    {
+      "ar": "وَٱعلَمُو",
+      "tr": "waʿlamūā",
+      "ty": "imperative",
+      "n": 18,
+      "mn": {
+        "en": "and know! (pl.)",
+        "bn": "এবং জেনে নাও!"
+      }
+    },
+    {
+      "ar": "وَيَعلَمُ",
+      "tr": "wayaʿlamu",
+      "ty": "imperfect",
+      "n": 10,
+      "mn": {
+        "en": "and he knows",
+        "bn": "এবং সে জানে"
+      }
+    },
+    {
+      "ar": "عَلِمَ",
+      "tr": "ʿalima",
+      "ty": "perfect",
+      "n": 9,
+      "mn": {
+        "en": "he knew",
+        "bn": "সে জেনেছে"
+      }
+    },
+    {
+      "ar": "أَعلَمُ",
+      "tr": "ʾāʿlamu",
+      "ty": "imperfect",
+      "n": 8,
+      "mn": {
+        "en": "I know",
+        "bn": "আমি জানি"
+      }
+    },
+    {
+      "ar": "فَٱعلَمُو",
+      "tr": "faʿlamūā",
+      "ty": "imperative",
+      "n": 6,
+      "mn": {
+        "en": "then know! (pl.)",
+        "bn": "তারপর জেনে নাও!"
+      }
+    },
+    {
+      "ar": "وَلِيَعلَمَ",
+      "tr": "walīaʿlama",
+      "ty": "subjunctive",
+      "n": 6,
+      "mn": {
+        "en": "and so that he knows",
+        "bn": "এবং যাতে সে জানে"
+      }
+    },
+    {
+      "ar": "عَلِمنَ",
+      "tr": "ʿalimnā",
+      "ty": "perfect",
+      "n": 6,
+      "mn": {
+        "en": "we knew",
+        "bn": "আমরা জেনেছি"
+      }
+    },
+    {
+      "ar": "نَعلَمُ",
+      "tr": "naʿlamu",
+      "ty": "imperfect",
+      "n": 5,
+      "mn": {
+        "en": "we know",
+        "bn": "আমরা জানি"
+      }
+    },
+    {
+      "ar": "تَعلَمُ",
+      "tr": "taʿlamu",
+      "ty": "imperfect",
+      "n": 5,
+      "mn": {
+        "en": "you know",
+        "bn": "তুমি জানো"
+      }
+    },
+    {
+      "ar": "يَعلَمُو",
+      "tr": "yaʿlamūā",
+      "ty": "jussive",
+      "n": 5,
+      "mn": {
+        "en": "they know",
+        "bn": "তারা জানে"
+      }
+    },
+    {
+      "ar": "تَعلَمُو",
+      "tr": "taʿlamūā",
+      "ty": "jussive",
+      "n": 5,
+      "mn": {
+        "en": "you (pl.) know",
+        "bn": "তোমরা জানো"
+      }
+    },
+    {
+      "ar": "تَعلَم",
+      "tr": "taʿlam",
+      "ty": "jussive",
+      "n": 4,
+      "mn": {
+        "en": "you know",
+        "bn": "তুমি জানো"
+      }
+    },
+    {
+      "ar": "وَأَعلَمُ",
+      "tr": "waʾāʿlamu",
+      "ty": "imperfect",
+      "n": 3,
+      "mn": {
+        "en": "and I know",
+        "bn": "এবং আমি জানি"
+      }
+    },
+    {
+      "ar": "لِنَعلَمَ",
+      "tr": "linaʿlama",
+      "ty": "subjunctive",
+      "n": 3,
+      "mn": {
+        "en": "so that we know",
+        "bn": "যাতে আমরা জানি"
+      }
+    },
+    {
+      "ar": "يَعلَمِ",
+      "tr": "yaʿlami",
+      "ty": "jussive",
+      "n": 3,
+      "mn": {
+        "en": "he knows",
+        "bn": "সে জানে"
+      }
+    },
+    {
+      "ar": "فَٱعلَم",
+      "tr": "faʿlam",
+      "ty": "imperative",
+      "n": 3,
+      "mn": {
+        "en": "then know!",
+        "bn": "তারপর জেনে নাও!"
+      }
+    },
+    {
+      "ar": "ٱعلَمُو",
+      "tr": "ʿlamūā",
+      "ty": "imperative",
+      "n": 3,
+      "mn": {
+        "en": "know! (pl.)",
+        "bn": "জেনে নাও!"
+      }
+    },
+    {
+      "ar": "يَعلَمُهُم",
+      "tr": "yaʿlamuhum",
+      "ty": "imperfect",
+      "n": 3,
+      "mn": {
+        "en": "he knows them",
+        "bn": "সে জানে তাদের"
+      }
+    },
+    {
+      "ar": "عَلِمتَ",
+      "tr": "ʿalimta",
+      "ty": "perfect",
+      "n": 3,
+      "mn": {
+        "en": "you knew",
+        "bn": "তুমি জেনেছ"
+      }
+    },
+    {
+      "ar": "يَعلَمَ",
+      "tr": "yaʿlama",
+      "ty": "subjunctive",
+      "n": 3,
+      "mn": {
+        "en": "he knows",
+        "bn": "সে জানে"
+      }
+    },
+    {
+      "ar": "فَسَتَعلَمُونَ",
+      "tr": "fasataʿlamūna",
+      "ty": "imperfect",
+      "n": 3,
+      "mn": {
+        "en": "then will you (pl.) know",
+        "bn": "তারপর শীঘ্রই তোমরা জানো"
+      }
+    },
+    {
+      "ar": "وَلَيَعلَمَنَّ",
+      "tr": "walayaʿlamana",
+      "ty": "imperfect",
+      "n": 3,
+      "mn": {
+        "en": "and surely he knows",
+        "bn": "এবং অবশ্যই সে জানে"
+      }
+    },
+    {
+      "ar": "سَيَعلَمُونَ",
+      "tr": "sayaʿlamūna",
+      "ty": "imperfect",
+      "n": 3,
+      "mn": {
+        "en": "will they know",
+        "bn": "শীঘ্রই তারা জানে"
+      }
+    },
+    {
+      "ar": "لِتَعلَمُو",
+      "tr": "litaʿlamūā",
+      "ty": "subjunctive",
+      "n": 3,
+      "mn": {
+        "en": "so that you (pl.) know",
+        "bn": "যাতে তোমরা জানো"
+      }
+    },
+    {
+      "ar": "عَلِمتُم",
+      "tr": "ʿalimtum",
+      "ty": "perfect",
+      "n": 3,
+      "mn": {
+        "en": "you (pl.) knew",
+        "bn": "তোমরা জেনেছ"
+      }
+    },
+    {
+      "ar": "يَعلَم",
+      "tr": "yaʿlam",
+      "ty": "jussive",
+      "n": 3,
+      "mn": {
+        "en": "he knows",
+        "bn": "সে জানে"
+      }
+    },
+    {
+      "ar": "عَلِمتُمُ",
+      "tr": "ʿalimtumu",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "you (pl.) knew",
+        "bn": "তোমরা জেনেছ"
+      }
+    },
+    {
+      "ar": "يَعلَمهُ",
+      "tr": "yaʿlamhu",
+      "ty": "jussive",
+      "n": 2,
+      "mn": {
+        "en": "he knows him",
+        "bn": "সে জানে তাকে"
+      }
+    },
+    {
+      "ar": "وَيَعلَمَ",
+      "tr": "wayaʿlama",
+      "ty": "subjunctive",
+      "n": 2,
+      "mn": {
+        "en": "and he knows",
+        "bn": "এবং সে জানে"
+      }
+    },
+    {
+      "ar": "لِيَعلَمَ",
+      "tr": "līaʿlama",
+      "ty": "subjunctive",
+      "n": 2,
+      "mn": {
+        "en": "so that he knows",
+        "bn": "যাতে সে জানে"
+      }
+    },
+    {
+      "ar": "وَسَيَعلَمُ",
+      "tr": "wasayaʿlamu",
+      "ty": "imperfect",
+      "n": 2,
+      "mn": {
+        "en": "and will he knows",
+        "bn": "এবং শীঘ্রই সে জানে"
+      }
+    },
+    {
+      "ar": "فَسَيَعلَمُونَ",
+      "tr": "fasayaʿlamūna",
+      "ty": "imperfect",
+      "n": 2,
+      "mn": {
+        "en": "then will they know",
+        "bn": "তারপর শীঘ্রই তারা জানে"
+      }
+    },
+    {
+      "ar": "وَلَتَعلَمُنَّ",
+      "tr": "walataʿlamuna",
+      "ty": "imperfect",
+      "n": 2,
+      "mn": {
+        "en": "and surely you know",
+        "bn": "এবং অবশ্যই তুমি জানো"
+      }
+    },
+    {
+      "ar": "وَيَعلَمُونَ",
+      "tr": "wayaʿlamūna",
+      "ty": "imperfect",
+      "n": 2,
+      "mn": {
+        "en": "and they know",
+        "bn": "এবং তারা জানে"
+      }
+    },
+    {
+      "ar": "فَعَلِمَ",
+      "tr": "faʿalima",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "then he knew",
+        "bn": "তারপর সে জেনেছে"
+      }
+    },
+    {
+      "ar": "عَلِمَت",
+      "tr": "ʿalimat",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "she knew",
+        "bn": "সে জেনেছে"
+      }
+    },
+    {
+      "ar": "يَعلَمُهَ",
+      "tr": "yaʿlamuhā",
+      "ty": "imperfect",
+      "n": 2,
+      "mn": {
+        "en": "he knows",
+        "bn": "সে জানে"
+      }
+    },
+    {
+      "ar": "فَيَعلَمُونَ",
+      "tr": "fayaʿlamūna",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "then they know",
+        "bn": "তারপর তারা জানে"
+      }
+    },
+    {
+      "ar": "عَلِمُو",
+      "tr": "ʿalimūā",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "they knew",
+        "bn": "তারা জেনেছে"
+      }
+    },
+    {
+      "ar": "لَيَعلَمُونَ",
+      "tr": "layaʿlamūna",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "surely they know",
+        "bn": "অবশ্যই তারা জানে"
+      }
+    },
+    {
+      "ar": "وَٱعلَم",
+      "tr": "waʿlam",
+      "ty": "imperative",
+      "n": 1,
+      "mn": {
+        "en": "and know!",
+        "bn": "এবং জেনে নাও!"
+      }
+    },
+    {
+      "ar": "يَعلَمُهُ,",
+      "tr": "yaʿlamuhu,",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "he knows him",
+        "bn": "সে জানে তাকে"
+      }
+    },
+    {
+      "ar": "لَعَلِمَهُ",
+      "tr": "laʿalimahu",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "he knew him",
+        "bn": "সে জেনেছে তাকে"
+      }
+    },
+    {
+      "ar": "وَنَعلَمَ",
+      "tr": "wanaʿlama",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "and we know",
+        "bn": "এবং আমরা জানি"
+      }
+    },
+    {
+      "ar": "عَلِمتَهُ,",
+      "tr": "ʿalimtahu,",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "you knew him",
+        "bn": "তুমি জেনেছ তাকে"
+      }
+    },
+    {
+      "ar": "أَتَعلَمُونَ",
+      "tr": "ʾātaʿlamūna",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "do you (pl.) know",
+        "bn": "কি তোমরা জানো"
+      }
+    },
+    {
+      "ar": "تَعلَمُونَهُمُ",
+      "tr": "taʿlamūnahumu",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "you (pl.) know them",
+        "bn": "তোমরা জানো তাদের"
+      }
+    },
+    {
+      "ar": "وَعَلِمَ",
+      "tr": "waʿalima",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "and he knew",
+        "bn": "এবং সে জেনেছে"
+      }
+    },
+    {
+      "ar": "وَتَعلَمَ",
+      "tr": "wataʿlama",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "and you know",
+        "bn": "এবং তুমি জানো"
+      }
+    },
+    {
+      "ar": "تَعلَمُهُم",
+      "tr": "taʿlamuhum",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "you know them",
+        "bn": "তুমি জানো তাদের"
+      }
+    },
+    {
+      "ar": "نَعلَمُهُم",
+      "tr": "naʿlamuhum",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "we know them",
+        "bn": "আমরা জানি তাদের"
+      }
+    },
+    {
+      "ar": "تَعلَمُهَ",
+      "tr": "taʿlamuhā",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "you know",
+        "bn": "তুমি জানো"
+      }
+    },
+    {
+      "ar": "لَتَعلَمُ",
+      "tr": "lataʿlamu",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "surely you know",
+        "bn": "অবশ্যই তুমি জানো"
+      }
+    },
+    {
+      "ar": "وَلِيَعلَمُو",
+      "tr": "walīaʿlamūā",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "and so that they know",
+        "bn": "এবং যাতে তারা জানে"
+      }
+    },
+    {
+      "ar": "وَلِتَعلَمُو",
+      "tr": "walitaʿlamūā",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "and so that you (pl.) know",
+        "bn": "এবং যাতে তোমরা জানো"
+      }
+    },
+    {
+      "ar": "لِيَعلَمُو",
+      "tr": "līaʿlamūā",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "so that they know",
+        "bn": "যাতে তারা জানে"
+      }
+    },
+    {
+      "ar": "لِيُعلَمَ",
+      "tr": "līuʿlama",
+      "ty": "passive",
+      "n": 1,
+      "mn": {
+        "en": "so that it was known",
+        "bn": "যাতে জানা হয়েছে"
+      }
+    },
+    {
+      "ar": "يَعلَمَهُ,",
+      "tr": "yaʿlamahu,",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "he knows him",
+        "bn": "সে জানে তাকে"
+      }
+    },
+    {
+      "ar": "لَيَعلَمُ",
+      "tr": "layaʿlamu",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "surely he knows",
+        "bn": "অবশ্যই সে জানে"
+      }
+    },
+    {
+      "ar": "وَلِتَعلَمَ",
+      "tr": "walitaʿlama",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "and so that you know",
+        "bn": "এবং যাতে তুমি জানো"
+      }
+    },
+    {
+      "ar": "عَلِمتُ",
+      "tr": "ʿalimtu",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "I knew",
+        "bn": "আমি জেনেছি"
+      }
+    },
+    {
+      "ar": "فَعَلِمُو",
+      "tr": "faʿalimūā",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "then he knew",
+        "bn": "তারপর সে জেনেছে"
+      }
+    },
+    {
+      "ar": "فَلَيَعلَمَنَّ",
+      "tr": "falayaʿlamana",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "then surely he knows",
+        "bn": "তারপর অবশ্যই সে জানে"
+      }
+    },
+    {
+      "ar": "عَلِمَتِ",
+      "tr": "ʿalimati",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "she knew",
+        "bn": "সে জেনেছে"
+      }
+    },
+    {
+      "ar": "نَعلَمَ",
+      "tr": "naʿlama",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "we know",
+        "bn": "আমরা জানি"
+      }
+    },
+    {
+      "ar": "تَعلَمُوهُم",
+      "tr": "taʿlamūhum",
+      "ty": "jussive",
+      "n": 1,
+      "mn": {
+        "en": "you know them",
+        "bn": "তুমি জানো তাদের"
+      }
+    },
+    {
+      "ar": "وَنَعلَمُ",
+      "tr": "wanaʿlamu",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "and we know",
+        "bn": "এবং আমরা জানি"
+      }
+    },
+    {
+      "ar": "عَلِمتُمُوهُنَّ",
+      "tr": "ʿalimtumūhuna",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "they knew them (f.)",
+        "bn": "তারা জেনেছে তাদের"
+      }
+    },
+    {
+      "ar": "تَّعلَمُونَ",
+      "tr": "taʿlamūna",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "you (pl.) know",
+        "bn": "তোমরা জানো"
+      }
+    },
+    {
+      "ar": "لَنَعلَمُ",
+      "tr": "lanaʿlamu",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "surely we know",
+        "bn": "অবশ্যই আমরা জানি"
+      }
+    },
+    {
+      "ar": "لِّيَعلَمَ",
+      "tr": "līaʿlama",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "so that he knows",
+        "bn": "যাতে সে জানে"
+      }
+    }
+  ],
+  "5": [
+    {
+      "ar": "جَعَلَ",
+      "tr": "jaʿala",
+      "ty": "perfect",
+      "n": 45,
+      "mn": {
+        "en": "he made",
+        "bn": "সে বানিয়েছে"
+      }
+    },
+    {
+      "ar": "وَجَعَلنَ",
+      "tr": "wajaʿalnā",
+      "ty": "perfect",
+      "n": 37,
+      "mn": {
+        "en": "and we made",
+        "bn": "এবং আমরা বানিয়েছি"
+      }
+    },
+    {
+      "ar": "وَجَعَلَ",
+      "tr": "wajaʿala",
+      "ty": "perfect",
+      "n": 29,
+      "mn": {
+        "en": "and he made",
+        "bn": "এবং সে বানিয়েছে"
+      }
+    },
+    {
+      "ar": "جَعَلنَ",
+      "tr": "jaʿalnā",
+      "ty": "perfect",
+      "n": 29,
+      "mn": {
+        "en": "we made",
+        "bn": "আমরা বানিয়েছি"
+      }
+    },
+    {
+      "ar": "وَجَعَلُو",
+      "tr": "wajaʿalūā",
+      "ty": "perfect",
+      "n": 8,
+      "mn": {
+        "en": "and they made",
+        "bn": "এবং তারা বানিয়েছে"
+      }
+    },
+    {
+      "ar": "جَعَلنَٰهُ",
+      "tr": "jaʿalnāhu",
+      "ty": "perfect",
+      "n": 7,
+      "mn": {
+        "en": "he made him",
+        "bn": "সে বানিয়েছে তাকে"
+      }
+    },
+    {
+      "ar": "جَعَلَكُم",
+      "tr": "jaʿalakum",
+      "ty": "perfect",
+      "n": 6,
+      "mn": {
+        "en": "he made you (pl.)",
+        "bn": "সে বানিয়েছে তোমাদের"
+      }
+    },
+    {
+      "ar": "يَجعَل",
+      "tr": "yajʿal",
+      "ty": "jussive",
+      "n": 6,
+      "mn": {
+        "en": "he makes",
+        "bn": "সে বানায়"
+      }
+    },
+    {
+      "ar": "ٱجعَل",
+      "tr": "jʿal",
+      "ty": "imperative",
+      "n": 6,
+      "mn": {
+        "en": "make!",
+        "bn": "বানাও!"
+      }
+    },
+    {
+      "ar": "تَجعَلُو",
+      "tr": "tajʿalūā",
+      "ty": "jussive",
+      "n": 5,
+      "mn": {
+        "en": "you (pl.) make",
+        "bn": "তোমরা বানাও"
+      }
+    },
+    {
+      "ar": "وَٱجعَل",
+      "tr": "wajʿal",
+      "ty": "imperative",
+      "n": 5,
+      "mn": {
+        "en": "and make!",
+        "bn": "এবং বানাও!"
+      }
+    },
+    {
+      "ar": "وَجَعَلنَٰهُم",
+      "tr": "wajaʿalnāhum",
+      "ty": "perfect",
+      "n": 5,
+      "mn": {
+        "en": "and he made them",
+        "bn": "এবং সে বানিয়েছে তাদের"
+      }
+    },
+    {
+      "ar": "يَجعَلَ",
+      "tr": "yajʿala",
+      "ty": "subjunctive",
+      "n": 4,
+      "mn": {
+        "en": "he makes",
+        "bn": "সে বানায়"
+      }
+    },
+    {
+      "ar": "يَجعَلُ",
+      "tr": "yajʿalu",
+      "ty": "imperfect",
+      "n": 4,
+      "mn": {
+        "en": "he makes",
+        "bn": "সে বানায়"
+      }
+    },
+    {
+      "ar": "تَجعَل",
+      "tr": "tajʿal",
+      "ty": "jussive",
+      "n": 4,
+      "mn": {
+        "en": "you make",
+        "bn": "তুমি বানাও"
+      }
+    },
+    {
+      "ar": "وَجَعَلَنِى",
+      "tr": "wajaʿalaniā",
+      "ty": "perfect",
+      "n": 4,
+      "mn": {
+        "en": "and he made me",
+        "bn": "এবং সে বানিয়েছে আমাকে"
+      }
+    },
+    {
+      "ar": "وَيَجعَل",
+      "tr": "wayajʿal",
+      "ty": "jussive",
+      "n": 4,
+      "mn": {
+        "en": "and he makes",
+        "bn": "এবং সে বানায়"
+      }
+    },
+    {
+      "ar": "جَعَلنَٰكَ",
+      "tr": "jaʿalnāka",
+      "ty": "perfect",
+      "n": 3,
+      "mn": {
+        "en": "he made you",
+        "bn": "সে বানিয়েছে তোমাকে"
+      }
+    },
+    {
+      "ar": "تَجعَلنَ",
+      "tr": "tajʿalnā",
+      "ty": "jussive",
+      "n": 3,
+      "mn": {
+        "en": "you make",
+        "bn": "তুমি বানাও"
+      }
+    },
+    {
+      "ar": "جَعَلَهُ,",
+      "tr": "jaʿalahu,",
+      "ty": "perfect",
+      "n": 3,
+      "mn": {
+        "en": "he made him",
+        "bn": "সে বানিয়েছে তাকে"
+      }
+    },
+    {
+      "ar": "وَيَجعَلُونَ",
+      "tr": "wayajʿalūna",
+      "ty": "imperfect",
+      "n": 3,
+      "mn": {
+        "en": "and they make",
+        "bn": "এবং তারা বানায়"
+      }
+    },
+    {
+      "ar": "وَجَعَلنَٰهُ",
+      "tr": "wajaʿalnāhu",
+      "ty": "perfect",
+      "n": 3,
+      "mn": {
+        "en": "and he made him",
+        "bn": "এবং সে বানিয়েছে তাকে"
+      }
+    },
+    {
+      "ar": "نَجعَل",
+      "tr": "najʿal",
+      "ty": "jussive",
+      "n": 3,
+      "mn": {
+        "en": "we make",
+        "bn": "আমরা বানাই"
+      }
+    },
+    {
+      "ar": "نَجعَلُ",
+      "tr": "najʿalu",
+      "ty": "imperfect",
+      "n": 3,
+      "mn": {
+        "en": "we make",
+        "bn": "আমরা বানাই"
+      }
+    },
+    {
+      "ar": "جَعَلنَٰهَ",
+      "tr": "jaʿalnāhā",
+      "ty": "perfect",
+      "n": 3,
+      "mn": {
+        "en": "he made it",
+        "bn": "সে বানিয়েছে তা"
+      }
+    },
+    {
+      "ar": "فَجَعَلنَٰهُم",
+      "tr": "fajaʿalnāhum",
+      "ty": "perfect",
+      "n": 3,
+      "mn": {
+        "en": "then he made them",
+        "bn": "তারপর সে বানিয়েছে তাদের"
+      }
+    },
+    {
+      "ar": "فَجَعَلنَٰهُ",
+      "tr": "fajaʿalnāhu",
+      "ty": "perfect",
+      "n": 3,
+      "mn": {
+        "en": "then he made him",
+        "bn": "তারপর সে বানিয়েছে তাকে"
+      }
+    },
+    {
+      "ar": "فَجَعَلَهُ,",
+      "tr": "fajaʿalahu,",
+      "ty": "perfect",
+      "n": 3,
+      "mn": {
+        "en": "then he made him",
+        "bn": "তারপর সে বানিয়েছে তাকে"
+      }
+    },
+    {
+      "ar": "جَعَلُو",
+      "tr": "jaʿalūā",
+      "ty": "perfect",
+      "n": 3,
+      "mn": {
+        "en": "they made",
+        "bn": "তারা বানিয়েছে"
+      }
+    },
+    {
+      "ar": "فَٱجعَل",
+      "tr": "fajʿal",
+      "ty": "imperative",
+      "n": 3,
+      "mn": {
+        "en": "then make!",
+        "bn": "তারপর বানাও!"
+      }
+    },
+    {
+      "ar": "وَجَعَلنَٰهَ",
+      "tr": "wajaʿalnāhā",
+      "ty": "perfect",
+      "n": 3,
+      "mn": {
+        "en": "and he made it",
+        "bn": "এবং সে বানিয়েছে তা"
+      }
+    },
+    {
+      "ar": "يَجعَلُونَ",
+      "tr": "yajʿalūna",
+      "ty": "imperfect",
+      "n": 2,
+      "mn": {
+        "en": "they make",
+        "bn": "তারা বানায়"
+      }
+    },
+    {
+      "ar": "فَجَعَلنَٰهَ",
+      "tr": "fajaʿalnāhā",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "then he made it",
+        "bn": "তারপর সে বানিয়েছে তা"
+      }
+    },
+    {
+      "ar": "وَٱجعَلنَ",
+      "tr": "wajʿalnā",
+      "ty": "imperative",
+      "n": 2,
+      "mn": {
+        "en": "and make!",
+        "bn": "এবং বানাও!"
+      }
+    },
+    {
+      "ar": "جَعَلنَٰكُم",
+      "tr": "jaʿalnākum",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "he made you (pl.)",
+        "bn": "সে বানিয়েছে তোমাদের"
+      }
+    },
+    {
+      "ar": "جَعَلَهُ",
+      "tr": "jaʿalahu",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "he made him",
+        "bn": "সে বানিয়েছে তাকে"
+      }
+    },
+    {
+      "ar": "لِيَجعَلَ",
+      "tr": "līajʿala",
+      "ty": "subjunctive",
+      "n": 2,
+      "mn": {
+        "en": "so that he makes",
+        "bn": "যাতে সে বানায়"
+      }
+    },
+    {
+      "ar": "وَيَجعَلَ",
+      "tr": "wayajʿala",
+      "ty": "subjunctive",
+      "n": 2,
+      "mn": {
+        "en": "and he makes",
+        "bn": "এবং সে বানায়"
+      }
+    },
+    {
+      "ar": "لَجَعَلَكُم",
+      "tr": "lajaʿalakum",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "he made you (pl.)",
+        "bn": "সে বানিয়েছে তোমাদের"
+      }
+    },
+    {
+      "ar": "تَجعَلنِى",
+      "tr": "tajʿalniā",
+      "ty": "jussive",
+      "n": 2,
+      "mn": {
+        "en": "you make me",
+        "bn": "তুমি বানাও আমাকে"
+      }
+    },
+    {
+      "ar": "وَيَجعَلُ",
+      "tr": "wayajʿalu",
+      "ty": "imperfect",
+      "n": 2,
+      "mn": {
+        "en": "and he makes",
+        "bn": "এবং সে বানায়"
+      }
+    },
+    {
+      "ar": "ٱجعَلنِى",
+      "tr": "jʿalniā",
+      "ty": "imperative",
+      "n": 2,
+      "mn": {
+        "en": "make! me",
+        "bn": "বানাও! আমাকে"
+      }
+    },
+    {
+      "ar": "وَجَعَلنَٰكُم",
+      "tr": "wajaʿalnākum",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "and he made you (pl.)",
+        "bn": "এবং সে বানিয়েছে তোমাদের"
+      }
+    },
+    {
+      "ar": "سَيَجعَلُ",
+      "tr": "sayajʿalu",
+      "ty": "imperfect",
+      "n": 2,
+      "mn": {
+        "en": "will he makes",
+        "bn": "শীঘ্রই সে বানায়"
+      }
+    },
+    {
+      "ar": "جَعَلنَٰهُم",
+      "tr": "jaʿalnāhum",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "he made them",
+        "bn": "সে বানিয়েছে তাদের"
+      }
+    },
+    {
+      "ar": "فَجَعَلَهُم",
+      "tr": "fajaʿalahum",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "then he made them",
+        "bn": "তারপর সে বানিয়েছে তাদের"
+      }
+    },
+    {
+      "ar": "فَجَعَلنَٰهُمُ",
+      "tr": "fajaʿalnāhumu",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "then he made them",
+        "bn": "তারপর সে বানিয়েছে তাদের"
+      }
+    },
+    {
+      "ar": "يَجعَلُهُ,",
+      "tr": "yajʿaluhu,",
+      "ty": "imperfect",
+      "n": 2,
+      "mn": {
+        "en": "he makes him",
+        "bn": "সে বানায় তাকে"
+      }
+    },
+    {
+      "ar": "وَتَجعَلُونَ",
+      "tr": "watajʿalūna",
+      "ty": "imperfect",
+      "n": 2,
+      "mn": {
+        "en": "and you (pl.) make",
+        "bn": "এবং তোমরা বানাও"
+      }
+    },
+    {
+      "ar": "فَجَعَلَ",
+      "tr": "fajaʿala",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "then he made",
+        "bn": "তারপর সে বানিয়েছে"
+      }
+    },
+    {
+      "ar": "نَجعَلِ",
+      "tr": "najʿali",
+      "ty": "jussive",
+      "n": 2,
+      "mn": {
+        "en": "we make",
+        "bn": "আমরা বানাই"
+      }
+    },
+    {
+      "ar": "أَتَجعَلُ",
+      "tr": "ʾātajʿalu",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "do you make",
+        "bn": "কি তুমি বানাও"
+      }
+    },
+    {
+      "ar": "وَلِنَجعَلَكَ",
+      "tr": "walinajʿalaka",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "and so that we make you",
+        "bn": "এবং যাতে আমরা বানাই তোমাকে"
+      }
+    },
+    {
+      "ar": "فَنَجعَل",
+      "tr": "fanajʿal",
+      "ty": "jussive",
+      "n": 1,
+      "mn": {
+        "en": "then we make",
+        "bn": "তারপর আমরা বানাই"
+      }
+    },
+    {
+      "ar": "وَجَعَلَكُم",
+      "tr": "wajaʿalakum",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "and he made you (pl.)",
+        "bn": "এবং সে বানিয়েছে তোমাদের"
+      }
+    },
+    {
+      "ar": "لَّجَعَلنَٰهُ",
+      "tr": "lajaʿalnāhu",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "he made him",
+        "bn": "সে বানিয়েছে তাকে"
+      }
+    },
+    {
+      "ar": "يَجعَلهُ",
+      "tr": "yajʿalhu",
+      "ty": "jussive",
+      "n": 1,
+      "mn": {
+        "en": "he makes him",
+        "bn": "সে বানায় তাকে"
+      }
+    },
+    {
+      "ar": "تَجعَلُونَهُ,",
+      "tr": "tajʿalūnahu,",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "you (pl.) make him",
+        "bn": "তোমরা বানাও তাকে"
+      }
+    },
+    {
+      "ar": "فَيَجعَلَهُ,",
+      "tr": "fayajʿalahu,",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "then he makes him",
+        "bn": "তারপর সে বানায় তাকে"
+      }
+    },
+    {
+      "ar": "أَجَعَلتُم",
+      "tr": "ʾājaʿaltum",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "you (pl.) made",
+        "bn": "তোমরা বানিয়েছ"
+      }
+    },
+    {
+      "ar": "فَجَعَلتُم",
+      "tr": "fajaʿaltum",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "then you (pl.) made",
+        "bn": "তারপর তোমরা বানিয়েছ"
+      }
+    },
+    {
+      "ar": "وَٱجعَلُو",
+      "tr": "wajʿalūā",
+      "ty": "imperative",
+      "n": 1,
+      "mn": {
+        "en": "and make! (pl.)",
+        "bn": "এবং বানাও!"
+      }
+    },
+    {
+      "ar": "لَجَعَلَ",
+      "tr": "lajaʿala",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "he made",
+        "bn": "সে বানিয়েছে"
+      }
+    },
+    {
+      "ar": "يَجعَلُوهُ",
+      "tr": "yajʿalūhu",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "he makes him",
+        "bn": "সে বানায় তাকে"
+      }
+    },
+    {
+      "ar": "ٱجعَلُو",
+      "tr": "jʿalūā",
+      "ty": "imperative",
+      "n": 1,
+      "mn": {
+        "en": "make! (pl.)",
+        "bn": "বানাও!"
+      }
+    },
+    {
+      "ar": "جَعَلَهَ",
+      "tr": "jaʿalahā",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "he made it",
+        "bn": "সে বানিয়েছে তা"
+      }
+    },
+    {
+      "ar": "فَجَعَلنَ",
+      "tr": "fajaʿalnā",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "then we made",
+        "bn": "তারপর আমরা বানিয়েছি"
+      }
+    },
+    {
+      "ar": "جَعَلتُمُ",
+      "tr": "jaʿaltumu",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "you (pl.) made",
+        "bn": "তোমরা বানিয়েছ"
+      }
+    },
+    {
+      "ar": "جُعِلَ",
+      "tr": "juʿila",
+      "ty": "passive",
+      "n": 1,
+      "mn": {
+        "en": "it was made",
+        "bn": "বানানো হয়েছে"
+      }
+    },
+    {
+      "ar": "نَّجعَلَ",
+      "tr": "najʿala",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "we make",
+        "bn": "আমরা বানাই"
+      }
+    },
+    {
+      "ar": "تَجعَلَ",
+      "tr": "tajʿala",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "you make",
+        "bn": "তুমি বানাও"
+      }
+    },
+    {
+      "ar": "أَجعَل",
+      "tr": "ʾājʿal",
+      "ty": "jussive",
+      "n": 1,
+      "mn": {
+        "en": "I make",
+        "bn": "আমি বানাই"
+      }
+    },
+    {
+      "ar": "وَٱجعَلهُ",
+      "tr": "wajʿalhu",
+      "ty": "imperative",
+      "n": 1,
+      "mn": {
+        "en": "and make! him",
+        "bn": "এবং বানাও! তাকে"
+      }
+    },
+    {
+      "ar": "وَلِنَجعَلَهُ,",
+      "tr": "walinajʿalahu,",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "and so that we make",
+        "bn": "এবং যাতে আমরা বানাই"
+      }
+    },
+    {
+      "ar": "يَجعَلنِى",
+      "tr": "yajʿalniā",
+      "ty": "jussive",
+      "n": 1,
+      "mn": {
+        "en": "he makes me",
+        "bn": "সে বানায় আমাকে"
+      }
+    },
+    {
+      "ar": "لِّيَجعَلَ",
+      "tr": "līajʿala",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "so that he makes",
+        "bn": "যাতে সে বানায়"
+      }
+    },
+    {
+      "ar": "يَجعَلِ",
+      "tr": "yajʿali",
+      "ty": "jussive",
+      "n": 1,
+      "mn": {
+        "en": "he makes",
+        "bn": "সে বানায়"
+      }
+    },
+    {
+      "ar": "لَجَعَلَهُ,",
+      "tr": "lajaʿalahu,",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "he made him",
+        "bn": "সে বানিয়েছে তাকে"
+      }
+    },
+    {
+      "ar": "لَأَجعَلَنَّكَ",
+      "tr": "laʾājʿalanaka",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "surely I make you",
+        "bn": "অবশ্যই আমি বানাই তোমাকে"
+      }
+    },
+    {
+      "ar": "وَٱجعَلنِى",
+      "tr": "wajʿalniā",
+      "ty": "imperative",
+      "n": 1,
+      "mn": {
+        "en": "and make! me",
+        "bn": "এবং বানাও! আমাকে"
+      }
+    },
+    {
+      "ar": "وَيَجعَلُكُم",
+      "tr": "wayajʿalukum",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "and he makes you (pl.)",
+        "bn": "এবং সে বানায় তোমাদের"
+      }
+    },
+    {
+      "ar": "وَنَجعَلَهُم",
+      "tr": "wanajʿalahum",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "and we make them",
+        "bn": "এবং আমরা বানাই তাদের"
+      }
+    },
+    {
+      "ar": "وَنَجعَلَهُمُ",
+      "tr": "wanajʿalahumu",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "and we make them",
+        "bn": "এবং আমরা বানাই তাদের"
+      }
+    },
+    {
+      "ar": "وَنَجعَلُ",
+      "tr": "wanajʿalu",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "and we make",
+        "bn": "এবং আমরা বানাই"
+      }
+    },
+    {
+      "ar": "نَجعَلُهَ",
+      "tr": "najʿaluhā",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "we make it",
+        "bn": "আমরা বানাই তা"
+      }
+    },
+    {
+      "ar": "وَيَجعَلُهُ,",
+      "tr": "wayajʿaluhu,",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "and he makes him",
+        "bn": "এবং সে বানায় তাকে"
+      }
+    },
+    {
+      "ar": "وَنَجعَلَ",
+      "tr": "wanajʿala",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "and we make",
+        "bn": "এবং আমরা বানাই"
+      }
+    },
+    {
+      "ar": "أَجَعَلَ",
+      "tr": "ʾājaʿala",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "he made",
+        "bn": "সে বানিয়েছে"
+      }
+    },
+    {
+      "ar": "نَجعَلهُمَ",
+      "tr": "najʿalhumā",
+      "ty": "jussive",
+      "n": 1,
+      "mn": {
+        "en": "we make",
+        "bn": "আমরা বানাই"
+      }
+    },
+    {
+      "ar": "لَجَعَلَهُم",
+      "tr": "lajaʿalahum",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "he made them",
+        "bn": "সে বানিয়েছে তাদের"
+      }
+    },
+    {
+      "ar": "وَجَعَلَهَ",
+      "tr": "wajaʿalahā",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "and he made it",
+        "bn": "এবং সে বানিয়েছে তা"
+      }
+    },
+    {
+      "ar": "لَّجَعَلنَ",
+      "tr": "lajaʿalnā",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "we made",
+        "bn": "আমরা বানিয়েছি"
+      }
+    },
+    {
+      "ar": "أَجَعَلنَ",
+      "tr": "ʾājaʿalnā",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "we made",
+        "bn": "আমরা বানিয়েছি"
+      }
+    },
+    {
+      "ar": "لَجَعَلنَ",
+      "tr": "lajaʿalnā",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "we made",
+        "bn": "আমরা বানিয়েছি"
+      }
+    },
+    {
+      "ar": "نَّجعَلَهُم",
+      "tr": "najʿalahum",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "we make them",
+        "bn": "আমরা বানাই তাদের"
+      }
+    },
+    {
+      "ar": "جَعَلَتهُ",
+      "tr": "jaʿalathu",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "she made him",
+        "bn": "সে বানিয়েছে তাকে"
+      }
+    },
+    {
+      "ar": "فَجَعَلنَٰهُنَّ",
+      "tr": "fajaʿalnāhuna",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "then he made them (f.)",
+        "bn": "তারপর সে বানিয়েছে তাদের"
+      }
+    },
+    {
+      "ar": "لَجَعَلنَٰهُ",
+      "tr": "lajaʿalnāhu",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "he made him",
+        "bn": "সে বানিয়েছে তাকে"
+      }
+    },
+    {
+      "ar": "أَفَنَجعَلُ",
+      "tr": "ʾāfanajʿalu",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "do then we make",
+        "bn": "কি তারপর আমরা বানাই"
+      }
+    },
+    {
+      "ar": "لِنَجعَلَهَ",
+      "tr": "linajʿalahā",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "so that we make it",
+        "bn": "যাতে আমরা বানাই তা"
+      }
+    },
+    {
+      "ar": "وَجَعَلتُ",
+      "tr": "wajaʿaltu",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "and I made",
+        "bn": "এবং আমি বানিয়েছি"
+      }
+    }
+  ],
+  "6": [
+    {
+      "ar": "كَفَرُو",
+      "tr": "kafarūā",
+      "ty": "perfect",
+      "n": 189,
+      "mn": {
+        "en": "they disbelieved",
+        "bn": "তারা কুফরি করেছে"
+      }
+    },
+    {
+      "ar": "كَفَرَ",
+      "tr": "kafara",
+      "ty": "perfect",
+      "n": 18,
+      "mn": {
+        "en": "he disbelieved",
+        "bn": "সে কুফরি করেছে"
+      }
+    },
+    {
+      "ar": "يَكفُرُونَ",
+      "tr": "yakfurūna",
+      "ty": "imperfect",
+      "n": 12,
+      "mn": {
+        "en": "they disbelieve",
+        "bn": "তারা কুফরি করে"
+      }
+    },
+    {
+      "ar": "تَكفُرُونَ",
+      "tr": "takfurūna",
+      "ty": "imperfect",
+      "n": 11,
+      "mn": {
+        "en": "you (pl.) disbelieve",
+        "bn": "তোমরা কুফরি করো"
+      }
+    },
+    {
+      "ar": "يَكفُر",
+      "tr": "yakfur",
+      "ty": "jussive",
+      "n": 8,
+      "mn": {
+        "en": "he disbelieves",
+        "bn": "সে কুফরি করে"
+      }
+    },
+    {
+      "ar": "كَفَرتُم",
+      "tr": "kafartum",
+      "ty": "perfect",
+      "n": 6,
+      "mn": {
+        "en": "you (pl.) disbelieved",
+        "bn": "তোমরা কুফরি করেছ"
+      }
+    },
+    {
+      "ar": "تَكفُرُو",
+      "tr": "takfurūā",
+      "ty": "jussive",
+      "n": 4,
+      "mn": {
+        "en": "you (pl.) disbelieve",
+        "bn": "তোমরা কুফরি করো"
+      }
+    },
+    {
+      "ar": "يَكفُرُو",
+      "tr": "yakfurūā",
+      "ty": "subjunctive",
+      "n": 3,
+      "mn": {
+        "en": "they disbelieve",
+        "bn": "তারা কুফরি করে"
+      }
+    },
+    {
+      "ar": "يَكفُرُ",
+      "tr": "yakfuru",
+      "ty": "imperfect",
+      "n": 3,
+      "mn": {
+        "en": "he disbelieves",
+        "bn": "সে কুফরি করে"
+      }
+    },
+    {
+      "ar": "لِيَكفُرُو",
+      "tr": "līakfurūā",
+      "ty": "subjunctive",
+      "n": 3,
+      "mn": {
+        "en": "so that they disbelieve",
+        "bn": "যাতে তারা কুফরি করে"
+      }
+    },
+    {
+      "ar": "فَكَفَرُو",
+      "tr": "fakafarūā",
+      "ty": "perfect",
+      "n": 3,
+      "mn": {
+        "en": "then they disbelieved",
+        "bn": "তারপর তারা কুফরি করেছে"
+      }
+    },
+    {
+      "ar": "وَكَفَرُو",
+      "tr": "wakafarūā",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "and they disbelieved",
+        "bn": "এবং তারা কুফরি করেছে"
+      }
+    },
+    {
+      "ar": "كَفَرنَ",
+      "tr": "kafarnā",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "we disbelieved",
+        "bn": "আমরা কুফরি করেছি"
+      }
+    },
+    {
+      "ar": "وَتَكفُرُونَ",
+      "tr": "watakfurūna",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "and you (pl.) disbelieve",
+        "bn": "এবং তোমরা কুফরি করো"
+      }
+    },
+    {
+      "ar": "وَيَكفُرُونَ",
+      "tr": "wayakfurūna",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "and they disbelieve",
+        "bn": "এবং তারা কুফরি করে"
+      }
+    },
+    {
+      "ar": "تَكفُر",
+      "tr": "takfur",
+      "ty": "jussive",
+      "n": 1,
+      "mn": {
+        "en": "you disbelieve",
+        "bn": "তুমি কুফরি করো"
+      }
+    },
+    {
+      "ar": "تَكفُرُونِ",
+      "tr": "takfurūni",
+      "ty": "jussive",
+      "n": 1,
+      "mn": {
+        "en": "you disbelieve",
+        "bn": "তুমি কুফরি করো"
+      }
+    },
+    {
+      "ar": "وَٱكفُرُو",
+      "tr": "wakfurūā",
+      "ty": "imperative",
+      "n": 1,
+      "mn": {
+        "en": "and disbelieve! (pl.)",
+        "bn": "এবং কুফরি করো না!"
+      }
+    },
+    {
+      "ar": "أَكَفَرتُم",
+      "tr": "ʾākafartum",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "you (pl.) disbelieved",
+        "bn": "তোমরা কুফরি করেছ"
+      }
+    },
+    {
+      "ar": "يُكفَرُوهُ",
+      "tr": "yukfarūhu",
+      "ty": "passive",
+      "n": 1,
+      "mn": {
+        "en": "they were disbelieved him",
+        "bn": "কুফরি করা হয়েছে তাকে"
+      }
+    },
+    {
+      "ar": "يُكفَرُ",
+      "tr": "yukfaru",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "he disbelieves",
+        "bn": "সে কুফরি করে"
+      }
+    },
+    {
+      "ar": "وَنَكفُرُ",
+      "tr": "wanakfuru",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "and we disbelieve",
+        "bn": "এবং আমরা কুফরি করি"
+      }
+    },
+    {
+      "ar": "كَفَرتُ",
+      "tr": "kafartu",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "I disbelieved",
+        "bn": "আমি কুফরি করেছি"
+      }
+    },
+    {
+      "ar": "فَكَفَرَت",
+      "tr": "fakafarat",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "then she disbelieved",
+        "bn": "তারপর সে কুফরি করেছে"
+      }
+    },
+    {
+      "ar": "فَليَكفُر",
+      "tr": "falyakfur",
+      "ty": "jussive",
+      "n": 1,
+      "mn": {
+        "en": "then so that he disbelieves",
+        "bn": "তারপর যাতে সে কুফরি করে"
+      }
+    },
+    {
+      "ar": "أَكَفَرتَ",
+      "tr": "ʾākafarta",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "you disbelieved",
+        "bn": "তুমি কুফরি করেছ"
+      }
+    },
+    {
+      "ar": "سَيَكفُرُونَ",
+      "tr": "sayakfurūna",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "will they disbelieve",
+        "bn": "শীঘ্রই তারা কুফরি করে"
+      }
+    },
+    {
+      "ar": "أَكفُرُ",
+      "tr": "ʾākfuru",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "I disbelieve",
+        "bn": "আমি কুফরি করি"
+      }
+    },
+    {
+      "ar": "نَّكفُرَ",
+      "tr": "nakfura",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "we disbelieve",
+        "bn": "আমরা কুফরি করি"
+      }
+    },
+    {
+      "ar": "فَتَكفُرُونَ",
+      "tr": "fatakfurūna",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "then you (pl.) disbelieve",
+        "bn": "তারপর তোমরা কুফরি করো"
+      }
+    },
+    {
+      "ar": "لِأَكفُرَ",
+      "tr": "liʾākfura",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "he disbelieves",
+        "bn": "সে কুফরি করে"
+      }
+    },
+    {
+      "ar": "وَكَفَرنَ",
+      "tr": "wakafarnā",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "and we disbelieved",
+        "bn": "এবং আমরা কুফরি করেছি"
+      }
+    },
+    {
+      "ar": "لَتَكفُرُونَ",
+      "tr": "latakfurūna",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "surely you (pl.) disbelieve",
+        "bn": "অবশ্যই তোমরা কুফরি করো"
+      }
+    },
+    {
+      "ar": "وَكَفَرتُم",
+      "tr": "wakafartum",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "and you (pl.) disbelieved",
+        "bn": "এবং তোমরা কুফরি করেছ"
+      }
+    },
+    {
+      "ar": "كُفِرَ",
+      "tr": "kufira",
+      "ty": "passive",
+      "n": 1,
+      "mn": {
+        "en": "it was disbelieved",
+        "bn": "কুফরি করা হয়েছে"
+      }
+    },
+    {
+      "ar": "ٱكفُر",
+      "tr": "kfur",
+      "ty": "imperative",
+      "n": 1,
+      "mn": {
+        "en": "disbelieve!",
+        "bn": "কুফরি করো না!"
+      }
+    },
+    {
+      "ar": "وَكَفَرَت",
+      "tr": "wakafarat",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "and she disbelieved",
+        "bn": "এবং সে কুফরি করেছে"
+      }
+    },
+    {
+      "ar": "وَكَفَرَ",
+      "tr": "wakafara",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "and he disbelieved",
+        "bn": "এবং সে কুফরি করেছে"
+      }
+    }
+  ],
+  "7": [
+    {
+      "ar": "جَاءَ",
+      "tr": "jāʾa",
+      "ty": "perfect",
+      "n": 57,
+      "mn": {
+        "en": "he came",
+        "bn": "সে এসেছে"
+      }
+    },
+    {
+      "ar": "جَاءَهُم",
+      "tr": "jāʾahum",
+      "ty": "perfect",
+      "n": 30,
+      "mn": {
+        "en": "he came them",
+        "bn": "সে এসেছে তাদের"
+      }
+    },
+    {
+      "ar": "جَاءَكُم",
+      "tr": "jāʾakum",
+      "ty": "perfect",
+      "n": 21,
+      "mn": {
+        "en": "he came you (pl.)",
+        "bn": "সে এসেছে তোমাদের"
+      }
+    },
+    {
+      "ar": "جَاءَكَ",
+      "tr": "jāʾaka",
+      "ty": "perfect",
+      "n": 11,
+      "mn": {
+        "en": "he came you",
+        "bn": "সে এসেছে তোমাকে"
+      }
+    },
+    {
+      "ar": "جَاءَهُمُ",
+      "tr": "jāʾahumu",
+      "ty": "perfect",
+      "n": 11,
+      "mn": {
+        "en": "he came them",
+        "bn": "সে এসেছে তাদের"
+      }
+    },
+    {
+      "ar": "جَاءَتهُم",
+      "tr": "jāʾathum",
+      "ty": "perfect",
+      "n": 11,
+      "mn": {
+        "en": "she came them",
+        "bn": "সে এসেছে তাদের"
+      }
+    },
+    {
+      "ar": "وَجَاءَ",
+      "tr": "wajāʾa",
+      "ty": "perfect",
+      "n": 10,
+      "mn": {
+        "en": "and he came",
+        "bn": "এবং সে এসেছে"
+      }
+    },
+    {
+      "ar": "جَاءَت",
+      "tr": "jāʾat",
+      "ty": "perfect",
+      "n": 8,
+      "mn": {
+        "en": "she came",
+        "bn": "সে এসেছে"
+      }
+    },
+    {
+      "ar": "جَاءَتهُمُ",
+      "tr": "jāʾathumu",
+      "ty": "perfect",
+      "n": 7,
+      "mn": {
+        "en": "she came them",
+        "bn": "সে এসেছে তাদের"
+      }
+    },
+    {
+      "ar": "جَاءُو",
+      "tr": "jāʾū",
+      "ty": "perfect",
+      "n": 6,
+      "mn": {
+        "en": "they came",
+        "bn": "তারা এসেছে"
+      }
+    },
+    {
+      "ar": "جَاءَنَ",
+      "tr": "jāʾanā",
+      "ty": "perfect",
+      "n": 6,
+      "mn": {
+        "en": "we came",
+        "bn": "আমরা এসেছি"
+      }
+    },
+    {
+      "ar": "جِئتَ",
+      "tr": "jiʾta",
+      "ty": "perfect",
+      "n": 5,
+      "mn": {
+        "en": "you came",
+        "bn": "তুমি এসেছ"
+      }
+    },
+    {
+      "ar": "جَاءُوكَ",
+      "tr": "jāʾūka",
+      "ty": "perfect",
+      "n": 5,
+      "mn": {
+        "en": "they came you",
+        "bn": "তারা এসেছে তোমাকে"
+      }
+    },
+    {
+      "ar": "أَجِئتَنَ",
+      "tr": "ʾājiʾtanā",
+      "ty": "perfect",
+      "n": 5,
+      "mn": {
+        "en": "we came",
+        "bn": "আমরা এসেছি"
+      }
+    },
+    {
+      "ar": "جَاءَهُ,",
+      "tr": "jāʾahu,",
+      "ty": "perfect",
+      "n": 5,
+      "mn": {
+        "en": "he came him",
+        "bn": "সে এসেছে তাকে"
+      }
+    },
+    {
+      "ar": "جِئتُكُم",
+      "tr": "jiʾtukum",
+      "ty": "perfect",
+      "n": 4,
+      "mn": {
+        "en": "I came you (pl.)",
+        "bn": "আমি এসেছি তোমাদের"
+      }
+    },
+    {
+      "ar": "جِئنَ",
+      "tr": "jiʾnā",
+      "ty": "perfect",
+      "n": 4,
+      "mn": {
+        "en": "we came",
+        "bn": "আমরা এসেছি"
+      }
+    },
+    {
+      "ar": "جَاءَكُمُ",
+      "tr": "jāʾakumu",
+      "ty": "perfect",
+      "n": 4,
+      "mn": {
+        "en": "he came you (pl.)",
+        "bn": "সে এসেছে তোমাদের"
+      }
+    },
+    {
+      "ar": "جَاءَتكُم",
+      "tr": "jāʾatkum",
+      "ty": "perfect",
+      "n": 4,
+      "mn": {
+        "en": "she came you (pl.)",
+        "bn": "সে এসেছে তোমাদের"
+      }
+    },
+    {
+      "ar": "وَجِئنَ",
+      "tr": "wajiʾnā",
+      "ty": "perfect",
+      "n": 3,
+      "mn": {
+        "en": "and we came",
+        "bn": "এবং আমরা এসেছি"
+      }
+    },
+    {
+      "ar": "وَجَاءَت",
+      "tr": "wajāʾat",
+      "ty": "perfect",
+      "n": 3,
+      "mn": {
+        "en": "and she came",
+        "bn": "এবং সে এসেছে"
+      }
+    },
+    {
+      "ar": "جِئنَٰكَ",
+      "tr": "jiʾnāka",
+      "ty": "perfect",
+      "n": 3,
+      "mn": {
+        "en": "he came you",
+        "bn": "সে এসেছে তোমাকে"
+      }
+    },
+    {
+      "ar": "جَاءُوهَ",
+      "tr": "jāʾūhā",
+      "ty": "perfect",
+      "n": 3,
+      "mn": {
+        "en": "they came it",
+        "bn": "তারা এসেছে তা"
+      }
+    },
+    {
+      "ar": "جَاءُوكُم",
+      "tr": "jāʾūkum",
+      "ty": "perfect",
+      "n": 3,
+      "mn": {
+        "en": "they came you (pl.)",
+        "bn": "তারা এসেছে তোমাদের"
+      }
+    },
+    {
+      "ar": "وَجَاءُو",
+      "tr": "wajāʾū",
+      "ty": "perfect",
+      "n": 3,
+      "mn": {
+        "en": "and they came",
+        "bn": "এবং তারা এসেছে"
+      }
+    },
+    {
+      "ar": "وَجَاءَهُمُ",
+      "tr": "wajāʾahumu",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "and he came them",
+        "bn": "এবং সে এসেছে তাদের"
+      }
+    },
+    {
+      "ar": "جِئتَهُم",
+      "tr": "jiʾtahum",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "you came them",
+        "bn": "তুমি এসেছ তাদের"
+      }
+    },
+    {
+      "ar": "جِئتُمُونَ",
+      "tr": "jiʾtumūnā",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "we came",
+        "bn": "আমরা এসেছি"
+      }
+    },
+    {
+      "ar": "جِئتَنَ",
+      "tr": "jiʾtanā",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "we came",
+        "bn": "আমরা এসেছি"
+      }
+    },
+    {
+      "ar": "وَجَاءَتهُم",
+      "tr": "wajāʾathum",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "and she came them",
+        "bn": "এবং সে এসেছে তাদের"
+      }
+    },
+    {
+      "ar": "فَجَاءُوهُم",
+      "tr": "fajāʾūhum",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "then they came them",
+        "bn": "তারপর তারা এসেছে তাদের"
+      }
+    },
+    {
+      "ar": "جَاءَهُ",
+      "tr": "jāʾahu",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "he came him",
+        "bn": "সে এসেছে তাকে"
+      }
+    },
+    {
+      "ar": "جَاءَنِى",
+      "tr": "jāʾaniā",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "he came me",
+        "bn": "সে এসেছে আমাকে"
+      }
+    },
+    {
+      "ar": "جَاءَهَ",
+      "tr": "jāʾahā",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "he came it",
+        "bn": "সে এসেছে তা"
+      }
+    },
+    {
+      "ar": "وَجِاىءَ",
+      "tr": "wajiāāʾa",
+      "ty": "passive",
+      "n": 2,
+      "mn": {
+        "en": "and he was brought",
+        "bn": "এবং আনা হয়েছে"
+      }
+    },
+    {
+      "ar": "جَاءَتِ",
+      "tr": "jāʾati",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "she came",
+        "bn": "সে এসেছে"
+      }
+    },
+    {
+      "ar": "جِئتُم",
+      "tr": "jiʾtum",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "you (pl.) came",
+        "bn": "তোমরা এসেছ"
+      }
+    },
+    {
+      "ar": "جَاءَتكُمُ",
+      "tr": "jāʾatkumu",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "she came you (pl.)",
+        "bn": "সে এসেছে তোমাদের"
+      }
+    },
+    {
+      "ar": "جَاءَتهُ",
+      "tr": "jāʾathu",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "she came him",
+        "bn": "সে এসেছে তাকে"
+      }
+    },
+    {
+      "ar": "وَجِئتُكُم",
+      "tr": "wajiʾtukum",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "and I came you (pl.)",
+        "bn": "এবং আমি এসেছি তোমাদের"
+      }
+    },
+    {
+      "ar": "فَجَاءَهَ",
+      "tr": "fajāʾahā",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "then he came it",
+        "bn": "তারপর সে এসেছে তা"
+      }
+    },
+    {
+      "ar": "جِئنَٰهُم",
+      "tr": "jiʾnāhum",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "he came them",
+        "bn": "সে এসেছে তাদের"
+      }
+    },
+    {
+      "ar": "جَاءَتنَ",
+      "tr": "jāʾatnā",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "we came",
+        "bn": "আমরা এসেছি"
+      }
+    },
+    {
+      "ar": "جَاءَتهَ",
+      "tr": "jāʾathā",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "she came it",
+        "bn": "সে এসেছে তা"
+      }
+    },
+    {
+      "ar": "وَجَاءَتهُ",
+      "tr": "wajāʾathu",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "and she came him",
+        "bn": "এবং সে এসেছে তাকে"
+      }
+    },
+    {
+      "ar": "وَجَاءَهُ,",
+      "tr": "wajāʾahu,",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "and he came him",
+        "bn": "এবং সে এসেছে তাকে"
+      }
+    },
+    {
+      "ar": "وَجَاءَكَ",
+      "tr": "wajāʾaka",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "and he came you",
+        "bn": "এবং সে এসেছে তোমাকে"
+      }
+    },
+    {
+      "ar": "فَأَجَاءَهَ",
+      "tr": "faʾājāʾahā",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "then he came it",
+        "bn": "তারপর সে এসেছে তা"
+      }
+    },
+    {
+      "ar": "جِئتِ",
+      "tr": "jiʾti",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "he came",
+        "bn": "সে এসেছে"
+      }
+    },
+    {
+      "ar": "جِئتُكَ",
+      "tr": "jiʾtuka",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "I came you",
+        "bn": "আমি এসেছি তোমাকে"
+      }
+    },
+    {
+      "ar": "وَجِئتُكَ",
+      "tr": "wajiʾtuka",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "and I came you",
+        "bn": "এবং আমি এসেছি তোমাকে"
+      }
+    },
+    {
+      "ar": "فَجَاءَتهُ",
+      "tr": "fajāʾathu",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "then she came him",
+        "bn": "তারপর সে এসেছে তাকে"
+      }
+    },
+    {
+      "ar": "لَّجَاءَهُمُ",
+      "tr": "lajāʾahumu",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "he came them",
+        "bn": "সে এসেছে তাদের"
+      }
+    },
+    {
+      "ar": "وَجَاءَكُمُ",
+      "tr": "wajāʾakumu",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "and he came you (pl.)",
+        "bn": "এবং সে এসেছে তোমাদের"
+      }
+    },
+    {
+      "ar": "جَاءَتكَ",
+      "tr": "jāʾatka",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "she came you",
+        "bn": "সে এসেছে তোমাকে"
+      }
+    },
+    {
+      "ar": "جَاءَنِىَ",
+      "tr": "jāʾaniāa",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "he came",
+        "bn": "সে এসেছে"
+      }
+    },
+    {
+      "ar": "جِئنَٰكُم",
+      "tr": "jiʾnākum",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "he came you (pl.)",
+        "bn": "সে এসেছে তোমাদের"
+      }
+    },
+    {
+      "ar": "وَجَاءَهُم",
+      "tr": "wajāʾahum",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "and he came them",
+        "bn": "এবং সে এসেছে তাদের"
+      }
+    },
+    {
+      "ar": "فَجَاءَ",
+      "tr": "fajāʾa",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "then he came",
+        "bn": "তারপর সে এসেছে"
+      }
+    }
+  ],
+  "8": [
+    {
+      "ar": "تَعمَلُونَ",
+      "tr": "taʿmalūna",
+      "ty": "imperfect",
+      "n": 83,
+      "mn": {
+        "en": "you (pl.) do",
+        "bn": "তোমরা করো"
+      }
+    },
+    {
+      "ar": "يَعمَلُونَ",
+      "tr": "yaʿmalūna",
+      "ty": "imperfect",
+      "n": 56,
+      "mn": {
+        "en": "they do",
+        "bn": "তারা করে"
+      }
+    },
+    {
+      "ar": "وَعَمِلُو",
+      "tr": "waʿamilūā",
+      "ty": "perfect",
+      "n": 53,
+      "mn": {
+        "en": "and they did",
+        "bn": "এবং তারা করেছে"
+      }
+    },
+    {
+      "ar": "عَمِلُو",
+      "tr": "ʿamilūā",
+      "ty": "perfect",
+      "n": 20,
+      "mn": {
+        "en": "they did",
+        "bn": "তারা করেছে"
+      }
+    },
+    {
+      "ar": "وَعَمِلَ",
+      "tr": "waʿamila",
+      "ty": "perfect",
+      "n": 11,
+      "mn": {
+        "en": "and he did",
+        "bn": "এবং সে করেছে"
+      }
+    },
+    {
+      "ar": "عَمِلَ",
+      "tr": "ʿamila",
+      "ty": "perfect",
+      "n": 8,
+      "mn": {
+        "en": "he did",
+        "bn": "সে করেছে"
+      }
+    },
+    {
+      "ar": "يَعمَل",
+      "tr": "yaʿmal",
+      "ty": "jussive",
+      "n": 7,
+      "mn": {
+        "en": "he does",
+        "bn": "সে করে"
+      }
+    },
+    {
+      "ar": "ٱعمَلُو",
+      "tr": "ʿmalūā",
+      "ty": "imperative",
+      "n": 7,
+      "mn": {
+        "en": "do! (pl.)",
+        "bn": "করো!"
+      }
+    },
+    {
+      "ar": "عَمِلَت",
+      "tr": "ʿamilat",
+      "ty": "perfect",
+      "n": 5,
+      "mn": {
+        "en": "she did",
+        "bn": "সে করেছে"
+      }
+    },
+    {
+      "ar": "نَعمَلُ",
+      "tr": "naʿmalu",
+      "ty": "imperfect",
+      "n": 3,
+      "mn": {
+        "en": "we do",
+        "bn": "আমরা করি"
+      }
+    },
+    {
+      "ar": "يَعمَلُ",
+      "tr": "yaʿmalu",
+      "ty": "imperfect",
+      "n": 3,
+      "mn": {
+        "en": "he does",
+        "bn": "সে করে"
+      }
+    },
+    {
+      "ar": "أَعمَلُ",
+      "tr": "ʾāʿmalu",
+      "ty": "imperfect",
+      "n": 2,
+      "mn": {
+        "en": "I do",
+        "bn": "আমি করি"
+      }
+    },
+    {
+      "ar": "وَٱعمَلُو",
+      "tr": "waʿmalūā",
+      "ty": "imperative",
+      "n": 2,
+      "mn": {
+        "en": "and do! (pl.)",
+        "bn": "এবং করো!"
+      }
+    },
+    {
+      "ar": "أَعمَلَ",
+      "tr": "ʾāʿmala",
+      "ty": "subjunctive",
+      "n": 2,
+      "mn": {
+        "en": "I do",
+        "bn": "আমি করি"
+      }
+    },
+    {
+      "ar": "نَعمَل",
+      "tr": "naʿmal",
+      "ty": "jussive",
+      "n": 2,
+      "mn": {
+        "en": "we do",
+        "bn": "আমরা করি"
+      }
+    },
+    {
+      "ar": "وَيَعمَل",
+      "tr": "wayaʿmal",
+      "ty": "jussive",
+      "n": 2,
+      "mn": {
+        "en": "and he does",
+        "bn": "এবং সে করে"
+      }
+    },
+    {
+      "ar": "فَنَعمَلَ",
+      "tr": "fanaʿmala",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "then we do",
+        "bn": "তারপর আমরা করি"
+      }
+    },
+    {
+      "ar": "فَليَعمَل",
+      "tr": "falyaʿmal",
+      "ty": "jussive",
+      "n": 1,
+      "mn": {
+        "en": "then so that he does",
+        "bn": "তারপর যাতে সে করে"
+      }
+    },
+    {
+      "ar": "تَّعمَلُ",
+      "tr": "taʿmalu",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "you do",
+        "bn": "তুমি করো"
+      }
+    },
+    {
+      "ar": "وَيَعمَلُونَ",
+      "tr": "wayaʿmalūna",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "and they do",
+        "bn": "এবং তারা করে"
+      }
+    },
+    {
+      "ar": "وَتَعمَل",
+      "tr": "wataʿmal",
+      "ty": "jussive",
+      "n": 1,
+      "mn": {
+        "en": "and you do",
+        "bn": "এবং তুমি করো"
+      }
+    },
+    {
+      "ar": "ٱعمَل",
+      "tr": "ʿmal",
+      "ty": "imperative",
+      "n": 1,
+      "mn": {
+        "en": "do!",
+        "bn": "করো!"
+      }
+    },
+    {
+      "ar": "عَمِلَتهُ",
+      "tr": "ʿamilathu",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "she did him",
+        "bn": "সে করেছে তাকে"
+      }
+    },
+    {
+      "ar": "فَليَعمَلِ",
+      "tr": "falyaʿmali",
+      "ty": "jussive",
+      "n": 1,
+      "mn": {
+        "en": "then so that he does",
+        "bn": "তারপর যাতে সে করে"
+      }
+    },
+    {
+      "ar": "فَٱعمَل",
+      "tr": "faʿmal",
+      "ty": "imperative",
+      "n": 1,
+      "mn": {
+        "en": "then do!",
+        "bn": "তারপর করো!"
+      }
+    },
+    {
+      "ar": "عَمِلتُم",
+      "tr": "ʿamiltum",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "you (pl.) did",
+        "bn": "তোমরা করেছ"
+      }
+    }
+  ],
+  "9": [
+    {
+      "ar": "أُوتُو",
+      "tr": "ʾaūtūā",
+      "ty": "passive",
+      "n": 32,
+      "mn": {
+        "en": "they were given",
+        "bn": "তাদের দেওয়া হয়েছে"
+      }
+    },
+    {
+      "ar": "ءَاتَينَ",
+      "tr": "ʾātaynā",
+      "ty": "perfect",
+      "n": 19,
+      "mn": {
+        "en": "we gave",
+        "bn": "আমরা দিয়েছি"
+      }
+    },
+    {
+      "ar": "أُوتِىَ",
+      "tr": "ʾaūtiāa",
+      "ty": "passive",
+      "n": 14,
+      "mn": {
+        "en": "he was given",
+        "bn": "তাকে দেওয়া হয়েছে"
+      }
+    },
+    {
+      "ar": "وَءَاتُو",
+      "tr": "waʾātūā",
+      "ty": "imperative",
+      "n": 11,
+      "mn": {
+        "en": "and give! (pl.)",
+        "bn": "এবং দাও!"
+      }
+    },
+    {
+      "ar": "وَءَاتَينَٰهُ",
+      "tr": "waʾātaynāhu",
+      "ty": "perfect",
+      "n": 9,
+      "mn": {
+        "en": "and he gave him",
+        "bn": "এবং সে দিয়েছে তাকে"
+      }
+    },
+    {
+      "ar": "ءَاتَينَٰهُمُ",
+      "tr": "ʾātaynāhumu",
+      "ty": "perfect",
+      "n": 8,
+      "mn": {
+        "en": "he gave them",
+        "bn": "সে দিয়েছে তাদের"
+      }
+    },
+    {
+      "ar": "ءَاتَينَٰهُم",
+      "tr": "ʾātaynāhum",
+      "ty": "perfect",
+      "n": 8,
+      "mn": {
+        "en": "he gave them",
+        "bn": "সে দিয়েছে তাদের"
+      }
+    },
+    {
+      "ar": "وَءَاتَينَ",
+      "tr": "waʾātaynā",
+      "ty": "perfect",
+      "n": 7,
+      "mn": {
+        "en": "and we gave",
+        "bn": "এবং আমরা দিয়েছি"
+      }
+    },
+    {
+      "ar": "يُؤتِيهِ",
+      "tr": "yuʾutīhi",
+      "ty": "imperfect",
+      "n": 5,
+      "mn": {
+        "en": "he gives him",
+        "bn": "সে দেয় তাকে"
+      }
+    },
+    {
+      "ar": "ءَاتَىٰهُمُ",
+      "tr": "ʾātāāhumu",
+      "ty": "perfect",
+      "n": 5,
+      "mn": {
+        "en": "he gave them",
+        "bn": "সে দিয়েছে তাদের"
+      }
+    },
+    {
+      "ar": "وَيُؤتُونَ",
+      "tr": "wayuʾutūna",
+      "ty": "imperfect",
+      "n": 5,
+      "mn": {
+        "en": "and they give",
+        "bn": "এবং তারা দেয়"
+      }
+    },
+    {
+      "ar": "ءَاتَينَٰهُ",
+      "tr": "ʾātaynāhu",
+      "ty": "perfect",
+      "n": 5,
+      "mn": {
+        "en": "he gave him",
+        "bn": "সে দিয়েছে তাকে"
+      }
+    },
+    {
+      "ar": "ءَاتَىٰكُم",
+      "tr": "ʾātāākum",
+      "ty": "perfect",
+      "n": 5,
+      "mn": {
+        "en": "he gave you (pl.)",
+        "bn": "সে দিয়েছে তোমাদের"
+      }
+    },
+    {
+      "ar": "أُوتِيتُم",
+      "tr": "ʾaūtītum",
+      "ty": "passive",
+      "n": 5,
+      "mn": {
+        "en": "they were given",
+        "bn": "তাদের দেওয়া হয়েছে"
+      }
+    },
+    {
+      "ar": "ءَاتِنَ",
+      "tr": "ʾātinā",
+      "ty": "imperative",
+      "n": 4,
+      "mn": {
+        "en": "give!",
+        "bn": "দাও!"
+      }
+    },
+    {
+      "ar": "ءَاتَيتُمُوهُنَّ",
+      "tr": "ʾātaytumūhuna",
+      "ty": "perfect",
+      "n": 4,
+      "mn": {
+        "en": "they gave them (f.)",
+        "bn": "তারা দিয়েছে তাদের"
+      }
+    },
+    {
+      "ar": "وَءَاتَوُ",
+      "tr": "waʾātawuā",
+      "ty": "perfect",
+      "n": 4,
+      "mn": {
+        "en": "and he gave",
+        "bn": "এবং সে দিয়েছে"
+      }
+    },
+    {
+      "ar": "وَءَاتَينَٰهُم",
+      "tr": "waʾātaynāhum",
+      "ty": "perfect",
+      "n": 4,
+      "mn": {
+        "en": "and he gave them",
+        "bn": "এবং সে দিয়েছে তাদের"
+      }
+    },
+    {
+      "ar": "ءَاتَينَٰكُم",
+      "tr": "ʾātaynākum",
+      "ty": "perfect",
+      "n": 3,
+      "mn": {
+        "en": "he gave you (pl.)",
+        "bn": "সে দিয়েছে তোমাদের"
+      }
+    },
+    {
+      "ar": "وَءَاتَى",
+      "tr": "waʾātā",
+      "ty": "perfect",
+      "n": 3,
+      "mn": {
+        "en": "and he gave",
+        "bn": "এবং সে দিয়েছে"
+      }
+    },
+    {
+      "ar": "ءَاتَيتُم",
+      "tr": "ʾātaytum",
+      "ty": "perfect",
+      "n": 3,
+      "mn": {
+        "en": "you (pl.) gave",
+        "bn": "তোমরা দিয়েছ"
+      }
+    },
+    {
+      "ar": "يُؤتِى",
+      "tr": "yuʾutiā",
+      "ty": "imperfect",
+      "n": 3,
+      "mn": {
+        "en": "he gives",
+        "bn": "সে দেয়"
+      }
+    },
+    {
+      "ar": "نُؤتِهِ.",
+      "tr": "nuʾutihi.",
+      "ty": "jussive",
+      "n": 3,
+      "mn": {
+        "en": "we give",
+        "bn": "আমরা দিই"
+      }
+    },
+    {
+      "ar": "يُؤتُونَ",
+      "tr": "yuʾutūna",
+      "ty": "imperfect",
+      "n": 3,
+      "mn": {
+        "en": "they give",
+        "bn": "তারা দেয়"
+      }
+    },
+    {
+      "ar": "يُؤتِكُم",
+      "tr": "yuʾutikum",
+      "ty": "jussive",
+      "n": 3,
+      "mn": {
+        "en": "he gives you (pl.)",
+        "bn": "সে দেয় তোমাদের"
+      }
+    },
+    {
+      "ar": "ءَاتَىٰهُم",
+      "tr": "ʾātāāhum",
+      "ty": "perfect",
+      "n": 3,
+      "mn": {
+        "en": "he gave them",
+        "bn": "সে দিয়েছে তাদের"
+      }
+    },
+    {
+      "ar": "يُؤتَ",
+      "tr": "yuʾuta",
+      "ty": "passive",
+      "n": 2,
+      "mn": {
+        "en": "he was given",
+        "bn": "তাকে দেওয়া হয়েছে"
+      }
+    },
+    {
+      "ar": "ءَاتَىٰهُ",
+      "tr": "ʾātāāhu",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "he gave him",
+        "bn": "সে দিয়েছে তাকে"
+      }
+    },
+    {
+      "ar": "فَـَاتُوهُنَّ",
+      "tr": "faātūhuna",
+      "ty": "imperative",
+      "n": 2,
+      "mn": {
+        "en": "give! them (f.)",
+        "bn": "দাও! তাদের"
+      }
+    },
+    {
+      "ar": "وَيُؤتِ",
+      "tr": "wayuʾuti",
+      "ty": "jussive",
+      "n": 2,
+      "mn": {
+        "en": "and he gives",
+        "bn": "এবং সে দেয়"
+      }
+    },
+    {
+      "ar": "نُؤتِيهِ",
+      "tr": "nuʾutīhi",
+      "ty": "imperfect",
+      "n": 2,
+      "mn": {
+        "en": "we give him",
+        "bn": "আমরা দিই তাকে"
+      }
+    },
+    {
+      "ar": "يُؤتِ",
+      "tr": "yuʾuti",
+      "ty": "imperfect",
+      "n": 2,
+      "mn": {
+        "en": "he gives",
+        "bn": "সে দেয়"
+      }
+    },
+    {
+      "ar": "وَءَاتَىٰكُم",
+      "tr": "waʾātāākum",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "and he gave you (pl.)",
+        "bn": "এবং সে দিয়েছে তোমাদের"
+      }
+    },
+    {
+      "ar": "ءَاتَىٰهُمَ",
+      "tr": "ʾātāāhumā",
+      "ty": "imperfect",
+      "n": 2,
+      "mn": {
+        "en": "I give",
+        "bn": "আমি দিই"
+      }
+    },
+    {
+      "ar": "ءَاتَيتَ",
+      "tr": "ʾātayta",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "you gave",
+        "bn": "তুমি দিয়েছ"
+      }
+    },
+    {
+      "ar": "وَءَاتَىٰنِى",
+      "tr": "waʾātāāniā",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "and he gave me",
+        "bn": "এবং সে দিয়েছে আমাকে"
+      }
+    },
+    {
+      "ar": "ءَاتَينَٰكَ",
+      "tr": "ʾātaynāka",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "he gave you",
+        "bn": "সে দিয়েছে তোমাকে"
+      }
+    },
+    {
+      "ar": "وَءَاتُوهُم",
+      "tr": "waʾātūhum",
+      "ty": "imperative",
+      "n": 2,
+      "mn": {
+        "en": "and give! them",
+        "bn": "এবং দাও! তাদের"
+      }
+    },
+    {
+      "ar": "وَأُوتِينَ",
+      "tr": "waʾaūtīnā",
+      "ty": "passive",
+      "n": 2,
+      "mn": {
+        "en": "and he was given",
+        "bn": "এবং তাকে দেওয়া হয়েছে"
+      }
+    },
+    {
+      "ar": "أُوتِيتُهُ,",
+      "tr": "ʾaūtītuhu,",
+      "ty": "passive",
+      "n": 2,
+      "mn": {
+        "en": "he was given him",
+        "bn": "তাকে দেওয়া হয়েছে তাকে"
+      }
+    },
+    {
+      "ar": "تُؤتِى",
+      "tr": "tuʾutiā",
+      "ty": "imperfect",
+      "n": 2,
+      "mn": {
+        "en": "you give",
+        "bn": "তুমি দাও"
+      }
+    },
+    {
+      "ar": "يُؤتَىٰ",
+      "tr": "yuʾutāā",
+      "ty": "passive",
+      "n": 2,
+      "mn": {
+        "en": "he was given",
+        "bn": "তাকে দেওয়া হয়েছে"
+      }
+    },
+    {
+      "ar": "ءَاتُونِى",
+      "tr": "ʾātūniā",
+      "ty": "imperative",
+      "n": 2,
+      "mn": {
+        "en": "give! me",
+        "bn": "দাও! আমাকে"
+      }
+    },
+    {
+      "ar": "أُوتُوهُ",
+      "tr": "ʾaūtūhu",
+      "ty": "passive",
+      "n": 1,
+      "mn": {
+        "en": "they were given him",
+        "bn": "তাদের দেওয়া হয়েছে তাকে"
+      }
+    },
+    {
+      "ar": "وَءَاتَىٰهُ",
+      "tr": "waʾātāāhu",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "and he gave him",
+        "bn": "এবং সে দিয়েছে তাকে"
+      }
+    },
+    {
+      "ar": "فَـَاتَت",
+      "tr": "faātat",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "she gave",
+        "bn": "সে দিয়েছে"
+      }
+    },
+    {
+      "ar": "وَتُؤتُوهَ",
+      "tr": "watuʾutūhā",
+      "ty": "jussive",
+      "n": 1,
+      "mn": {
+        "en": "and you give it",
+        "bn": "এবং তুমি দাও তা"
+      }
+    },
+    {
+      "ar": "يُؤتِيَهُ",
+      "tr": "yuʾutīahu",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "he gives him",
+        "bn": "সে দেয় তাকে"
+      }
+    },
+    {
+      "ar": "ءَاتَيتُكُم",
+      "tr": "ʾātaytukum",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "I gave you (pl.)",
+        "bn": "আমি দিয়েছি তোমাদের"
+      }
+    },
+    {
+      "ar": "فَـَاتَىٰهُمُ",
+      "tr": "faātāāhumu",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "he gave them",
+        "bn": "সে দিয়েছে তাদের"
+      }
+    },
+    {
+      "ar": "وَءَاتِنَ",
+      "tr": "waʾātinā",
+      "ty": "imperative",
+      "n": 1,
+      "mn": {
+        "en": "and give!",
+        "bn": "এবং দাও!"
+      }
+    },
+    {
+      "ar": "تُؤتُو",
+      "tr": "tuʾutūā",
+      "ty": "jussive",
+      "n": 1,
+      "mn": {
+        "en": "you (pl.) give",
+        "bn": "তোমরা দাও"
+      }
+    },
+    {
+      "ar": "وَءَاتَيتُم",
+      "tr": "waʾātaytum",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "and you (pl.) gave",
+        "bn": "এবং তোমরা দিয়েছ"
+      }
+    },
+    {
+      "ar": "وَءَاتُوهُنَّ",
+      "tr": "waʾātūhuna",
+      "ty": "imperative",
+      "n": 1,
+      "mn": {
+        "en": "and give! them (f.)",
+        "bn": "এবং দাও! তাদের"
+      }
+    },
+    {
+      "ar": "فَـَاتُوهُم",
+      "tr": "faātūhum",
+      "ty": "imperative",
+      "n": 1,
+      "mn": {
+        "en": "give! them",
+        "bn": "দাও! তাদের"
+      }
+    },
+    {
+      "ar": "لَّءَاتَينَٰهُم",
+      "tr": "laʾātaynāhum",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "surely he gave them",
+        "bn": "অবশ্যই সে দিয়েছে তাদের"
+      }
+    },
+    {
+      "ar": "تُؤتُونَهُنَّ",
+      "tr": "tuʾutūnahuna",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "you (pl.) give them (f.)",
+        "bn": "তোমরা দাও তাদের"
+      }
+    },
+    {
+      "ar": "يُؤتِيهِم",
+      "tr": "yuʾutīhim",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "he gives",
+        "bn": "সে দেয়"
+      }
+    },
+    {
+      "ar": "سَنُؤتِيهِم",
+      "tr": "sanuʾutīhim",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "will we give",
+        "bn": "শীঘ্রই আমরা দিই"
+      }
+    },
+    {
+      "ar": "وَءَاتَيتُمُ",
+      "tr": "waʾātaytumu",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "and you (pl.) gave",
+        "bn": "এবং তোমরা দিয়েছ"
+      }
+    },
+    {
+      "ar": "تُؤتَوهُ",
+      "tr": "tuʾutawhu",
+      "ty": "passive",
+      "n": 1,
+      "mn": {
+        "en": "he was given him",
+        "bn": "তাকে দেওয়া হয়েছে তাকে"
+      }
+    },
+    {
+      "ar": "ءَاتَينَٰهَ",
+      "tr": "ʾātaynāhā",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "he gave",
+        "bn": "সে দিয়েছে"
+      }
+    },
+    {
+      "ar": "نُؤتَىٰ",
+      "tr": "nuʾutāā",
+      "ty": "passive",
+      "n": 1,
+      "mn": {
+        "en": "he was given",
+        "bn": "তাকে দেওয়া হয়েছে"
+      }
+    },
+    {
+      "ar": "فَـَاتِهِم",
+      "tr": "faātihim",
+      "ty": "imperative",
+      "n": 1,
+      "mn": {
+        "en": "give!",
+        "bn": "দাও!"
+      }
+    },
+    {
+      "ar": "ءَاتَيتُكَ",
+      "tr": "ʾātaytuka",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "I gave you",
+        "bn": "আমি দিয়েছি তোমাকে"
+      }
+    },
+    {
+      "ar": "ءَاتَيتَنَ",
+      "tr": "ʾātaytanā",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "we gave",
+        "bn": "আমরা দিয়েছি"
+      }
+    },
+    {
+      "ar": "سَيُؤتِينَ",
+      "tr": "sayuʾutīnā",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "will he gives",
+        "bn": "শীঘ্রই সে দেয়"
+      }
+    },
+    {
+      "ar": "ءَاتَىٰنَ",
+      "tr": "ʾātāānā",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "I give",
+        "bn": "আমি দিই"
+      }
+    },
+    {
+      "ar": "يُؤتِيَهُمُ",
+      "tr": "yuʾutīahumu",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "he gives them",
+        "bn": "সে দেয় তাদের"
+      }
+    },
+    {
+      "ar": "وَءَاتَت",
+      "tr": "waʾātat",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "and she gave",
+        "bn": "এবং সে দিয়েছে"
+      }
+    },
+    {
+      "ar": "تُؤتُونِ",
+      "tr": "tuʾutūni",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "you give",
+        "bn": "তুমি দাও"
+      }
+    },
+    {
+      "ar": "ءَاتَوهُ",
+      "tr": "ʾātawhu",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "he gave him",
+        "bn": "সে দিয়েছে তাকে"
+      }
+    },
+    {
+      "ar": "ءَاتَيتَنِى",
+      "tr": "ʾātaytaniā",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "you gave me",
+        "bn": "তুমি দিয়েছ আমাকে"
+      }
+    },
+    {
+      "ar": "وَءَاتِ",
+      "tr": "waʾāti",
+      "ty": "imperative",
+      "n": 1,
+      "mn": {
+        "en": "and give!",
+        "bn": "এবং দাও!"
+      }
+    },
+    {
+      "ar": "ءَاتَت",
+      "tr": "ʾātat",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "she gave",
+        "bn": "সে দিয়েছে"
+      }
+    },
+    {
+      "ar": "يُؤتِيَنِ",
+      "tr": "yuʾutīani",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "he gives",
+        "bn": "সে দেয়"
+      }
+    },
+    {
+      "ar": "ءَاتَىٰنِىَ",
+      "tr": "ʾātāāniāa",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "he gave",
+        "bn": "সে দিয়েছে"
+      }
+    },
+    {
+      "ar": "لَأُوتَيَنَّ",
+      "tr": "laʾaūtayana",
+      "ty": "passive",
+      "n": 1,
+      "mn": {
+        "en": "surely he was given",
+        "bn": "অবশ্যই তাকে দেওয়া হয়েছে"
+      }
+    },
+    {
+      "ar": "أُوتِيتَ",
+      "tr": "ʾaūtīta",
+      "ty": "passive",
+      "n": 1,
+      "mn": {
+        "en": "he was given",
+        "bn": "তাকে দেওয়া হয়েছে"
+      }
+    },
+    {
+      "ar": "ءَاتَو",
+      "tr": "ʾātawā",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "he gave",
+        "bn": "সে দিয়েছে"
+      }
+    },
+    {
+      "ar": "يُؤتُو",
+      "tr": "yuʾutūā",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "they give",
+        "bn": "তারা দেয়"
+      }
+    },
+    {
+      "ar": "وَأُوتِيَت",
+      "tr": "waʾaūtīat",
+      "ty": "passive",
+      "n": 1,
+      "mn": {
+        "en": "and she was given",
+        "bn": "এবং তাকে দেওয়া হয়েছে"
+      }
+    },
+    {
+      "ar": "ءَاتَىٰنِ.َ",
+      "tr": "ʾātāāni.a",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "he gave",
+        "bn": "সে দিয়েছে"
+      }
+    },
+    {
+      "ar": "يُؤتَونَ",
+      "tr": "yuʾutawna",
+      "ty": "passive",
+      "n": 1,
+      "mn": {
+        "en": "he was given",
+        "bn": "তাকে দেওয়া হয়েছে"
+      }
+    },
+    {
+      "ar": "ءَاتَىٰكَ",
+      "tr": "ʾātāāka",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "he gave you",
+        "bn": "সে দিয়েছে তোমাকে"
+      }
+    },
+    {
+      "ar": "فَـَاتِ",
+      "tr": "faāti",
+      "ty": "imperative",
+      "n": 1,
+      "mn": {
+        "en": "give!",
+        "bn": "দাও!"
+      }
+    },
+    {
+      "ar": "لَءَاتَينَ",
+      "tr": "laʾātaynā",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "surely we gave",
+        "bn": "অবশ্যই আমরা দিয়েছি"
+      }
+    },
+    {
+      "ar": "لَءَاتَوهَ",
+      "tr": "laʾātawhā",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "surely he gave it",
+        "bn": "অবশ্যই সে দিয়েছে তা"
+      }
+    },
+    {
+      "ar": "نُّؤتِهَ",
+      "tr": "nuʾutihā",
+      "ty": "jussive",
+      "n": 1,
+      "mn": {
+        "en": "we give",
+        "bn": "আমরা দিই"
+      }
+    },
+    {
+      "ar": "وَءَاتِينَ",
+      "tr": "waʾātīna",
+      "ty": "imperative",
+      "n": 1,
+      "mn": {
+        "en": "and give! (f.pl.)",
+        "bn": "এবং দাও!"
+      }
+    },
+    {
+      "ar": "ءَاتَيتَهُنَّ",
+      "tr": "ʾātaytahuna",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "you gave them (f.)",
+        "bn": "তুমি দিয়েছ তাদের"
+      }
+    },
+    {
+      "ar": "ءَاتِهِم",
+      "tr": "ʾātihim",
+      "ty": "imperative",
+      "n": 1,
+      "mn": {
+        "en": "give!",
+        "bn": "দাও!"
+      }
+    },
+    {
+      "ar": "وَءَاتَينَٰهُمَ",
+      "tr": "waʾātaynāhumā",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "and they gave",
+        "bn": "এবং তারা দিয়েছে"
+      }
+    },
+    {
+      "ar": "وَءَاتَىٰهُم",
+      "tr": "waʾātāāhum",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "and he gave them",
+        "bn": "এবং সে দিয়েছে তাদের"
+      }
+    },
+    {
+      "ar": "فَسَيُؤتِيهِ",
+      "tr": "fasayuʾutīhi",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "then will he gives him",
+        "bn": "তারপর শীঘ্রই সে দেয় তাকে"
+      }
+    },
+    {
+      "ar": "يُؤتِكُمُ",
+      "tr": "yuʾutikumu",
+      "ty": "jussive",
+      "n": 1,
+      "mn": {
+        "en": "he gives you (pl.)",
+        "bn": "সে দেয় তোমাদের"
+      }
+    },
+    {
+      "ar": "فَـَاتَينَ",
+      "tr": "faātaynā",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "we gave",
+        "bn": "আমরা দিয়েছি"
+      }
+    },
+    {
+      "ar": "ءَاتَىٰكُمُ",
+      "tr": "ʾātāākumu",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "he gave you (pl.)",
+        "bn": "সে দিয়েছে তোমাদের"
+      }
+    },
+    {
+      "ar": "فَـَاتُو",
+      "tr": "faātūā",
+      "ty": "imperative",
+      "n": 1,
+      "mn": {
+        "en": "give! (pl.)",
+        "bn": "দাও!"
+      }
+    },
+    {
+      "ar": "ءَاتَىٰهَ",
+      "tr": "ʾātāāhā",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "I give it",
+        "bn": "আমি দিই তা"
+      }
+    },
+    {
+      "ar": "أُوتَ",
+      "tr": "ʾaūta",
+      "ty": "passive",
+      "n": 1,
+      "mn": {
+        "en": "he was given",
+        "bn": "তাকে দেওয়া হয়েছে"
+      }
+    },
+    {
+      "ar": "وَيُؤتُو",
+      "tr": "wayuʾutūā",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "and they give",
+        "bn": "এবং তারা দেয়"
+      }
+    }
+  ],
+  "10": [
+    {
+      "ar": "تَرَ",
+      "tr": "tara",
+      "ty": "jussive",
+      "n": 31,
+      "mn": {
+        "en": "you see",
+        "bn": "তুমি দেখো"
+      }
+    },
+    {
+      "ar": "يَرَو",
+      "tr": "yarawā",
+      "ty": "jussive",
+      "n": 24,
+      "mn": {
+        "en": "he sees",
+        "bn": "সে দেখে"
+      }
+    },
+    {
+      "ar": "أَرَءَيتُم",
+      "tr": "ʾāraʾaytum",
+      "ty": "perfect",
+      "n": 14,
+      "mn": {
+        "en": "you (pl.) saw",
+        "bn": "তোমরা দেখেছ"
+      }
+    },
+    {
+      "ar": "تَرَىٰ",
+      "tr": "tarāā",
+      "ty": "imperfect",
+      "n": 14,
+      "mn": {
+        "en": "you see",
+        "bn": "তুমি দেখো"
+      }
+    },
+    {
+      "ar": "وَتَرَى",
+      "tr": "watarā",
+      "ty": "imperfect",
+      "n": 10,
+      "mn": {
+        "en": "and you see",
+        "bn": "এবং তুমি দেখো"
+      }
+    },
+    {
+      "ar": "رَءَ",
+      "tr": "raʾā",
+      "ty": "perfect",
+      "n": 9,
+      "mn": {
+        "en": "they saw",
+        "bn": "তারা দেখেছে"
+      }
+    },
+    {
+      "ar": "يَرَونَ",
+      "tr": "yarawna",
+      "ty": "imperfect",
+      "n": 8,
+      "mn": {
+        "en": "they see",
+        "bn": "তারা দেখে"
+      }
+    },
+    {
+      "ar": "أَرَءَيتَ",
+      "tr": "ʾāraʾayta",
+      "ty": "perfect",
+      "n": 6,
+      "mn": {
+        "en": "you saw",
+        "bn": "তুমি দেখেছ"
+      }
+    },
+    {
+      "ar": "رَأَو",
+      "tr": "raʾāwā",
+      "ty": "perfect",
+      "n": 6,
+      "mn": {
+        "en": "he saw",
+        "bn": "সে দেখেছে"
+      }
+    },
+    {
+      "ar": "نَرَىٰ",
+      "tr": "narāā",
+      "ty": "imperfect",
+      "n": 5,
+      "mn": {
+        "en": "we see",
+        "bn": "আমরা দেখি"
+      }
+    },
+    {
+      "ar": "رَأَيتَ",
+      "tr": "raʾāyta",
+      "ty": "perfect",
+      "n": 5,
+      "mn": {
+        "en": "you saw",
+        "bn": "তুমি দেখেছ"
+      }
+    },
+    {
+      "ar": "فَتَرَى",
+      "tr": "fatarā",
+      "ty": "imperfect",
+      "n": 5,
+      "mn": {
+        "en": "then you see",
+        "bn": "তারপর তুমি দেখো"
+      }
+    },
+    {
+      "ar": "تَرَى",
+      "tr": "tarā",
+      "ty": "imperfect",
+      "n": 5,
+      "mn": {
+        "en": "you see",
+        "bn": "তুমি দেখো"
+      }
+    },
+    {
+      "ar": "أَرَىٰ",
+      "tr": "ʾārāā",
+      "ty": "imperfect",
+      "n": 4,
+      "mn": {
+        "en": "I see",
+        "bn": "আমি দেখি"
+      }
+    },
+    {
+      "ar": "رَأَوُ",
+      "tr": "raʾāwuā",
+      "ty": "perfect",
+      "n": 4,
+      "mn": {
+        "en": "he saw",
+        "bn": "সে দেখেছে"
+      }
+    },
+    {
+      "ar": "نَرَىٰكَ",
+      "tr": "narāāka",
+      "ty": "subjunctive",
+      "n": 4,
+      "mn": {
+        "en": "we see you",
+        "bn": "আমরা দেখি তোমাকে"
+      }
+    },
+    {
+      "ar": "أَفَرَءَيتَ",
+      "tr": "ʾāfaraʾayta",
+      "ty": "perfect",
+      "n": 4,
+      "mn": {
+        "en": "do then you saw",
+        "bn": "কি তারপর তুমি দেখেছ"
+      }
+    },
+    {
+      "ar": "رَأَيتَهُم",
+      "tr": "raʾāytahum",
+      "ty": "perfect",
+      "n": 4,
+      "mn": {
+        "en": "you saw them",
+        "bn": "তুমি দেখেছ তাদের"
+      }
+    },
+    {
+      "ar": "أَفَرَءَيتُم",
+      "tr": "ʾāfaraʾaytum",
+      "ty": "perfect",
+      "n": 4,
+      "mn": {
+        "en": "do then you (pl.) saw",
+        "bn": "কি তারপর তোমরা দেখেছ"
+      }
+    },
+    {
+      "ar": "يَرَىٰ",
+      "tr": "yarāā",
+      "ty": "subjunctive",
+      "n": 4,
+      "mn": {
+        "en": "he sees",
+        "bn": "সে দেখে"
+      }
+    },
+    {
+      "ar": "أَرَىٰكُم",
+      "tr": "ʾārāākum",
+      "ty": "perfect",
+      "n": 4,
+      "mn": {
+        "en": "he saw you (pl.)",
+        "bn": "সে দেখেছে তোমাদের"
+      }
+    },
+    {
+      "ar": "لَنَرَىٰكَ",
+      "tr": "lanarāāka",
+      "ty": "imperfect",
+      "n": 3,
+      "mn": {
+        "en": "surely we see you",
+        "bn": "অবশ্যই আমরা দেখি তোমাকে"
+      }
+    },
+    {
+      "ar": "تَرَوهَ",
+      "tr": "tarawhā",
+      "ty": "jussive",
+      "n": 3,
+      "mn": {
+        "en": "you see it",
+        "bn": "তুমি দেখো তা"
+      }
+    },
+    {
+      "ar": "يَرَوُ",
+      "tr": "yarawuā",
+      "ty": "subjunctive",
+      "n": 3,
+      "mn": {
+        "en": "he sees",
+        "bn": "সে দেখে"
+      }
+    },
+    {
+      "ar": "تَرَونَهَ",
+      "tr": "tarawnahā",
+      "ty": "imperfect",
+      "n": 3,
+      "mn": {
+        "en": "you see it",
+        "bn": "তুমি দেখো তা"
+      }
+    },
+    {
+      "ar": "رَءَاهُ",
+      "tr": "raʾāhu",
+      "ty": "perfect",
+      "n": 3,
+      "mn": {
+        "en": "they saw him",
+        "bn": "তারা দেখেছে তাকে"
+      }
+    },
+    {
+      "ar": "أَفَرَءَيتُمُ",
+      "tr": "ʾāfaraʾaytumu",
+      "ty": "perfect",
+      "n": 3,
+      "mn": {
+        "en": "do then you (pl.) saw",
+        "bn": "কি তারপর তোমরা দেখেছ"
+      }
+    },
+    {
+      "ar": "يَرَهُ,",
+      "tr": "yarahu,",
+      "ty": "jussive",
+      "n": 3,
+      "mn": {
+        "en": "he sees him",
+        "bn": "সে দেখে তাকে"
+      }
+    },
+    {
+      "ar": "وَرَأَوُ",
+      "tr": "waraʾāwuā",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "and he saw",
+        "bn": "এবং সে দেখেছে"
+      }
+    },
+    {
+      "ar": "أَرَىٰكَ",
+      "tr": "ʾārāāka",
+      "ty": "subjunctive",
+      "n": 2,
+      "mn": {
+        "en": "I see you",
+        "bn": "আমি দেখি তোমাকে"
+      }
+    },
+    {
+      "ar": "وَتَرَىٰ",
+      "tr": "watarāā",
+      "ty": "imperfect",
+      "n": 2,
+      "mn": {
+        "en": "and you see",
+        "bn": "এবং তুমি দেখো"
+      }
+    },
+    {
+      "ar": "أَرَءَيتَكُم",
+      "tr": "ʾāraʾaytakum",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "you saw you (pl.)",
+        "bn": "তুমি দেখেছ তোমাদের"
+      }
+    },
+    {
+      "ar": "تَرَىٰنِى",
+      "tr": "tarāāniā",
+      "ty": "subjunctive",
+      "n": 2,
+      "mn": {
+        "en": "you see me",
+        "bn": "তুমি দেখো আমাকে"
+      }
+    },
+    {
+      "ar": "وَتَرَىٰهُم",
+      "tr": "watarāāhum",
+      "ty": "imperfect",
+      "n": 2,
+      "mn": {
+        "en": "and you see them",
+        "bn": "এবং তুমি দেখো তাদের"
+      }
+    },
+    {
+      "ar": "تَرَونَ",
+      "tr": "tarawna",
+      "ty": "imperfect",
+      "n": 2,
+      "mn": {
+        "en": "you see",
+        "bn": "তুমি দেখো"
+      }
+    },
+    {
+      "ar": "أَرَىٰنِى",
+      "tr": "ʾārāāniā",
+      "ty": "subjunctive",
+      "n": 2,
+      "mn": {
+        "en": "I see",
+        "bn": "আমি দেখি"
+      }
+    },
+    {
+      "ar": "يَرَ",
+      "tr": "yara",
+      "ty": "jussive",
+      "n": 2,
+      "mn": {
+        "en": "he sees",
+        "bn": "সে দেখে"
+      }
+    },
+    {
+      "ar": "يَرَونَهَ",
+      "tr": "yarawnahā",
+      "ty": "imperfect",
+      "n": 2,
+      "mn": {
+        "en": "they see it",
+        "bn": "তারা দেখে তা"
+      }
+    },
+    {
+      "ar": "رَءَاهَ",
+      "tr": "raʾāhā",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "they saw it",
+        "bn": "তারা দেখেছে তা"
+      }
+    },
+    {
+      "ar": "تَرَو",
+      "tr": "tarawā",
+      "ty": "jussive",
+      "n": 2,
+      "mn": {
+        "en": "you see",
+        "bn": "তুমি দেখো"
+      }
+    },
+    {
+      "ar": "فَرَءَاهُ",
+      "tr": "faraʾāhu",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "then they saw him",
+        "bn": "তারপর তারা দেখেছে তাকে"
+      }
+    },
+    {
+      "ar": "فَتَرَىٰهُ",
+      "tr": "fatarāāhu",
+      "ty": "imperfect",
+      "n": 2,
+      "mn": {
+        "en": "then you see him",
+        "bn": "তারপর তুমি দেখো তাকে"
+      }
+    },
+    {
+      "ar": "رَأَوهُ",
+      "tr": "raʾāwhu",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "he saw him",
+        "bn": "সে দেখেছে তাকে"
+      }
+    },
+    {
+      "ar": "يَرَىٰكُم",
+      "tr": "yarāākum",
+      "ty": "imperfect",
+      "n": 2,
+      "mn": {
+        "en": "he sees you (pl.)",
+        "bn": "সে দেখে তোমাদের"
+      }
+    },
+    {
+      "ar": "يُرَىٰ",
+      "tr": "yurāā",
+      "ty": "passive",
+      "n": 2,
+      "mn": {
+        "en": "it was seen",
+        "bn": "দেখা হয়েছে"
+      }
+    },
+    {
+      "ar": "رَأَىٰ",
+      "tr": "raʾaāā",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "he saw",
+        "bn": "সে দেখেছে"
+      }
+    },
+    {
+      "ar": "نَرَى",
+      "tr": "narā",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "we see",
+        "bn": "আমরা দেখি"
+      }
+    },
+    {
+      "ar": "يَرَى",
+      "tr": "yarā",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "he sees",
+        "bn": "সে দেখে"
+      }
+    },
+    {
+      "ar": "يَرَونَهُم",
+      "tr": "yarawnahum",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "they see them",
+        "bn": "তারা দেখে তাদের"
+      }
+    },
+    {
+      "ar": "رَأَيتُمُوهُ",
+      "tr": "raʾāytumūhu",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "they saw him",
+        "bn": "তারা দেখেছে তাকে"
+      }
+    },
+    {
+      "ar": "تَرَونَهُم",
+      "tr": "tarawnahum",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "you see them",
+        "bn": "তুমি দেখো তাদের"
+      }
+    },
+    {
+      "ar": "وَرَأَو",
+      "tr": "waraʾāwā",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "and he saw",
+        "bn": "এবং সে দেখেছে"
+      }
+    },
+    {
+      "ar": "أَرَىٰكَهُم",
+      "tr": "ʾārāākahum",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "he saw them",
+        "bn": "সে দেখেছে তাদের"
+      }
+    },
+    {
+      "ar": "وَسَيَرَى",
+      "tr": "wasayarā",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "and will he sees",
+        "bn": "এবং শীঘ্রই সে দেখে"
+      }
+    },
+    {
+      "ar": "فَسَيَرَى",
+      "tr": "fasayarā",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "then will he sees",
+        "bn": "তারপর শীঘ্রই সে দেখে"
+      }
+    },
+    {
+      "ar": "رَأَيتُ",
+      "tr": "raʾāytu",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "I saw",
+        "bn": "আমি দেখেছি"
+      }
+    },
+    {
+      "ar": "رَأَيتُهُم",
+      "tr": "raʾāytuhum",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "I saw them",
+        "bn": "আমি দেখেছি তাদের"
+      }
+    },
+    {
+      "ar": "رَّءَ",
+      "tr": "raʾā",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "they saw",
+        "bn": "তারা দেখেছে"
+      }
+    },
+    {
+      "ar": "لَنَرَىٰهَ",
+      "tr": "lanarāāhā",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "surely we see it",
+        "bn": "অবশ্যই আমরা দেখি তা"
+      }
+    },
+    {
+      "ar": "رَأَينَهُ,",
+      "tr": "raʾāynahu,",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "he saw",
+        "bn": "সে দেখেছে"
+      }
+    },
+    {
+      "ar": "أَرَءَيتَكَ",
+      "tr": "ʾāraʾaytaka",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "you saw you",
+        "bn": "তুমি দেখেছ তোমাকে"
+      }
+    },
+    {
+      "ar": "تَرَنِ",
+      "tr": "tarani",
+      "ty": "jussive",
+      "n": 1,
+      "mn": {
+        "en": "you see",
+        "bn": "তুমি দেখো"
+      }
+    },
+    {
+      "ar": "وَرَءَ",
+      "tr": "waraʾā",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "and they saw",
+        "bn": "এবং তারা দেখেছে"
+      }
+    },
+    {
+      "ar": "تَرَيِنَّ",
+      "tr": "tarayina",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "you see",
+        "bn": "তুমি দেখো"
+      }
+    },
+    {
+      "ar": "وَأَرَىٰ",
+      "tr": "waʾārāā",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "and I see",
+        "bn": "এবং আমি দেখি"
+      }
+    },
+    {
+      "ar": "رَءَاكَ",
+      "tr": "raʾāka",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "they saw you",
+        "bn": "তারা দেখেছে তোমাকে"
+      }
+    },
+    {
+      "ar": "يَرَىٰهَ",
+      "tr": "yarāāhā",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "he sees it",
+        "bn": "সে দেখে তা"
+      }
+    },
+    {
+      "ar": "رَأَتهُم",
+      "tr": "raʾāthum",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "she saw them",
+        "bn": "সে দেখেছে তাদের"
+      }
+    },
+    {
+      "ar": "رَأَوكَ",
+      "tr": "raʾāwka",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "he saw you",
+        "bn": "সে দেখেছে তোমাকে"
+      }
+    },
+    {
+      "ar": "يَرَىٰكَ",
+      "tr": "yarāāka",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "he sees you",
+        "bn": "সে দেখে তোমাকে"
+      }
+    },
+    {
+      "ar": "أَرَى",
+      "tr": "ʾārā",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "I see",
+        "bn": "আমি দেখি"
+      }
+    },
+    {
+      "ar": "رَأَتهُ",
+      "tr": "raʾāthu",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "she saw him",
+        "bn": "সে দেখেছে তাকে"
+      }
+    },
+    {
+      "ar": "فَرَأَوهُ",
+      "tr": "faraʾāwhu",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "then he saw him",
+        "bn": "তারপর সে দেখেছে তাকে"
+      }
+    },
+    {
+      "ar": "وَيَرَى",
+      "tr": "wayarā",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "and he sees",
+        "bn": "এবং সে দেখে"
+      }
+    },
+    {
+      "ar": "تَرَىٰهُم",
+      "tr": "tarāāhum",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "you see them",
+        "bn": "তুমি দেখো তাদের"
+      }
+    },
+    {
+      "ar": "لَّرَأَيتَهُ,",
+      "tr": "laraʾāytahu,",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "you saw him",
+        "bn": "তুমি দেখেছ তাকে"
+      }
+    },
+    {
+      "ar": "وَرَأَيتَهُم",
+      "tr": "waraʾāytahum",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "and you saw them",
+        "bn": "এবং তুমি দেখেছ তাদের"
+      }
+    },
+    {
+      "ar": "رَأَوهَ",
+      "tr": "raʾāwhā",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "he saw it",
+        "bn": "সে দেখেছে তা"
+      }
+    },
+    {
+      "ar": "يَرَونَهُ,",
+      "tr": "yarawnahu,",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "they see him",
+        "bn": "তারা দেখে তাকে"
+      }
+    },
+    {
+      "ar": "وَنَرَىٰهُ",
+      "tr": "wanarāāhu",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "and we see him",
+        "bn": "এবং আমরা দেখি তাকে"
+      }
+    },
+    {
+      "ar": "فَأَرَىٰهُ",
+      "tr": "faʾārāāhu",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "then he saw him",
+        "bn": "তারপর সে দেখেছে তাকে"
+      }
+    },
+    {
+      "ar": "رَأَوهُم",
+      "tr": "raʾāwhum",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "he saw them",
+        "bn": "সে দেখেছে তাদের"
+      }
+    },
+    {
+      "ar": "رَّءَاهُ",
+      "tr": "raʾāhu",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "they saw him",
+        "bn": "তারা দেখেছে তাকে"
+      }
+    },
+    {
+      "ar": "لَتَرَوُنَّ",
+      "tr": "latarawuna",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "surely you see",
+        "bn": "অবশ্যই তুমি দেখো"
+      }
+    },
+    {
+      "ar": "لَتَرَوُنَّهَ",
+      "tr": "latarawunahā",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "surely you see it",
+        "bn": "অবশ্যই তুমি দেখো তা"
+      }
+    },
+    {
+      "ar": "وَرَأَيتَ",
+      "tr": "waraʾāyta",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "and you saw",
+        "bn": "এবং তুমি দেখেছ"
+      }
+    }
+  ],
+  "11": [
+    {
+      "ar": "يَأتِىَ",
+      "tr": "yaʾatiāa",
+      "ty": "subjunctive",
+      "n": 14,
+      "mn": {
+        "en": "he comes",
+        "bn": "সে আসে"
+      }
+    },
+    {
+      "ar": "يَأتِ",
+      "tr": "yaʾati",
+      "ty": "jussive",
+      "n": 10,
+      "mn": {
+        "en": "he comes",
+        "bn": "সে আসে"
+      }
+    },
+    {
+      "ar": "فَأتُو",
+      "tr": "faʾatūā",
+      "ty": "imperative",
+      "n": 9,
+      "mn": {
+        "en": "come! (pl.)",
+        "bn": "এসো!"
+      }
+    },
+    {
+      "ar": "يَأتِى",
+      "tr": "yaʾatiā",
+      "ty": "imperfect",
+      "n": 8,
+      "mn": {
+        "en": "he comes",
+        "bn": "সে আসে"
+      }
+    },
+    {
+      "ar": "يَأتِيهِم",
+      "tr": "yaʾatīhim",
+      "ty": "imperfect",
+      "n": 7,
+      "mn": {
+        "en": "he comes",
+        "bn": "সে আসে"
+      }
+    },
+    {
+      "ar": "أَتَىٰكَ",
+      "tr": "ʾātāāka",
+      "ty": "perfect",
+      "n": 6,
+      "mn": {
+        "en": "do he came you",
+        "bn": "কি সে এসেছে তোমাকে"
+      }
+    },
+    {
+      "ar": "يَأتِينَ",
+      "tr": "yaʾatīna",
+      "ty": "imperfect",
+      "n": 6,
+      "mn": {
+        "en": "they come",
+        "bn": "তারা আসে"
+      }
+    },
+    {
+      "ar": "يَأتِكُم",
+      "tr": "yaʾatikum",
+      "ty": "jussive",
+      "n": 6,
+      "mn": {
+        "en": "he comes you (pl.)",
+        "bn": "সে আসে তোমাদের"
+      }
+    },
+    {
+      "ar": "يَأتِيكُم",
+      "tr": "yaʾatīkum",
+      "ty": "imperfect",
+      "n": 5,
+      "mn": {
+        "en": "he comes you (pl.)",
+        "bn": "সে আসে তোমাদের"
+      }
+    },
+    {
+      "ar": "تَأتِيَهُمُ",
+      "tr": "taʾatīahumu",
+      "ty": "subjunctive",
+      "n": 5,
+      "mn": {
+        "en": "you come them",
+        "bn": "তুমি আসো তাদের"
+      }
+    },
+    {
+      "ar": "ٱئتُونِى",
+      "tr": "ʾtūniā",
+      "ty": "imperative",
+      "n": 5,
+      "mn": {
+        "en": "come! me",
+        "bn": "এসো! আমাকে"
+      }
+    },
+    {
+      "ar": "يَأتُو",
+      "tr": "yaʾatūā",
+      "ty": "subjunctive",
+      "n": 5,
+      "mn": {
+        "en": "they come",
+        "bn": "তারা আসে"
+      }
+    },
+    {
+      "ar": "تَأتِيهِم",
+      "tr": "taʾatīhim",
+      "ty": "imperfect",
+      "n": 5,
+      "mn": {
+        "en": "you come",
+        "bn": "তুমি আসো"
+      }
+    },
+    {
+      "ar": "أَتَىٰهُم",
+      "tr": "ʾātāāhum",
+      "ty": "perfect",
+      "n": 5,
+      "mn": {
+        "en": "do he came them",
+        "bn": "কি সে এসেছে তাদের"
+      }
+    },
+    {
+      "ar": "فَأتِ",
+      "tr": "faʾati",
+      "ty": "imperative",
+      "n": 4,
+      "mn": {
+        "en": "come!",
+        "bn": "এসো!"
+      }
+    },
+    {
+      "ar": "يَأتُوكَ",
+      "tr": "yaʾatūka",
+      "ty": "jussive",
+      "n": 4,
+      "mn": {
+        "en": "he comes you",
+        "bn": "সে আসে তোমাকে"
+      }
+    },
+    {
+      "ar": "ٱئتِنَ",
+      "tr": "ʾtinā",
+      "ty": "imperative",
+      "n": 4,
+      "mn": {
+        "en": "come!",
+        "bn": "এসো!"
+      }
+    },
+    {
+      "ar": "لَتَأتُونَ",
+      "tr": "lataʾatūna",
+      "ty": "imperfect",
+      "n": 4,
+      "mn": {
+        "en": "surely you (pl.) come",
+        "bn": "অবশ্যই তোমরা আসো"
+      }
+    },
+    {
+      "ar": "يَأتُونَ",
+      "tr": "yaʾatūna",
+      "ty": "imperfect",
+      "n": 4,
+      "mn": {
+        "en": "they come",
+        "bn": "তারা আসে"
+      }
+    },
+    {
+      "ar": "يَأتِيهِ",
+      "tr": "yaʾatīhi",
+      "ty": "imperfect",
+      "n": 4,
+      "mn": {
+        "en": "he comes him",
+        "bn": "সে আসে তাকে"
+      }
+    },
+    {
+      "ar": "ءَاتِيكُم",
+      "tr": "ʾātīkum",
+      "ty": "imperfect",
+      "n": 4,
+      "mn": {
+        "en": "I come you (pl.)",
+        "bn": "আমি আসি তোমাদের"
+      }
+    },
+    {
+      "ar": "أَتَىٰ",
+      "tr": "ʾātāā",
+      "ty": "perfect",
+      "n": 4,
+      "mn": {
+        "en": "do he came",
+        "bn": "কি সে এসেছে"
+      }
+    },
+    {
+      "ar": "يَأتِيَهُم",
+      "tr": "yaʾatīahum",
+      "ty": "subjunctive",
+      "n": 4,
+      "mn": {
+        "en": "he comes them",
+        "bn": "সে আসে তাদের"
+      }
+    },
+    {
+      "ar": "تَأتِيَهُم",
+      "tr": "taʾatīahum",
+      "ty": "subjunctive",
+      "n": 4,
+      "mn": {
+        "en": "you come them",
+        "bn": "তুমি আসো তাদের"
+      }
+    },
+    {
+      "ar": "يَأتِيَهُمُ",
+      "tr": "yaʾatīahumu",
+      "ty": "subjunctive",
+      "n": 3,
+      "mn": {
+        "en": "he comes them",
+        "bn": "সে আসে তাদের"
+      }
+    },
+    {
+      "ar": "يَأتِيَكُمُ",
+      "tr": "yaʾatīakumu",
+      "ty": "subjunctive",
+      "n": 3,
+      "mn": {
+        "en": "he comes you (pl.)",
+        "bn": "সে আসে তোমাদের"
+      }
+    },
+    {
+      "ar": "وَيَأتِ",
+      "tr": "wayaʾati",
+      "ty": "jussive",
+      "n": 3,
+      "mn": {
+        "en": "and he comes",
+        "bn": "এবং সে আসে"
+      }
+    },
+    {
+      "ar": "أَتَىٰكُم",
+      "tr": "ʾātāākum",
+      "ty": "perfect",
+      "n": 3,
+      "mn": {
+        "en": "do he came you (pl.)",
+        "bn": "কি সে এসেছে তোমাদের"
+      }
+    },
+    {
+      "ar": "فَأتِنَ",
+      "tr": "faʾatinā",
+      "ty": "imperative",
+      "n": 3,
+      "mn": {
+        "en": "come!",
+        "bn": "এসো!"
+      }
+    },
+    {
+      "ar": "أَتَأتُونَ",
+      "tr": "ʾātaʾatūna",
+      "ty": "imperfect",
+      "n": 3,
+      "mn": {
+        "en": "do you (pl.) come",
+        "bn": "কি তোমরা আসো"
+      }
+    },
+    {
+      "ar": "يَأتِهِم",
+      "tr": "yaʾatihim",
+      "ty": "jussive",
+      "n": 3,
+      "mn": {
+        "en": "he comes",
+        "bn": "সে আসে"
+      }
+    },
+    {
+      "ar": "يَأتِيَنَّكُم",
+      "tr": "yaʾatīanakum",
+      "ty": "imperfect",
+      "n": 3,
+      "mn": {
+        "en": "he comes you (pl.)",
+        "bn": "সে আসে তোমাদের"
+      }
+    },
+    {
+      "ar": "تَأتِينَ",
+      "tr": "taʾatīnā",
+      "ty": "imperfect",
+      "n": 3,
+      "mn": {
+        "en": "you come",
+        "bn": "তুমি আসো"
+      }
+    },
+    {
+      "ar": "أَتَىٰهَ",
+      "tr": "ʾātāāhā",
+      "ty": "perfect",
+      "n": 3,
+      "mn": {
+        "en": "do he came it",
+        "bn": "কি সে এসেছে তা"
+      }
+    },
+    {
+      "ar": "أَتَينَ",
+      "tr": "ʾātaynā",
+      "ty": "perfect",
+      "n": 3,
+      "mn": {
+        "en": "do we came",
+        "bn": "কি আমরা এসেছি"
+      }
+    },
+    {
+      "ar": "أَتَو",
+      "tr": "ʾātawā",
+      "ty": "perfect",
+      "n": 3,
+      "mn": {
+        "en": "do he came",
+        "bn": "কি সে এসেছে"
+      }
+    },
+    {
+      "ar": "تَأتِيكُم",
+      "tr": "taʾatīkum",
+      "ty": "imperfect",
+      "n": 2,
+      "mn": {
+        "en": "you come you (pl.)",
+        "bn": "তুমি আসো তোমাদের"
+      }
+    },
+    {
+      "ar": "تَأتِهِم",
+      "tr": "taʾatihim",
+      "ty": "jussive",
+      "n": 2,
+      "mn": {
+        "en": "you come",
+        "bn": "তুমি আসো"
+      }
+    },
+    {
+      "ar": "ٱئتِ",
+      "tr": "ʾti",
+      "ty": "imperative",
+      "n": 2,
+      "mn": {
+        "en": "come!",
+        "bn": "এসো!"
+      }
+    },
+    {
+      "ar": "وَأتُونِى",
+      "tr": "waʾatūniā",
+      "ty": "imperative",
+      "n": 2,
+      "mn": {
+        "en": "come! me",
+        "bn": "এসো! আমাকে"
+      }
+    },
+    {
+      "ar": "نَأتِى",
+      "tr": "naʾatiā",
+      "ty": "imperfect",
+      "n": 2,
+      "mn": {
+        "en": "we come",
+        "bn": "আমরা আসি"
+      }
+    },
+    {
+      "ar": "تَأتِى",
+      "tr": "taʾatiā",
+      "ty": "imperfect",
+      "n": 2,
+      "mn": {
+        "en": "you come",
+        "bn": "তুমি আসো"
+      }
+    },
+    {
+      "ar": "ٱئتُو",
+      "tr": "ʾtūā",
+      "ty": "imperative",
+      "n": 2,
+      "mn": {
+        "en": "come! (pl.)",
+        "bn": "এসো!"
+      }
+    },
+    {
+      "ar": "أَتَينَٰهُم",
+      "tr": "ʾātaynāhum",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "do he came them",
+        "bn": "কি সে এসেছে তাদের"
+      }
+    },
+    {
+      "ar": "أَتَى",
+      "tr": "ʾātā",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "do he came",
+        "bn": "কি সে এসেছে"
+      }
+    },
+    {
+      "ar": "ءَاتِيكَ",
+      "tr": "ʾātīka",
+      "ty": "imperfect",
+      "n": 2,
+      "mn": {
+        "en": "I come you",
+        "bn": "আমি আসি তোমাকে"
+      }
+    },
+    {
+      "ar": "فَأَتَىٰهُمُ",
+      "tr": "faʾātāāhumu",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "then he came them",
+        "bn": "তারপর সে এসেছে তাদের"
+      }
+    },
+    {
+      "ar": "تَّأتِيهِم",
+      "tr": "taʾatīhim",
+      "ty": "imperfect",
+      "n": 2,
+      "mn": {
+        "en": "you come",
+        "bn": "তুমি আসো"
+      }
+    },
+    {
+      "ar": "فَليَأتُو",
+      "tr": "falyaʾatūā",
+      "ty": "jussive",
+      "n": 2,
+      "mn": {
+        "en": "then so that they come",
+        "bn": "তারপর যাতে তারা আসে"
+      }
+    },
+    {
+      "ar": "وَأُتُو",
+      "tr": "waʾautūā",
+      "ty": "passive",
+      "n": 1,
+      "mn": {
+        "en": "they were brought",
+        "bn": "আনা হয়েছে"
+      }
+    },
+    {
+      "ar": "يَأتُوكُم",
+      "tr": "yaʾatūkum",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "he comes you (pl.)",
+        "bn": "সে আসে তোমাদের"
+      }
+    },
+    {
+      "ar": "نَأتِ",
+      "tr": "naʾati",
+      "ty": "jussive",
+      "n": 1,
+      "mn": {
+        "en": "we come",
+        "bn": "আমরা আসি"
+      }
+    },
+    {
+      "ar": "أَتَيتَ",
+      "tr": "ʾātayta",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "do you came",
+        "bn": "কি তুমি এসেছ"
+      }
+    },
+    {
+      "ar": "تَأتُو",
+      "tr": "taʾatūā",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "you (pl.) come",
+        "bn": "তোমরা আসো"
+      }
+    },
+    {
+      "ar": "وَأتُو",
+      "tr": "waʾatūā",
+      "ty": "imperative",
+      "n": 1,
+      "mn": {
+        "en": "come! (pl.)",
+        "bn": "এসো!"
+      }
+    },
+    {
+      "ar": "فَأتُوهُنَّ",
+      "tr": "faʾatūhuna",
+      "ty": "imperative",
+      "n": 1,
+      "mn": {
+        "en": "come! them (f.)",
+        "bn": "এসো! তাদের"
+      }
+    },
+    {
+      "ar": "يَأتِينَكَ",
+      "tr": "yaʾatīnaka",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "they come you",
+        "bn": "তারা আসে তোমাকে"
+      }
+    },
+    {
+      "ar": "وَيَأتُوكُم",
+      "tr": "wayaʾatūkum",
+      "ty": "jussive",
+      "n": 1,
+      "mn": {
+        "en": "and he comes you (pl.)",
+        "bn": "এবং সে আসে তোমাদের"
+      }
+    },
+    {
+      "ar": "يَأتِيَنَ",
+      "tr": "yaʾatīanā",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "he comes",
+        "bn": "সে আসে"
+      }
+    },
+    {
+      "ar": "يَأتِيَٰنِهَ",
+      "tr": "yaʾatīānihā",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "he comes it",
+        "bn": "সে আসে তা"
+      }
+    },
+    {
+      "ar": "وَلتَأتِ",
+      "tr": "waltaʾati",
+      "ty": "jussive",
+      "n": 1,
+      "mn": {
+        "en": "and so that you come",
+        "bn": "এবং যাতে তুমি আসো"
+      }
+    },
+    {
+      "ar": "فَتَأتِيَهُم",
+      "tr": "fataʾatīahum",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "then you come them",
+        "bn": "তারপর তুমি আসো তাদের"
+      }
+    },
+    {
+      "ar": "أَتَتكُمُ",
+      "tr": "ʾātatkumu",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "do she came you (pl.)",
+        "bn": "কি সে এসেছে তোমাদের"
+      }
+    },
+    {
+      "ar": "لَءَاتِيَنَّهُم",
+      "tr": "laʾātīanahum",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "surely I come them",
+        "bn": "অবশ্যই আমি আসি তাদের"
+      }
+    },
+    {
+      "ar": "تَأتِيَنَ",
+      "tr": "taʾatīanā",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "you come",
+        "bn": "তুমি আসো"
+      }
+    },
+    {
+      "ar": "تَأتِنَ",
+      "tr": "taʾatinā",
+      "ty": "jussive",
+      "n": 1,
+      "mn": {
+        "en": "you come",
+        "bn": "তুমি আসো"
+      }
+    },
+    {
+      "ar": "فَأَتَو",
+      "tr": "faʾātawā",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "then he came",
+        "bn": "তারপর সে এসেছে"
+      }
+    },
+    {
+      "ar": "أَتَتهُم",
+      "tr": "ʾātathum",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "do she came them",
+        "bn": "কি সে এসেছে তাদের"
+      }
+    },
+    {
+      "ar": "أَتَوكَ",
+      "tr": "ʾātawka",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "do he came you",
+        "bn": "কি সে এসেছে তোমাকে"
+      }
+    },
+    {
+      "ar": "يَأتِيكُمَ",
+      "tr": "yaʾatīkumā",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "he comes",
+        "bn": "সে আসে"
+      }
+    },
+    {
+      "ar": "يَأتِيَكُمَ",
+      "tr": "yaʾatīakumā",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "he comes",
+        "bn": "সে আসে"
+      }
+    },
+    {
+      "ar": "تَأتُونِى",
+      "tr": "taʾatūniā",
+      "ty": "jussive",
+      "n": 1,
+      "mn": {
+        "en": "you come me",
+        "bn": "তুমি আসো আমাকে"
+      }
+    },
+    {
+      "ar": "لَتَأتُنَّنِى",
+      "tr": "lataʾatunaniā",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "surely you come me",
+        "bn": "অবশ্যই তুমি আসো আমাকে"
+      }
+    },
+    {
+      "ar": "يَأتِيَنِى",
+      "tr": "yaʾatīaniā",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "he comes me",
+        "bn": "সে আসে আমাকে"
+      }
+    },
+    {
+      "ar": "فَأتُونَ",
+      "tr": "faʾatūnā",
+      "ty": "imperative",
+      "n": 1,
+      "mn": {
+        "en": "come!",
+        "bn": "এসো!"
+      }
+    },
+    {
+      "ar": "نَّأتِيَكُم",
+      "tr": "naʾatīakum",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "we come you (pl.)",
+        "bn": "আমরা আসি তোমাদের"
+      }
+    },
+    {
+      "ar": "وَيَأتِيهِ",
+      "tr": "wayaʾatīhi",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "and he comes him",
+        "bn": "এবং সে আসে তাকে"
+      }
+    },
+    {
+      "ar": "يَأتِيهِمُ",
+      "tr": "yaʾatīhimu",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "he comes",
+        "bn": "সে আসে"
+      }
+    },
+    {
+      "ar": "وَأَتَينَٰكَ",
+      "tr": "waʾātaynāka",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "and he came you",
+        "bn": "এবং সে এসেছে তোমাকে"
+      }
+    },
+    {
+      "ar": "يَأتِيَكَ",
+      "tr": "yaʾatīaka",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "he comes you",
+        "bn": "সে আসে তোমাকে"
+      }
+    },
+    {
+      "ar": "فَأَتَى",
+      "tr": "faʾātā",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "then he came",
+        "bn": "তারপর সে এসেছে"
+      }
+    },
+    {
+      "ar": "وَأَتَىٰهُمُ",
+      "tr": "waʾātāāhumu",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "and he came them",
+        "bn": "এবং সে এসেছে তাদের"
+      }
+    },
+    {
+      "ar": "يَأتِيهَ",
+      "tr": "yaʾatīhā",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "he comes it",
+        "bn": "সে আসে তা"
+      }
+    },
+    {
+      "ar": "تَأتِىَ",
+      "tr": "taʾatiāa",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "you come",
+        "bn": "তুমি আসো"
+      }
+    },
+    {
+      "ar": "فَليَأتِكُم",
+      "tr": "falyaʾatikum",
+      "ty": "jussive",
+      "n": 1,
+      "mn": {
+        "en": "then so that he comes you (pl.)",
+        "bn": "তারপর যাতে সে আসে তোমাদের"
+      }
+    },
+    {
+      "ar": "أَتَيَ",
+      "tr": "ʾātayā",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "do he came",
+        "bn": "কি সে এসেছে"
+      }
+    },
+    {
+      "ar": "فَأَتَت",
+      "tr": "faʾātat",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "then she came",
+        "bn": "তারপর সে এসেছে"
+      }
+    },
+    {
+      "ar": "يَأتُونَنَ",
+      "tr": "yaʾatūnanā",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "they come",
+        "bn": "তারা আসে"
+      }
+    },
+    {
+      "ar": "يَأتِكَ",
+      "tr": "yaʾatika",
+      "ty": "jussive",
+      "n": 1,
+      "mn": {
+        "en": "he comes you",
+        "bn": "সে আসে তোমাকে"
+      }
+    },
+    {
+      "ar": "وَيَأتِينَ",
+      "tr": "wayaʾatīnā",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "and he comes",
+        "bn": "এবং সে আসে"
+      }
+    },
+    {
+      "ar": "فَأتِيَاهُ",
+      "tr": "faʾatīāhu",
+      "ty": "imperative",
+      "n": 1,
+      "mn": {
+        "en": "come! (dual) him",
+        "bn": "এসো! তাকে"
+      }
+    },
+    {
+      "ar": "فَلَنَأتِيَنَّكَ",
+      "tr": "falanaʾatīanaka",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "then surely we come you",
+        "bn": "তারপর অবশ্যই আমরা আসি তোমাকে"
+      }
+    },
+    {
+      "ar": "يَأتِهِ.",
+      "tr": "yaʾatihi.",
+      "ty": "jussive",
+      "n": 1,
+      "mn": {
+        "en": "he comes",
+        "bn": "সে আসে"
+      }
+    },
+    {
+      "ar": "أَتَتكَ",
+      "tr": "ʾātatka",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "do she came you",
+        "bn": "কি সে এসেছে তোমাকে"
+      }
+    },
+    {
+      "ar": "أَفَتَأتُونَ",
+      "tr": "ʾāfataʾatūna",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "do then you (pl.) come",
+        "bn": "কি তারপর তোমরা আসো"
+      }
+    },
+    {
+      "ar": "فَليَأتِنَ",
+      "tr": "falyaʾatinā",
+      "ty": "jussive",
+      "n": 1,
+      "mn": {
+        "en": "then so that he comes",
+        "bn": "তারপর যাতে সে আসে"
+      }
+    },
+    {
+      "ar": "يَأتُونَكَ",
+      "tr": "yaʾatūnaka",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "they come you",
+        "bn": "তারা আসে তোমাকে"
+      }
+    },
+    {
+      "ar": "فَسَيَأتِيهِم",
+      "tr": "fasayaʾatīhim",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "then will he comes",
+        "bn": "তারপর শীঘ্রই সে আসে"
+      }
+    },
+    {
+      "ar": "فَأتِيَ",
+      "tr": "faʾatīā",
+      "ty": "imperative",
+      "n": 1,
+      "mn": {
+        "en": "come! (dual)",
+        "bn": "এসো!"
+      }
+    },
+    {
+      "ar": "فَيَأتِيَهُم",
+      "tr": "fayaʾatīahum",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "then he comes them",
+        "bn": "তারপর সে আসে তাদের"
+      }
+    },
+    {
+      "ar": "سَـَاتِيكُم",
+      "tr": "saātīkum",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "he comes you (pl.)",
+        "bn": "সে আসে তোমাদের"
+      }
+    },
+    {
+      "ar": "لَيَأتِيَنِّى",
+      "tr": "layaʾatīaniā",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "surely he comes",
+        "bn": "অবশ্যই সে আসে"
+      }
+    },
+    {
+      "ar": "فَلَنَأتِيَنَّهُم",
+      "tr": "falanaʾatīanahum",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "then surely we come them",
+        "bn": "তারপর অবশ্যই আমরা আসি তাদের"
+      }
+    },
+    {
+      "ar": "يَأتِينِى",
+      "tr": "yaʾatīniā",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "he comes me",
+        "bn": "সে আসে আমাকে"
+      }
+    },
+    {
+      "ar": "يَأتُونِى",
+      "tr": "yaʾatūniā",
+      "ty": "subjunctive",
+      "n": 1,
+      "mn": {
+        "en": "he comes me",
+        "bn": "সে আসে আমাকে"
+      }
+    },
+    {
+      "ar": "أَتَوهُ",
+      "tr": "ʾātawhu",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "do he came him",
+        "bn": "কি সে এসেছে তাকে"
+      }
+    },
+    {
+      "ar": "وَتَأتُونَ",
+      "tr": "wataʾatūna",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "and you (pl.) come",
+        "bn": "এবং তোমরা আসো"
+      }
+    },
+    {
+      "ar": "وَلَيَأتِيَنَّهُم",
+      "tr": "walayaʾatīanahum",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "and surely he comes them",
+        "bn": "এবং অবশ্যই সে আসে তাদের"
+      }
+    },
+    {
+      "ar": "لَتَأتِيَنَّكُم",
+      "tr": "lataʾatīanakum",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "surely you come you (pl.)",
+        "bn": "অবশ্যই তুমি আসো তোমাদের"
+      }
+    },
+    {
+      "ar": "تَأتُونَنَ",
+      "tr": "taʾatūnanā",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "you (pl.) come",
+        "bn": "তোমরা আসো"
+      }
+    },
+    {
+      "ar": "ٱئتِيَ",
+      "tr": "ʾtīā",
+      "ty": "imperative",
+      "n": 1,
+      "mn": {
+        "en": "come! (dual)",
+        "bn": "এসো!"
+      }
+    },
+    {
+      "ar": "أَتَت",
+      "tr": "ʾātat",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "do she came",
+        "bn": "কি সে এসেছে"
+      }
+    },
+    {
+      "ar": "فَليَأتِ",
+      "tr": "falyaʾati",
+      "ty": "jussive",
+      "n": 1,
+      "mn": {
+        "en": "then so that he comes",
+        "bn": "তারপর যাতে সে আসে"
+      }
+    },
+    {
+      "ar": "أَتَىٰنَ",
+      "tr": "ʾātāānā",
+      "ty": "perfect",
+      "n": 1,
+      "mn": {
+        "en": "do we came",
+        "bn": "কি আমরা এসেছি"
+      }
+    },
+    {
+      "ar": "فَتَأتُونَ",
+      "tr": "fataʾatūna",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "then you (pl.) come",
+        "bn": "তারপর তোমরা আসো"
+      }
+    }
+  ],
+  "12": [
+    {
+      "ar": "يَشَاءُ",
+      "tr": "yashāʾu",
+      "ty": "imperfect",
+      "n": 108,
+      "mn": {
+        "en": "he wills",
+        "bn": "সে চায়"
+      }
+    },
+    {
+      "ar": "شَاءَ",
+      "tr": "shāʾa",
+      "ty": "perfect",
+      "n": 56,
+      "mn": {
+        "en": "he willed",
+        "bn": "সে চেয়েছে"
+      }
+    },
+    {
+      "ar": "نَشَاءُ",
+      "tr": "nashāʾu",
+      "ty": "imperfect",
+      "n": 11,
+      "mn": {
+        "en": "we will",
+        "bn": "আমরা চাই"
+      }
+    },
+    {
+      "ar": "تَشَاءُ",
+      "tr": "tashāʾu",
+      "ty": "imperfect",
+      "n": 9,
+      "mn": {
+        "en": "you will",
+        "bn": "তুমি চাও"
+      }
+    },
+    {
+      "ar": "يَشَأ",
+      "tr": "yashaʾa",
+      "ty": "jussive",
+      "n": 8,
+      "mn": {
+        "en": "he wills",
+        "bn": "সে চায়"
+      }
+    },
+    {
+      "ar": "يَشَاءَ",
+      "tr": "yashāʾa",
+      "ty": "subjunctive",
+      "n": 8,
+      "mn": {
+        "en": "he wills",
+        "bn": "সে চায়"
+      }
+    },
+    {
+      "ar": "نَّشَاءُ",
+      "tr": "nashāʾu",
+      "ty": "imperfect",
+      "n": 7,
+      "mn": {
+        "en": "we will",
+        "bn": "আমরা চাই"
+      }
+    },
+    {
+      "ar": "شِئنَ",
+      "tr": "shiʾnā",
+      "ty": "perfect",
+      "n": 5,
+      "mn": {
+        "en": "we willed",
+        "bn": "আমরা চেয়েছি"
+      }
+    },
+    {
+      "ar": "يَشَاءُونَ",
+      "tr": "yashāʾūna",
+      "ty": "imperfect",
+      "n": 5,
+      "mn": {
+        "en": "they will",
+        "bn": "তারা চায়"
+      }
+    },
+    {
+      "ar": "شِئتُم",
+      "tr": "shiʾtum",
+      "ty": "perfect",
+      "n": 5,
+      "mn": {
+        "en": "you (pl.) willed",
+        "bn": "তোমরা চেয়েছ"
+      }
+    },
+    {
+      "ar": "شِئتَ",
+      "tr": "shiʾta",
+      "ty": "perfect",
+      "n": 3,
+      "mn": {
+        "en": "you willed",
+        "bn": "তুমি চেয়েছ"
+      }
+    },
+    {
+      "ar": "نَّشَأ",
+      "tr": "nashaʾa",
+      "ty": "jussive",
+      "n": 3,
+      "mn": {
+        "en": "we will",
+        "bn": "আমরা চাই"
+      }
+    },
+    {
+      "ar": "شِئتُمَ",
+      "tr": "shiʾtumā",
+      "ty": "perfect",
+      "n": 2,
+      "mn": {
+        "en": "you (pl.) willed",
+        "bn": "তোমরা চেয়েছ"
+      }
+    },
+    {
+      "ar": "يَشَإِ",
+      "tr": "yashaʾii",
+      "ty": "jussive",
+      "n": 2,
+      "mn": {
+        "en": "he wills",
+        "bn": "সে চায়"
+      }
+    },
+    {
+      "ar": "تَشَاءُونَ",
+      "tr": "tashāʾūna",
+      "ty": "imperfect",
+      "n": 2,
+      "mn": {
+        "en": "you (pl.) will",
+        "bn": "তোমরা চাও"
+      }
+    },
+    {
+      "ar": "أَشَاءُ",
+      "tr": "ʾāshāʾu",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "I will",
+        "bn": "আমি চাই"
+      }
+    },
+    {
+      "ar": "نَشَٰؤُ",
+      "tr": "nashāʾuuā",
+      "ty": "imperfect",
+      "n": 1,
+      "mn": {
+        "en": "we will",
+        "bn": "আমরা চাই"
+      }
+    }
+  ]
+}
