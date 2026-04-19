@@ -19,4 +19,6 @@ const { count, size } = await generateSW({
   ],
 });
 
-console.log(`SW generated: ${count} files precached (${(size / 1024).toFixed(1)} KB)`);
+console.log(
+  `SW generated: ${count} files precached (${(size / 1024).toFixed(1)} KB)`,
+);

@@ -15,16 +15,26 @@
 
 // ── Load all data sources ───────────────────────────────────────────
 
-const verbFormsFinal: Record<string, Array<{
-  ar: string; tr: string; roman: string; ty: string; n: number;
-  mn: { en: string; bn: string };
-}>> = await Bun.file("scripts/verb-forms-final.json").json();
+const verbFormsFinal: Record<
+  string,
+  Array<{
+    ar: string;
+    tr: string;
+    roman: string;
+    ty: string;
+    n: number;
+    mn: { en: string; bn: string };
+  }>
+> = await Bun.file("scripts/verb-forms-final.json").json();
 
-const ayahRefs: Record<string, Record<string, { s: number; a: number; t: string }>> =
-  await Bun.file("scripts/ayah-refs.json").json();
+const ayahRefs: Record<
+  string,
+  Record<string, { s: number; a: number; t: string }>
+> = await Bun.file("scripts/ayah-refs.json").json();
 
-const ayahsUsed: Record<string, string> =
-  await Bun.file("scripts/ayahs-used.json").json();
+const ayahsUsed: Record<string, string> = await Bun.file(
+  "scripts/ayahs-used.json",
+).json();
 
 const ayahTranslations: Record<string, { en: string; bn: string }> =
   await Bun.file("scripts/ayah-translations-v2.json").json();
@@ -35,7 +45,7 @@ let tsx = await Bun.file("src/quranic-verbs.tsx").text();
 
 tsx = tsx.replace(
   'import { useState, useEffect, useMemo, useRef, createContext, useContext } from "react";',
-  'import { useState, useEffect, useMemo, createContext, useContext } from "react";\nimport { createPortal } from "react-dom";'
+  'import { useState, useEffect, useMemo, createContext, useContext } from "react";\nimport { createPortal } from "react-dom";',
 );
 console.log("✓ Imports");
 
@@ -43,7 +53,7 @@ console.log("✓ Imports");
 
 tsx = tsx.replace(
   `interface VerbForm {\n  ar: string;\n  tr: string;\n  ty: VerbType;\n  n: number;\n  mn: Record<Lang, string>;\n}`,
-  `interface VerbForm {\n  ar: string;\n  tr: string;\n  ty: VerbType;\n  n: number;\n  mn: Record<Lang, string>;\n  ex: [number, number];\n}`
+  `interface VerbForm {\n  ar: string;\n  tr: string;\n  ty: VerbType;\n  n: number;\n  mn: Record<Lang, string>;\n  ex: [number, number];\n}`,
 );
 console.log("✓ VerbForm interface");
 
@@ -51,11 +61,11 @@ console.log("✓ VerbForm interface");
 
 tsx = tsx.replace(
   `noMatch: "No verbs match your search.", next: "Next →",`,
-  `noMatch: "No verbs match your search.", next: "Next →", all: "All",`
+  `noMatch: "No verbs match your search.", next: "Next →", all: "All",`,
 );
 tsx = tsx.replace(
   `noMatch: "কোনো ক্রিয়াপদ পাওয়া যায়নি।", next: "পরবর্তী →",`,
-  `noMatch: "কোনো ক্রিয়াপদ পাওয়া যায়নি।", next: "পরবর্তী →", all: "সব",`
+  `noMatch: "কোনো ক্রিয়াপদ পাওয়া যায়নি।", next: "পরবর্তী →", all: "সব",`,
 );
 tsx = tsx.replace(`jussive: "মাজযূম"`, `jussive: "শর্তমূলক"`);
 tsx = tsx.replace(`subjunctive: "মানসূব"`, `subjunctive: "সম্ভাব্য"`);
@@ -69,8 +79,10 @@ const sortedAyahKeys = Object.keys(ayahsUsed).sort((a, b) => {
   return sa * 10000 + aa - (sb * 10000 + ab);
 });
 
-let ayahsCode = "\n// ── Ayah Texts (Saheeh International EN, Abu Bakr Zakaria BN) ────\n\n";
-ayahsCode += "const AYAHS: Record<string, { ar: string; en: string; bn: string }> = {\n";
+let ayahsCode =
+  "\n// ── Ayah Texts (Saheeh International EN, Abu Bakr Zakaria BN) ────\n\n";
+ayahsCode +=
+  "const AYAHS: Record<string, { ar: string; en: string; bn: string }> = {\n";
 for (const key of sortedAyahKeys) {
   const ar = ayahsUsed[key];
   const tr = ayahTranslations[key] || { en: "", bn: "" };
@@ -84,13 +96,28 @@ console.log(`✓ AYAHS map (${sortedAyahKeys.length} entries)`);
 // ── Step 5: Replace VERBS array with 844 forms + ex fields ─────────
 
 // Extract verb metadata from original file
-const verbMeta: { id: number; root: string; verb: string; tr: string; form: string; freq: number; color: string; mn: { en: string; bn: string } }[] = [];
-const metaRegex = /\{\s*\n?\s*id:\s*(\d+),\s*root:\s*"([^"]+)",\s*verb:\s*"([^"]+)",\s*tr:\s*"([^"]+)",\s*form:\s*"([^"]+)",\s*freq:\s*(\d+),\s*color:\s*"([^"]+)",\s*\n?\s*mn:\s*\{\s*en:\s*"([^"]+)",\s*bn:\s*"([^"]+)"\s*\}/g;
+const verbMeta: {
+  id: number;
+  root: string;
+  verb: string;
+  tr: string;
+  form: string;
+  freq: number;
+  color: string;
+  mn: { en: string; bn: string };
+}[] = [];
+const metaRegex =
+  /\{\s*\n?\s*id:\s*(\d+),\s*root:\s*"([^"]+)",\s*verb:\s*"([^"]+)",\s*tr:\s*"([^"]+)",\s*form:\s*"([^"]+)",\s*freq:\s*(\d+),\s*color:\s*"([^"]+)",\s*\n?\s*mn:\s*\{\s*en:\s*"([^"]+)",\s*bn:\s*"([^"]+)"\s*\}/g;
 let match;
 while ((match = metaRegex.exec(tsx)) !== null) {
   verbMeta.push({
-    id: +match[1], root: match[2], verb: match[3], tr: match[4],
-    form: match[5], freq: +match[6], color: match[7],
+    id: +match[1],
+    root: match[2],
+    verb: match[3],
+    tr: match[4],
+    form: match[5],
+    freq: +match[6],
+    color: match[7],
     mn: { en: match[8], bn: match[9] },
   });
 }
@@ -121,12 +148,16 @@ verbsCode += "];\n";
 
 // Count forms added
 let formCount = 0;
-for (const v of verbMeta) formCount += (verbFormsFinal[String(v.id)] || []).length;
+for (const v of verbMeta)
+  formCount += (verbFormsFinal[String(v.id)] || []).length;
 console.log(`✓ VERBS array with ${formCount} forms`);
 
 // Replace old VERBS array
 const verbsStart = tsx.indexOf("const VERBS: Verb[] = [");
-if (verbsStart === -1) { console.error("Could not find VERBS array"); process.exit(1); }
+if (verbsStart === -1) {
+  console.error("Could not find VERBS array");
+  process.exit(1);
+}
 
 // Find matching end bracket
 let depth = 0;
@@ -136,10 +167,23 @@ let strCh = "";
 let esc = false;
 for (let i = verbsStart; i < tsx.length; i++) {
   const ch = tsx[i];
-  if (esc) { esc = false; continue; }
-  if (ch === "\\") { esc = true; continue; }
-  if (inStr) { if (ch === strCh) inStr = false; continue; }
-  if (ch === '"' || ch === "'" || ch === "`") { inStr = true; strCh = ch; continue; }
+  if (esc) {
+    esc = false;
+    continue;
+  }
+  if (ch === "\\") {
+    esc = true;
+    continue;
+  }
+  if (inStr) {
+    if (ch === strCh) inStr = false;
+    continue;
+  }
+  if (ch === '"' || ch === "'" || ch === "`") {
+    inStr = true;
+    strCh = ch;
+    continue;
+  }
   if (ch === "[") depth++;
   if (ch === "]") {
     depth--;
@@ -176,7 +220,7 @@ tsx = tsx.replace(
     const distractors = shuffle(candidates).slice(0, 3).map(f => f.mn[lang]);
     return { form, correct, options: shuffle([correct, ...distractors]) };
   });
-}`
+}`,
 );
 console.log("✓ buildQuizQuestions with type filter");
 
@@ -262,7 +306,7 @@ function highlightWord(text: string, word: string): (string | React.ReactElement
 
 tsx = tsx.replace(
   "const TypeBadge = ",
-  surahNamesCode + "\nconst TypeBadge = "
+  surahNamesCode + "\nconst TypeBadge = ",
 );
 console.log("✓ SURAH_NAMES + highlightWord");
 

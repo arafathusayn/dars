@@ -23,6 +23,7 @@ export default [
       "src/paraglide/**",
       "src/routeTree.gen.ts",
       "dist/**",
+      "scripts/**",
     ],
   },
 ];

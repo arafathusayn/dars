@@ -6,13 +6,21 @@
  * Run: bun scripts/generate-component-data.ts
  */
 
-const formsData: Record<string, Array<{
-  ar: string; tr: string; ty: string; n: number;
-  mn: { en: string; bn: string }; ex: [number, number];
-}>> = await Bun.file("scripts/verb-forms-with-ayahs.json").json();
+const formsData: Record<
+  string,
+  Array<{
+    ar: string;
+    tr: string;
+    ty: string;
+    n: number;
+    mn: { en: string; bn: string };
+    ex: [number, number];
+  }>
+> = await Bun.file("scripts/verb-forms-with-ayahs.json").json();
 
-const ayahsUsed: Record<string, string> =
-  await Bun.file("scripts/ayahs-used.json").json();
+const ayahsUsed: Record<string, string> = await Bun.file(
+  "scripts/ayahs-used.json",
+).json();
 
 // ── Generate AYAHS map ──────────────────────────────────────────────
 
@@ -56,9 +64,11 @@ console.log(`\nAYAHS map size: ${(ayahsSize / 1024).toFixed(1)} KB`);
 
 // Check for interesting "last ayah" stats
 for (const [verbId, forms] of Object.entries(formsData)) {
-  const lastSurah = Math.max(...forms.map(f => f.ex[0]));
-  const lateForms = forms.filter(f => f.ex[0] >= 100);
+  const lastSurah = Math.max(...forms.map((f) => f.ex[0]));
+  const lateForms = forms.filter((f) => f.ex[0] >= 100);
   if (lateForms.length > 0) {
-    console.log(`Verb ${verbId}: ${lateForms.length} forms have last occurrence in surah 100+`);
+    console.log(
+      `Verb ${verbId}: ${lateForms.length} forms have last occurrence in surah 100+`,
+    );
   }
 }

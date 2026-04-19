@@ -48,8 +48,17 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
     links: [
       { rel: "stylesheet", href: appCss },
       { rel: "manifest", href: "/manifest.json" },
-      { rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png" },
-      { rel: "icon", type: "image/png", sizes: "512x512", href: "/logo512.png" },
+      {
+        rel: "apple-touch-icon",
+        sizes: "180x180",
+        href: "/apple-touch-icon.png",
+      },
+      {
+        rel: "icon",
+        type: "image/png",
+        sizes: "512x512",
+        href: "/logo512.png",
+      },
     ],
     scripts: [
       { tag: "script" as const, children: THEME_INIT_SCRIPT },

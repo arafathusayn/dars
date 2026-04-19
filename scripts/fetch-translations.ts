@@ -9,8 +9,9 @@
  * Run: bun scripts/fetch-translations.ts
  */
 
-const ayahsUsed: Record<string, string> =
-  await Bun.file("scripts/ayahs-used.json").json();
+const ayahsUsed: Record<string, string> = await Bun.file(
+  "scripts/ayahs-used.json",
+).json();
 
 const refs = Object.keys(ayahsUsed);
 console.log(`Need translations for ${refs.length} ayahs`);
@@ -81,7 +82,8 @@ const bnMap = await fetchTranslation(213, "BN");
 console.log(`  Got ${bnMap.size} translations`);
 
 // Check coverage
-let enMissing = 0, bnMissing = 0;
+let enMissing = 0,
+  bnMissing = 0;
 for (const ref of refs) {
   if (!enMap.has(ref)) enMissing++;
   if (!bnMap.has(ref)) bnMissing++;
@@ -97,7 +99,10 @@ for (const ref of refs) {
   };
 }
 
-await Bun.write("scripts/ayah-translations-v2.json", JSON.stringify(result, null, 2));
+await Bun.write(
+  "scripts/ayah-translations-v2.json",
+  JSON.stringify(result, null, 2),
+);
 console.log("Wrote scripts/ayah-translations-v2.json");
 
 // Samples

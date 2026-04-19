@@ -12,12 +12,16 @@
  * Run: bun scripts/rebuild-all.ts
  */
 
-const ayahRefs: Record<string, Record<string, { s: number; a: number; t: string }>> =
-  await Bun.file("scripts/ayah-refs.json").json();
-const ayahsUsed: Record<string, string> =
-  await Bun.file("scripts/ayahs-used.json").json();
-const translations: Record<string, { en: string; bn: string }> =
-  await Bun.file("scripts/ayah-translations-v2.json").json();
+const ayahRefs: Record<
+  string,
+  Record<string, { s: number; a: number; t: string }>
+> = await Bun.file("scripts/ayah-refs.json").json();
+const ayahsUsed: Record<string, string> = await Bun.file(
+  "scripts/ayahs-used.json",
+).json();
+const translations: Record<string, { en: string; bn: string }> = await Bun.file(
+  "scripts/ayah-translations-v2.json",
+).json();
 
 let tsx = await Bun.file("src/quranic-verbs.tsx").text();
 
@@ -26,7 +30,7 @@ let tsx = await Bun.file("src/quranic-verbs.tsx").text();
 // ═══════════════════════════════════════════════════════════════════
 tsx = tsx.replace(
   'import { useState, useEffect, useMemo, useRef, createContext, useContext } from "react";',
-  'import { useState, useEffect, useMemo, createContext, useContext } from "react";\nimport { createPortal } from "react-dom";'
+  'import { useState, useEffect, useMemo, createContext, useContext } from "react";\nimport { createPortal } from "react-dom";',
 );
 console.log("✓ 1. Updated imports");
 
@@ -48,7 +52,7 @@ tsx = tsx.replace(
   n: number;
   mn: Record<Lang, string>;
   ex: [number, number];
-}`
+}`,
 );
 console.log("✓ 2. Updated VerbForm interface");
 
@@ -57,11 +61,11 @@ console.log("✓ 2. Updated VerbForm interface");
 // ═══════════════════════════════════════════════════════════════════
 tsx = tsx.replace(
   `noMatch: "No verbs match your search.", next: "Next →",`,
-  `noMatch: "No verbs match your search.", next: "Next →", all: "All",`
+  `noMatch: "No verbs match your search.", next: "Next →", all: "All",`,
 );
 tsx = tsx.replace(
   `noMatch: "কোনো ক্রিয়াপদ পাওয়া যায়নি।", next: "পরবর্তী →",`,
-  `noMatch: "কোনো ক্রিয়াপদ পাওয়া যায়নি।", next: "পরবর্তী →", all: "সব",`
+  `noMatch: "কোনো ক্রিয়াপদ পাওয়া যায়নি।", next: "পরবর্তী →", all: "সব",`,
 );
 tsx = tsx.replace(`jussive: "মাজযূম"`, `jussive: "শর্তমূলক"`);
 tsx = tsx.replace(`subjunctive: "মানসূব"`, `subjunctive: "সম্ভাব্য"`);
@@ -76,8 +80,10 @@ const sortedKeys = Object.keys(ayahsUsed).sort((a, b) => {
   return sa * 10000 + aa - (sb * 10000 + ab);
 });
 
-let ayahsCode = "\n// ── Ayah Texts (Saheeh International EN, Abu Bakr Zakaria BN) ────\n\n";
-ayahsCode += "const AYAHS: Record<string, { ar: string; en: string; bn: string }> = {\n";
+let ayahsCode =
+  "\n// ── Ayah Texts (Saheeh International EN, Abu Bakr Zakaria BN) ────\n\n";
+ayahsCode +=
+  "const AYAHS: Record<string, { ar: string; en: string; bn: string }> = {\n";
 for (const key of sortedKeys) {
   const ar = ayahsUsed[key];
   const tr = translations[key] || { en: "", bn: "" };
@@ -125,13 +131,15 @@ for (const line of lines) {
       let ex = lookup?.get(ar);
       if (!ex) {
         // Normalized form: strip sukun, maddah, hamza above, trailing alef
-        const norm = ar.replace(/[\u0652\u0653\u0654]/g, "").replace(/\u0627$/, "");
+        const norm = ar
+          .replace(/[\u0652\u0653\u0654]/g, "")
+          .replace(/\u0627$/, "");
         ex = lookup?.get(norm);
       }
       if (ex) {
         const updated = line.replace(
           /\}\s*\},\s*$/,
-          `}, ex: [${ex[0]}, ${ex[1]}] },`
+          `}, ex: [${ex[0]}, ${ex[1]}] },`,
         );
         newLines.push(updated);
         formUpdates++;
@@ -171,7 +179,7 @@ tsx = tsx.replace(
     const distractors = shuffle(candidates).slice(0, 3).map(f => f.mn[lang]);
     return { form, correct, options: shuffle([correct, ...distractors]) };
   });
-}`
+}`,
 );
 console.log("✓ 6. Updated buildQuizQuestions with type filter");
 
@@ -265,4 +273,6 @@ function highlightWord(text: string, word: string): (string | React.ReactElement
 await Bun.write("src/quranic-verbs.tsx", tsx);
 const sizeKB = (new TextEncoder().encode(tsx).length / 1024).toFixed(1);
 console.log(`\n✓ Wrote src/quranic-verbs.tsx (${sizeKB} KB)`);
-console.log("\nRemaining: Quiz tabs, AyahModal, AyahRef, FormRow, highlightWord — apply via Edit tool");
+console.log(
+  "\nRemaining: Quiz tabs, AyahModal, AyahRef, FormRow, highlightWord — apply via Edit tool",
+);

@@ -7,13 +7,21 @@
  * Run: bun scripts/inject-ayah-data.ts
  */
 
-const formsData: Record<string, Array<{
-  ar: string; tr: string; ty: string; n: number;
-  mn: { en: string; bn: string }; ex: [number, number];
-}>> = await Bun.file("scripts/verb-forms-with-ayahs.json").json();
+const formsData: Record<
+  string,
+  Array<{
+    ar: string;
+    tr: string;
+    ty: string;
+    n: number;
+    mn: { en: string; bn: string };
+    ex: [number, number];
+  }>
+> = await Bun.file("scripts/verb-forms-with-ayahs.json").json();
 
-const ayahsUsed: Record<string, string> =
-  await Bun.file("scripts/ayahs-used.json").json();
+const ayahsUsed: Record<string, string> = await Bun.file(
+  "scripts/ayahs-used.json",
+).json();
 
 let tsx = await Bun.file("src/quranic-verbs.tsx").text();
 
@@ -51,13 +59,12 @@ const sortedKeys = Object.keys(ayahsUsed).sort((a, b) => {
   return sa * 10000 + aa - (sb * 10000 + ab);
 });
 
-let ayahsCode = "\n// ── Ayah Texts (lookup table, keyed by surah:ayah) ──────────────────\n\n";
+let ayahsCode =
+  "\n// ── Ayah Texts (lookup table, keyed by surah:ayah) ──────────────────\n\n";
 ayahsCode += "const AYAHS: Record<string, string> = {\n";
 for (const key of sortedKeys) {
   // Escape any problematic chars for a TS string
-  const text = ayahsUsed[key]
-    .replace(/\\/g, "\\\\")
-    .replace(/"/g, '\\"');
+  const text = ayahsUsed[key].replace(/\\/g, "\\\\").replace(/"/g, '\\"');
   ayahsCode += `  "${key}": "${text}",\n`;
 }
 ayahsCode += "};\n";
@@ -98,7 +105,7 @@ for (let i = 0; i < lines.length; i++) {
   // Check if this line is a form entry (has ar:, ty:, mn:, and ends with } },)
   if (
     currentVerbId > 0 &&
-    line.includes("ar: \"") &&
+    line.includes('ar: "') &&
     line.includes("mn: {") &&
     line.trimEnd().endsWith("} },")
   ) {
@@ -116,7 +123,7 @@ for (let i = 0; i < lines.length; i++) {
           // Insert ex before the closing } },
           const updated = line.replace(
             /\}\s*\},\s*$/,
-            `}, ex: [${ex[0]}, ${ex[1]}] },`
+            `}, ex: [${ex[0]}, ${ex[1]}] },`,
           );
           newLines.push(updated);
           formUpdates++;
@@ -133,7 +140,9 @@ tsx = newLines.join("\n");
 console.log(`✓ Added ex field to ${formUpdates} form entries`);
 
 if (formUpdates !== 844) {
-  console.warn(`⚠ Expected 844 forms, got ${formUpdates}. Checking mismatches...`);
+  console.warn(
+    `⚠ Expected 844 forms, got ${formUpdates}. Checking mismatches...`,
+  );
 
   // Debug: find which forms weren't matched
   for (const [verbId, lookup] of Object.entries(exLookup)) {

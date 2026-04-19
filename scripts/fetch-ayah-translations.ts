@@ -8,8 +8,9 @@
  * Run: bun scripts/fetch-ayah-translations.ts
  */
 
-const ayahsUsed: Record<string, string> =
-  await Bun.file("scripts/ayahs-used.json").json();
+const ayahsUsed: Record<string, string> = await Bun.file(
+  "scripts/ayahs-used.json",
+).json();
 
 const refs = Object.keys(ayahsUsed);
 console.log(`Fetching translations for ${refs.length} ayahs...`);
@@ -57,7 +58,10 @@ for (const ref of refs) {
 
 console.log(`Matched ${matched}/${refs.length} translations`);
 
-await Bun.write("scripts/ayah-translations.json", JSON.stringify(result, null, 2));
+await Bun.write(
+  "scripts/ayah-translations.json",
+  JSON.stringify(result, null, 2),
+);
 console.log("Wrote scripts/ayah-translations.json");
 
 // Print sample

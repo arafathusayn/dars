@@ -8,8 +8,9 @@
 const newTranslations: Record<string, { en: string; bn: string }> =
   await Bun.file("scripts/ayah-translations-v2.json").json();
 
-const ayahsUsed: Record<string, string> =
-  await Bun.file("scripts/ayahs-used.json").json();
+const ayahsUsed: Record<string, string> = await Bun.file(
+  "scripts/ayahs-used.json",
+).json();
 
 let tsx = await Bun.file("src/quranic-verbs.tsx").text();
 
@@ -20,7 +21,8 @@ const sortedKeys = Object.keys(ayahsUsed).sort((a, b) => {
   return sa * 10000 + aa - (sb * 10000 + ab);
 });
 
-let newCode = 'const AYAHS: Record<string, { ar: string; en: string; bn: string }> = {\n';
+let newCode =
+  "const AYAHS: Record<string, { ar: string; en: string; bn: string }> = {\n";
 for (const key of sortedKeys) {
   const ar = ayahsUsed[key];
   const tr = newTranslations[key] || { en: "", bn: "" };
@@ -30,7 +32,8 @@ for (const key of sortedKeys) {
 newCode += "};";
 
 // Find the AYAHS constant by its type signature
-const marker = 'const AYAHS: Record<string, { ar: string; en: string; bn: string }> = {';
+const marker =
+  "const AYAHS: Record<string, { ar: string; en: string; bn: string }> = {";
 const startIdx = tsx.indexOf(marker);
 if (startIdx === -1) {
   console.error("ERROR: Could not find AYAHS constant");
@@ -91,5 +94,7 @@ tsx = tsx.slice(0, startIdx) + newCode + tsx.slice(endIdx);
 
 await Bun.write("src/quranic-verbs.tsx", tsx);
 const sizeKB = (new TextEncoder().encode(tsx).length / 1024).toFixed(1);
-console.log(`✓ Updated AYAHS with Saheeh International (EN) + Abu Bakr Zakaria (BN)`);
+console.log(
+  `✓ Updated AYAHS with Saheeh International (EN) + Abu Bakr Zakaria (BN)`,
+);
 console.log(`✓ Wrote src/quranic-verbs.tsx (${sizeKB} KB)`);

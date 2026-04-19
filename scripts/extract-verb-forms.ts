@@ -23,13 +23,19 @@ const VERBS: VerbDef[] = [
   { id: 6, root: "kfr", lem: "kafara" },
   { id: 7, root: "jyA", lem: "jaA^'a" },
   { id: 8, root: "Eml", lem: "Eamila" },
-  { id: 9, root: "Aty", lem: "A^taY" },   // آتَى form IV
-  { id: 10, root: "rAy", lem: "ra'aA" },   // رَأَى form I (includes >arayo for form IV)
-  { id: 11, root: "Aty", lem: ">ataY" },   // أَتَى form I
+  { id: 9, root: "Aty", lem: "A^taY" }, // آتَى form IV
+  { id: 10, root: "rAy", lem: "ra'aA" }, // رَأَى form I (includes >arayo for form IV)
+  { id: 11, root: "Aty", lem: ">ataY" }, // أَتَى form I
   { id: 12, root: "$yA", lem: "$aA^'a" },
 ];
 
-type VerbType = "perfect" | "imperfect" | "imperative" | "jussive" | "subjunctive" | "passive";
+type VerbType =
+  | "perfect"
+  | "imperfect"
+  | "imperative"
+  | "jussive"
+  | "subjunctive"
+  | "passive";
 
 function classifyType(features: string): VerbType {
   const isPassive = features.includes("|PASS");
@@ -56,7 +62,8 @@ async function main() {
   const words = new Map<string, Segment[]>();
 
   for (const line of lines) {
-    if (line.startsWith("#") || line.startsWith("LOCATION") || !line.trim()) continue;
+    if (line.startsWith("#") || line.startsWith("LOCATION") || !line.trim())
+      continue;
     const [loc, form, tag, features] = line.split("\t");
     if (!loc || !form || !tag) continue;
     // (1:1:1:1) -> (1:1:1)
@@ -72,7 +79,10 @@ async function main() {
 
     for (const [, segments] of words) {
       const verbSeg = segments.find(
-        (s) => s.tag === "V" && s.features.includes(`ROOT:${verb.root}`) && s.features.includes(`LEM:${verb.lem}`)
+        (s) =>
+          s.tag === "V" &&
+          s.features.includes(`ROOT:${verb.root}`) &&
+          s.features.includes(`LEM:${verb.lem}`),
       );
       if (!verbSeg) continue;
 
@@ -97,10 +107,15 @@ async function main() {
   for (const verb of VERBS) {
     const forms = results[verb.id];
     const total = forms.reduce((s, f) => s + f.n, 0);
-    console.log(`Verb ${verb.id} (root:${verb.root}, lem:${verb.lem}): ${forms.length} unique forms, ${total} total occurrences`);
+    console.log(
+      `Verb ${verb.id} (root:${verb.root}, lem:${verb.lem}): ${forms.length} unique forms, ${total} total occurrences`,
+    );
   }
 
-  await Bun.write("scripts/verb-forms-raw.json", JSON.stringify(results, null, 2));
+  await Bun.write(
+    "scripts/verb-forms-raw.json",
+    JSON.stringify(results, null, 2),
+  );
   console.log("\nWrote scripts/verb-forms-raw.json");
 }
 

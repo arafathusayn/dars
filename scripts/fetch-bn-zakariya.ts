@@ -8,8 +8,9 @@
  * Run: bun scripts/fetch-bn-zakariya.ts
  */
 
-const ayahsUsed: Record<string, string> =
-  await Bun.file("scripts/ayahs-used.json").json();
+const ayahsUsed: Record<string, string> = await Bun.file(
+  "scripts/ayahs-used.json",
+).json();
 
 const refs = Object.keys(ayahsUsed);
 console.log(`Need translations for ${refs.length} ayahs`);
@@ -40,7 +41,10 @@ for (const surahNum of surahs) {
   for (const tr of data.translations) {
     const key = tr.verse_key; // "S:A" format
     // Clean HTML tags from translation text
-    let text = tr.text.replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
+    let text = tr.text
+      .replace(/<[^>]+>/g, "")
+      .replace(/\s+/g, " ")
+      .trim();
     translations.set(key, text);
   }
 

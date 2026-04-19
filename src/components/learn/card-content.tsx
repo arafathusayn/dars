@@ -68,8 +68,7 @@ export function CardContent({ v, accent }: CardContentProps) {
                   lineHeight: 1,
                 }}
               >
-                {GENDER_ICON[v.g]}{" "}
-                {v.g === "M" ? m.masculine() : m.feminine()}
+                {GENDER_ICON[v.g]} {v.g === "M" ? m.masculine() : m.feminine()}
               </span>
             </div>
           </div>

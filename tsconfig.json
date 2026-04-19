@@ -6,6 +6,7 @@
     "prettier.config.js",
     "vite.config.js"
   ],
+  "exclude": ["node_modules", "dist", "scripts"],
 
   "compilerOptions": {
     "target": "ES2022",
@@ -17,7 +18,7 @@
       "@/*": ["./src/*"]
     },
     "lib": ["ES2022", "DOM", "DOM.Iterable"],
-    "types": ["vite/client"],
+    "types": ["vite/client", "bun"],
 
     /* Bundler mode */
     "moduleResolution": "bundler",

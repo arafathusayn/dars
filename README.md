@@ -11,14 +11,14 @@ bun run dev
 
 ## Scripts
 
-| Command | Description |
-|---|---|
-| `bun run dev` | Start dev server on port 3000 |
-| `bun run build` | Validate messages + production build |
-| `bun run preview` | Preview production build locally |
-| `bun run check` | Run all checks (validate, typecheck, format, lint) |
-| `bun run deploy` | Deploy to Cloudflare Workers |
-| `bun run test` | Run tests |
+| Command           | Description                                        |
+| ----------------- | -------------------------------------------------- |
+| `bun run dev`     | Start dev server on port 3000                      |
+| `bun run build`   | Validate messages + production build               |
+| `bun run preview` | Preview production build locally                   |
+| `bun run check`   | Run all checks (validate, typecheck, format, lint) |
+| `bun run deploy`  | Deploy to Cloudflare Workers                       |
+| `bun run test`    | Run tests                                          |
 
 ## Stack
 

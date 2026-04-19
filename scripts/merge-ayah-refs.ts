@@ -10,16 +10,26 @@
  * Run: bun scripts/merge-ayah-refs.ts
  */
 
-const ayahRefs: Record<string, Record<string, { s: number; a: number; t: string }>> =
-  await Bun.file("scripts/ayah-refs.json").json();
+const ayahRefs: Record<
+  string,
+  Record<string, { s: number; a: number; t: string }>
+> = await Bun.file("scripts/ayah-refs.json").json();
 
-const ayahTexts: Record<string, string> =
-  await Bun.file("scripts/ayah-texts.json").json();
+const ayahTexts: Record<string, string> = await Bun.file(
+  "scripts/ayah-texts.json",
+).json();
 
-const verbFormsFinal: Record<string, Array<{
-  ar: string; tr: string; roman: string; ty: string; n: number;
-  mn: { en: string; bn: string };
-}>> = await Bun.file("scripts/verb-forms-final.json").json();
+const verbFormsFinal: Record<
+  string,
+  Array<{
+    ar: string;
+    tr: string;
+    roman: string;
+    ty: string;
+    n: number;
+    mn: { en: string; bn: string };
+  }>
+> = await Bun.file("scripts/verb-forms-final.json").json();
 
 // Build the ex mapping: for each verb form, find its ayah reference
 interface FormWithEx {
@@ -67,7 +77,10 @@ for (const [verbId, forms] of Object.entries(verbFormsFinal)) {
 console.log(`Matched: ${matched}, Unmatched: ${unmatched}`);
 
 // Write the merged data
-await Bun.write("scripts/verb-forms-with-ayahs.json", JSON.stringify(output, null, 2));
+await Bun.write(
+  "scripts/verb-forms-with-ayahs.json",
+  JSON.stringify(output, null, 2),
+);
 console.log("Wrote scripts/verb-forms-with-ayahs.json");
 
 // Write the unique ayahs map (for embedding in component)
@@ -85,4 +98,6 @@ for (const key of usedRefs) {
 }
 
 await Bun.write("scripts/ayahs-used.json", JSON.stringify(usedAyahs, null, 2));
-console.log(`Wrote scripts/ayahs-used.json (${Object.keys(usedAyahs).length} ayahs)`);
+console.log(
+  `Wrote scripts/ayahs-used.json (${Object.keys(usedAyahs).length} ayahs)`,
+);

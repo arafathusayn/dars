@@ -13,19 +13,56 @@ const CORPUS_PATH = "src/data/quranic-corpus-morphology-0.4.txt";
 // ── Buckwalter transliteration map ──────────────────────────────────
 
 const BW: Record<string, string> = {
-  "'": "\u0621", "|": "\u0622", ">": "\u0623", "&": "\u0624",
-  "<": "\u0625", "}": "\u0626", "A": "\u0627", "b": "\u0628",
-  "p": "\u0629", "t": "\u062A", "v": "\u062B", "j": "\u062C",
-  "H": "\u062D", "x": "\u062E", "d": "\u062F", "*": "\u0630",
-  "r": "\u0631", "z": "\u0632", "s": "\u0633", "$": "\u0634",
-  "S": "\u0635", "D": "\u0636", "T": "\u0637", "Z": "\u0638",
-  "E": "\u0639", "g": "\u063A", "_": "\u0640", "f": "\u0641",
-  "q": "\u0642", "k": "\u0643", "l": "\u0644", "m": "\u0645",
-  "n": "\u0646", "h": "\u0647", "w": "\u0648", "Y": "\u0649",
-  "y": "\u064A", "F": "\u064B", "N": "\u064C", "K": "\u064D",
-  "a": "\u064E", "u": "\u064F", "i": "\u0650", "~": "\u0651",
-  "o": "\u0652", "`": "\u0670", "{": "\u0671", "^": "\u0653",
-  "#": "\u0654", "@": "",
+  "'": "\u0621",
+  "|": "\u0622",
+  ">": "\u0623",
+  "&": "\u0624",
+  "<": "\u0625",
+  "}": "\u0626",
+  A: "\u0627",
+  b: "\u0628",
+  p: "\u0629",
+  t: "\u062A",
+  v: "\u062B",
+  j: "\u062C",
+  H: "\u062D",
+  x: "\u062E",
+  d: "\u062F",
+  "*": "\u0630",
+  r: "\u0631",
+  z: "\u0632",
+  s: "\u0633",
+  $: "\u0634",
+  S: "\u0635",
+  D: "\u0636",
+  T: "\u0637",
+  Z: "\u0638",
+  E: "\u0639",
+  g: "\u063A",
+  _: "\u0640",
+  f: "\u0641",
+  q: "\u0642",
+  k: "\u0643",
+  l: "\u0644",
+  m: "\u0645",
+  n: "\u0646",
+  h: "\u0647",
+  w: "\u0648",
+  Y: "\u0649",
+  y: "\u064A",
+  F: "\u064B",
+  N: "\u064C",
+  K: "\u064D",
+  a: "\u064E",
+  u: "\u064F",
+  i: "\u0650",
+  "~": "\u0651",
+  o: "\u0652",
+  "`": "\u0670",
+  "{": "\u0671",
+  "^": "\u0653",
+  "#": "\u0654",
+  "@": "",
 };
 
 function bwToArabic(bw: string): string {
@@ -58,7 +95,11 @@ const VERBS = [
 
 // ── Parse corpus ────────────────────────────────────────────────────
 
-interface Segment { form: string; tag: string; features: string }
+interface Segment {
+  form: string;
+  tag: string;
+  features: string;
+}
 
 async function main() {
   console.log("Reading corpus...");
@@ -71,33 +112,40 @@ async function main() {
   let currentSegs: Segment[] = [];
 
   for (const line of lines) {
-    if (line.startsWith("#") || line.startsWith("LOCATION") || !line.trim()) continue;
+    if (line.startsWith("#") || line.startsWith("LOCATION") || !line.trim())
+      continue;
     const [loc, form, tag, features] = line.split("\t");
     if (!loc || !form || !tag) continue;
     const wordLoc = loc.replace(/:\d+\)$/, ")");
     if (wordLoc !== currentWordLoc) {
-      if (currentSegs.length) words.push({ loc: currentWordLoc, segs: currentSegs });
+      if (currentSegs.length)
+        words.push({ loc: currentWordLoc, segs: currentSegs });
       currentWordLoc = wordLoc;
       currentSegs = [];
     }
     currentSegs.push({ form, tag, features: features || "" });
   }
-  if (currentSegs.length) words.push({ loc: currentWordLoc, segs: currentSegs });
+  if (currentSegs.length)
+    words.push({ loc: currentWordLoc, segs: currentSegs });
 
   console.log(`Parsed ${words.length} words from corpus`);
 
   // ── Find last occurrence of each form for each verb ─────────────
 
   // Map: verbId → { normalizedAr → { surah, ayah, sortKey } }
-  const lastOccurrence: Record<number, Map<string, { s: number; a: number; key: number }>> = {};
+  const lastOccurrence: Record<
+    number,
+    Map<string, { s: number; a: number; key: number }>
+  > = {};
   for (const v of VERBS) lastOccurrence[v.id] = new Map();
 
   for (const word of words) {
     for (const verb of VERBS) {
       const verbSeg = word.segs.find(
-        (s) => s.tag === "V" &&
+        (s) =>
+          s.tag === "V" &&
           s.features.includes(`ROOT:${verb.root}`) &&
-          s.features.includes(`LEM:${verb.lem}`)
+          s.features.includes(`LEM:${verb.lem}`),
       );
       if (!verbSeg) continue;
 
@@ -156,7 +204,10 @@ async function main() {
 
   // ── Build final output ────────────────────────────────────────────
 
-  const result: Record<number, Record<string, { s: number; a: number; t: string }>> = {};
+  const result: Record<
+    number,
+    Record<string, { s: number; a: number; t: string }>
+  > = {};
 
   for (const verb of VERBS) {
     result[verb.id] = {};
@@ -187,8 +238,13 @@ async function main() {
       if (!uniqueAyahs[key]) uniqueAyahs[key] = loc.t;
     }
   }
-  await Bun.write("scripts/ayah-texts.json", JSON.stringify(uniqueAyahs, null, 2));
-  console.log(`\nWrote scripts/ayah-texts.json (${Object.keys(uniqueAyahs).length} unique ayahs)`);
+  await Bun.write(
+    "scripts/ayah-texts.json",
+    JSON.stringify(uniqueAyahs, null, 2),
+  );
+  console.log(
+    `\nWrote scripts/ayah-texts.json (${Object.keys(uniqueAyahs).length} unique ayahs)`,
+  );
 }
 
 main();

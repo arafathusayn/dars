@@ -6,11 +6,13 @@
  * Run: bun scripts/inject-ayah-translations.ts
  */
 
-const translations: Record<string, { en: string; bn: string }> =
-  await Bun.file("scripts/ayah-translations.json").json();
+const translations: Record<string, { en: string; bn: string }> = await Bun.file(
+  "scripts/ayah-translations.json",
+).json();
 
-const ayahsUsed: Record<string, string> =
-  await Bun.file("scripts/ayahs-used.json").json();
+const ayahsUsed: Record<string, string> = await Bun.file(
+  "scripts/ayahs-used.json",
+).json();
 
 let tsx = await Bun.file("src/quranic-verbs.tsx").text();
 
@@ -21,7 +23,8 @@ const sortedKeys = Object.keys(ayahsUsed).sort((a, b) => {
   return sa * 10000 + aa - (sb * 10000 + ab);
 });
 
-let newAyahsCode = "const AYAHS: Record<string, { ar: string; en: string; bn: string }> = {\n";
+let newAyahsCode =
+  "const AYAHS: Record<string, { ar: string; en: string; bn: string }> = {\n";
 for (const key of sortedKeys) {
   const ar = ayahsUsed[key].replace(/\\/g, "\\\\").replace(/"/g, '\\"');
   const tr = translations[key] || { en: "", bn: "" };
@@ -65,5 +68,7 @@ tsx = tsx.slice(0, ayahsStartIdx) + newAyahsCode + tsx.slice(ayahsEndIdx);
 
 await Bun.write("src/quranic-verbs.tsx", tsx);
 const sizeKB = (new TextEncoder().encode(tsx).length / 1024).toFixed(1);
-console.log(`✓ Updated AYAHS map with translations (${sortedKeys.length} entries)`);
+console.log(
+  `✓ Updated AYAHS map with translations (${sortedKeys.length} entries)`,
+);
 console.log(`✓ Wrote src/quranic-verbs.tsx (${sizeKB} KB)`);
