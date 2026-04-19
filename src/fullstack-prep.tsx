@@ -125,7 +125,22 @@ export default function FullstackPrep() {
     answers: {},
     scores: {},
   });
+  const [fundMenuOpen, setFundMenuOpen] = useState(false);
+  const [qMenuOpen, setQMenuOpen] = useState(false);
   const rootRef = useRef<HTMLDivElement>(null);
+  const fundArticleRef = useRef<HTMLElement>(null);
+  const qListRef = useRef<HTMLDivElement>(null);
+
+  const scrollToRef = (ref: React.RefObject<HTMLElement | null>) => {
+    if (typeof window === "undefined") return;
+    requestAnimationFrame(() => {
+      const el = ref.current;
+      if (!el) return;
+      // Offset for sticky header+tabs (~108px)
+      const y = el.getBoundingClientRect().top + window.scrollY - 108;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    });
+  };
 
   useEffect(() => {
     setQuizState(loadState());
@@ -197,62 +212,64 @@ export default function FullstackPrep() {
     <div className="fp-root" ref={rootRef}>
       <style>{STYLES}</style>
 
-      <header className="fp-header">
-        <div className="fp-header-inner">
-          <div className="fp-logo">
-            <div className="fp-logo-mark">{data.meta.logoMark}</div>
-            <span>{data.meta.subtitle}</span>
-          </div>
-          {tab === "quiz" && (
-            <div className="fp-progress-wrap">
-              <span>
-                Overall: {totalScored} / {totalQuizzes}
-              </span>
-              <div className="fp-progress-bar">
-                <div
-                  className="fp-progress-fill"
-                  style={{
-                    width: `${totalQuizzes ? (totalScored / totalQuizzes) * 100 : 0}%`,
-                  }}
-                />
-              </div>
-              <button
-                className="fp-reset-btn"
-                title="Reset all progress"
-                aria-label="Reset all quiz progress"
-                onClick={() => {
-                  if (confirm("সব quiz progress reset করবেন?")) {
-                    setQuizState({ answers: {}, scores: {} });
-                    setQuizIdx(0);
-                  }
-                }}
-              >
-                ↻
-              </button>
+      <div className="fp-sticky-top">
+        <header className="fp-header">
+          <div className="fp-header-inner">
+            <div className="fp-logo">
+              <div className="fp-logo-mark">{data.meta.logoMark}</div>
+              <span>{data.meta.subtitle}</span>
             </div>
-          )}
-        </div>
-      </header>
+            {tab === "quiz" && (
+              <div className="fp-progress-wrap">
+                <span>
+                  Overall: {totalScored} / {totalQuizzes}
+                </span>
+                <div className="fp-progress-bar">
+                  <div
+                    className="fp-progress-fill"
+                    style={{
+                      width: `${totalQuizzes ? (totalScored / totalQuizzes) * 100 : 0}%`,
+                    }}
+                  />
+                </div>
+                <button
+                  className="fp-reset-btn"
+                  title="Reset all progress"
+                  aria-label="Reset all quiz progress"
+                  onClick={() => {
+                    if (confirm("সব quiz progress reset করবেন?")) {
+                      setQuizState({ answers: {}, scores: {} });
+                      setQuizIdx(0);
+                    }
+                  }}
+                >
+                  ↻
+                </button>
+              </div>
+            )}
+          </div>
+        </header>
 
-      <nav className="fp-main-tabs">
-        {(
-          [
-            ["home", "হোম"],
-            ["fundamentals", "Fundamentals"],
-            ["questions", "Interview Questions"],
-            ["quiz", "Quiz 🎯"],
-            ["tips", "Tips"],
-          ] as [TabKey, string][]
-        ).map(([key, label]) => (
-          <button
-            key={key}
-            className={`fp-main-tab${tab === key ? " active" : ""}`}
-            onClick={() => setTab(key)}
-          >
-            {label}
-          </button>
-        ))}
-      </nav>
+        <nav className="fp-main-tabs">
+          {(
+            [
+              ["home", "হোম"],
+              ["fundamentals", "Fundamentals"],
+              ["questions", "Interview Questions"],
+              ["quiz", "Quiz 🎯"],
+              ["tips", "Tips"],
+            ] as [TabKey, string][]
+          ).map(([key, label]) => (
+            <button
+              key={key}
+              className={`fp-main-tab${tab === key ? " active" : ""}`}
+              onClick={() => setTab(key)}
+            >
+              {label}
+            </button>
+          ))}
+        </nav>
+      </div>
 
       <main className="fp-container">
         {tab === "home" && (
@@ -261,19 +278,36 @@ export default function FullstackPrep() {
 
         {tab === "fundamentals" && (
           <div className="fp-topic-layout">
-            <aside className="fp-topic-sidebar">
-              <p className="fp-sidebar-title">Topics</p>
-              {Object.entries(data.fundamentals).map(([key, value]) => (
-                <button
-                  key={key}
-                  className={`fp-sidebar-btn${fundKey === key ? " active" : ""}`}
-                  onClick={() => setFundKey(key as FundamentalKey)}
-                >
-                  {value.title}
-                </button>
-              ))}
+            <aside className={`fp-topic-sidebar${fundMenuOpen ? " open" : ""}`}>
+              <button
+                className="fp-sidebar-toggle"
+                aria-expanded={fundMenuOpen}
+                onClick={() => setFundMenuOpen(!fundMenuOpen)}
+              >
+                <span className="fp-sidebar-toggle-label">
+                  <span className="fp-sidebar-toggle-hint">Topic</span>
+                  <span>{data.fundamentals[fundKey].title}</span>
+                </span>
+                <span className="fp-sidebar-toggle-arrow">▼</span>
+              </button>
+              <div className="fp-sidebar-list">
+                <p className="fp-sidebar-title">Topics</p>
+                {Object.entries(data.fundamentals).map(([key, value]) => (
+                  <button
+                    key={key}
+                    className={`fp-sidebar-btn${fundKey === key ? " active" : ""}`}
+                    onClick={() => {
+                      setFundKey(key as FundamentalKey);
+                      setFundMenuOpen(false);
+                      scrollToRef(fundArticleRef);
+                    }}
+                  >
+                    {value.title}
+                  </button>
+                ))}
+              </div>
             </aside>
-            <article className="fp-article">
+            <article className="fp-article" ref={fundArticleRef}>
               <h2>{data.fundamentals[fundKey].title}</h2>
               <div className="fp-lede">{data.fundamentals[fundKey].lede}</div>
               <div
@@ -287,22 +321,40 @@ export default function FullstackPrep() {
 
         {tab === "questions" && (
           <div className="fp-topic-layout">
-            <aside className="fp-topic-sidebar">
-              <p className="fp-sidebar-title">Categories</p>
-              {Object.entries(data.questions).map(([key, value]) => (
-                <button
-                  key={key}
-                  className={`fp-sidebar-btn${qCat === key ? " active" : ""}`}
-                  onClick={() => {
-                    setQCat(key as QuestionCategoryKey);
-                    setOpenQ({});
-                  }}
-                >
-                  {value.title} ({value.items.length})
-                </button>
-              ))}
+            <aside className={`fp-topic-sidebar${qMenuOpen ? " open" : ""}`}>
+              <button
+                className="fp-sidebar-toggle"
+                aria-expanded={qMenuOpen}
+                onClick={() => setQMenuOpen(!qMenuOpen)}
+              >
+                <span className="fp-sidebar-toggle-label">
+                  <span className="fp-sidebar-toggle-hint">Category</span>
+                  <span>
+                    {data.questions[qCat].title} (
+                    {data.questions[qCat].items.length})
+                  </span>
+                </span>
+                <span className="fp-sidebar-toggle-arrow">▼</span>
+              </button>
+              <div className="fp-sidebar-list">
+                <p className="fp-sidebar-title">Categories</p>
+                {Object.entries(data.questions).map(([key, value]) => (
+                  <button
+                    key={key}
+                    className={`fp-sidebar-btn${qCat === key ? " active" : ""}`}
+                    onClick={() => {
+                      setQCat(key as QuestionCategoryKey);
+                      setOpenQ({});
+                      setQMenuOpen(false);
+                      scrollToRef(qListRef);
+                    }}
+                  >
+                    {value.title} ({value.items.length})
+                  </button>
+                ))}
+              </div>
             </aside>
-            <div>
+            <div ref={qListRef}>
               <input
                 className="fp-search-box"
                 type="text"
@@ -812,6 +864,7 @@ const STYLES = `
   line-height: 1.75;
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 @media (prefers-color-scheme: dark) {
   .fp-root {
@@ -839,18 +892,21 @@ const STYLES = `
 }
 .fp-root *, .fp-root *::before, .fp-root *::after { box-sizing: border-box; }
 
-.fp-header {
-  background: var(--fp-surface);
-  border-bottom: 1px solid var(--fp-border);
-  padding: 1rem 1.5rem;
+.fp-sticky-top {
   position: sticky;
   top: 0;
   z-index: 100;
+  background: var(--fp-bg);
   backdrop-filter: blur(12px);
+}
+.fp-header {
+  border-bottom: 1px solid var(--fp-border);
+  padding: 1rem 1.5rem;
   background: rgba(255,255,255,0.85);
 }
 @media (prefers-color-scheme: dark) {
   .fp-header { background: rgba(36,36,34,0.85); }
+  .fp-sticky-top { background: rgba(26,26,26,0.6); }
 }
 .fp-header-inner {
   max-width: 1320px;
@@ -930,10 +986,8 @@ const STYLES = `
   gap: 0.25rem;
   border-bottom: 1px solid var(--fp-border);
   background: var(--fp-bg);
-  position: sticky;
-  top: 63px;
-  z-index: 99;
   overflow-x: auto;
+  scrollbar-width: thin;
 }
 .fp-main-tab {
   padding: 0.85rem 1.1rem;
@@ -962,8 +1016,49 @@ const STYLES = `
 }
 @media (max-width: 640px) {
   .fp-container { padding: 1.25rem 0.9rem 4rem; }
-  .fp-header { padding: 0.75rem 0.9rem; }
-  .fp-main-tabs { padding: 0 0.9rem; }
+  .fp-header { padding: 0.6rem 0.9rem; }
+  .fp-main-tabs { padding: 0 0.9rem; gap: 0; }
+  .fp-logo { font-size: 0.9rem; gap: 0.5rem; }
+  .fp-logo-mark { width: 26px; height: 26px; font-size: 0.68rem; }
+  .fp-main-tab { padding: 0.6rem 0.8rem; font-size: 0.85rem; }
+  .fp-progress-wrap { font-size: 0.75rem; }
+  .fp-progress-bar { width: 80px !important; }
+  .fp-reset-btn { width: 22px; height: 22px; font-size: 0.85rem; }
+  .fp-feature-card { padding: 1rem; }
+  .fp-feature-card h3 { font-size: 0.95rem; }
+  .fp-feature-card p { font-size: 0.82rem; line-height: 1.5; }
+  .fp-feature-icon { width: 30px; height: 30px; font-size: 0.72rem; margin-bottom: 0.5rem; }
+  .fp-sidebar-btn { font-size: 0.85rem; padding: 0.5rem 0.7rem; }
+  .fp-search-box { font-size: 0.88rem; padding: 0.6rem 0.85rem; }
+  .fp-qa-head { padding: 0.7rem 0.9rem; gap: 0.5rem; }
+  .fp-qa-q { font-size: 0.9rem; }
+  .fp-qa-num { width: 24px; height: 24px; font-size: 0.7rem; }
+  .fp-qa-body { padding: 0 0.9rem 0.85rem 2.75rem; font-size: 0.88rem; }
+  .fp-qa-body pre { font-size: 0.76rem; padding: 0.6rem 0.8rem; }
+  .fp-quiz-card { padding: 1.1rem 1.1rem; }
+  .fp-quiz-question { font-size: 0.98rem; margin-bottom: 1rem; }
+  .fp-quiz-option { font-size: 0.88rem; padding: 0.7rem 0.85rem; }
+  .fp-quiz-option-marker { width: 22px; height: 22px; font-size: 0.7rem; }
+  .fp-quiz-explain { font-size: 0.85rem; padding: 0.75rem 0.9rem; }
+  .fp-btn { font-size: 0.85rem; padding: 0.55rem 1rem; }
+  .fp-quiz-cat-btn {
+    font-size: 0.78rem;
+    padding: 0.4rem 0.7rem;
+    flex: 0 0 auto !important;
+    white-space: nowrap !important;
+  }
+  .fp-quiz-cat-score { font-size: 0.68rem; }
+  .fp-quiz-categories {
+    padding: 0.4rem;
+    gap: 0.4rem;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+  .fp-quiz-result { padding: 2rem 1rem; }
+  .fp-quiz-result-score { font-size: 2.6rem; }
+  .fp-quiz-result h3 { font-size: 1.1rem; }
 }
 @keyframes fpFade {
   from { opacity: 0; transform: translateY(4px); }
@@ -1013,10 +1108,28 @@ const STYLES = `
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
-@media (max-width: 520px) {
-  .fp-hero-stats { gap: 0.75rem 1.5rem; }
-  .fp-stat-num { font-size: 1.8rem; }
-  .fp-stat { min-width: 72px; }
+@media (max-width: 640px) {
+  .fp-hero {
+    padding: 1.75rem 0.5rem 1.25rem;
+  }
+  .fp-hero p {
+    font-size: 0.95rem;
+    line-height: 1.55;
+  }
+  .fp-hero-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1.5rem;
+    max-width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fp-stat { min-width: 0; }
+  .fp-stat-num { font-size: 1.9rem; }
+  .fp-stat-label { font-size: 0.7rem; letter-spacing: 0.05em; }
+  .fp-feature-grid { gap: 0.75rem; margin-top: 1.25rem; }
+  .fp-hero-footer { margin-top: 2rem; font-size: 0.85rem; }
 }
 .fp-hero-footer {
   margin-top: 3rem;
@@ -1079,8 +1192,20 @@ const STYLES = `
   align-items: start;
 }
 @media (max-width: 820px) {
-  .fp-topic-layout { grid-template-columns: 1fr; }
-  .fp-topic-sidebar { position: static !important; max-height: none !important; }
+  .fp-topic-layout { grid-template-columns: 1fr; gap: 1rem; }
+  .fp-topic-sidebar { position: static !important; max-height: none !important; padding-right: 0 !important; }
+  .fp-sidebar-toggle { display: flex !important; }
+  .fp-topic-sidebar .fp-sidebar-list {
+    display: none;
+    margin-top: 0.5rem;
+    max-height: 60vh;
+    overflow-y: auto;
+    padding: 0.5rem;
+    background: var(--fp-surface);
+    border: 1px solid var(--fp-border);
+    border-radius: var(--fp-radius);
+  }
+  .fp-topic-sidebar.open .fp-sidebar-list { display: block; animation: fpFade 0.2s; }
 }
 .fp-topic-sidebar {
   position: sticky;
@@ -1089,6 +1214,47 @@ const STYLES = `
   overflow-y: auto;
   padding-right: 0.5rem;
 }
+.fp-sidebar-toggle {
+  display: none;
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  background: var(--fp-surface);
+  border: 1px solid var(--fp-border);
+  border-radius: var(--fp-radius);
+  font-family: inherit;
+  font-size: 0.9rem;
+  color: var(--fp-text);
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  transition: border-color 0.15s;
+}
+.fp-sidebar-toggle:hover { border-color: var(--fp-border-strong); }
+.fp-sidebar-toggle-label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  text-align: left;
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.fp-sidebar-toggle-hint {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--fp-text-dim);
+  font-weight: 600;
+}
+.fp-sidebar-toggle-arrow {
+  color: var(--fp-text-muted);
+  font-size: 0.7rem;
+  transition: transform 0.2s;
+}
+.fp-topic-sidebar.open .fp-sidebar-toggle-arrow { transform: rotate(180deg); }
 .fp-sidebar-title {
   font-size: 0.75rem;
   font-weight: 600;
@@ -1267,11 +1433,13 @@ const STYLES = `
 .fp-article th, .fp-article td {
   padding: 0.6rem 0.75rem;
   border-bottom: 1px solid var(--fp-border);
+  border-right: 1px solid var(--fp-border);
   text-align: left;
   vertical-align: top;
   word-break: break-word;
   overflow-wrap: anywhere;
 }
+.fp-article th:last-child, .fp-article td:last-child { border-right: none; }
 .fp-article th {
   font-weight: 600;
   background: var(--fp-surface-2);
@@ -1279,8 +1447,54 @@ const STYLES = `
 }
 .fp-article tr:last-child td { border-bottom: none; }
 @media (max-width: 700px) {
-  .fp-article table { font-size: 0.82rem; }
-  .fp-article th, .fp-article td { padding: 0.5rem 0.55rem; }
+  .fp-article table { font-size: 0.8rem; }
+  .fp-article th, .fp-article td { padding: 0.45rem 0.5rem; }
+}
+/* Horizontal scroll ONLY on tables (not on page).
+   The outer .fp-root has overflow-x:hidden to cap any accidental bleed,
+   while each table gets display:block + overflow-x:auto so its interior
+   scrolls horizontally when cells exceed viewport width. */
+@media (max-width: 820px) {
+  .fp-container { max-width: 100%; overflow-x: hidden; }
+  .fp-article { max-width: 100%; overflow-x: hidden; }
+  .fp-article table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+    width: 100%;
+  }
+  .fp-article th,
+  .fp-article td {
+    word-break: normal;
+    overflow-wrap: normal;
+    white-space: normal;
+    padding: 0.4rem 0.55rem;
+    /* No min-width: cells hug their content. Short values stay narrow,
+       long values expand - horizontal scroll only when sum exceeds viewport. */
+  }
+  .fp-article pre {
+    font-size: 0.72rem;
+    padding: 0.6rem 0.75rem;
+    line-height: 1.5;
+  }
+  .fp-article h2 { font-size: 1.3rem; }
+  .fp-article h3 { font-size: 1rem; margin-top: 1.3rem; }
+  .fp-article h4 { font-size: 0.95rem; margin-top: 1rem; }
+  .fp-article p, .fp-article li { font-size: 0.92rem; line-height: 1.65; }
+  .fp-article ul, .fp-article ol { padding-left: 1.2rem; }
+  .fp-article .compare-grid {
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+  }
+  .fp-article .compare-card { padding: 0.8rem; }
+  .fp-article .compare-card h5 { font-size: 0.88rem; }
+  .fp-article .compare-card p { font-size: 0.8rem; }
+  .fp-article .callout, .fp-callout {
+    font-size: 0.88rem;
+    padding: 0.7rem 0.9rem;
+  }
+  .fp-lede { font-size: 0.95rem; padding-left: 0.8rem; }
 }
 .fp-lede {
   font-size: 1.05rem;
