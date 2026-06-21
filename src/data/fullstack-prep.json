@@ -4,13 +4,28 @@
     "subtitle": "Full-stack Junior Engineer গাইড",
     "logoMark": "FS",
     "description": "",
-    "totalQuizCount": 300
+    "totalQuizCount": 351
   },
   "fundamentals": {
     "javascript": {
       "title": "JavaScript Core",
       "lede": "JavaScript single-threaded কিন্তু non-blocking। Event loop-এর জন্য async code পারে। Closure, prototype, this - এই তিনটা বুঝলে বাকি সব interpret করতে পারবেন।",
       "content": "<h3>Closure</h3><p>Inner function outer function-এর variable remember করে, even after outer function return করে।</p><pre><code>function counter() {\n  let count = 0;\n  return () =&gt; ++count;\n}\nconst c = counter();\nc(); // 1\nc(); // 2</code></pre><h3>Prototype chain</h3><p>প্রতিটা object-এর একটা <code>__proto__</code> থাকে। Property lookup fail করলে prototype chain-এ উপরে খোঁজে, শেষে <code>Object.prototype</code>, তারপর <code>null</code>।</p><h3>Event Loop - deeper view</h3><pre><code>┌──────────────────────────┐\n│  Call Stack              │  ← synchronous code\n├──────────────────────────┤\n│  Microtask Queue         │  ← Promise.then, queueMicrotask, MutationObserver\n├──────────────────────────┤\n│  Macrotask Queue         │  ← setTimeout, setInterval, I/O, UI event\n├──────────────────────────┤\n│  Render Steps (browser)  │  ← rAF → style → layout → paint\n└──────────────────────────┘</code></pre><p>Stack empty হলে event loop সব microtask drain করে (nested microtask-সহ), তারপর <strong>একটা</strong> macrotask নেয়, তারপর browser render step। Recursive microtask দিলে UI starve হবে।</p><h4>Node.js event loop phases</h4><pre><code>timers → pending callbacks → idle/prepare\n     → poll (I/O) → check (setImmediate) → close callbacks\n     (প্রতি phase-এর পর microtask + process.nextTick drain)</code></pre><h3>this কীভাবে bind হয়?</h3><ol><li><strong>new</strong> দিয়ে call → newly created object</li><li><strong>obj.method()</strong> → obj</li><li><strong>call/apply/bind</strong> → explicit</li><li><strong>arrow function</strong> → lexically inherited</li><li>কিছুই না → global (strict-এ undefined)</li></ol><h3>Iterators & Generators</h3><pre><code>// Custom iterable\nconst range = {\n  [Symbol.iterator]() {\n    let i = 0;\n    return { next: () =&gt; i &lt; 3 ? { value: i++, done: false } : { value: undefined, done: true } };\n  }\n};\nfor (const x of range) console.log(x); // 0,1,2\n\n// Generator - simpler\nfunction* gen() { yield 1; yield 2; }</code></pre><h3>Async iteration</h3><pre><code>async function* pages() {\n  let cursor = null;\n  do {\n    const r = await fetch(`/api?cursor=${cursor}`).then(r =&gt; r.json());\n    cursor = r.nextCursor;\n    yield* r.items;\n  } while (cursor);\n}\n\nfor await (const item of pages()) console.log(item);</code></pre><h3>Modules - ESM vs CJS quick diff</h3><table><thead><tr><th>Aspect</th><th>ESM</th><th>CJS</th></tr></thead><tbody><tr><td>Load</td><td>Static, async</td><td>Dynamic, sync</td></tr><tr><td>Syntax</td><td><code>import/export</code></td><td><code>require/module.exports</code></td></tr><tr><td>Tree-shaking</td><td>✓</td><td>✗</td></tr><tr><td>Top-level await</td><td>✓</td><td>✗</td></tr><tr><td>Circular deps</td><td>Live binding, live value</td><td>Partial export</td></tr></tbody></table><h3>WeakRef & FinalizationRegistry</h3><p>Advanced memory management। <code>WeakRef</code>-এ object hold করে কিন্তু GC block করে না। <code>FinalizationRegistry.register(obj, meta)</code>-এ object collect হলে callback fire - cache eviction, resource cleanup।</p><h3>Structured cloning</h3><pre><code>const clone = structuredClone(obj);\n// Deep clone - Date, Map, Set, RegExp, ArrayBuffer, circular ref সব handle</code></pre><h3>Common pitfalls</h3><ul><li><code>typeof null === 'object'</code> - historical bug, use <code>x === null</code></li><li><code>NaN === NaN</code> - false! use <code>Number.isNaN()</code></li><li><code>0.1 + 0.2 !== 0.3</code> - IEEE 754 float; use <code>toFixed</code> বা Decimal library</li><li>Array-এ sparse hole - <code>[1,,3].map(x =&gt; x)</code> hole skip করে</li><li><code>{a: 1} === {a: 1}</code> - false, reference compare</li></ul><h3>Garbage Collection basics (V8)</h3><ul><li><strong>Young generation</strong>: scavenger (Cheney's algorithm) - short-lived object, fast</li><li><strong>Old generation</strong>: mark-sweep-compact - long-lived</li><li>Incremental + concurrent - GC pause কমায়</li><li>Memory leak source: closures holding DOM, global arrays, event listener not removed</li></ul>"
+    },
+    "browser": {
+      "title": "Browser, Network ও Rendering",
+      "lede": "URL টাইপ করে Enter চাপলে DNS → TCP → TLS → HTTP → parsing → render - এই পুরো pipeline চলে। প্রতিটা step বুঝলে performance, caching, SEO সব জায়গায় edge পাবেন।",
+      "content": "<h3>URL → screen: পুরো timeline</h3><ol><li><strong>URL parsing</strong> - scheme, host, port, path, query, fragment আলাদা হয়। Protocol (https) আর navigation vs search decide হয়।</li><li><strong>Cache check</strong> - HSTS list, HTTP/resource cache, DNS cache। Fresh cached response থাকলে network পুরো skip হতে পারে।</li><li><strong>DNS resolution</strong> - hostname → IP (layered lookup)।</li><li><strong>TCP connection</strong> - 3-way handshake দিয়ে reliable, ordered byte stream।</li><li><strong>TLS handshake</strong> (HTTPS-এ) - version + cipher negotiate, server cert authenticate, symmetric session key establish।</li><li><strong>HTTP request</strong> - method, path, header (Host, cookie, Accept)।</li><li><strong>Server response</strong> - status line, header, body (HTML)।</li><li><strong>Parsing + rendering</strong> - HTML → DOM, CSS → CSSOM, JS run, render tree, layout → paint → composite। Sub-resource (CSS, JS, image) আরও request trigger করে।</li></ol><div class='callout'><strong>কেন TCP-এর পর TLS?</strong> TLS একটা reliable transport-এর উপর চলে, তাই আগে TCP connection লাগে। DNS নিজে সাধারণত UDP-তে চলে। Cache short-circuit করলে network-এই যায় না।</div><h3>URL-এর অংশ</h3><p><code>https://user:pass@www.example.com:443/path/page?q=term&amp;page=2#section</code></p><table><thead><tr><th>অংশ</th><th>উদাহরণ</th><th>কাজ</th></tr></thead><tbody><tr><td>Scheme/protocol</td><td><code>https</code></td><td>কীভাবে communicate</td></tr><tr><td>Host/domain</td><td><code>www.example.com</code></td><td>কোন server</td></tr><tr><td>Port</td><td><code>443</code></td><td>কোন process (default 80 http, 443 https)</td></tr><tr><td>Path</td><td><code>/path/page</code></td><td>কোন resource</td></tr><tr><td>Query</td><td><code>?q=term&amp;page=2</code></td><td>server-কে key/value input</td></tr><tr><td>Fragment</td><td><code>#section</code></td><td>client-only, server-এ যায় না</td></tr></tbody></table><p>Fragment কখনো network-এ যায় না - browser আর SPA router client-এ ব্যবহার করে।</p><h3>DNS resolution ও cache layer</h3><p>Resolver order: <strong>browser DNS cache → OS cache (hosts/stub resolver) → router cache → ISP/recursive resolver</strong>। Miss হলে recursive resolver iterative walk করে:</p><pre><code>recursive resolver\n   → root server      (.com-এর TLD nameserver দেয়)\n   → TLD server       (example.com-এর authoritative দেয়)\n   → authoritative    (আসল A/AAAA record দেয়)</code></pre><p>প্রতি layer উত্তর TTL অনুযায়ী cache করে। আপনার machine → resolver request <strong>recursive</strong> (\"উত্তরটা এনে দাও, আমি wait করছি\"), resolver → hierarchy query <strong>iterative</strong>। TTL-এর জন্যই DNS change সারা পৃথিবীতে instant হয় না।</p><h3>TCP ও 3-way handshake</h3><p>TCP connection-oriented transport - reliable, ordered byte delivery দেয় (lost packet retransmit, sequence number + ACK দিয়ে ordering)। Data যাওয়ার আগে handshake:</p><pre><code>Client → SYN      (কথা বলতে চাই, এই আমার initial sequence number)\nServer → SYN-ACK  (acknowledge + নিজের sequence number)\nClient → ACK      (acknowledge)  →  connection established</code></pre><p>এই reliability-র জন্যই HTTP/1.1 আর HTTP/2 TCP-তে চলে। কিন্তু HTTP/3 চলে QUIC-এর উপর, যা UDP-based (reliable in-order delivery QUIC নিজে stream-level-এ দেয়, TLS 1.3 integrated)। UDP নিজে fire-and-forget (no ordering/retransmission) - DNS, video-তে ব্যবহার হয়।</p><h3>TLS/HTTPS handshake</h3><p>HTTPS = HTTP over TLS। Handshake তিনটা জিনিস করে: (1) version + cipher suite <strong>negotiate</strong>, (2) certificate দিয়ে server <strong>authenticate</strong> (CA chain-এ verify), (3) shared <strong>symmetric session key establish</strong>।</p><ul><li><strong>Asymmetric</strong> (public encrypt / private decrypt) - handshake-এ shared secret agree আর authenticate করতে। ধীর, তাই শুধু key exchange-এ।</li><li><strong>Symmetric</strong> (একই key encrypt + decrypt) - আসল bulk data-তে, কারণ অনেক fast।</li></ul><p>HTTPS রক্ষা করে: eavesdropping (confidentiality), tampering (integrity, MAC), impersonation (authentication, certificate)। Certificate প্রমাণ করে server-এর কাছে CA-signed public key-এর matching private key আছে। TLS 1.3-এ ephemeral Diffie-Hellman → forward secrecy।</p><h3>Layering (OSI ↔ TCP/IP)</h3><table><thead><tr><th>Protocol</th><th>OSI layer</th></tr></thead><tbody><tr><td>HTTP, DNS</td><td>L7 Application</td></tr><tr><td>TLS</td><td>L5/L6-এর মাঝে (session/presentation)</td></tr><tr><td>TCP, UDP</td><td>L4 Transport</td></tr><tr><td>IP</td><td>L3 Network</td></tr></tbody></table><p>HTTP/TCP/TLS সব <strong>protocol</strong> (communication-এর নিয়ম), method নয়। GET/POST/PUT/DELETE হলো HTTP-এর method।</p><h3>HTML → DOM</h3><p>Bytes → characters (UTF-8) → <strong>tokenizer</strong> (startTag/endTag token) → <strong>tree construction</strong> → DOM tree। DOM construction <strong>incremental</strong> - byte আসার সাথে সাথে build হয়। Synchronous <code>&lt;script&gt;</code> tokenization থামিয়ে দেয়, কারণ JS DOM mutate করতে পারে।</p><h3>CSS → CSSOM (render-blocking)</h3><p>CSS bytes → token → node → <strong>CSSOM</strong> tree (computed style ধরে রাখে)। applicable CSS <strong>render-blocking by default</strong>: render tree-র জন্য DOM + applicable CSSOM দুটোই দরকার, আর cascade-এর জন্য পরের rule আগেরটা override করতে পারে — তাই পুরো CSSOM তৈরি না হওয়া পর্যন্ত browser safely paint করতে পারে না। তবে <code>media</code> attribute/query দিয়ে কিছু CSS non-render-blocking করা যায়। এটাই \"CSS render-blocking\"-এর কারণ; fix = কম CSS / critical CSS inline।</p><h3>Render tree → layout → paint → composite</h3><ol><li><strong>Render tree</strong> = DOM + CSSOM, শুধু <em>visible</em> node। <code>display:none</code> বাদ; <code>visibility:hidden</code> tree-তে থাকে কিন্তু invisible; head/script বাদ।</li><li><strong>Layout/reflow</strong> = geometry (size + position) compute (viewport-নির্ভর)।</li><li><strong>Paint</strong> = pixel ভরা (color, text, shadow, border) layer-এ।</li><li><strong>Composite</strong> = layer গুলো সঠিক order-এ মিলানো, প্রায়ই GPU-তে।</li></ol><p><code>transform</code> আর <code>opacity</code> cheap, কারণ এগুলো নিজের layer-এ <strong>composite</strong> stage-এ handle হয়, layout আর প্রায়ই paint skip করে - তাই smooth animate। <code>width</code>/<code>top</code> change → layout; <code>color</code>/<code>background</code> → paint।</p><h3>Layout thrashing</h3><p>Browser DOM write batch করে আর layout defer করে। কিন্তু write-এর পরপরই layout property (<code>offsetHeight</code>, <code>getBoundingClientRect</code>, <code>scrollTop</code>) read করলে browser বাধ্য হয়ে এখনই synchronous layout recompute করে। Loop-এ read→write→read→write করলে বারবার forced reflow = <strong>layout thrashing</strong> = jank। Fix: সব read আগে, তারপর সব write; <code>requestAnimationFrame</code> / FastDOM।</p><h3>async vs defer</h3><table><thead><tr><th>Attribute</th><th>Behavior</th></tr></thead><tbody><tr><td>(কিছু না)</td><td>parser-blocking - download + execute না হওয়া পর্যন্ত HTML parse থামে</td></tr><tr><td><code>defer</code></td><td>parallel download, HTML parse শেষে in-order execute, parse কখনো block করে না</td></tr><tr><td><code>async</code></td><td>parallel download, যেই আসে সাথে সাথে execute (parse pause), order guaranteed না - analytics-এ ভালো</td></tr></tbody></table><h3>Resource caching</h3><p>HTTP cache response store করে URL key-এ freshness rule সহ (<code>Cache-Control</code>, <code>ETag</code>/<code>If-None-Match</code>, <code>Last-Modified</code>)। Fresh হলে network ছাড়াই cache থেকে; stale কিন্তু validatable হলে conditional request → <code>304 Not Modified</code> (body re-download নেই)। Strong caching (<code>max-age</code>, no request) আর validation (<code>ETag</code>, সস্তা 304) আলাদা।</p>"
+    },
+    "v8engine": {
+      "title": "JS Engine ও Execution (V8)",
+      "lede": "V8 (Chrome + Node) JS-কে parse করে, bytecode-এ চালায়, hot code-কে optimized machine code-এ compile করে। Execution context, hoisting, scope, closure - সব এই pipeline-এর উপর দাঁড়িয়ে।",
+      "content": "<h3>V8 pipeline</h3><pre><code>Source\n  → Parser → AST (Abstract Syntax Tree)\n  → Ignition (interpreter): bytecode generate + execute, type feedback collect\n  → hot function → TurboFan (optimizing compiler): speculative optimized machine code\n  → assumption ভাঙলে → Deopt (bytecode-এ ফেরত)</code></pre><p>আধুনিক V8-এ মাঝে Sparkplug/Maglev tier-ও আছে। মনে রাখার order: <strong>parse → AST → bytecode (Ignition) → optimized machine code (TurboFan) → deopt</strong>।</p><h3>JIT কেন fast?</h3><p>Just-In-Time = runtime-এ machine code compile (ahead-of-time না)। V8 আগে interpret করে (fast startup), hot path profile করে, তারপর সেগুলো optimized machine code-এ compile করে stable type/shape assume করে। সব compile না করার কারণ: compile খরচ বেশি, বেশিরভাগ code কম চলে - JIT শুধু যেখানে লাভ সেখানেই effort দেয়। <strong>Monomorphic</strong> (single-shape) code optimized থাকে; polymorphic/megamorphic deopt হতে পারে।</p><h3>Execution context</h3><p>Code যেখানে চলে সেই environment। একটা <strong>global execution context</strong> (শুরুতে) + প্রতি function call-এ নতুন <strong>function execution context</strong>। প্রতিটার দুই phase: <strong>creation/memory phase</strong> (scope setup, declaration hoist, <code>this</code> establish) আর <strong>execution phase</strong> (line by line run, value assign)।</p><h3>Hoisting</h3><table><thead><tr><th>Declaration</th><th>Hoist behavior</th></tr></thead><tbody><tr><td>function declaration</td><td>পুরোপুরি hoisted (line-এর আগে callable)</td></tr><tr><td><code>var</code></td><td>hoisted + <code>undefined</code> initialized (আগে read করলে undefined)</td></tr><tr><td><code>let</code>/<code>const</code></td><td>hoisted কিন্তু uninitialized - আগে read করলে <code>ReferenceError</code> (TDZ)</td></tr></tbody></table><pre><code>console.log(x); var x = 1;   // undefined\nconsole.log(y); let y = 1;   // ReferenceError (TDZ)</code></pre><p><strong>TDZ</strong> = scope-এ ঢোকা থেকে <code>let</code>/<code>const</code> declaration line পর্যন্ত window। Binding আছে (hoisted) কিন্তু uninitialized, তাই access করলে error - use-before-declaration bug ধরে।</p><h3>Scope ও scope chain</h3><ul><li><code>var</code> <strong>function-scoped</strong> (if/for block ignore করে); <code>let</code>/<code>const</code> <strong>block-scoped</strong> (নিকটতম <code>{}</code>)।</li><li><strong>Lexical (static) scope</strong> - variable accessibility code কোথায় লেখা তার উপর, কোথায় call হয় তার উপর না।</li><li><strong>Scope chain</strong> - lookup miss হলে engine parent lexical environment-এ খোঁজে, global পর্যন্ত, তারপর throw।</li></ul><h3>Closure</h3><p>Closure = function + তার surrounding lexical state-এর reference। Outer function return করার পরও outer scope access রাখে। Use: data privacy (private counter), factory function, callback/handler, partial application।</p><pre><code>for (var i = 0; i &lt; 3; i++) setTimeout(() =&gt; console.log(i), 0); // 3,3,3\nfor (let i = 0; i &lt; 3; i++) setTimeout(() =&gt; console.log(i), 0); // 0,1,2</code></pre><p><code>var</code> function-scoped - তিন closure একই <code>i</code> share করে (শেষ value 3)। <code>let</code> block-scoped - প্রতি iteration-এ fresh binding, তাই 0,1,2।</p><h3>Call stack</h3><p>LIFO stack of execution frame। Function call → frame push; return → pop। একসাথে শুধু top frame চলে (single-threaded)। অতিরিক্ত/infinite recursion overflow করে → \"Maximum call stack size exceeded\"।</p><h3>JS engine vs rendering engine vs DOM</h3><ul><li><strong>JS engine (V8)</strong> - JS parse + execute।</li><li><strong>Rendering engine (Blink)</strong> - HTML/CSS parse, layout/paint।</li><li><strong>DOM</strong> - document-এর in-memory tree, browser দেয় (JS language-এর অংশ না), JS-এ Web API হিসেবে exposed।</li></ul><div class='callout warn'><code>document</code>, <code>setTimeout</code>, <code>fetch</code> JavaScript language-এর অংশ নয় - এগুলো runtime/host API। Parameter = definition-এর named variable (<code>f(a,b)</code>); argument = call-time-এর actual value (<code>f(1,2)</code>)।</div>"
+    },
+    "eventloop": {
+      "title": "Event Loop ও Async",
+      "lede": "JS execution thread single-threaded, কিন্তু runtime async কাজ off-thread করে callback queue-এ ফেরত দেয়। Microtask vs macrotask-এর priority বুঝলে যেকোনো output-tracing প্রশ্ন solve করতে পারবেন।",
+      "content": "<h3>Single-threaded, কিন্তু non-blocking</h3><p>JS execution thread single-threaded - call stack-এ একসময় একটাই কাজ। কিন্তু <strong>runtime</strong> (browser/Node) timer, network, I/O-র জন্য Web API / background thread দেয়, তাই async কাজ main thread-এর বাইরে হয় আর callback queue-তে ফেরত আসে।</p><h3>Event loop algorithm</h3><pre><code>┌──────────────────────────┐\n│  Call Stack              │  ← synchronous code\n├──────────────────────────┤\n│  Microtask Queue         │  ← Promise.then, queueMicrotask, MutationObserver\n├──────────────────────────┤\n│  Macrotask Queue         │  ← setTimeout, setInterval, I/O, UI event\n└──────────────────────────┘\n\nsync run শেষ → পুরো microtask queue drain → একটা macrotask\n            → আবার পুরো microtask drain → (render) → repeat</code></pre><p>প্রতি sync run আর প্রতি macrotask-এর পর engine <strong>microtask checkpoint</strong> করে: পুরো microtask queue empty করে (drain চলাকালীন নতুন schedule হওয়া microtask সহ), তারপরই পরের macrotask বা render।</p><table><thead><tr><th>Queue</th><th>কী থাকে</th><th>Priority</th></tr></thead><tbody><tr><td>Microtask</td><td>Promise <code>.then/.catch/.finally</code>, <code>queueMicrotask</code>, MutationObserver</td><td>উঁচু - পুরোটা drain হয়</td></tr><tr><td>Macrotask</td><td><code>setTimeout</code>, <code>setInterval</code>, DOM/message event, I/O</td><td>প্রতি loop-এ একটা</td></tr></tbody></table><h3>Output-tracing: example 1</h3><pre><code>console.log('A');\nsetTimeout(() =&gt; console.log('B'), 0);\nPromise.resolve().then(() =&gt; console.log('C'));\nconsole.log('D');\n// Output: A, D, C, B</code></pre><p><code>A</code>, <code>D</code> synchronous (আগে চলে)। <code>B</code> macrotask, <code>C</code> microtask। Sync শেষে microtask (<code>C</code>) drain হয়, তারপর macrotask (<code>B</code>)।</p><h3>Output-tracing: example 2</h3><pre><code>console.log('1');\nsetTimeout(() =&gt; console.log('2'), 0);\nPromise.resolve().then(() =&gt; {\n  console.log('3');\n  return Promise.resolve();\n}).then(() =&gt; console.log('4'));\nqueueMicrotask(() =&gt; console.log('5'));\n(async () =&gt; { console.log('6'); await null; console.log('7'); })();\nconsole.log('8');\n// Output: 1, 6, 8, 3, 5, 7, 4, 2</code></pre><p>Sync: <code>1</code>, timeout schedule (<code>2</code> macrotask), <code>.then</code>→<code>3</code> (microtask), <code>5</code> (microtask), IIFE sync <code>6</code> + <code>await null</code> continuation <code>7</code> schedule, sync <code>8</code>। Microtask drain (queue order): <code>3</code> → <code>return Promise.resolve()</code> একটা extra tick যোগ করে <code>4</code>-এর পথে, <code>5</code>, <code>7</code>, তারপর <code>4</code>। শেষে macrotask <code>2</code>।</p><div class='callout warn'><code>.then</code> থেকে promise return করলে extra microtask \"tick\" যোগ হয়, তাই <code>4</code> <code>5</code>/<code>7</code>-এর পরে। <code>4</code>-এর exact position engine-ভেদে এক tick এদিক-ওদিক হতে পারে - mechanism বুঝুন, শুধু letter মুখস্থ নয়।</div><p>একটা microtask আরেকটা microtask schedule করলে সেটা <strong>একই</strong> checkpoint-এ drain হয়। তাই অসীম microtask chain rendering আর macrotask <strong>starve</strong> করে - UI freeze। বিপরীতে recursive <code>setTimeout</code> (macrotask) প্রতি call-এর মাঝে render-কে yield করে, UI freeze করে না।</p><h3>Node.js event loop (libuv)</h3><pre><code>timers → pending callbacks → idle/prepare\n     → poll (I/O) → check (setImmediate) → close callbacks\n  (প্রতি phase ও প্রতি callback-এর পর microtask drain হয়)</code></pre><p>Node দুটো microtask queue drain করে: <strong><code>process.nextTick</code> আগে</strong> (সর্বোচ্চ priority), তারপর Promise microtask queue - তাই <code>nextTick</code> &gt; Promise microtask &gt; macrotask phase। libuv-র <strong>thread pool</strong> (default size 4, <code>UV_THREADPOOL_SIZE</code> দিয়ে পরিবর্তনযোগ্য, max 1024) file I/O আর কিছু crypto/DNS handle করে; network I/O OS async (epoll/kqueue/IOCP) ব্যবহার করে, thread pool নয়। এজন্যই এক thread হাজার connection serve করতে পারে - non-blocking I/O OS/thread pool-এ offload হয়।</p><div class='callout'><strong>worker_threads:</strong> CPU-bound কাজ (image processing, বড় parsing, heavy compute, crypto)-এ ব্যবহার করুন যেন single event-loop thread block না হয়। সাধারণ async I/O-তে দরকার নেই - Node এমনিতেই efficient। Pool size ~ CPU core সংখ্যা।</div>"
     },
     "typescript": {
       "title": "TypeScript",
@@ -95,7 +110,12 @@
     "compare": {
       "title": "Quick Reference Compare",
       "lede": "সব concept একসাথে, side-by-side।",
-      "content": "<h3>Frontend রেন্ডারিং</h3><table><thead><tr><th>Approach</th><th>HTML কখন তৈরি</th><th>উদাহরণ</th></tr></thead><tbody><tr><td>CSR</td><td>Browser-এ JS run-এর পর</td><td>Create React App, Vite SPA</td></tr><tr><td>SSR</td><td>Server-এ per-request</td><td>Next.js, TanStack Start, React Router v7 (Framework mode)</td></tr><tr><td>SSG</td><td>Build time</td><td>Astro, Next.js static, TanStack Start prerender</td></tr><tr><td>ISR</td><td>Build + background refresh</td><td>Next.js revalidate</td></tr><tr><td>Streaming SSR</td><td>HTML stream + progressive hydration</td><td>Next.js App Router, TanStack Start, React Router v7</td></tr><tr><td>RSC</td><td>Server-এ render, client-এ data হিসেবে compose</td><td>Next.js App Router, TanStack Start</td></tr></tbody></table><h3>React Meta-framework (2026)</h3><table><thead><tr><th>Framework</th><th>Routing</th><th>RSC</th><th>বিশেষত্ব</th></tr></thead><tbody><tr><td><strong>Next.js</strong></td><td>File-based App Router</td><td>✓ (opinionated)</td><td>Batteries included, huge adoption, RSC pioneer</td></tr><tr><td><strong>TanStack Start</strong></td><td>Type-safe (TanStack Router), file বা code-based</td><td>✓ (RSC as data, cache-agnostic)</td><td>Server functions (auto-RPC), top SSR throughput, deploy anywhere (Cloudflare/Node/Bun/Netlify)</td></tr><tr><td><strong>React Router v7 (ex-Remix)</strong></td><td>File-based nested</td><td>✓ (unstable Framework Mode)</td><td>Vite + HMR, loader/action, form-first, Remix + RR unified</td></tr><tr><td><strong>Astro</strong></td><td>File-based</td><td>✗ (islands)</td><td>Content-heavy, near-zero JS default</td></tr></tbody></table><div class='callout good'><strong>TanStack Start-এর RSC edge:</strong> Next.js-এর RSC opinionated - specific cache model + rendering pipeline tied। TanStack Start RSC-কে \"server-rendered data\" হিসেবে treat করে - client নিজের cache (TanStack Query, Router cache) দিয়ে compose করতে পারে। এই flexibility + server function auto-RPC-এর জন্য 2026-এ অনেকে TanStack Start prefer করছে।</div><h3>Reactivity frameworks</h3><table><thead><tr><th>Framework</th><th>Default model</th><th>Fine-grained option</th></tr></thead><tbody><tr><td>React</td><td>VDOM + diff (component re-run)</td><td><code>useSyncExternalStore</code> + signal lib (@preact/signals-react, Legend State, TanStack Store, Jotai)</td></tr><tr><td>SolidJS</td><td>Fine-grained signals (component runs once)</td><td>Native</td></tr><tr><td>Vue 3</td><td>Proxy-based reactivity (<code>ref</code>, <code>reactive</code>, <code>computed</code>)</td><td>Native FGR</td></tr><tr><td>Svelte 5</td><td>Compile-time signals (runes: <code>$state</code>, <code>$derived</code>)</td><td>Native</td></tr><tr><td>Angular</td><td>RxJS + Zone.js + signals (modern)</td><td>Native signals (2024+)</td></tr></tbody></table><div class='callout'><strong>Note:</strong> \"Signals vs VDOM\" dichotomy misleading - React <code>useSyncExternalStore</code> (official API) দিয়ে external signal store-এ tear-free subscribe করা যায়, concurrent-safe fine-grained update সহ। SolidJS native, React opt-in - কিন্তু দুটোই possible।</div><h3>Backend framework decision</h3><div class='compare-grid'><div class='compare-card'><h5>Express</h5><p>Minimalist, huge ecosystem, legacy comfort।</p></div><div class='compare-card'><h5>Fastify</h5><p>2–3× faster, schema-based validation।</p></div><div class='compare-card'><h5>NestJS</h5><p>OOP + DI + decorators, enterprise-y।</p></div><div class='compare-card'><h5>Hono</h5><p>Edge-first, tiny, TypeScript-native।</p></div><div class='compare-card'><h5>Bun.serve</h5><p>Native fast, no framework lock-in।</p></div></div><h3>Pagination approach</h3><table><thead><tr><th>Approach</th><th>Best for</th></tr></thead><tbody><tr><td>Offset</td><td>Admin pages, small dataset, jump to page N</td></tr><tr><td>Cursor</td><td>Feed, large dataset, real-time insert</td></tr><tr><td>Seek after sort</td><td>Infinite scroll</td></tr></tbody></table>"
+      "content": "<h3>Frontend রেন্ডারিং</h3><table><thead><tr><th>Approach</th><th>HTML কখন তৈরি</th><th>উদাহরণ</th></tr></thead><tbody><tr><td>CSR</td><td>Browser-এ JS run-এর পর</td><td>Create React App, Vite SPA</td></tr><tr><td>SSR</td><td>Server-এ per-request</td><td>Next.js, TanStack Start, React Router v8 (Framework mode)</td></tr><tr><td>SSG</td><td>Build time</td><td>Astro, Next.js static, TanStack Start prerender</td></tr><tr><td>ISR</td><td>Build + background refresh</td><td>Next.js revalidate</td></tr><tr><td>Streaming SSR</td><td>HTML stream + progressive hydration</td><td>Next.js App Router, TanStack Start, React Router v8</td></tr><tr><td>RSC</td><td>Server-এ render, client-এ data হিসেবে compose</td><td>Next.js App Router; TanStack Start (experimental, RC)</td></tr></tbody></table><h3>React Meta-framework (2026)</h3><table><thead><tr><th>Framework</th><th>Routing</th><th>RSC</th><th>বিশেষত্ব</th></tr></thead><tbody><tr><td><strong>Next.js</strong></td><td>File-based App Router</td><td>✓ (opinionated)</td><td>Batteries included, huge adoption, RSC pioneer</td></tr><tr><td><strong>TanStack Start</strong> (RC)</td><td>Type-safe (TanStack Router), file বা code-based</td><td>experimental (current headline: server functions + streaming SSR)</td><td>Server functions (auto-RPC), top SSR throughput, deploy anywhere (Cloudflare/Node/Bun/Netlify)</td></tr><tr><td><strong>React Router v8 (Remix-unified)</strong></td><td>File-based nested</td><td>✓ (unstable Framework Mode)</td><td>Vite + HMR, loader/action, form-first, Remix + RR unified</td></tr><tr><td><strong>Astro</strong></td><td>File-based</td><td>✗ (islands)</td><td>Content-heavy, near-zero JS default</td></tr></tbody></table><div class='callout'><strong>TanStack Start (2026, RC):</strong> current public docs-এ headline feature হলো streaming SSR, server functions (auto-RPC), server routes আর deployable runtime output - RSC এখনো default/documented feature নয় (experimental)। Type-safe routing + client cache (TanStack Query/Router) দিয়ে data compose করার flexibility-র জন্য অনেকে এটা prefer করছে। RSC দাবি করার আগে current official doc/version verify করুন।</div><h3>Reactivity frameworks</h3><table><thead><tr><th>Framework</th><th>Default model</th><th>Fine-grained option</th></tr></thead><tbody><tr><td>React</td><td>VDOM + diff (component re-run)</td><td><code>useSyncExternalStore</code> + signal lib (@preact/signals-react, Legend State, TanStack Store, Jotai)</td></tr><tr><td>SolidJS</td><td>Fine-grained signals (component runs once)</td><td>Native</td></tr><tr><td>Vue 3</td><td>Proxy-based reactivity (<code>ref</code>, <code>reactive</code>, <code>computed</code>)</td><td>Native FGR</td></tr><tr><td>Svelte 5</td><td>Compile-time signals (runes: <code>$state</code>, <code>$derived</code>)</td><td>Native</td></tr><tr><td>Angular</td><td>RxJS + Zone.js + signals (modern)</td><td>Native signals (2024+)</td></tr></tbody></table><div class='callout'><strong>Note:</strong> \"Signals vs VDOM\" dichotomy misleading - React <code>useSyncExternalStore</code> (official API) দিয়ে external signal store-এ tear-free subscribe করা যায়, concurrent-safe fine-grained update সহ। SolidJS native, React opt-in - কিন্তু দুটোই possible।</div><h3>Backend framework decision</h3><div class='compare-grid'><div class='compare-card'><h5>Express</h5><p>Minimalist, huge ecosystem, legacy comfort।</p></div><div class='compare-card'><h5>Fastify</h5><p>2–3× faster, schema-based validation।</p></div><div class='compare-card'><h5>NestJS</h5><p>OOP + DI + decorators, enterprise-y।</p></div><div class='compare-card'><h5>Hono</h5><p>Edge-first, tiny, TypeScript-native।</p></div><div class='compare-card'><h5>Bun.serve</h5><p>Native fast, no framework lock-in।</p></div></div><h3>Pagination approach</h3><table><thead><tr><th>Approach</th><th>Best for</th></tr></thead><tbody><tr><td>Offset</td><td>Admin pages, small dataset, jump to page N</td></tr><tr><td>Cursor</td><td>Feed, large dataset, real-time insert</td></tr><tr><td>Seek after sort</td><td>Infinite scroll</td></tr></tbody></table>"
+    },
+    "dsa": {
+      "title": "DSA ও Problem Solving",
+      "lede": "Algorithm মুখস্থ নয় - input/output restate, data structure চেনা, brute-force → optimize, edge case আর complexity (best + worst) বলতে পারাই interview-তে depth দেখায়।",
+      "content": "<h3>সমস্যা approach করার ধাপ</h3><ol><li>Input, output, rule নিজের ভাষায় <strong>restate</strong>।</li><li>সঠিক <strong>data structure</strong> চিনুন।</li><li><strong>Edge case</strong>: empty, single element, duplicate, negative, overflow।</li><li><strong>Brute-force</strong> আগে, তারপর <strong>optimize</strong>।</li><li>ছোট example + একটা edge case দিয়ে <strong>dry-run</strong> তারপর code।</li></ol><h3>Big-O intuition</h3><table><thead><tr><th>Class</th><th>মানে</th><th>উদাহরণ</th></tr></thead><tbody><tr><td>O(1)</td><td>constant</td><td>hash lookup, array index</td></tr><tr><td>O(log n)</td><td>প্রতি step অর্ধেক</td><td>binary search, balanced BST</td></tr><tr><td>O(n)</td><td>single pass</td><td>একটা loop</td></tr><tr><td>O(n log n)</td><td>ভালো sort</td><td>merge/heap sort</td></tr><tr><td>O(n²)</td><td>nested loop</td><td>দুই loop n-এর উপর</td></tr><tr><td>O(V+E)</td><td>graph traversal</td><td>DFS/BFS</td></tr></tbody></table><p><strong>Space complexity</strong> = input ছাড়া extra memory: recursion call stack (O(h), worst O(n)), explicit stack/queue, visited set (O(V)), memo table (O(states))।</p><h3>Tree basics</h3><p>Tree = node + edge-এর hierarchical structure, একটা root, cycle নেই, প্রতি node-এর এক parent (root ছাড়া)। <strong>Depth</strong> = root থেকে দূরত্ব; <strong>height</strong> = node থেকে leaf পর্যন্ত longest path। Operation প্রায়ই O(height)-এ চলে, তাই height গুরুত্বপূর্ণ।</p><h3>Binary Tree vs BST</h3><p><strong>Binary Tree</strong> - প্রতি node-এর সর্বোচ্চ ২ child, ordering নেই। <strong>BST</strong> - ordering invariant: প্রতি node-এ left-subtree &lt; node &lt; right-subtree। তাই <strong>balanced</strong> হলে O(log n) search (target compare করে left/right গিয়ে অর্ধেক বাদ)।</p><div class='callout warn'>O(log n) শুধু <strong>balanced</strong> হলে। Sorted value (1,2,3,4,5) insert করলে BST linked list-এ degenerate হয় - height O(n), search/insert/delete O(n)। সবসময় দুই case-ই বলুন: balanced O(log n), worst O(n)।</div><h3>Self-balancing tree</h3><p><strong>AVL</strong> - rotation দিয়ে strict height-balance (faster lookup, বেশি rotation)। <strong>Red-Black</strong> - node red/black color + rule (root black, red-এর child black, সব path-এ সমান black-height) দিয়ে longest path ≤ 2× shortest, সব operation O(log n)। ordered map/set (Java <code>TreeMap</code>, C++ <code>std::map</code>)-এ ব্যবহৃত। AVL read-এ ভালো; Red-Black write-এ কম rotation, তাই অনেক library Red-Black নেয়।</p><h3>HashMap</h3><p><code>hash(key)</code> → bucket index। Average O(1) insert/search/delete। <strong>Collision</strong> (একই bucket-এ দুই key) - chaining (bucket-এ list/tree) বা open addressing (পরের free slot probe)। খারাপ hash / pathological collision-এ O(n)। HashMap = unordered, avg O(1); TreeMap (balanced BST) = ordered, O(log n)।</p><h3>DFS vs BFS</h3><table><thead><tr><th></th><th>DFS</th><th>BFS</th></tr></thead><tbody><tr><td>Strategy</td><td>যতদূর সম্ভব গভীরে, তারপর backtrack</td><td>level by level</td></tr><tr><td>Structure</td><td>stack (recursion বা explicit)</td><td>queue (FIFO)</td></tr><tr><td>Best for</td><td>path existence, topo sort, cycle detect, deep solution</td><td>unweighted shortest path, level-order, shallow solution</td></tr><tr><td>Space</td><td>O(h)</td><td>O(n) (widest level)</td></tr></tbody></table><p>দুটোই graph-এ O(V+E) (প্রতি vertex ও edge একবার); tree-তে E ≈ V−1 তাই O(n)। Graph-এ cycle এড়াতে <strong>visited set</strong> লাগে; tree-তে লাগে না। Recursive DFS-এ leaf-এ পৌঁছলে child নেই, তাই function return করে (backtrack); iterative-এ শুধু <code>pop</code> করে এগোয়।</p><pre><code>// Iterative DFS\nstack = [start]\nwhile (stack.length) {\n  node = stack.pop();\n  if (visited.has(node)) continue;\n  visited.add(node);\n  for (child of node.children) stack.push(child);\n}</code></pre><h3>Memoization</h3><p>Expensive call-এর result input-key-এ cache করা, তাই একই input-এ পরের call O(1)। Overlapping subproblem-এ (DP, যেমন Fibonacci) essential - naive recursion exponential, memoize করলে O(n)। Space = distinct state সংখ্যা।</p><h3>Story → structure modeling</h3><p>Domain-কে structure-এ map করুন: <strong>entity → node, relationship → edge, operation → state change, প্রশ্ন → query/traversal</strong>। যেমন \"দুই মানুষের মাঝে সবচেয়ে কম intermediary\" → মানুষ node, friendship edge, \"কম\" → unweighted graph-এ <strong>BFS shortest path</strong>। abstract shape (graph/tree/DP) চেনাই আসল skill।</p>"
     }
   },
   "questions": {
@@ -164,7 +184,7 @@
         ],
         [
           "Frontend performance metric?",
-          "<strong>Core Web Vitals:</strong> LCP (Largest Contentful Paint) ≤ 2.5s, FID/INP (input delay) ≤ 100ms/200ms, CLS (layout shift) ≤ 0.1। Lighthouse-এ measure।"
+          "<strong>Core Web Vitals:</strong> LCP (Largest Contentful Paint) ≤ 2.5s, INP (Interaction to Next Paint, 2024-এ FID-কে replace করেছে) ≤ 200ms, CLS (Cumulative Layout Shift) ≤ 0.1 — 75th percentile-এ measured। Lighthouse (lab) INP-এর proxy হিসেবে TBT দেখায়; real INP field tool/RUM (CrUX) measure করে।"
         ],
         [
           "Accessibility (a11y) কেন?",
@@ -1106,6 +1126,447 @@
         [
           "P0 incident - payment processing down - runbook-এ 5 first steps?",
           "1) <strong>Acknowledge</strong> - incident channel + status page \"investigating\"। 2) <strong>Rollback</strong> - recent deploy revert first (fastest mitigation)। 3) <strong>Isolate</strong> scope (which region/endpoint/%)। 4) <strong>Comms</strong> - stakeholders/customers honest update। 5) <strong>Bridge</strong> - war room, IC + scribe + SME roles। Post-incident: blameless postmortem 48-72hr within।"
+        ]
+      ]
+    },
+    "browser": {
+      "title": "Browser, Network ও Rendering",
+      "items": [
+        [
+          "URL type করে Enter চাপলে end-to-end কী কী হয়?",
+          "<ol><li><strong>URL parsing</strong>: scheme, host, port, path, query, fragment আলাদা হয়।</li><li><strong>Cache check</strong>: HSTS, resource cache, DNS cache দেখা হয় — fresh cache থাকলে network পুরোপুরি skip হতে পারে।</li><li><strong>DNS resolution</strong>: hostname থেকে IP — browser→OS→router/ISP→recursive resolver, যা root→TLD→authoritative walk করে।</li><li><strong>TCP connection</strong>: 3-way handshake (SYN→SYN-ACK→ACK) দিয়ে reliable ordered byte stream তৈরি হয়।</li><li><strong>TLS handshake</strong> (HTTPS হলে): version+cipher negotiate, server cert authenticate, symmetric session key establish।</li><li><strong>HTTP request</strong>: method, path, headers (Host, cookies, Accept) পাঠানো হয়।</li><li><strong>Server response</strong>: status, headers, body (HTML) আসে।</li><li><strong>Parsing+rendering</strong>: HTML→DOM, CSS→CSSOM, JS run, render tree→layout→paint→composite; sub-resource আরও request trigger করে।</li></ol>TCP আগে আসে কারণ TLS একটা reliable transport-এর উপর চলে। HTTPS confidentiality+integrity+authentication দেয়। DNS নিজে সাধারণত UDP-তে চলে। <strong>Gotcha:</strong> caching পুরো flow short-circuit করতে পারে — resource cache hit মানে কোনো network call-ই হয় না।"
+        ],
+        [
+          "একটা URL-এর parts কী কী? <code>https://user:pass@www.example.com:443/path/page?q=term&page=2#section</code> ভাঙো।",
+          "<ul><li><strong>Scheme/protocol</strong> (<code>https</code>): কীভাবে কথা বলবে।</li><li><strong>Host/domain</strong> (<code>www.example.com</code>): কোন server।</li><li><strong>Port</strong> (<code>443</code>): default 80 (http), 443 (https)।</li><li><strong>Path</strong> (<code>/path/page</code>): কোন resource।</li><li><strong>Query params</strong> (<code>?q=term&page=2</code>): key/value, server-কে পাঠানো হয়।</li><li><strong>Fragment</strong> (<code>#section</code>): client-only, server-এ যায় না।</li></ul><strong>Gotcha:</strong> fragment কখনো network-এ যায় না — browser বা SPA router client-side এ এটা use করে।"
+        ],
+        [
+          "DNS lookup কীভাবে কাজ করে আর cache layer-গুলো কী কী?",
+          "DNS hostname-কে IP-তে translate করে। Cache order: <strong>browser DNS cache → OS cache → router cache → ISP/recursive resolver</strong>। Miss হলে recursive resolver iterative walk করে: root server (→ <code>.com</code>-এর TLD nameserver), TLD (→ <code>example.com</code>-এর authoritative), authoritative (→ আসল A/AAAA record)। প্রতি layer TTL অনুযায়ী cache করে। <strong>Gotcha:</strong> তোমার machine→resolver হলো recursive ('answer এনে দাও, আমি wait করি'), আর resolver→hierarchy হলো iterative; TTL-এর কারণেই DNS change সারা পৃথিবীতে instantly propagate হয় না।"
+        ],
+        [
+          "TCP কী আর 3-way handshake কীভাবে হয়?",
+          "TCP হলো connection-oriented transport যা <strong>reliable, ordered byte delivery</strong> দেয় — lost packet retransmit হয়, ordering হয় sequence number + ACK দিয়ে। 3-way handshake: <ul><li><strong>SYN</strong>: client→server, আমার initial seq num।</li><li><strong>SYN-ACK</strong>: server ack করে + নিজের seq num পাঠায়।</li><li><strong>ACK</strong>: client ack করে।</li></ul>এখন দুই পক্ষ sequence number-এ একমত, connection established। <strong>Gotcha:</strong> এই reliability-র জন্যই HTTP/1.1 আর HTTP/2 TCP-তে চলে; কিন্তু HTTP/3 QUIC (UDP-based)-এর উপর চলে — reliable in-order delivery তখন QUIC নিজে দেয়। UDP নিজে fire-and-forget (no ordering/retransmission), DNS আর video-তে ব্যবহৃত হয়।"
+        ],
+        [
+          "TLS/HTTPS handshake কী establish করে? symmetric vs asymmetric crypto-র role কী?",
+          "HTTPS মানে HTTP over TLS। Handshake তিনটা জিনিস করে: (1) version + cipher suite <strong>negotiate</strong>; (2) certificate দিয়ে server <strong>authenticate</strong> (CA chain-এর বিরুদ্ধে verify); (3) shared symmetric session key <strong>establish</strong>। Handshake-এ asymmetric crypto দিয়ে shared secret-এ একমত হয়, তারপর actual data-র জন্য symmetric-এ switch করে (অনেক faster)। Symmetric = একই key encrypt/decrypt করে (bulk data); asymmetric = public encrypt, private decrypt (secret bootstrap + authenticate)। এতে HTTPS eavesdropping (confidentiality), tampering (integrity, MAC), impersonation (authentication, cert) থেকে রক্ষা করে। <strong>Gotcha:</strong> asymmetric slow বলেই শুধু symmetric key exchange-এ use হয়; certificate প্রমাণ করে server-এর কাছে CA-signed public key-র matching private key আছে; TLS 1.3 forward secrecy-র জন্য ephemeral Diffie-Hellman use করে।"
+        ],
+        [
+          "HTTP, TCP, TLS — এগুলো কি 'protocol' নাকি 'method'? কোন layer-এ থাকে?",
+          "তিনটাই <strong>protocol</strong> (agreed rules), method নয়। HTTP-তে 'method' মানে verb — GET/POST। Layering: <ul><li><strong>HTTP</strong> = application (OSI L7)।</li><li><strong>TLS</strong> = application আর transport-এর মাঝে (প্রায়ই L6 presentation / L5 session)।</li><li><strong>TCP</strong> = transport (L4)।</li><li><strong>IP</strong> = network (L3)।</li></ul><strong>Gotcha:</strong> GET/POST/PUT/DELETE হলো HTTP method; HTTP নিজে হলো protocol।"
+        ],
+        [
+          "OSI model-এর 7টা layer কী কী?",
+          "<ul><li><strong>L7 Application</strong>: HTTP, DNS।</li><li><strong>L6 Presentation</strong>: encryption/encoding — TLS প্রায়ই এখানে।</li><li><strong>L5 Session</strong>: TLS session কখনো এখানে।</li><li><strong>L4 Transport</strong>: TCP, UDP।</li><li><strong>L3 Network</strong>: IP, routing।</li><li><strong>L2 Data Link</strong>: Ethernet, MAC, switch।</li><li><strong>L1 Physical</strong>: cable।</li></ul>TCP/IP model এগুলো Application/Transport/Internet/Link-এ collapse করে। <strong>Gotcha:</strong> TLS কোনো একটা layer-এ ঠিকমতো বসে না — বলো 'application আর transport-এর মাঝে (L5/L6)'; interviewer চায় IP (L3), TCP (L4), HTTP (L7) সঠিকভাবে place করা।"
+        ],
+        [
+          "Browser HTML-কে কীভাবে DOM-এ parse করে?",
+          "Flow: bytes → characters (encoding, সাধারণত UTF-8) → tokenizer token emit করে (startTag/endTag) → tree construction nesting অনুযায়ী node connect করে → <strong>DOM tree</strong>। DOM construction <strong>incremental</strong> — byte আসতে আসতেই তৈরি হয়। <strong>Gotcha:</strong> একটা synchronous <code>&lt;script&gt;</code> tokenization/DOM construction pause করে দেয়, কারণ JS <code>document.write</code> করতে বা DOM mutate করতে পারে।"
+        ],
+        [
+          "Browser CSS-কে কীভাবে CSSOM-এ parse করে?",
+          "CSS bytes → tokens → nodes → <strong>CSSOM tree</strong> (DOM-এর mirror, computed style ধরে রাখে)। applicable CSS <strong>render-blocking by default</strong>: render tree-র জন্য DOM + applicable CSSOM দুটোই লাগে, আর cascade-এর কারণে পরের rule আগেরটা override করতে পারে, তাই পুরো CSSOM তৈরি না হওয়া পর্যন্ত browser নিরাপদে paint করতে পারে না। তবে <code>media</code> attribute/query দিয়ে কিছু CSS non-render-blocking হতে পারে। <strong>Gotcha:</strong> এটাই 'CSS render-blocking' হওয়ার আসল কারণ; fix = কম CSS ship করা / critical CSS inline করা।"
+        ],
+        [
+          "Render tree → layout → paint → composite — এই pipeline-টা ব্যাখ্যা করো।",
+          "<ol><li><strong>Render tree</strong> = DOM + CSSOM, শুধু visible node (<code>display:none</code> বাদ; <code>visibility:hidden</code> tree-তে থাকে কিন্তু invisible; head/script বাদ)।</li><li><strong>Layout/reflow</strong> = geometry compute (size+position, viewport-এর উপর depend করে)।</li><li><strong>Paint/repaint</strong> = layer-এ pixel fill করা।</li><li><strong>Composite</strong> = layer-গুলো order অনুযায়ী combine, প্রায়ই GPU-তে।</li></ol><code>transform</code>/<code>opacity</code> cheap কারণ এরা নিজের layer-এ composite stage-এ চলে, layout আর প্রায়ই paint skip করে; <code>width</code>/<code>top</code> change করলে layout force হয়; <code>color</code>/<code>background</code> paint force করে। <strong>Gotcha:</strong> composite-only property = <code>transform</code>, <code>opacity</code>।"
+        ],
+        [
+          "Layout thrashing / forced synchronous reflow কী?",
+          "Browser DOM write batch করে আর layout defer করে। কিন্তু write-এর ঠিক পরেই কোনো layout property (<code>offsetHeight</code>, <code>getBoundingClientRect</code>, <code>scrollTop</code>) read করলে এখনই synchronous layout recompute force হয়। Loop-এ read→write→read→write মানে বারবার forced reflow = <strong>layout thrashing</strong> = jank। Fix: সব read একসাথে batch করো, তারপর সব write; <code>requestAnimationFrame</code> / FastDOM use করো। <strong>Gotcha:</strong> read/write interleave করলে এক reflow-র বদলে O(n) reflow হয়।"
+        ],
+        [
+          "Render-blocking CSS vs JS; <code>async</code> vs <code>defer</code> পার্থক্য কী?",
+          "CSS render-blocking (CSSOM complete না হলে paint নেই)। সাধারণ <code>&lt;script&gt;</code> default-এ <strong>parser-blocking</strong> — download+execute হওয়ার সময় HTML parsing থামিয়ে দেয় (DOM/CSSOM change করতে পারে বলে), কার্যত render-blocking। <ul><li><strong>defer</strong>: parallel download, HTML parsing শেষ হওয়ার পর order বজায় রেখে execute, কখনো parsing block করে না।</li><li><strong>async</strong>: parallel download, যখনই আসে তখনই execute (execution-এর জন্য parsing pause), order guaranteed নয় — independent script-এ ভালো (analytics)।</li></ul><strong>Gotcha:</strong> <code>&lt;body&gt;</code>-র শেষে <code>&lt;script&gt;</code> defer-এর মতো behave করে; async আসামাত্র parsing interrupt করতে পারে, defer কখনো করে না।"
+        ],
+        [
+          "Browser resource caching কীভাবে কাজ করে?",
+          "HTTP cache response-কে URL দিয়ে key করে store করে freshness rule সহ (<code>Cache-Control</code>, <code>ETag</code>/<code>If-None-Match</code>, <code>Last-Modified</code>)। Fresh resource cache থেকে serve হয় কোনো network request ছাড়া; stale-but-validatable হলে conditional request যায় যা <strong>304 Not Modified</strong> return করতে পারে (body আবার download হয় না)। এতে repeat visit fast হয়, bandwidth বাঁচে। <strong>Gotcha:</strong> strong caching (<code>max-age</code>, কোনো request নয়) আর validation (<code>ETag</code>, সস্তা 304) — দুটো আলাদা করে বলো।"
+        ]
+      ]
+    },
+    "engine": {
+      "title": "JS Engine ও Execution (V8)",
+      "items": [
+        [
+          "JS engine end-to-end কী করে? (V8, Chrome+Node)",
+          "<p>Source code প্রথমে <strong>parser</strong>-এ যায়, যেটা একটা <strong>AST</strong> বানায়। তারপর <strong>Ignition</strong> (interpreter) সেই AST থেকে <code>bytecode</code> generate করে এবং execute করতে করতে type feedback collect করে। যে functions বারবার চলে (hot), সেগুলো <strong>TurboFan</strong> (optimizing compiler)-এ পাঠানো হয়, যেটা speculative assumptions ধরে optimized machine code বানায়।</p><p>কোনো assumption ভেঙে গেলে — যেমন যে function সবসময় number পেতো হঠাৎ string পেল — V8 <strong>deoptimize</strong> করে bytecode-এ ফিরে আসে। মাঝে Sparkplug আর Maglev নামের intermediate tier-ও আছে।</p><p><strong>Gotcha:</strong> engine-টার নাম V8; order মনে রাখবে — parse → AST → bytecode (Ignition) → optimized machine code (TurboFan) → broken assumption-এ deopt।</p>"
+        ],
+        [
+          "AST কী?",
+          "<p><strong>AST</strong> (Abstract Syntax Tree) হলো source code-এর tree representation, যেখানে প্রতিটা node একটা construct বোঝায় — statement, expression বা operator। Parser এটা produce করে, আর engine এই tree walk করে bytecode generate করে।</p><p><code>Babel</code> বা <code>ESLint</code>-এর মতো tools এই AST-এর উপরেই কাজ করে।</p>"
+        ],
+        [
+          "JIT compilation কী এবং কেন JS fast করে?",
+          "<p><strong>JIT</strong> (Just-In-Time) মানে runtime-এ machine code-এ compile করা, ahead-of-time নয়। V8 প্রথমে interpret করে (fast startup), hot code profile করে, তারপর hot path-গুলোকে speculative optimization দিয়ে optimized machine code-এ compile করে — stable types ও shapes ধরে নিয়ে।</p><p>এতে startup আর peak speed দুটোর balance হয়; assumption ভাঙলে deoptimize করে। <strong>Monomorphic</strong> (single-shape) code optimized থাকে, কিন্তু polymorphic/megamorphic code deopt হতে পারে।</p><p><strong>Gotcha:</strong> প্রথমে interpret কেন? কারণ compile করা expensive আর বেশিরভাগ code কম চলে — JIT effort শুধু সেখানেই দেয় যেখানে এটা pay off করে।</p>"
+        ],
+        [
+          "Execution context — global vs function কী?",
+          "<p><strong>Execution context</strong> হলো সেই environment যেখানে code চলে। শুরুতে একটা global execution context থাকে, আর প্রতিটা function call-এ একটা নতুন function execution context তৈরি হয়।</p><p>প্রতিটা context-এর দুটো phase আছে: <strong>creation/memory phase</strong> (scope set up, declarations hoist, <code>this</code> establish) এবং <strong>execution phase</strong> (line by line চলা, value assign)।</p>"
+        ],
+        [
+          "Hoisting বিস্তারিতভাবে কীভাবে কাজ করে?",
+          "<p>Creation phase-এ execution-এর আগেই declarations register হয়। <strong>Function declarations</strong> পুরোপুরি hoisted — line-এর আগেই callable। <code>var</code> hoisted হয়ে <code>undefined</code>-এ initialize হয় (assignment-এর আগে read করলে undefined)। <code>let</code>/<code>const</code> hoisted কিন্তু uninitialized — declaration line-এর আগে read করলে <code>ReferenceError</code> throw করে (এটাই TDZ)।</p><pre><code>console.log(x); var x = 1;   // undefined\nconsole.log(y); let y = 1;   // ReferenceError</code></pre><p><strong>Gotcha:</strong> var → undefined; let/const → ReferenceError (TDZ); আর var-এ assign করা function expression early callable নয় — শুধু var-টাই hoist হয় (undefined হিসেবে)।</p>"
+        ],
+        [
+          "Temporal Dead Zone (TDZ) কী?",
+          "<p><strong>TDZ</strong> হলো scope-এ ঢোকা আর <code>let</code>/<code>const</code> declaration line-এর মাঝখানের window। ওই window-তে variable access করলে <code>ReferenceError</code> throw হয়, কারণ binding-টা exist করে (hoisted) কিন্তু এখনো uninitialized।</p><p>এটা use-before-declaration bug ধরে ফেলে এবং <code>const</code>-এর semantics sound রাখে।</p>"
+        ],
+        [
+          "Scope: global, function, block — পার্থক্য কী?",
+          "<p><code>var</code> হলো <strong>function-scoped</strong> — <code>if</code>/<code>for</code>-এর মতো block ignore করে। <code>let</code>/<code>const</code> হলো <strong>block-scoped</strong> — নিকটতম <code>{}</code>-এর মধ্যে confined থাকে। আর <strong>global scope</strong> সব জায়গা থেকেই accessible।</p>"
+        ],
+        [
+          "Lexical scope এবং scope chain কী?",
+          "<p><strong>Lexical (static) scope</strong> মানে accessibility ঠিক হয় code কোথায় লেখা হয়েছে তার উপরে, কোথায় call হয়েছে তার উপরে নয়। Inner functions enclosing variables গুলো <strong>scope chain</strong> দিয়ে read করে — lookup miss হলে engine parent lexical environment ধরে উপরে global পর্যন্ত খোঁজে, না পেলে throw করে।</p><p><strong>Gotcha:</strong> 'যেখানে লেখা, যেখানে call নয়' — এটাই closures-কে কাজ করায়।</p>"
+        ],
+        [
+          "Closures কী এবং classic loop bug কীভাবে কাজ করে?",
+          "<p><strong>Closure</strong> হলো একটা function যেটা তার surrounding lexical state-এর references সহ bundled — outer function return করার পরেও সেই outer scope access করতে পারে। Use cases: data privacy (private counter), factory functions, callbacks/handlers, partial application।</p><pre><code>for (var i = 0; i < 3; i++)\n  setTimeout(() => console.log(i), 0);\n// prints 3, 3, 3\n\nfor (let i = 0; i < 3; i++)\n  setTimeout(() => console.log(i), 0);\n// prints 0, 1, 2</code></pre><p><strong>Gotcha:</strong> <code>var</code> function-scoped হওয়ায় তিনটা closure একই shared lexical environment-এর একটাই <code>i</code> share করে (final 3, 3, 3); <code>let</code> block-scoped হওয়ায় প্রতি iteration-এ fresh binding দেয় (0, 1, 2)।</p>"
+        ],
+        [
+          "Call stack কী?",
+          "<p><strong>Call stack</strong> হলো execution frame-এর একটা LIFO stack। Function call করলে একটা frame push হয়, return করলে pop হয়। যেহেতু JS single-threaded, একসময়ে শুধু top frame-টাই চলে।</p><p>খুব deep বা infinite recursion stack overflow করে — তখন <em>'Maximum call stack size exceeded'</em> error আসে।</p>"
+        ],
+        [
+          "Parameter vs argument — পার্থক্য কী?",
+          "<p><strong>Parameter</strong> হলো definition-এ named variable — যেমন <code>function f(a, b)</code>-এর <code>a</code>, <code>b</code>। <strong>Argument</strong> হলো call time-এ পাঠানো actual value — যেমন <code>f(1, 2)</code>-এর <code>1</code>, <code>2</code>।</p>"
+        ],
+        [
+          "JS engine vs rendering engine vs DOM — পার্থক্য কী?",
+          "<p>এগুলো আলাদা কিন্তু interacting পিস। <strong>JS engine</strong> (V8) JS parse + execute করে। <strong>Rendering engine</strong> (Chrome-এ Blink) HTML/CSS parse করে, layout আর paint করে। <strong>DOM</strong> হলো document-এর in-memory tree, যেটা browser provide করে এবং JS-এ Web APIs হিসেবে expose হয় — এটা JS language-এর অংশ নয়।</p><p>JS DOM API-তে call করে, আর rendering engine সেই DOM changes screen-এ reflect করে।</p><p><strong>Gotcha:</strong> <code>document</code>, <code>setTimeout</code>, <code>fetch</code> — এগুলো JavaScript language-এর অংশ নয়, এগুলো runtime/host API।</p>"
+        ]
+      ]
+    },
+    "eventloop": {
+      "title": "Event Loop ও Async",
+      "items": [
+        [
+          "JavaScript কি single-threaded? তাহলে async কীভাবে কাজ করে?",
+          "<p>JS-এর execution thread single-threaded — <strong>call stack</strong>-এ একসাথে একটাই জিনিস চলে, parallel JS code চলে না।</p><p>কিন্তু runtime (browser বা Node) language-এর বাইরে কিছু background facility provide করে — timers, network, I/O ইত্যাদির জন্য আলাদা thread/Web APIs থাকে। তাই async কাজগুলো main thread-এর বাইরে হয় আর complete হলে callback queue-তে push হয়ে আবার main thread-এ ফিরে আসে।</p><p>মানে JS নিজে inherently single-threaded, but runtime <code>task</code> + <code>microtask</code> queue আর worker threads maintain করে বলে concurrency পাওয়া যায়।</p>"
+        ],
+        [
+          "Event loop জিনিসটা আসলে কী করে?",
+          "<p>Event loop হলো সেই coordinator যা <strong>call stack</strong> আর <strong>queue</strong>-গুলোর মধ্যে কাজ ভাগ করে দেয়।</p><p>Algorithm-টা এমন: current synchronous code পুরোটা complete হতে দেয় → তারপর <strong>পুরো microtask queue</strong> drain করে → একটা macrotask নেয় → আবার সব microtask drain করে → (render) → এভাবে repeat করতে থাকে।</p><p>Task exit করার পর stack empty হলে সব microtask turn-by-turn চলে — এমনকি draining-এর সময় schedule হওয়া microtask-ও পরের task-এর আগে চলে যায়।</p>"
+        ],
+        [
+          "Web APIs বলতে কী বোঝায়? এগুলো কি JavaScript-এর অংশ?",
+          "<p><code>setTimeout</code>, <code>fetch</code>, DOM events, <code>XMLHttpRequest</code> — এগুলো language-এর part নয়, runtime provide করে।</p><p>এই কাজগুলো main thread-এর বাইরে off-thread চলে, আর complete হলে appropriate queue-তে একটা callback push করে দেয়। তাই blocking ছাড়াই async behaviour পাওয়া যায়।</p>"
+        ],
+        [
+          "Macrotask (task) queue-তে কী কী থাকে?",
+          "<p>Macrotask queue-তে থাকে: <code>setTimeout</code>, <code>setInterval</code>, DOM events, message events আর I/O callbacks।</p><p>Event loop প্রতি iteration-এ <strong>মাত্র একটা</strong> macrotask run করে, তারপর microtask-গুলো drain করে। তাই একসাথে পরপর সব timer চলে না — মাঝখানে microtask আর render-এর সুযোগ থাকে।</p>"
+        ],
+        [
+          "Microtask queue-তে কী থাকে এবং এর priority কেমন?",
+          "<p>Microtask queue-তে থাকে: Promise-এর <code>.then</code>/<code>.catch</code>/<code>.finally</code> callback, <code>queueMicrotask</code> আর <code>MutationObserver</code>।</p><p>এর priority macrotask-এর চেয়ে বেশি — পরের macrotask বা render-এর আগে <strong>পুরো microtask queue</strong> drain হয়, এমনকি microtask থেকে schedule হওয়া নতুন microtask-ও একই দফায় চলে যায়।</p>"
+        ],
+        [
+          "Exact priority rule-টা কী? Microtask কখন run হয়?",
+          "<p>Initial sync run-এর পর এবং প্রতিটা macrotask-এর পর engine একটা <strong>microtask checkpoint</strong> চালায় — এই মুহূর্তে microtask queue পুরোপুরি empty করা হয়, এমনকি draining-এর সময় নতুন schedule হওয়া microtask-ও সেই দফাতেই চলে।</p><p>মানে কোনো microtask যদি <code>queueMicrotask()</code> দিয়ে আরও কাজ schedule করে, সেগুলো পরের task বা render-এর আগেই চলবে। Order: sync → সব microtask → এক macrotask → আবার সব microtask।</p>"
+        ],
+        [
+          "<code>queueMicrotask</code> কী কাজে লাগে?",
+          "<p><code>queueMicrotask</code> একটা function-কে পরের microtask checkpoint-এ run করার জন্য schedule করে — current sync code-এর পরে, কিন্তু পরের macrotask/render-এর আগে।</p><p>এটা তখন কাজে লাগে যখন কোনো কাজ একটু defer করতে চাই কিন্তু timer বা rendering-এর চেয়ে আগে রাখতে চাই। <code>setTimeout(fn, 0)</code>-এর চেয়ে এটা strictly আগে চলে।</p>"
+        ],
+        [
+          "<code>async/await</code> ভেতরে আসলে কীভাবে desugar হয়?",
+          "<p>একটা <code>async</code> function সবসময় একটা Promise return করে।</p><p><code>await</code> function-টাকে suspend করে দেয় আর await-এর পরের পুরো অংশকে (continuation) একটা <strong>microtask</strong> হিসেবে schedule করে, যা awaited promise settle হলে চলে।</p><p>তাই <code>await</code>-এর পরের code আসলে একটা <code>.then</code> callback-এর মতোই behave করে — synchronously নয়, microtask হিসেবে।</p>"
+        ],
+        [
+          "এই code-এর output কী হবে আর কেন? <code>console.log('A')</code> থেকে শুরু।",
+          "<pre><code>console.log('A');\nsetTimeout(() =&gt; console.log('B'), 0);\nPromise.resolve().then(() =&gt; console.log('C'));\nconsole.log('D');</code></pre><p><strong>Output:</strong> <code>A D C B</code></p><p>ব্যাখ্যা step-by-step: <code>A</code> আর <code>D</code> synchronous, তাই আগে চলে যায়। <code>setTimeout</code>-এর callback <code>B</code> একটা macrotask হিসেবে macrotask queue-তে বসে। <code>.then</code>-এর callback <code>C</code> একটা microtask।</p><p>Sync code শেষ হয়ে stack empty হওয়ার পর event loop প্রথমে microtask queue drain করে — তাই <code>C</code> চলে। তারপর macrotask <code>B</code> চলে। এজন্যই order হয় <code>A D C B</code>।</p>"
+        ],
+        [
+          "এই mixed code-এর output trace করো: <code>console.log('1')</code> থেকে শুরু।",
+          "<pre><code>console.log('1');\nsetTimeout(() =&gt; console.log('2'), 0);\nPromise.resolve().then(() =&gt; {\n  console.log('3');\n  return Promise.resolve();\n}).then(() =&gt; console.log('4'));\nqueueMicrotask(() =&gt; console.log('5'));\n(async () =&gt; {\n  console.log('6');\n  await null;\n  console.log('7');\n})();\nconsole.log('8');</code></pre><p><strong>Output:</strong> <code>1 6 8 3 5 7 4 2</code></p><p>প্রথমে sync part চলে: <code>1</code> print হয়, <code>setTimeout</code> macrotask হিসেবে <code>2</code> schedule করে, <code>.then</code> microtask হিসেবে <code>3</code> schedule করে, <code>queueMicrotask</code> microtask হিসেবে <code>5</code> schedule করে, IIFE-টা synchronously <code>6</code> print করে তারপর <code>await null</code> এর পরের অংশ <code>7</code>-কে microtask হিসেবে schedule করে, শেষে sync <code>8</code> print হয়ে stack empty হয়।</p><p>এবার microtask drain হয় queued order-এ: <code>3</code> (এর ভেতরের <code>return Promise.resolve()</code> একটা extra microtask tick যোগ করে দেয় <code>4</code>-এর দিকে), তারপর <code>5</code>, তারপর <code>7</code>; এরপর <code>4</code>। সবশেষে macrotask <code>2</code>।</p><p><strong>Gotcha:</strong> <code>.then</code> থেকে একটা promise return করলে একটা extra microtask tick add হয়, এজন্যই <code>4</code> এসে পড়ে <code>5</code> আর <code>7</code>-এর পরে; mechanism-টা মনে রাখাই আসল কথা — exact letter ordering এক tick এদিক-ওদিক engine-ভেদে vary করতে পারে।</p>"
+        ],
+        [
+          "একটা microtask যদি আরেকটা microtask schedule করে, সেটা কখন চলে?",
+          "<p>সেটা <strong>একই microtask checkpoint</strong>-এই drain হয় — loop queue empty না হওয়া পর্যন্ত চলতেই থাকে।</p><p>তাই একটা endless microtask chain (প্রতিটা আরেকটা schedule করছে) rendering আর macrotask-কে starve করে দেয়: browser কখনো paint বা user-event handling-এ পৌঁছায় না, UI পুরো freeze হয়ে যায়।</p><p><strong>Gotcha:</strong> এর উল্টোটা হলো recursive <code>setTimeout</code> (macrotask) — প্রতিটা call-এর মাঝে rendering-কে yield করে, তাই UI freeze করে না।</p>"
+        ],
+        [
+          "Node.js-এর event loop browser থেকে কীভাবে আলাদা?",
+          "<p>Node <strong>libuv</strong> ব্যবহার করে, যা loop-টাকে কয়েকটা phase-এ চালায়: timers (<code>setTimeout</code>/<code>setInterval</code>) → pending callbacks → idle/prepare (internal) → poll (I/O) → check (<code>setImmediate</code>) → close callbacks।</p><p>libuv-এর একটা thread pool আছে (default size 4, <code>UV_THREADPOOL_SIZE</code> দিয়ে configurable, max 1024) — file system I/O আর কিছু crypto/DNS এতে চলে; কিন্তু network I/O OS-এর async (epoll/kqueue/IOCP) দিয়ে হয়, thread pool দিয়ে নয়।</p><p>Ordering: প্রতিটা phase-এর মাঝে (এবং প্রতি callback-এর পর) Node দুটো microtask queue drain করে — আগে <code>process.nextTick</code> (সবচেয়ে high priority), তারপর Promise microtask queue। মানে <strong>nextTick &gt; Promise microtasks &gt; macrotask phases</strong>।</p><p>Node I/O efficiently handle করে কারণ non-blocking I/O OS/thread pool-এ offload হয়; single JS thread শুধু result ready হলে callback চালায়, তাই একটা thread হাজার হাজার connection serve করতে পারে।</p><p><strong>Gotcha:</strong> recursive <code>process.nextTick</code> I/O-কে starve করতে পারে (loop advance করার আগেই চলে); browser-এ <code>nextTick</code>/<code>setImmediate</code> নেই — সেখানে শুধু micro vs macro-র খেলা।</p>"
+        ],
+        [
+          "Worker threads কখন ব্যবহার করব?",
+          "<p><code>worker_threads</code> ব্যবহার করব <strong>CPU-bound</strong> কাজের জন্য — image processing, large parsing, heavy computation, crypto — যাতে single event-loop thread block না হয়।</p><p>সাধারণ async I/O-র জন্য worker thread ব্যবহার <strong>করব না</strong> — Node নিজেই সেটা block ছাড়া efficiently handle করে।</p><p>Main thread block হয়ে গেলে সব request freeze হয়ে যায়; তাই CPU-heavy কাজ একটা pooled worker set-এ (মোটামুটি CPU core সংখ্যার সমান) offload করাই ভালো।</p>"
+        ]
+      ]
+    },
+    "prototypes": {
+      "title": "Prototype, this, call/apply/bind",
+      "items": [
+        [
+          "<code>Array.prototype.map</code> কী করে এবং নিজে implement করো।",
+          "<p><code>map</code> একই length-এর একটা <strong>নতুন array</strong> return করে, প্রতিটা element-এ callback <code>(element, index, array)</code> call করে; original array mutate করে না।</p><pre><code>Array.prototype.myMap = function(cb) {\n  const out = [];\n  for (let i = 0; i < this.length; i++)\n    out.push(cb(this[i], i, this));\n  return out;\n};</code></pre><p><strong>Gotcha:</strong> সবসময় নতুন array return করে (তাই chaining কাজ করে); callback-এর return value-ই নতুন element হয়। <strong>নোট:</strong> এটা simplified version — spec-correct native <code>map</code> sparse hole skip করে (hole preserve করে), optional <code>thisArg</code> নেয়, callback validate করে আর শুরুতে <code>length</code> snapshot করে।</p>"
+        ],
+        [
+          "<code>Array.prototype.filter</code> কী করে এবং নিজে implement করো।",
+          "<p><code>filter</code> একটা <strong>নতুন array</strong> return করে যেখানে শুধু সেই element-গুলো থাকে যাদের জন্য callback truthy return করে।</p><pre><code>Array.prototype.myFilter = function(cb) {\n  const out = [];\n  for (let i = 0; i < this.length; i++)\n    if (cb(this[i], i, this)) out.push(this[i]);\n  return out;\n};</code></pre><p><strong>নোট:</strong> এটাও simplified — native <code>filter</code> sparse hole skip করে, optional <code>thisArg</code> নেয় আর callback validate করে।</p>"
+        ],
+        [
+          "Prototype এবং prototype chain কী?",
+          "<p>প্রতিটা object-এর একটা internal <code>[[Prototype]]</code> link থাকে (<code>__proto__</code> বা <code>Object.getPrototypeOf</code> দিয়ে access)। Property/method lookup chain ধরে উপরে delegate করে: <code>obj.foo</code> না পেলে obj-এর prototype, তারপর তার prototype... যতক্ষণ না পায় বা <code>null</code> আসে।</p><p>যেমন <code>arr.map()</code> resolve হয়: arr → <code>Array.prototype</code> (map এখানে) → <code>Object.prototype</code> → null। <code>prototype</code> হলো constructor function-এর একটা property, যেটা <code>new</code> দিয়ে বানানো instance-এর <code>[[Prototype]]</code> হয়; <code>__proto__</code> হলো instance-এর actual link; <code>Object.create(proto)</code> proto-কে prototype হিসেবে নিয়ে নতুন object বানায়।</p><p><strong>Gotcha:</strong> <code>Foo.prototype</code> (যাকে instance delegate করে) আর <code>instance.__proto__</code> (link) আলাদা concept হলেও একই object-কে point করে — <code>new Foo().__proto__ === Foo.prototype</code>।</p>"
+        ],
+        [
+          "Prototypal vs classical inheritance — class কি just sugar?",
+          "<p><strong>Classical inheritance</strong> (Java/C++) class থেকে instance-এ structure copy করে। <strong>JS</strong> prototypal inheritance ব্যবহার করে — objects runtime-এ chain দিয়ে অন্য objects-এ delegate করে।</p><p>ES6 <code>class</code> হলো constructor functions + prototypes-এর উপরে syntactic sugar — <code>class X { method(){} }</code> আসলে <code>method</code>-কে <code>X.prototype</code>-এ বসায়। ভেতরে আলাদা কোনো class system নেই।</p>"
+        ],
+        [
+          "<code>this</code> binding rules গুলো priority অনুযায়ী বলো।",
+          "<p>Priority high → low:</p><ol><li><strong>new binding</strong> — <code>new Fn()</code> → freshly created object।</li><li><strong>Explicit</strong> — <code>call</code>/<code>apply</code>/<code>bind</code> → provided value।</li><li><strong>Implicit</strong> — <code>obj.method()</code> → obj (dot-এর আগের object)।</li><li><strong>Default</strong> — plain <code>fn()</code> → global object (non-strict) বা <code>undefined</code> (strict)।</li><li><strong>Arrow functions</strong> — নিজের <code>this</code> নেই; enclosing scope থেকে lexically capture করে; call/apply/bind এটা override করতে পারে না।</li></ol><p><code>this</code> ঠিক হয় function কীভাবে call হলো তার উপরে, কোথায় define হলো তার উপরে নয় (arrow ছাড়া)।</p><pre><code>setTimeout(o.greet, 0);          // undefined (bare call)\nsetTimeout(() => o.greet(), 0);  // preserved\nsetTimeout(o.greet.bind(o), 0);  // bound</code></pre><p><strong>Gotcha:</strong> object-এ arrow method একটা trap — <code>{ greet: () => this.name }</code> বাইরের (প্রায়ই global) this capture করে, object-এর নয়; this-dependent logic-এ shorthand method ব্যবহার করো।</p>"
+        ],
+        [
+          "<code>call</code> vs <code>apply</code> vs <code>bind</code> — পার্থক্য কী?",
+          "<p><code>call(thisArg, a, b)</code> — সঙ্গে সঙ্গে invoke করে, args comma-separated। <code>apply(thisArg, [a, b])</code> — সঙ্গে সঙ্গে invoke করে, args একটা array হিসেবে। <code>bind(thisArg, ...)</code> — invoke করে না, বরং thisArg-এ permanently bound একটা <strong>নতুন function</strong> return করে; callback-এর জন্য ভালো।</p><p>Mnemonic: <strong>Apply = Array</strong>; <strong>Call = Comma</strong>; <strong>Bind = later</strong>।</p>"
+        ]
+      ]
+    },
+    "reactrender": {
+      "title": "React Rendering ও Performance",
+      "items": [
+        [
+          "React কী? এটা <strong>library</strong> না <strong>framework</strong>?",
+          "React একটা <strong>library</strong> যা component থেকে UI build করার জন্য — ইচ্ছাকৃতভাবে routing, data fetching আর build setup আপনার উপর ছেড়ে দেয়। <em>Next.js</em>-এর মতো framework React-এর উপর দাঁড়িয়ে routing, SSR/SSG, bundling আর convention যোগ করে। তাই <code>React একটা framework</code> বললে interviewer correction দিতে চাইবে — React কে library বলাই সঠিক।"
+        ],
+        [
+          "<code>React is not magic</code> — actual flow টা কী?",
+          "Component JSX return করে → JSX compile হয়ে <code>React.createElement</code>/<code>jsx()</code> call হয় → React একটা in-memory element tree (Virtual DOM) build করে → update-এ reconciliation আগের vs পরের tree diff করে → commit phase minimal real-DOM mutation apply করে। কাজটা দুই ভাগে ভাগ হয়: <strong>render phase</strong> (পরিবর্তন compute করে, pause/restart করা যায়) আর synchronous <strong>commit phase</strong> (DOM-এ apply করে)।"
+        ],
+        [
+          "JSX কী এবং কী নয়?",
+          "JSX একটা <strong>syntax extension</strong> যা দেখতে HTML-এর মতো কিন্তু compile হয়ে JS function call-এ পরিণত হয়; এটা HTML নয়, browser সরাসরি চালাতে পারে না — Babel/SWC একে transpile করে। HTML থেকে পার্থক্য: <code>className</code> (class নয়), <code>htmlFor</code> (for নয়), camelCase event (<code>onClick</code>), আর JS embed করতে <code>{expressions}</code>। যেমন <code>&lt;div className='x' /&gt;</code> হয়ে যায় <code>jsx('div', { className: 'x' })</code>। <strong>Gotcha:</strong> browser JSX চালাতে পারে না কারণ এটা valid JS/HTML নয় — ship করার আগেই compile করে ফেলা হয়।"
+        ],
+        [
+          "Babel/SWC কী কাজ করে?",
+          "এরা modern JS (এবং JSX/TS) কে browser-compatible JavaScript-এ <strong>transpile</strong> করে: JSX→<code>createElement</code>/<code>jsx</code> call, আর ES2020+ syntax→পুরোনো equivalent-এ। <strong>SWC</strong> হলো Babel-এর Rust-based একটা দ্রুততর alternative যা Next.js ব্যবহার করে। এটা build toolchain-এর অংশ।"
+        ],
+        [
+          "Render phase vs commit phase, reconciliation আর key — কীভাবে কাজ করে?",
+          "<strong>Render phase</strong>-এ React component call করে, নতুন element tree build করে, আর heuristic দিয়ে আগেরটার সাথে diff করে (reconciliation)। <strong>Commit phase</strong> (synchronous) computed minimal DOM mutation apply করে আর layout effect চালায়। এরপর browser paint করে (React-এর বাইরে)। passive effect (<code>useEffect</code>) সাধারণত paint-এর পরে চলে, তবে interaction-caused effect paint-এর আগেও run হতে পারে। Diffing heuristic: (1) ভিন্ন element type → পুরোনো subtree বাদ, নতুন build; (2) একই type → in place update; (3) list <code>key</code> দিয়ে match হয়। Stable key element-কে render-জুড়ে identity দেয় যাতে React সঠিক instance/state reuse করে। Index-as-key identity-কে position-এর সাথে বাঁধে; insert/reorder করলে React mis-match করে → wrong state (ভুল input row-এ text) + extra DOM কাজ। <strong>Gotcha:</strong> index key দিলে state data item-এ নয়, position-এ attach হয়।"
+        ],
+        [
+          "Virtual DOM vs real DOM — interview-এ আসলে কী বলবেন?",
+          "React একটা lightweight in-memory representation রাখে, নতুন vs আগেরটা diff করে, তারপর শুধু minimal real-DOM পরিবর্তন commit করে। <code>Virtual DOM</code> মূলত একটা mental model / marketing term, precise API নয় — internally React <strong>Fiber</strong> tree ব্যবহার করে। Real DOM mutate করা ধীর, তাই minimal update batch করাই win। কিছু framework (Svelte, Solid) VDOM skip করে সরাসরি update-এ compile করে। <strong>Gotcha:</strong> VDOM সবসময় DOM থেকে দ্রুত — এটা দাবি করবেন না; win হলো DOM write minimize/batch করা, আর compiler approach (Svelte/Solid) এটাকে হারাতে পারে।"
+        ],
+        [
+          "State vs props — পার্থক্য কী?",
+          "<strong>State</strong> component-owned, সময়ের সাথে mutable, এবং এটা পরিবর্তন করলে re-render trigger হয়। <strong>Props</strong> হলো parent থেকে আসা read-only input। কখনো props বা state সরাসরি mutate করবেন না — দুটোকেই immutable হিসেবে treat করুন।"
+        ],
+        [
+          "Immutable state update কেন জরুরি?",
+          "React re-render করবে কিনা সেটা reference compare করে (shallow equality) ঠিক করে, deep value দিয়ে নয়। কোনো object/array in place mutate করলে reference একই থাকে, তাই React (এবং <code>React.memo</code>/hook) update <strong>skip</strong> করতে পারে — UI stale হয়ে যায়। সবসময় নতুন object/array বানান, যেমন <code>setItems([...items, x])</code>, <code>setUser({...user, name})</code>। <strong>Gotcha:</strong> এটা সরাসরি <code>React.memo</code> আর hook dependency comparison (<code>Object.is</code>)-এর সাথে যুক্ত।"
+        ],
+        [
+          "Batching কী?",
+          "React একাধিক <code>setState</code> call-কে group করে একটাই re-render-এ পরিণত করে। React 18-এ batching <strong>automatic</strong> — এমনকি promise, <code>setTimeout</code> আর native event handler-এর ভেতরেও (আগে শুধু React event handler-এর ভেতরে হতো)। সত্যিই দরকার হলে synchronous update force করতে <code>flushSync</code> ব্যবহার করুন।"
+        ],
+        [
+          "Stale state / stale closure কী এবং fix কী?",
+          "<code>setState</code>-এর ঠিক পরে state পড়লে পুরোনো value পাবেন কারণ update schedule হয়, synchronously apply হয় না, আর current render-এর variable গুলো closure দিয়ে capture থাকে। Fix হলো functional updater: <code>setCount(prev => prev + 1)</code>, যা সবসময় সর্বশেষ value-এর উপর কাজ করে — previous state-এর উপর ভিত্তি করে update বা increment batch করার সময় অপরিহার্য। যেমন <code>setCount(count+1); setCount(count+1)</code> → মোট +1 (stale); কিন্তু <code>setCount(c=&gt;c+1); setCount(c=&gt;c+1)</code> → +2।"
+        ],
+        [
+          "Functional vs class component; lifecycle কীভাবে <code>useEffect</code>-এ map হয়?",
+          "Modern React function component + hooks ব্যবহার করে। Class lifecycle গুলো map হয়: <code>componentDidMount</code> → <code>useEffect(fn, [])</code>; <code>componentDidUpdate</code> → <code>useEffect(fn, [deps])</code>; <code>componentWillUnmount</code> → <code>useEffect</code> থেকে return করা cleanup function। একটা effect-ই mount+update+unmount প্রকাশ করতে পারে।"
+        ],
+        [
+          "<code>useEffect</code> — গভীরভাবে কীভাবে কাজ করে?",
+          "Effect render commit হওয়ার পরে চলে; passive effect সাধারণত browser paint-এর <strong>পরে</strong>, তবে interaction-caused effect paint-এর আগেও চলতে পারে (pre-paint measurement/positioning-এ <code>useLayoutEffect</code>)। মূল উদ্দেশ্য: external system-এর সাথে synchronize করা। Deps: কোনো array না → প্রতি render-এর পরে; <code>[]</code> → mount-এ একবার (unmount-এ cleanup); <code>[deps]</code> → mount-এ এবং যখনই কোনো dep পরিবর্তন হয় (<code>Object.is</code> দিয়ে compare)। Cleanup পরের effect run-এর আগে এবং unmount-এ চলে। Pitfall: missing deps (stale value), stale closure, infinite loop (effect এমন state set করে যা আবার dep), cleanup/abort ছাড়া fetch (race condition, unmount-এর পরে set state)। <strong>Gotcha:</strong> <code>You Might Not Need an Effect</code> — render-এর জন্য data transform বা user event handle করতে effect ব্যবহার করবেন না; render-এ বা handler-এ compute করুন।"
+        ],
+        [
+          "<code>useRef</code> — গভীরভাবে কীভাবে কাজ করে?",
+          "<code>useRef(initial)</code> একটা mutable <code>{ current }</code> object return করে যা render-জুড়ে persist করে, আর <code>.current</code> mutate করলে re-render <strong>trigger হয় না</strong> (ref একটা plain JS object বলে React পরিবর্তনটা জানে না)। যে info screen-এ দেখাতে চান তা ref-এ রাখা উচিত নয়। Use: DOM node reference, timer/interval ID, previous value, এমন যেকোনো mutable value যা render-এ ব্যবহার হয় না। <code>useRef</code> vs <code>useState</code>: পরিবর্তন re-render করে screen-এ দেখাতে হলে state; না দেখালে ref।"
+        ],
+        [
+          "Memoization — <code>memo</code> / <code>useMemo</code> / <code>useCallback</code> কীভাবে কাজে লাগে?",
+          "<code>React.memo(Component)</code> re-render skip করে যখন props আগের render-এর সাথে shallow-equal; প্রতি parent render-এ নতুন object/array বানালে React সেটা changed ধরে নেয়। এটা optimization, <strong>guarantee নয়</strong>। <code>useMemo(fn, deps)</code> expensive computation-এর return value cache করে, শুধু deps পরিবর্তনে recompute করে। <code>useCallback(fn, deps)</code> function reference cache করে; <code>useCallback(fn, deps)</code> ≡ <code>useMemo(() =&gt; fn, deps)</code>। সাহায্য করে: memo-wrapped child-কে stable callback/object pass করলে, বা সত্যিকারের expensive recompute এড়াতে। ক্ষতিকর: সবকিছু wrap করলে memory + comparison overhead বাড়ে আর initial render ধীর হয়; একটা <code>always new</code> value পুরো component-এর memoization ভাঙে। Referential equality-ই মূল কথা। <strong>Gotcha:</strong> child যদি সত্যিই <code>memo</code>-তে wrap না থাকে আর সব props stable না হয়, তবে বহু <code>useMemo</code>/<code>useCallback</code> অর্থহীন।"
+        ],
+        [
+          "Controlled vs uncontrolled component — পার্থক্য আর tradeoff কী?",
+          "<strong>Controlled:</strong> input value React state + <code>onChange</code> দিয়ে driven, React-ই single source of truth (সহজ validation, conditional disabling, predictability)। <strong>Uncontrolled:</strong> DOM নিজে value ধরে রাখে, ref দিয়ে পড়েন (<code>inputRef.current.value</code>) — সহজ, কম code, quick form বা file input-এর জন্য ভালো। Tradeoff: control/validation/predictability বনাম simplicity/কম re-rendering।"
+        ],
+        [
+          "Prop drilling কী, আর store library ছাড়া alternative কী?",
+          "<strong>Prop drilling</strong> মানে এমন intermediate component-গুলোর মধ্য দিয়ে props pass করা যারা সেগুলো ব্যবহারই করে না। Redux/Zustand-এর আগে alternative: (1) state lift/colocate — closest common ancestor-এ সরান, বা ব্যবহারের কাছাকাছি push down করুন; (2) component composition — <code>children</code>/slot দিয়ে JSX pass করুন যাতে data-owner সরাসরি consumer render করে; (3) Context API — subtree-জুড়ে share; (4) custom hook। Store library তখনই যুক্তিযুক্ত যখন state global, ঘন ঘন update হয়, distant অংশে shared, আর traceability/devtools/middleware দরকার (এবং Context অতিরিক্ত re-render ঘটাবে)। <strong>Gotcha:</strong> Context কোনো performance tool নয় — value পরিবর্তনে প্রতিটি consumer re-render হয়; context split করুন বা value memoize করুন।"
+        ],
+        [
+          "React-এ composition over inheritance মানে কী?",
+          "React composition-কে প্রাধান্য দেয়: class inheritance-এর বদলে component nest করে এবং <code>children</code>/render prop/slot pass করে complex UI build করুন। যেমন একটা generic <code>&lt;Dialog&gt;</code> তার body-র জন্য <code>children</code> accept করে। এটা বেশি flexible এবং brittle class hierarchy এড়ায়।"
+        ],
+        [
+          "Performance technique — lazy loading vs virtualization vs infinite scroll vs <code>useTransition</code>; এরা কোন আলাদা সমস্যা solve করে?",
+          "এই চারটা আলাদা সমস্যা solve করে — গুলিয়ে ফেলবেন না। <strong>Lazy loading / code splitting</strong> (<code>React.lazy</code> + <code>Suspense</code>, dynamic <code>import()</code>): component-এর JS code প্রথম render পর্যন্ত defer করে initial bundle ছোট করে। <strong>List virtualization / windowing</strong> (<code>react-window</code>): শুধু visible row-গুলো (সাথে সামান্য overscan) DOM-এ render করে, scroll-এ off-screen node recycle হয় — তাই dataset যত বড়ই হোক DOM node সংখ্যা ছোট থাকে। <strong>Infinite scroll:</strong> user শেষের কাছে scroll করলে API দিয়ে আরও data (নতুন row) load করে; DOM size cap করে না — প্রায়ই virtualization-এর সাথে combine করা হয়। <strong>useTransition:</strong> একটা state update-কে non-urgent Transition mark করে, যাতে urgent update (typing) responsive থাকে আর expensive re-render background-এ চলে; <code>[isPending, startTransition]</code> return করে এবং pending transition interrupt করা যায়।<table><thead><tr><th>Technique</th><th>যে সমস্যা solve করে</th></tr></thead><tbody><tr><td>Lazy loading</td><td>শুরুতে বেশি JS ship হচ্ছে</td></tr><tr><td>Virtualization</td><td>already-loaded data-র জন্য অনেক বেশি DOM node</td></tr><tr><td>Infinite scroll</td><td>পুরো dataset একবারে load হচ্ছে</td></tr><tr><td>useTransition</td><td>expensive re-render responsiveness block করছে</td></tr></tbody></table>One-liner: lazy = কম JS shipped; virtualization = কম DOM node render; infinite scroll = ধাপে ধাপে আরও data load; useTransition = non-urgent render deprioritize করে UI responsive রাখা। <strong>Gotcha:</strong> virtualization আর infinite scroll complementary (একটা DOM সীমিত করে, অন্যটা data); <code>useTransition</code> কাজ কমায় না — কাজ reorder করে।"
+        ]
+      ]
+    },
+    "reacteco": {
+      "title": "React Ecosystem ও Rendering Strategy",
+      "items": [
+        [
+          "Redux আসলে কী, আর <code>reducer</code> কীভাবে কাজ করে? কখন এটা justified আর কখন overkill?",
+          "<p>Redux পুরো app state একটা single central store-এ রাখে। আপনি <code>action</code> dispatch করেন — এগুলো plain object যা describe করে কী ঘটেছে; তারপর একটা pure <code>reducer (prevState, action) =&gt; nextState</code> next state compute করে, কিন্তু previous state কখনো mutate করে না।</p><p>এটা তখনই justified যখন state অনেক component জুড়ে shared/traceable, আর আপনি predictable updates, time-travel debugging, middleware চান। শুধু local UI state-এর জন্য Redux overkill।</p><p><strong>Gotcha:</strong> reducer অবশ্যই pure হতে হবে (কোনো side effect নেই, কোনো mutation নেই) — তাহলেই React/Redux reference compare করে আর action গুলো replay করতে পারে।</p>"
+        ],
+        [
+          "Zod কী, আর TypeScript থাকার পরও runtime validation কেন দরকার?",
+          "<p>Zod একটা TypeScript-first runtime schema validation library। একবার schema define করেন, তারপর <code>z.infer&lt;typeof Schema&gt;</code> দিয়ে TS type derive করেন।</p><p>Runtime validation দরকার কারণ TypeScript type compile time-এ erase হয়ে যায় — runtime-এ user input, API response, env var, <code>JSON.parse</code> এর result সব untyped/untrusted হয়ে আসে। TS শুধু আপনার নিজের code-এর internal consistency check করে, কোনো network response যে আপনার interface-এর সাথে মেলে তা verify করতে পারে না। <code>Schema.parse(input)</code> typed validated result return করে অথবা <code>ZodError</code> throw করে; <code>safeParse</code> একটা result object দেয়। Validation boundary-তেই হওয়া উচিত — request DTO, API response parsing, form input, env config — typed code-এ data ঢোকার আগে।</p><p><strong>Gotcha:</strong> <code>const data: User = await res.json()</code> একটা মিথ্যা যা compiler বিশ্বাস করে নেয় — zero runtime checking; Zod এটাকে real করে দেয়।</p>"
+        ],
+        [
+          "Type-safe routing (যেমন TanStack Router) কী দেয়, আর React Router-এর সাথে এর পার্থক্য কী?",
+          "<p>একটা type-safe router আপনাকে typed routes, params আর search params দেয়, সাথে route loader আর route-level code splitting। Compiler-ই bad link বা bad param ধরে ফেলে।</p><p>Contrast: React Router mature আর flexible, কিন্তু historically কম type-inference; একটা fully type-safe router compile-time guarantee দেয়, তবে setup একটু বেশি লাগে। মূল principle — router navigation, matching, guard আর data loading handle করে; heavy business logic router-এ নয়, service-এ থাকা উচিত।</p>"
+        ],
+        [
+          "CSR, SSR আর SSG-এর পার্থক্য কী, আর <em>hydration</em> বলতে কী বোঝায়?",
+          "<p><strong>CSR:</strong> server প্রায় খালি একটা HTML shell + JS bundle পাঠায়, browser সব render করে — first paint slow, extra কাজ ছাড়া SEO দুর্বল, কিন্তু load-এর পর SPA navigation fast।</p><p><strong>SSR:</strong> server প্রতি request-এ HTML render করে — fast first contentful paint, ভালো SEO, server cost বেশি, TTFB server speed-এর উপর নির্ভর করে; তারপর hydration server HTML-এ listener attach করে।</p><p><strong>SSG:</strong> HTML build time-এ pre-render হয়, CDN থেকে serve হয় — সবচেয়ে fast/cheap, কিন্তু rebuild না হওয়া পর্যন্ত content stale হতে পারে (ISR এটা mitigate করে)।</p><p><strong>Hydration:</strong> downloaded JS server-rendered HTML-কে adopt করে, listener/state attach করে; এখানে একটা hydration gap থাকে যেখানে content দেখা যায় কিন্তু এখনো interactive না।</p><p>Choose করুন: static হলে SSG; per-request/personalized/SEO-critical হলে SSR; auth-এর পেছনে highly interactive app হলে CSR। Modern app সাধারণত প্রতি route-এ আলাদা strategy mix করে।</p>"
+        ],
+        [
+          "Server Components আর Client Components-এর মধ্যে পার্থক্য কী?",
+          "<p>React Server Components server-এ render হয় আর তাদের JS client-এ ship হয় না — তাই bundle ছোট থাকে আর direct server-only data access (DB, secret) করা যায়। Client Components (<code>'use client'</code> দিয়ে mark করা) browser-এ চলে interactivity-র জন্য: state, effect, event handler, browser API।</p><p>Boundary-র উপর দিয়ে আপনি শুধু serializable prop pass করতে পারেন; state সরাসরি দুটোর মধ্যে share করা যায় না। Next.js App Router-এ এটাই default: content-heavy অংশ SSR/RSC, আর <code>'use client'</code> দিয়ে interactive island।</p><p><strong>Gotcha:</strong> যে component <code>useState</code>/<code>useEffect</code>/<code>onClick</code>/<code>window</code> ব্যবহার করে সেটা অবশ্যই client component হতে হবে; server component bundle ছোট করে কিন্তু interactive হতে পারে না।</p>"
+        ]
+      ]
+    },
+    "backendq": {
+      "title": "Backend: Queue, Socket, Pattern",
+      "items": [
+        [
+          "Message queue আদৌ কেন ব্যবহার করব?",
+          "<p>একটা queue producer আর consumer-কে decouple করে, আর slow/unreliable কাজ background-এ করতে দেয় — ফলে client-কে fast response দিতে পারেন। Benefit: traffic spike absorb করা (buffer), producer/consumer-কে independent ভাবে scale করা, retry + failure handling, আর durability (consumer down থাকলেও message টিকে থাকে)।</p><p>Producer একটা message পাঠায়; queue সেটা durably store করে; consumer poll করে নিজের গতিতে process করে।</p><p><strong>Gotcha:</strong> কেন কাজটা request-এর মধ্যেই করি না? Slow task (AI call, email, image processing) HTTP response block করবে, latency খারাপ করবে, আর crash হলে কাজ হারিয়ে যাবে।</p>"
+        ],
+        [
+          "Amazon SQS-এর basics কী, আর এটা ঠিক কোন problem solve করে?",
+          "<p>SQS একটা fully managed message queue। Producer <code>SendMessage</code> call করে; message multiple server-এ redundant ভাবে store হয় (durable); consumer <code>ReceiveMessage</code> দিয়ে poll করে, process করে, তারপর explicitly <code>DeleteMessage</code> দিয়ে delete করে। SQS distributed system-কে decouple আর scale করতে দেয়, standard queue-এ at-least-once delivery সহ।</p><p>Specific problem: slow task-এর (AI inference, email, image processing) reliable async processing — HTTP request block না করে, built-in retry আর failure handling সহ।</p>"
+        ],
+        [
+          "SQS আর Socket.IO/WebSocket-এর মূল পার্থক্য কী?",
+          "<p>এরা সম্পূর্ণ আলাদা, complementary problem solve করে। <strong>SQS</strong> = durable, reliable background job processing — message persist করে, retry হয়, consumer downtime survive করে। <strong>Socket.IO/WebSocket</strong> = real-time, bidirectional UI update (browser-এ push); এটা durable নয় — client/server drop করলে in-flight message হারিয়ে যায়, কোনো built-in retry বা persistence নেই।</p><p>Pattern: long task reliably process করতে SQS ব্যবহার করুন (worker job pull করে AI model call করে), আর status change (processing… done) UI-কে জানাতে Socket.IO ব্যবহার করুন। Socket.IO একা কোনো durable job system নয়; আবার SQS browser-এ push করতে পারে না।</p><p><strong>Gotcha:</strong> Socket.IO একাই কেন যথেষ্ট নয়? কোনো durability নেই, retry নেই, guaranteed processing নেই — এটা live UI-র transport, job queue নয়।</p>"
+        ],
+        [
+          "Dead Letter Queue (DLQ) কী আর কেন দরকার?",
+          "<p>DLQ একটা আলাদা queue যেখানে message তখন গিয়ে পড়ে যখন সেটা N বার process fail করে (redrive policy-র <code>maxReceiveCount</code>)। <code>ReceiveCount</code> যখন <code>maxReceiveCount</code> ছাড়িয়ে যায়, SQS message-টা DLQ-তে move করে দেয়।</p><p>এটা poison-pill message-কে চিরকাল retry হয়ে queue block করা থেকে আটকায়, আর failure inspect/debug করার জন্য একটা জায়গা দেয়। Best practice: DLQ retention সর্বোচ্চ 14 day, আর <code>ApproximateNumberOfMessagesVisible</code>-এর উপর alarm রাখা।</p><p><strong>Gotcha:</strong> <code>maxReceiveCount</code> redrive policy-তে নিজে explicitly set করতে হয় (কোনো universal default ধরে নেবেন না)। transient failure-এর জন্য যথেষ্ট high রাখুন; Lambda consumer-এর জন্য AWS <code>maxReceiveCount</code> &ge; 5 recommend করে। এত high নয় যেন bad message চিরকাল loop করে।</p>"
+        ],
+        [
+          "Visibility timeout কী আর retry-তে এর ভূমিকা কী?",
+          "<p>Consumer একটা message receive করলে SQS সেটাকে visibility timeout (default 30 second, সর্বোচ্চ 12 hour) সময়ের জন্য অন্য consumer-এর কাছে invisible করে দেয়। Consumer-কে এই timeout-এর আগেই message process আর delete করতে হবে; নাহলে (crash বা too slow) message আবার visible হয়ে redeliver হয় — এটাই retry enable করে। প্রতি redelivery receive count বাড়ায় (যা DLQ threshold-এ feed করে)।</p><p>Timeout আপনার max processing time-এর &ge; রাখুন; Lambda-র জন্য AWS recommend করে 6&times; function timeout + <code>MaximumBatchingWindowInSeconds</code>। বেশি ছোট হলে process চলাকালীনই redeliver হবে (duplicate work); বেশি বড় হলে real failure-এর পর retry slow হবে।</p><p><strong>Gotcha:</strong> visibility timeout হলো retry-র পেছনের mechanism; এটা single delivery guarantee করে না (standard queue at-least-once)।</p>"
+        ],
+        [
+          "একটা ভালো retry strategy কেমন হওয়া উচিত, আর SQS-এ retry কীভাবে কাজ করে?",
+          "<p>Limited retry count, attempt-এর মাঝে exponential backoff, structured logging, আর permanent failure-এ DLQ-তে move — এগুলোই একটা ভালো strategy।</p><p>SQS-এ retry implicit: consumer শুধু message-টা delete করে না, তাই visibility timeout-এর পর সেটা আবার reappear করে; <code>maxReceiveCount</code> পার হলে এটা DLQ-তে চলে যায়।</p>"
+        ],
+        [
+          "Idempotency কী, আর SQS-এর মতো at-least-once queue-এ এটা কেন essential?",
+          "<p>একটা operation idempotent তখন, যখন সেটা একবার apply করলে যা হয়, multiple বার apply করলেও ঠিক একই result আসে। SQS standard-এর মতো at-least-once queue-এ এটা essential, কারণ একটা message একাধিকবার deliver/process হতে পারে (visibility timeout-এর পর redelivery, distributed duplicate)।</p><p>এটা অর্জন করুন idempotency key / dedup দিয়ে: processed message ID store করুন (Redis/DynamoDB) আর আগে handle হয়ে গেলে skip করুন; অথবা write-গুলোকে naturally idempotent design করুন (stable ID দিয়ে keyed upsert)।</p><p><strong>Gotcha:</strong> AWS বলে আপনাকে application idempotent ভাবে design করতে হবে — যাতে একই message একাধিকবার process হলেও adversely affected না হয়।</p>"
+        ],
+        [
+          "WebSocket / Socket.IO কখন queue-কেও হারিয়ে দেয়?",
+          "<p>WebSocket হলো client আর server-এর মধ্যে একটা persistent, bidirectional channel। Socket.IO এর উপর room, auto-reconnect আর fallback যোগ করে।</p><p>এটা real-time UI-র জন্য ব্যবহার করুন: chat, typing indicator, live progress bar, collaborative cursor, live dashboard। যখন browser-এ instant push দরকার — যা queue করতে পারে না — তখন এটা queue-কেও হারিয়ে দেয়।</p>"
+        ],
+        [
+          "Adapter design pattern টা ঠিকঠাক ভাবে কী, আর শুধু একটা <code>adapters</code> folder থেকে এটা আলাদা কোথায়?",
+          "<p>এটা শুধু <code>adapters</code> নামের একটা folder নয়। এটা একটা interface/contract + তার পেছনে interchangeable concrete implementation, যাতে caller concrete provider-এর উপর নয়, abstraction-এর উপর depend করে।</p><p>Example: <code>interface AIProvider { complete(prompt): Promise&lt;string&gt; }</code>, তারপর <code>OpenAIAdapter</code>, <code>AnthropicAdapter</code>, <code>LocalLlamaAdapter</code> সবাই এটা implement করে। Caller শুধু <code>AIProvider</code> ব্যবহার করে; আপনি caller code না বদলেই provider swap করতে পারেন (বা fallback chain যোগ করতে পারেন)। এটাই practice-এ abstraction + polymorphism — same interface, different implementation।</p><p><strong>Gotcha:</strong> এটাকে adapter বানায় কী, just একটা class থেকে? একটা stable interface যা caller-কে swappable implementation থেকে decouple করে (আর প্রায়ই কোনো third-party API-র shape-কে আপনার interface-এ adapt করে)।</p>"
+        ],
+        [
+          "DTO কী, আর validation ঠিক কোথায় হওয়া উচিত?",
+          "<p>একটা DTO (Data Transfer Object) হলো একটা plain object যা boundary পার হওয়া data-র shape define করে (যেমন একটা HTTP request/response body)।</p><p>Validation (যেমন Zod) সেই boundary-তেই হওয়া উচিত: business logic-এ ঢোকার আগেই incoming request DTO-কে parse আর validate করুন, যাতে internal code বিশ্বাস করতে পারে data well-formed আর typed।</p>"
+        ]
+      ]
+    },
+    "sysdesign": {
+      "title": "OOP, Docker, Git, DB, Security",
+      "items": [
+        [
+          "OOP কী, আর এর 4 pillar গুলো এক লাইনের example সহ বলো?",
+          "<p>OOP মানে data আর behavior কে object-এ bundle করে real-world entity model করা। চারটা pillar:</p><ul><li><strong>Encapsulation</strong> — data + behavior একসাথে bundle করে internal state hide করা; যেমন <code>BankAccount</code> এর <code>deposit()</code> expose করে কিন্তু <code>balance</code> private রেখে invariant protect করে।</li><li><strong>Abstraction</strong> — implementation hide করে minimal interface expose করা; <code>PaymentService.pay()</code> Stripe না PayPal সেটা hide করে।</li><li><strong>Inheritance</strong> — base class extend করে reuse; overuse করলে tight coupling আর brittle hierarchy হয়।</li><li><strong>Polymorphism</strong> — same interface, different implementation; <code>EmailNotifier</code> আর <code>SmsNotifier</code> দুটোই <code>send()</code> implement করে, caller জানে না কোনটা চলছে।</li></ul><p>একটা <strong>abstract class</strong> instantiate করা যায় না — শুধু shared behavior + required abstract method define করে যা subclass কে implement করতেই হয়। আর <strong>composition over inheritance</strong> মানে deep inheritance (is-a) এর বদলে ছোট object থেকে behavior assemble করা (has-a) prefer করা। TS-এ classes, <code>interface</code>/<code>implements</code>, আর constructor দিয়ে dependency injection এসব realize করে। <strong>Gotcha:</strong> প্রতিটা pillar-এর জন্য এক-লাইন example ready রাখবে — interviewer প্রায়ই polymorphism-এর code চায়।</p>"
+        ],
+        [
+          "Docker-এ image, container, আর Docker Compose এর মধ্যে পার্থক্য কী?",
+          "<p>তিনটা আলাদা concept:</p><ul><li><strong>Image</strong> — তোমার app + runtime + dependencies + config এর একটা read-only template, যা Dockerfile থেকে layer-by-layer build হয়।</li><li><strong>Container</strong> — image এর একটা running, isolated instance; host kernel share করে কিন্তু Linux namespaces + cgroups দিয়ে নিজস্ব filesystem আর network namespace পায়।</li><li><strong>Docker Compose</strong> — একটা YAML file দিয়ে multi-container app (API + Postgres + Redis + worker) একসাথে define আর এক command-এ run করার tool।</li></ul><p><strong>Gotcha:</strong> image = blueprint (class), container = running instance (object); container ephemeral, তাই persistent data এর জন্য volume use করতে হয়।</p>"
+        ],
+        [
+          "Container আর virtual machine এর মধ্যে পার্থক্য কী, আর tradeoff কোথায়?",
+          "<p>একটা <strong>VM</strong> hypervisor এর উপর নিজস্ব guest kernel সহ পুরো OS virtualize করে — strong isolation দেয় কিন্তু heavy (GB-scale, boot হতে কয়েক ten of seconds লাগে)। একটা <strong>container</strong> host kernel share করে আর শুধু process/filesystem/network isolate করে — lightweight (MB-scale, sub-second start)। Container single OS kernel থেকে যা দরকার তাই request করে, তাই VM-এর তুলনায় per server 2–3x বেশি app pack করা যায়। Docker app টাকে সব dependency সহ package করে দিয়ে <em>works on my machine</em> problem solve করে। <strong>Gotcha:</strong> tradeoff হলো — VM stronger isolation/security দেয় (separate kernel), container density/speed দেয় কিন্তু kernel share করে, তাই একটা kernel vuln সব container কে affect করে।</p>"
+        ],
+        [
+          "Git-এ merge আর rebase এর পার্থক্য কী, আর কখন কোনটা use করবে?",
+          "<p>দুটোই branch-এর মধ্যে change integrate করে, কিন্তু আলাদাভাবে:</p><ul><li><strong>Merge</strong> দুটো branch combine করে একটা merge commit তৈরি করে যার দুটো parent থাকে; history যেমন ঘটেছে তেমনই preserve করে (non-destructive) কিন্তু non-linear graph বানায়।</li><li><strong>Rebase</strong> তোমার commit গুলো অন্য base-এর উপর replay করে linear history বানায় — কিন্তু history rewrite করে (নতুন commit SHA)।</li></ul><p>ব্যবহার: share করার আগে local/private branch clean up করতে rebase (linear, easy bisect/review); shared branch integrate করে context preserve করতে merge। <strong>Golden Rule:</strong> যে branch অন্যরা pull করেছে (public/shared) সেটা কখনো rebase করবে না। Conflict দুটোতেই হয়; rebase-এ per-commit resolve করতে হতে পারে। <strong>Gotcha:</strong> shared branch rebase করলে কেন এড়াবে? Changed SHA teammate-দের copy থেকে diverge করে, commit duplicate হয় আর তাদের history ভেঙে merge hell তৈরি হয়।</p>"
+        ],
+        [
+          "SQL vs NoSQL, index, আর normalization — এগুলো কীভাবে কাজ করে?",
+          "<p><strong>SQL</strong> (Postgres/MySQL): structured schema, relation, ACID transaction, powerful join/complex query — relational আর consistency-critical data এর জন্য best। <strong>NoSQL</strong> (MongoDB ইত্যাদি): flexible schema, document/key-value model, certain pattern-এ easy horizontal scaling, historically weaker cross-document transaction — unstructured বা দ্রুত-evolving data এর জন্য best।</p><p>একটা <strong>index</strong> হলো data structure (সাধারণত B-tree) যা full table scan avoid করে read/filter/sort দ্রুত করে — extra storage আর slower write এর cost-এ (index update করতে হয়)। Hash index equality lookup-এ O(1) দেয়, B-tree range/ordering support করে। <strong>Normalization</strong> (redundancy remove করতে data split করা, relation দিয়ে integrity enforce) vs <strong>denormalization</strong> (join avoid করতে data duplicate করে read speed বাড়ানো): write integrity-র জন্য normalize, read performance-এর জন্য denormalize। <strong>Gotcha:</strong> index কখন hurt করে? Write-heavy table-এ — প্রতি insert/update index maintain করে; তাই সবকিছু index করবে না।</p>"
+        ],
+        [
+          "Password hashing, salting, আর JWT vs session — security fundamentals বলো?",
+          "<p>Password <strong>hash</strong> করো, <strong>encrypt</strong> করো না। Hashing one-way — hash store করে input কে hash করে compare করে verify করা হয়; password validation-এর জন্য এটাই সঠিক approach। তুমি কখনোই password decrypt করতে পারবে না: encryption two-way, তাই key leak হলে প্রতিটা password expose হয়ে যায়। Slow, adaptive hash use করো — <strong>Argon2id</strong> (first choice), <strong>scrypt</strong>, বা <strong>bcrypt</strong> — fast hash যেমন raw SHA-256/MD5 নয়, কারণ ওগুলো attacker কে billions of guess/second করতে দেয়।</p><p><strong>Salting:</strong> hashing-এর আগে যোগ করা random per-password value, যাতে identical password আলাদা hash দেয় — rainbow table defeat করে আর duplicate password hide করে; modern algorithm (bcrypt/Argon2) salting internally handle করে। <strong>Pepper:</strong> সব password-এ shared একটা secret, DB থেকে আলাদা (env/secret manager/HSM) store করা — DB leak হলে defense-in-depth।</p><p><strong>JWT vs session:</strong> session state server-side store করে আর client কে opaque session ID দেয় (easy to revoke, প্রতি request-এ server lookup); JWT self-contained signed token, server stateless-ভাবে verify করে (scalable, কিন্তু expiry-র আগে revoke করা কঠিন)। Secret সবসময় env var/secret manager-এ রাখো কখনো code-এ নয়; sensitive data log করো না; hash compare করতে constant-time comparison use করো। <strong>Gotcha:</strong> password-এ কেন SHA-256 নয়? এটা fast হওয়ার জন্য design করা — password storage-এর জন্য ঠিক উল্টো। আর hash করলেও salt কেন? Salt ছাড়া identical password একই hash share করে আর rainbow table instantly crack করে।</p>"
+        ]
+      ]
+    },
+    "dsa": {
+      "title": "DSA ও Problem Solving",
+      "items": [
+        [
+          "একটা algorithmic problem কীভাবে approach করবে?",
+          "<p>একটা structured process follow করবে:</p><ol><li>Input, output, rule নিজের ভাষায় restate করো।</li><li>সঠিক data structure identify করো।</li><li>Edge case enumerate করো (empty, single element, duplicate, negative, overflow)।</li><li>প্রথমে brute-force দিয়ে শুরু করো, তারপর optimize করো।</li><li>Code লেখার আগে একটা small example আর একটা edge case দিয়ে dry-run করো।</li></ol><p>Tradeoff গুলো aloud communicate করবে। <strong>Gotcha:</strong> interviewer process দেখতে চায় — brute force first, then optimize — কোনো memorized answer নয়।</p>"
+        ],
+        [
+          "Array indexing, loop tracing আর off-by-one error সম্পর্কে বলো?",
+          "<p>Array <strong>0-based</strong>: i-th element (1-indexed) থাকে index <code>i-1</code>-এ; valid index <code>0..length-1</code>। Off-by-one আসে loop bound-এ <code>&lt;=</code> vs <code>&lt;</code> confuse করা থেকে, আর position কে index ভেবে ভুল করা থেকে। Trace করার সময় সবসময় first আর last iteration check করবে।</p>"
+        ],
+        [
+          "Time complexity আর Big-O এর intuition বলো?",
+          "<p><strong>Big-O</strong> describe করে input size n বাড়লে runtime কীভাবে grow করে। Common class গুলো:</p><ul><li><code>O(1)</code> — constant।</li><li><code>O(log n)</code> — প্রতি step-এ halve হওয়া (binary search, balanced BST)।</li><li><code>O(n)</code> — single pass।</li><li><code>O(n log n)</code> — good sort।</li><li><code>O(n²)</code> — nested loop।</li><li><code>O(V+E)</code> — graph traversal।</li></ul><p>n এর উপর একটা loop হলো O(n); nested loop O(n²); recursion-এ branching factor কে depth দিয়ে multiply করে।</p>"
+        ],
+        [
+          "Space complexity কী, আর extra memory কোথা থেকে আসে?",
+          "<p><strong>Space complexity</strong> মানে input ছাড়া বাড়তি memory। Source গুলো:</p><ul><li>Recursion call stack — height h এর tree-তে <code>O(h)</code>, worst case <code>O(n)</code>।</li><li>Explicit stack/queue।</li><li>Graph-এ visited set — <code>O(V)</code>।</li><li>Memo table — <code>O(states)</code>।</li></ul>"
+        ],
+        [
+          "Tree কী, আর basic terms গুলো define করো?",
+          "<p>একটা <strong>tree</strong> হলো node + edge এর hierarchical structure যার একটা root থাকে, কোনো cycle নেই, আর প্রতিটা node-এর একটা parent থাকে (root ছাড়া)। Terms:</p><ul><li><strong>root</strong> — top node।</li><li><strong>parent/child, sibling</strong> — relation।</li><li><strong>leaf</strong> — যার কোনো child নেই।</li><li><strong>subtree</strong> — একটা node + তার descendant।</li><li><strong>depth</strong> — root থেকে একটা node পর্যন্ত distance।</li><li><strong>height</strong> — একটা node থেকে leaf পর্যন্ত longest path।</li></ul><p>Height search/recursion cost drive করে কারণ operation প্রায়ই <code>O(height)</code>-এ চলে।</p>"
+        ],
+        [
+          "Binary Tree আর Binary Search Tree (BST) এর পার্থক্য কী?",
+          "<p><strong>Binary Tree</strong> = প্রতিটা node-এর সর্বোচ্চ 2 child, কোনো ordering rule নেই। <strong>BST</strong> এর সাথে যোগ হয় ordering invariant: প্রতিটা node-এর জন্য left-subtree এর সব value <strong>&lt;</strong> node <strong>&lt;</strong> right-subtree এর সব value। এটা balanced হলে <code>O(log n)</code> search enable করে: target কে node-এর সাথে compare করো, ছোট হলে left যাও, বড় হলে right, repeat — প্রতি step-এ tree-র অর্ধেক eliminate করে। <strong>Gotcha:</strong> বলবে যে <code>O(log n)</code> শুধু balanced হলেই হয়; একটা BST inherently balanced না।</p>"
+        ],
+        [
+          "Balanced আর unbalanced tree এর মধ্যে পার্থক্য কী?",
+          "<p><strong>Balanced</strong> মানে height <code>O(log n)</code> থাকে। AVL strict height-balance enforce করে (subtree height difference ≤ 1); Red-Black color/black-height rule দিয়ে longest path-কে shortest-এর তুলনায় bounded রাখে — তাই strict 1-difference জরুরি নয়। একটা unbalanced BST (sorted value 1,2,3,4,5 insert করলে) একটা linked list-এ degenerate হয়ে height হয়ে যায় <code>O(n)</code>, তাই search/insert/delete সব <code>O(n)</code>-এ degrade করে। <strong>Gotcha:</strong> সবসময় দুটো case-ই বলবে — balanced-এ <code>O(log n)</code>, worst-case-এ <code>O(n)</code>।</p>"
+        ],
+        [
+          "Self-balancing tree (AVL, Red-Black) কীভাবে কাজ করে?",
+          "<p>এগুলো insert/delete-এ restructure করে height ~<code>O(log n)</code> রাখে। <strong>AVL</strong> rotation দিয়ে strict height-balance enforce করে (faster lookup, write-এ বেশি rotation)। <strong>Red-Black</strong> node গুলোকে red/black color করে আর rule enforce করে (root black, red node-এর child black, সব path-এ equal black-height) rotation + recoloring দিয়ে, যাতে longest path ≤ 2x shortest থাকে — তাই সব operation <code>O(log n)</code>। এরা ordered map/set implementation-এ used হয় (Java <code>TreeMap</code>/<code>TreeSet</code>, C++ <code>std::map</code>/<code>std::set</code>)। <strong>Gotcha:</strong> AVL বেশি rigidly balanced (better read); Red-Black একটু বেশি imbalance allow করে (fewer rotation, better write) — তাই অনেক library Red-Black pick করে।</p>"
+        ],
+        [
+          "HashMap কীভাবে কাজ করে, আর কখন O(n)-এ degrade করে?",
+          "<p><strong>HashMap</strong> key→value store করে <code>hash(key)</code> compute করে একটা bucket index-এ map করে। Average <code>O(1)</code> insert/search/delete। <strong>Collision</strong> (দুটো key একই bucket-এ) resolve হয় chaining (প্রতি bucket-এ list/tree) বা open addressing (পরের free slot probe করা) দিয়ে। Worst case (অনেক collision / খারাপ hash) <code>O(n)</code>-এ degrade করে। <strong>HashMap vs TreeMap:</strong> HashMap = unordered, average <code>O(1)</code>; TreeMap (একটা balanced BST) = ordered, <code>O(log n)</code>। <strong>Gotcha:</strong> HashMap কখন <code>O(n)</code>? Pathological collision বা poor hash function-এ; modern Java long bucket কে <code>O(log n)</code>-এ treeify করে।</p>"
+        ],
+        [
+          "DFS (depth-first search) কীভাবে কাজ করে?",
+          "<p><strong>DFS</strong> এক branch যতদূর সম্ভব গভীরে যায়, তারপর backtrack করে। <strong>Recursive:</strong> node process করো, child-এ recurse করো; return = parent-এ backtrack; implicitly call stack use করে (space <code>O(h)</code>)। <strong>Iterative:</strong> একটা explicit stack use করো — start push করো, একটা node pop করো, process করো, তার unvisited child push করো; LIFO ordering আগে গভীরে যায়। Graph-এ (cycle থাকতে পারে) infinite loop avoid করতে <strong>visited set</strong> maintain করো; tree-তে visited set লাগে না। <strong>Gotcha:</strong> stack vs recursion → recursion call stack use করে, iterative explicit stack; visited state graph-এ লাগে tree-তে না; leaf-এ child নেই তাই recursion return (backtrack) করে; space <code>O(h)</code> (skewed tree-তে worst-case <code>O(n)</code>)।</p>"
+        ],
+        [
+          "BFS (breadth-first search) কীভাবে কাজ করে, আর কখন use করবে?",
+          "<p><strong>BFS</strong> একটা queue (FIFO) দিয়ে level by level explore করে: start enqueue করো, একটা node dequeue করো, process করো, তার unvisited neighbor enqueue করো। Unweighted graph-এ shortest path / nearest-by-level problem-এ BFS use করো (যেকোনো node-এ প্রথমবার পৌঁছানো মানেই সেটা shortest path দিয়ে)। <strong>Gotcha:</strong> space <code>O(n)</code> হতে পারে (একটা level-এ ~n/2 পর্যন্ত node থাকতে পারে); graph-এ visited set required।</p>"
+        ],
+        [
+          "DFS আর BFS এর মধ্যে কখন কোনটা use করবে?",
+          "<p><strong>DFS</strong> use করবে — exhaustive exploration, path existence, topological sort, cycle detection, deep solution-এর জন্য; wide tree-তে lower memory। <strong>BFS</strong> use করবে — unweighted graph-এ shortest path, level-order traversal, আর যখন solution shallow/root-এর কাছাকাছি থাকে।</p>"
+        ],
+        [
+          "DFS আর BFS এর time আর space complexity কী?",
+          "<p>দুটোই graph-এ <code>O(V+E)</code> (প্রতিটা vertex আর edge একবার করে visit করে)। Tree-তে <code>E ≈ V−1</code>, তাই <code>O(n)</code>। <strong>Space:</strong> DFS <code>O(h)</code> (call/explicit stack), BFS <code>O(n)</code> (queue / widest level); graph-এ visited set <code>O(V)</code>।</p>"
+        ],
+        [
+          "Stack আর queue এর basics, আর leaf থেকে backtracking কীভাবে হয়?",
+          "<p><strong>Stack</strong> = LIFO (top-এ push/pop); call stack নিজেই একটা stack। <strong>Queue</strong> = FIFO (back-এ enqueue, front-এ dequeue)। <strong>Leaf থেকে backtracking:</strong> recursive DFS-এ একটা leaf-এ পৌঁছানো মানে recurse করার মতো কোনো child নেই, তাই function return করে (নিজের frame pop করে), আর parent-এর পরের branch resume হয়; iterative DFS-এ তুমি শুধু pop করে stack-এ যা পরে আছে তা নিয়ে continue করো।</p>"
+        ],
+        [
+          "Memoization কী, আর কেন important?",
+          "<p><strong>Memoization</strong> মানে expensive function call-এর result কে input দিয়ে key করে cache করা, যাতে একই input-এ repeated call <code>O(1)</code> lookup হয়। Dynamic programming-এ overlapping subproblem-এর জন্য essential (যেমন Fibonacci, যেখানে naive recursion exponential কিন্তু memoization সেটাকে <code>O(n)</code> বানায়)। Space cost = <code>O(number of distinct states)</code>।</p>"
+        ],
+        [
+          "একটা real-world story problem কীভাবে data-structure problem হিসেবে model করবে?",
+          "<p>Domain কে structure-এ map করো: entity → node, relationship → edge, operation → state change, question → query/traversal। যেমন <em>দুজন মানুষের মধ্যে fewest intermediary খুঁজে বের করো</em> → মানুষ হলো node, friendship হলো edge, <em>fewest</em> → unweighted graph-এ BFS shortest path। Underlying graph/tree/DP shape চিনতে পারাই key skill। <strong>Gotcha:</strong> interviewer একটা story দেয় তুমি abstract structure extract করতে পারো কিনা দেখতে — entity/edge/operation explicitly name করবে।</p>"
         ]
       ]
     }
@@ -2295,22 +2756,22 @@
           "q": "Virtualization primary benefit?",
           "options": [
             "SEO",
-            "Smaller JS",
             "10K item list-এও DOM-এ শুধু visible items, scroll smooth",
+            "Smaller JS",
             "Accessibility"
           ],
-          "correct": 2,
+          "correct": 1,
           "explain": "Total memory/DOM nodes কমে constant। Viewport + buffer-এর বাইরে unmounted।"
         },
         {
           "q": "react-window vs react-virtual?",
           "options": [
-            "একই package",
+            "react-window older/simpler, react-virtual (TanStack) modern hook-based",
             "react-virtual deprecated",
             "react-window faster",
-            "react-window older/simpler, react-virtual (TanStack) modern hook-based"
+            "একই package"
           ],
-          "correct": 3,
+          "correct": 0,
           "explain": "react-window Brian Vaughn-এর, lighter। <code>@tanstack/react-virtual</code> hook-based, framework-agnostic, variable size flexible।"
         },
         {
@@ -2318,10 +2779,10 @@
           "options": [
             "Flexbox break",
             "কিছু না",
-            "Total height আগে জানা যায় না, measurement সহ estimate + refine",
-            "CSS only"
+            "CSS only",
+            "Total height আগে জানা যায় না, measurement সহ estimate + refine"
           ],
-          "correct": 2,
+          "correct": 3,
           "explain": "Fixed size simple। Variable-এ rendered item measure, rest estimate। Scroll jumps avoid - carefully update।"
         },
         {
@@ -2338,23 +2799,23 @@
         {
           "q": "Throttle-এর common use?",
           "options": [
-            "Scroll/mousemove - fixed rate-এ handle",
             "Click",
+            "Scroll/mousemove - fixed rate-এ handle",
             "Form submit",
             "Startup"
           ],
-          "correct": 0,
+          "correct": 1,
           "explain": "Event-এ flood control - e.g., 60fps-এ max একবার। rAF-based throttle smooth।"
         },
         {
           "q": "Code splitting mainly কী save করে?",
           "options": [
-            "Cookie",
+            "Initial bundle size - unused route-এর code later load",
             "CPU",
             "Memory",
-            "Initial bundle size - unused route-এর code later load"
+            "Cookie"
           ],
-          "correct": 3,
+          "correct": 0,
           "explain": "Dynamic <code>import()</code> split chunk। First paint faster। Lazy + Suspense pattern।"
         },
         {
@@ -2362,10 +2823,10 @@
           "options": [
             "CJS",
             "Runtime",
-            "ESM - static analysis-এ unused export detect",
-            "Both equal"
+            "Both equal",
+            "ESM - static analysis-এ unused export detect"
           ],
-          "correct": 2,
+          "correct": 3,
           "explain": "ESM <code>import</code> static, bundler unused export drop করতে পারে। CJS <code>require</code> dynamic, hard।"
         },
         {
@@ -2383,33 +2844,33 @@
           "q": "Image optimization-এর top technique?",
           "options": [
             "BMP",
-            "JPEG always",
+            "Modern format (WebP/AVIF) + responsive srcset + lazy + CDN",
             "GIF",
-            "Modern format (WebP/AVIF) + responsive srcset + lazy + CDN"
+            "JPEG always"
           ],
-          "correct": 3,
+          "correct": 1,
           "explain": "AVIF/WebP smaller, <code>srcset</code> different resolution, <code>loading=\"lazy\"</code> offscreen, CDN geo-close।"
         },
         {
           "q": "Web Worker কখন?",
           "options": [
-            "Network call",
+            "CPU-heavy task (parse, ML, image) main thread block না করে",
             "Everything",
             "DOM access",
-            "CPU-heavy task (parse, ML, image) main thread block না করে"
+            "Network call"
           ],
-          "correct": 3,
+          "correct": 0,
           "explain": "Parallel thread - heavy computation UI-কে jank করে না। DOM access নেই, <code>postMessage</code> দিয়ে communicate।"
         },
         {
           "q": "IntersectionObserver কী করে?",
           "options": [
-            "Element viewport-এ visible কিনা efficiently detect",
+            "Type check",
             "Network monitor",
             "Form validate",
-            "Type check"
+            "Element viewport-এ visible কিনা efficiently detect"
           ],
-          "correct": 0,
+          "correct": 3,
           "explain": "Lazy image, infinite scroll, animate-on-scroll - scroll listener-এর চেয়ে efficient। Native async।"
         },
         {
@@ -2417,32 +2878,32 @@
           "options": [
             "Priority",
             "Async",
-            "Faster",
-            "Browser next paint-এর আগে callback, sync with refresh rate"
+            "Browser next paint-এর আগে callback, sync with refresh rate",
+            "Faster"
           ],
-          "correct": 3,
+          "correct": 2,
           "explain": "Animation frame-aligned। Tab background-এ throttle/pause। <code>setTimeout</code>-এর চেয়ে smoother।"
         },
         {
           "q": "Layout thrashing-এর cause?",
           "options": [
             "CSS huge",
-            "GPU",
+            "Read (offsetHeight) → Write (style) interleave → forced reflow every cycle",
             "Cache",
-            "Read (offsetHeight) → Write (style) interleave → forced reflow every cycle"
+            "GPU"
           ],
-          "correct": 3,
+          "correct": 1,
           "explain": "Read-এ browser pending write flush করে reflow করে। Pattern: সব read batch, তারপর সব write।"
         },
         {
           "q": "LCP optimize-এর key strategies?",
           "options": [
-            "Disable CSS",
+            "Hero image preload, server TTFB ↓, render-blocking resource কমানো",
             "No images",
             "More JS",
-            "Hero image preload, server TTFB ↓, render-blocking resource কমানো"
+            "Disable CSS"
           ],
-          "correct": 3,
+          "correct": 0,
           "explain": "LCP candidate (hero image/text) দ্রুত paint। Preload, priority hint, CDN, inline critical CSS।"
         },
         {
@@ -2450,10 +2911,10 @@
           "options": [
             "z-index",
             "Lazy",
-            "Image-এ width/height set, font-display: swap carefully, reserved space",
-            "Animation"
+            "Animation",
+            "Image-এ width/height set, font-display: swap carefully, reserved space"
           ],
-          "correct": 2,
+          "correct": 3,
           "explain": "Dimension দিলে browser space reserve। Ad slot, embeds-এও fixed size। Font swap flash carefully।"
         }
       ]
@@ -4371,43 +4832,43 @@
           "options": [
             "Disable CSS",
             "More RAM",
-            "Paginate only",
-            "Virtualize the list (react-window / react-virtual)"
+            "Virtualize the list (react-window / react-virtual)",
+            "Paginate only"
           ],
-          "correct": 3,
+          "correct": 2,
           "explain": "Render-এ শুধু viewport rows। Pagination UX trade-off; virtualization transparent।"
         },
         {
           "q": "প্রতি keystroke পুরো page re-render। কী করবেন?",
           "options": [
-            "Form state-কে নিচে (form component-এ) colocate বা react-hook-form",
             "memo everything",
+            "Form state-কে নিচে (form component-এ) colocate বা react-hook-form",
             "Context বেশি",
             "useEffect bump"
           ],
-          "correct": 0,
+          "correct": 1,
           "explain": "Top-level state বাসা-বাসি re-render। Colocation বা uncontrolled + field subscription।"
         },
         {
           "q": "API intermittent 500 - প্রথম step?",
           "options": [
-            "Switch framework",
-            "Disable feature",
             "Log aggregator + APM trace, DB connection, downstream timeout check",
+            "Disable feature",
+            "Switch framework",
             "Restart"
           ],
-          "correct": 2,
+          "correct": 0,
           "explain": "Observability প্রথম। Correlation ID specific request trace। Root cause-এ fix।"
         },
         {
           "q": "Bundle 5MB - main action?",
           "options": [
-            "Bundle analyzer দিয়ে offender identify, code split, tree-shake, replace heavy lib",
+            "Disable types",
             "Drop React",
             "Minify only",
-            "Disable types"
+            "Bundle analyzer দিয়ে offender identify, code split, tree-shake, replace heavy lib"
           ],
-          "correct": 0,
+          "correct": 3,
           "explain": "Data-driven optimization। Often <code>moment</code>/<code>lodash</code>/SDK-এ heavy culprit।"
         },
         {
@@ -4425,11 +4886,11 @@
           "q": "New API version breaks old mobile client। strategy?",
           "options": [
             "Remove endpoint",
-            "Ignore",
+            "URL versioning (/v1 keep), deprecation header, metric-driven sunset",
             "Force upgrade",
-            "URL versioning (/v1 keep), deprecation header, metric-driven sunset"
+            "Ignore"
           ],
-          "correct": 3,
+          "correct": 1,
           "explain": "Backward compat period। Usage metric দেখে kill decision।"
         },
         {
@@ -4446,12 +4907,12 @@
         {
           "q": "XSS via stored input। mitigation?",
           "options": [
-            "Output encode (React default safe), CSP, input validate, HttpOnly cookie",
+            "Regex sanitize",
             "Disable JS",
             "Blacklist",
-            "Regex sanitize"
+            "Output encode (React default safe), CSP, input validate, HttpOnly cookie"
           ],
-          "correct": 0,
+          "correct": 3,
           "explain": "Defense in depth। Library-level escape, CSP script-src strict, user-content scoped iframe।"
         },
         {
@@ -4469,12 +4930,536 @@
           "q": "Monolith → microservices শুরু কোথায়?",
           "options": [
             "New language",
-            "Rewrite all",
+            "Bounded context identify, Strangler fig pattern piece-by-piece extract, observability day-1",
             "Big bang cutover",
-            "Bounded context identify, Strangler fig pattern piece-by-piece extract, observability day-1"
+            "Rewrite all"
+          ],
+          "correct": 1,
+          "explain": "Gradual extraction। API gateway facade, event bus async, service-owned DB।"
+        }
+      ]
+    },
+    "browsernet": {
+      "title": "Browser, Network ও Rendering",
+      "icon": "P",
+      "color": "coral",
+      "questions": [
+        {
+          "q": "URL টাইপ করার পর সবার আগে network-level-এ কোনটা হয়?",
+          "options": [
+            "DNS resolution (cache miss হলে)",
+            "TLS handshake",
+            "TCP handshake",
+            "HTTP request"
+          ],
+          "correct": 0,
+          "explain": "Browser/OS/router/resolver cache check-এর পর hostname → IP resolve হয়, তারপর TCP connection।"
+        },
+        {
+          "q": "TCP 3-way handshake-এর সঠিক order?",
+          "options": [
+            "SYN → ACK → SYN-ACK",
+            "SYN-ACK → SYN → ACK",
+            "ACK → SYN → SYN-ACK",
+            "SYN → SYN-ACK → ACK"
           ],
           "correct": 3,
-          "explain": "Gradual extraction। API gateway facade, event bus async, service-owned DB।"
+          "explain": "Client SYN, server SYN-ACK, client ACK - তারপর connection established।"
+        },
+        {
+          "q": "TLS handshake-এ asymmetric crypto কেন, পুরোটা symmetric নয় কেন?",
+          "options": [
+            "Symmetric insecure",
+            "Asymmetric নেই TLS-এ",
+            "Asymmetric ধীর, তাই শুধু shared key exchange-এ",
+            "Symmetric key লাগে না"
+          ],
+          "correct": 2,
+          "explain": "Asymmetric অনেক ধীর - শুধু shared secret agree + authenticate-এ; bulk data fast symmetric-এ।"
+        },
+        {
+          "q": "URL-এর কোন অংশ server-এ যায় না?",
+          "options": ["Query string", "Fragment (#section)", "Path", "Port"],
+          "correct": 1,
+          "explain": "Fragment client-only - browser/SPA router ব্যবহার করে, network-এ যায় না।"
+        },
+        {
+          "q": "CSS render-blocking কেন?",
+          "options": [
+            "Cascade-এর জন্য পুরো CSSOM না হলে safely paint করা যায় না",
+            "CSS বড় হয়",
+            "JS-এর আগে চলে",
+            "Browser bug"
+          ],
+          "correct": 0,
+          "explain": "পরের rule আগেরটা override করতে পারে, তাই সম্পূর্ণ CSSOM ছাড়া paint unsafe।"
+        },
+        {
+          "q": "কোন CSS property গুলো composite-only (layout/paint skip)?",
+          "options": [
+            "width, height",
+            "color, background",
+            "margin, padding",
+            "transform, opacity"
+          ],
+          "correct": 3,
+          "explain": "transform/opacity নিজের layer-এ composite stage-এ চলে, তাই smooth animate।"
+        },
+        {
+          "q": "<code>defer</code> script কখন execute হয়?",
+          "options": [
+            "আসার সাথে সাথে",
+            "DOMContentLoaded-এর অনেক পরে",
+            "HTML parsing শেষে, in-order",
+            "কখনো না"
+          ],
+          "correct": 2,
+          "explain": "defer parallel download করে কিন্তু HTML parse শেষে in-order চালায়, parse block করে না।"
+        },
+        {
+          "q": "Layout thrashing-এর মূল কারণ?",
+          "options": [
+            "বেশি CSS",
+            "DOM read আর write interleave করা",
+            "Image বড়",
+            "অনেক event listener"
+          ],
+          "correct": 1,
+          "explain": "Write-এর পর layout property read করলে forced synchronous reflow; loop-এ interleave করলে বারবার reflow।"
+        },
+        {
+          "q": "<code>304 Not Modified</code> কী বোঝায়?",
+          "options": [
+            "Cached version এখনো valid, body re-download লাগবে না",
+            "Resource delete হয়েছে",
+            "Server error",
+            "Redirect"
+          ],
+          "correct": 0,
+          "explain": "Conditional request (ETag/If-None-Match)-এ resource unchanged - body ছাড়া tiny response।"
+        },
+        {
+          "q": "DNS-এ recursive vs iterative query?",
+          "options": [
+            "দুটো একই",
+            "শুধু iterative হয়",
+            "Client→resolver iterative",
+            "Client→resolver recursive, resolver→hierarchy iterative"
+          ],
+          "correct": 3,
+          "explain": "Client \"উত্তর এনে দাও\" (recursive); resolver root→TLD→authoritative iteratively walk করে।"
+        },
+        {
+          "q": "HTTP, TCP, TLS - এগুলো কী?",
+          "options": [
+            "সব method",
+            "TCP method, বাকি protocol",
+            "সব protocol",
+            "সব data format"
+          ],
+          "correct": 2,
+          "explain": "তিনটাই protocol (নিয়ম)। GET/POST হলো HTTP-এর method।"
+        },
+        {
+          "q": "DOM construction-এর বৈশিষ্ট্য কী?",
+          "options": [
+            "সম্পূর্ণ download শেষে শুরু হয়",
+            "Incremental - byte আসার সাথে build হয়",
+            "শুধু JS চালায়",
+            "CSSOM-এর পরে হয়"
+          ],
+          "correct": 1,
+          "explain": "DOM incremental build হয়; synchronous script এসে tokenization থামাতে পারে।"
+        }
+      ]
+    },
+    "jsengine": {
+      "title": "JS Engine ও Event Loop",
+      "icon": "R",
+      "color": "info",
+      "questions": [
+        {
+          "q": "V8 pipeline-এর সঠিক order?",
+          "options": [
+            "AST → bytecode → machine code → parse",
+            "parse → AST → Ignition bytecode → TurboFan machine code",
+            "machine code → bytecode → AST",
+            "parse → machine code → bytecode"
+          ],
+          "correct": 1,
+          "explain": "Parser → AST → Ignition (bytecode) → TurboFan (optimized machine code) → deopt।"
+        },
+        {
+          "q": "V8-এ deoptimization কখন হয়?",
+          "options": [
+            "Speculative assumption ভাঙলে (যেমন number-এর জায়গায় string)",
+            "Memory ফুরালে",
+            "Page reload-এ",
+            "GC চলার সময়"
+          ],
+          "correct": 0,
+          "explain": "TurboFan stable type assume করে; assumption ভাঙলে Ignition bytecode-এ ফেরত যায়।"
+        },
+        {
+          "q": "<code>console.log(x); var x = 1;</code> কী print করে?",
+          "options": ["1", "ReferenceError", "null", "undefined"],
+          "correct": 3,
+          "explain": "var hoisted + undefined initialized, তাই declaration-এর আগে read করলে undefined।"
+        },
+        {
+          "q": "<code>let</code> declaration-এর আগে access করলে?",
+          "options": ["undefined", "null", "ReferenceError (TDZ)", "0"],
+          "correct": 2,
+          "explain": "let/const hoisted কিন্তু uninitialized - TDZ-এ access করলে ReferenceError।"
+        },
+        {
+          "q": "<code>for(var i=0;i&lt;3;i++) setTimeout(()=&gt;console.log(i))</code> কী print করে?",
+          "options": ["0,1,2", "3,3,3", "0,0,0", "undefined×3"],
+          "correct": 1,
+          "explain": "var function-scoped - তিন closure একই i share করে, callback চলার সময় i=3।"
+        },
+        {
+          "q": "Lexical scope মানে কী?",
+          "options": [
+            "Code কোথায় লেখা সেটা দিয়ে accessibility",
+            "Runtime-এ call site দিয়ে scope",
+            "Global only",
+            "Dynamic scope"
+          ],
+          "correct": 0,
+          "explain": "Lexical (static) scope - কোথায় লেখা তার উপর, কোথায় call হয় তার উপর না। Closure-এর ভিত্তি।"
+        },
+        {
+          "q": "Event loop-এ priority কেমন?",
+          "options": [
+            "Macrotask আগে",
+            "এক macrotask → এক microtask",
+            "Random",
+            "Sync → পুরো microtask drain → এক macrotask → আবার microtask"
+          ],
+          "correct": 3,
+          "explain": "প্রতি macrotask-এর পর পুরো microtask queue drain (checkpoint), তারপরই পরের macrotask/render।"
+        },
+        {
+          "q": "নিচের কোনটা microtask?",
+          "options": [
+            "setTimeout callback",
+            "setInterval",
+            "Promise.then callback",
+            "DOM click event"
+          ],
+          "correct": 2,
+          "explain": "Promise .then/.catch/.finally, queueMicrotask, MutationObserver = microtask; setTimeout/event = macrotask।"
+        },
+        {
+          "q": "<code>console.log('A'); setTimeout(()=&gt;log('B')); Promise.resolve().then(()=&gt;log('C')); console.log('D')</code> output?",
+          "options": ["A B C D", "A D C B", "A D B C", "A C D B"],
+          "correct": 1,
+          "explain": "Sync A,D; microtask C macrotask B-এর আগে drain হয় → A, D, C, B।"
+        },
+        {
+          "q": "Node-এ সবচেয়ে high-priority queue কোনটা?",
+          "options": [
+            "process.nextTick",
+            "Promise microtask",
+            "setImmediate",
+            "timers"
+          ],
+          "correct": 0,
+          "explain": "process.nextTick queue Promise microtask-এরও আগে drain হয়।"
+        },
+        {
+          "q": "libuv thread pool-এর default size?",
+          "options": ["1", "CPU core সংখ্যা", "8", "4"],
+          "correct": 3,
+          "explain": "Default 4, UV_THREADPOOL_SIZE দিয়ে পরিবর্তনযোগ্য (max 1024); file I/O, কিছু crypto/DNS-এ ব্যবহৃত।"
+        },
+        {
+          "q": "worker_threads কখন ব্যবহার করবেন?",
+          "options": [
+            "সাধারণ async I/O",
+            "Database query",
+            "CPU-bound heavy compute যেন event loop block না হয়",
+            "HTTP request"
+          ],
+          "correct": 2,
+          "explain": "CPU-bound কাজে (image, crypto, parsing); সাধারণ I/O Node এমনিতেই non-blocking handle করে।"
+        },
+        {
+          "q": "অসীম microtask chain-এর ফল?",
+          "options": [
+            "কিছুই না",
+            "Rendering ও macrotask starve, UI freeze",
+            "Stack overflow",
+            "GC trigger"
+          ],
+          "correct": 1,
+          "explain": "Microtask একই checkpoint-এ drain হয়, তাই endless chain render/macrotask-এ পৌঁছতে দেয় না।"
+        }
+      ]
+    },
+    "dsaalgo": {
+      "title": "DSA ও Algorithm",
+      "icon": "S",
+      "color": "teal",
+      "questions": [
+        {
+          "q": "Balanced BST-তে search-এর time complexity?",
+          "options": ["O(1)", "O(n)", "O(log n)", "O(n log n)"],
+          "correct": 2,
+          "explain": "প্রতি step-এ অর্ধেক বাদ → O(log n), কিন্তু শুধু balanced হলে।"
+        },
+        {
+          "q": "Sorted value insert করলে BST-এর কী হয়?",
+          "options": [
+            "Balanced থাকে",
+            "Linked list-এ degenerate, O(n)",
+            "Error দেয়",
+            "Auto-balance হয়"
+          ],
+          "correct": 1,
+          "explain": "1,2,3,4,5 insert করলে height O(n) - search/insert O(n)।"
+        },
+        {
+          "q": "BFS কোন structure ব্যবহার করে?",
+          "options": ["Queue (FIFO)", "Stack", "Heap", "HashMap"],
+          "correct": 0,
+          "explain": "BFS level by level - queue; DFS stack (recursion বা explicit)।"
+        },
+        {
+          "q": "Unweighted graph-এ shortest path-এর জন্য?",
+          "options": ["DFS", "যেকোনো একটা", "Dijkstra", "BFS"],
+          "correct": 3,
+          "explain": "BFS - প্রথমবার node-এ পৌঁছানো মানেই shortest path (unweighted)।"
+        },
+        {
+          "q": "Graph traversal-এ visited set কেন লাগে?",
+          "options": [
+            "Speed বাড়াতে",
+            "Memory বাঁচাতে",
+            "Cycle-এ infinite loop এড়াতে",
+            "Tree-তেও লাগে"
+          ],
+          "correct": 2,
+          "explain": "Graph-এ cycle থাকে; visited না রাখলে infinite loop/reprocess। Tree-তে cycle নেই, লাগে না।"
+        },
+        {
+          "q": "HashMap average lookup complexity?",
+          "options": ["O(log n)", "O(1)", "O(n)", "O(n log n)"],
+          "correct": 1,
+          "explain": "hash(key) → bucket, average O(1); pathological collision/খারাপ hash-এ O(n)।"
+        },
+        {
+          "q": "DFS (recursive)-এর space complexity?",
+          "options": ["O(h) - call stack height", "O(1)", "O(n²)", "O(V+E)"],
+          "correct": 0,
+          "explain": "Call stack tree height-এর সমান depth ধরে; skewed tree-তে worst O(n)।"
+        },
+        {
+          "q": "DFS ও BFS graph-এ time complexity?",
+          "options": ["O(n²)", "O(V·E)", "O(log V)", "O(V+E)"],
+          "correct": 3,
+          "explain": "প্রতি vertex ও edge একবার visit → O(V+E); tree-তে O(n)।"
+        },
+        {
+          "q": "Memoization কোন সমস্যায় essential?",
+          "options": [
+            "Sorting",
+            "Hashing",
+            "Overlapping subproblem (DP, Fibonacci)",
+            "Binary search"
+          ],
+          "correct": 2,
+          "explain": "Repeated input cache করে; naive Fibonacci exponential → memoize O(n)।"
+        },
+        {
+          "q": "Stack vs Queue?",
+          "options": [
+            "দুটো FIFO",
+            "Stack LIFO, Queue FIFO",
+            "দুটো LIFO",
+            "Stack FIFO, Queue LIFO"
+          ],
+          "correct": 1,
+          "explain": "Stack last-in-first-out (call stack); Queue first-in-first-out (BFS)।"
+        },
+        {
+          "q": "Algorithmic problem approach-এর প্রথম ধাপ?",
+          "options": [
+            "Input/output/rule restate + edge case",
+            "সাথে সাথে optimal code লেখা",
+            "Library খোঁজা",
+            "Big-O লেখা"
+          ],
+          "correct": 0,
+          "explain": "Restate → structure চেনা → brute-force → optimize → dry-run; process-টাই interviewer দেখতে চায়।"
+        },
+        {
+          "q": "AVL vs Red-Black tree?",
+          "options": [
+            "একই জিনিস",
+            "AVL slow",
+            "Red-Black unbalanced",
+            "AVL read-এ ভালো (strict), Red-Black write-এ (কম rotation)"
+          ],
+          "correct": 3,
+          "explain": "AVL rigidly balanced (faster lookup); Red-Black কম rotation, তাই অনেক library write-heavy-তে এটা নেয়।"
+        },
+        {
+          "q": "\"দুই মানুষের মাঝে কম intermediary\" - কোন approach?",
+          "options": [
+            "Sorting",
+            "Binary search",
+            "BFS shortest path (people=node, friendship=edge)",
+            "DFS only"
+          ],
+          "correct": 2,
+          "explain": "Unweighted graph-এ shortest path → BFS; story থেকে structure extract করাই skill।"
+        },
+        {
+          "q": "0-based array-এ valid index range?",
+          "options": ["1..length", "0..length-1", "0..length", "1..length-1"],
+          "correct": 1,
+          "explain": "0-based, তাই 0..length-1; off-by-one প্রায়ই <= vs < থেকে আসে।"
+        }
+      ]
+    },
+    "secops": {
+      "title": "Security, Docker ও Git",
+      "icon": "T",
+      "color": "red",
+      "questions": [
+        {
+          "q": "Password কীভাবে store করা উচিত?",
+          "options": [
+            "Encrypt (reversible)",
+            "Plaintext",
+            "Base64 encode",
+            "Slow adaptive hash (Argon2/bcrypt) + salt"
+          ],
+          "correct": 3,
+          "explain": "Hashing one-way; decrypt করা যায় না। Argon2id/bcrypt slow, salt দিয়ে rainbow table defeat।"
+        },
+        {
+          "q": "Password-এ SHA-256/MD5 কেন খারাপ?",
+          "options": [
+            "Insecure algorithm",
+            "Output বড়",
+            "Fast-এর জন্য designed - সেকেন্ডে কোটি guess",
+            "Salt support করে না"
+          ],
+          "correct": 2,
+          "explain": "Fast hash attacker-কে দ্রুত brute-force করতে দেয়; password-এ slow adaptive hash দরকার।"
+        },
+        {
+          "q": "Salt কী করে?",
+          "options": [
+            "Hash fast করে",
+            "Random per-password value - identical password ভিন্ন hash দেয়",
+            "Password encrypt করে",
+            "Key store করে"
+          ],
+          "correct": 1,
+          "explain": "Rainbow table defeat করে আর duplicate password লুকায়; bcrypt/Argon2 internally handle করে।"
+        },
+        {
+          "q": "Docker image vs container?",
+          "options": [
+            "Image read-only template (blueprint), container তার running instance",
+            "একই জিনিস",
+            "Container template, image instance",
+            "দুটোই running process"
+          ],
+          "correct": 0,
+          "explain": "Image = class/blueprint; container = object/running instance (ephemeral, volume-এ persist)।"
+        },
+        {
+          "q": "Container VM থেকে lightweight কেন?",
+          "options": [
+            "কম code",
+            "Compress করা থাকে",
+            "GPU ব্যবহার করে",
+            "Host kernel share করে, পুরো guest OS boot করে না"
+          ],
+          "correct": 3,
+          "explain": "Container host kernel share করে (MBs, sub-second); VM-এর নিজের guest kernel লাগে (GBs)।"
+        },
+        {
+          "q": "Git rebase কী করে?",
+          "options": [
+            "Merge commit তৈরি করে",
+            "Branch delete করে",
+            "Commit replay করে linear history বানায়, SHA rewrite করে",
+            "History preserve করে দুই parent-এ"
+          ],
+          "correct": 2,
+          "explain": "Rebase commit replay করে (নতুন SHA, linear); merge দুই-parent merge commit বানায় (history preserve)।"
+        },
+        {
+          "q": "Rebase-এর Golden Rule?",
+          "options": [
+            "সবসময় rebase করুন",
+            "অন্যরা pull করেছে এমন shared branch কখনো rebase করবেন না",
+            "শুধু main rebase করুন",
+            "Merge-এর আগে rebase বাধ্যতামূলক"
+          ],
+          "correct": 1,
+          "explain": "Shared history rewrite করলে SHA diverge হয়, commit duplicate, teammate-দের history ভাঙে।"
+        },
+        {
+          "q": "Database index-এর tradeoff কী?",
+          "options": [
+            "Read fast করে কিন্তু storage + write খরচ বাড়ায়",
+            "সব free",
+            "Read slow করে",
+            "শুধু storage বাঁচায়"
+          ],
+          "correct": 0,
+          "explain": "B-tree index full scan এড়ায়, কিন্তু insert/update-এ index maintain করতে হয় - write-heavy table-এ index hurt করে।"
+        },
+        {
+          "q": "JWT vs session-এর মূল পার্থক্য?",
+          "options": [
+            "JWT কম secure",
+            "JWT server-এ store হয়",
+            "Session stateless",
+            "Session server-side state (সহজ revoke); JWT stateless signed token (scalable, revoke কঠিন)"
+          ],
+          "correct": 3,
+          "explain": "Session opaque ID + server lookup; JWT self-contained, expiry-র আগে revoke করা কঠিন।"
+        },
+        {
+          "q": "Pepper কী?",
+          "options": [
+            "Per-password random value",
+            "Hash algorithm",
+            "সব password-এর জন্য একটা secret, DB-র বাইরে আলাদা store",
+            "Salt-এর আরেক নাম"
+          ],
+          "correct": 2,
+          "explain": "Pepper shared secret (env/secret manager/HSM)-এ - DB leak হলেও defense-in-depth দেয়।"
+        },
+        {
+          "q": "OOP-এর encapsulation মানে?",
+          "options": [
+            "Inheritance",
+            "Data + behavior bundle করে internal state hide করা",
+            "একই interface ভিন্ন implementation",
+            "Implementation hide শুধু"
+          ],
+          "correct": 1,
+          "explain": "Encapsulation method-এর পিছনে state guard করে; polymorphism = same interface, ভিন্ন implementation।"
+        },
+        {
+          "q": "Docker Compose কী?",
+          "options": [
+            "Multi-container app এক YAML + এক command-এ চালানো",
+            "Image build tool",
+            "Container registry",
+            "Kernel module"
+          ],
+          "correct": 0,
+          "explain": "Compose API + Postgres + Redis + worker একসাথে define + run করে।"
         }
       ]
     }

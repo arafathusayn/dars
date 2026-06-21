@@ -16,7 +16,7 @@
     "format:fix": "prettier --write .",
     "check": "bun run validate && bun run typecheck && bun run format && bun run lint",
     "fix": "bun run format:fix && bun run lint:fix",
-    "validate": "bun scripts/validate-messages.ts",
+    "validate": "bun scripts/validate-messages.ts && bun scripts/validate-fullstack-prep.ts",
     "typecheck": "tsc --noEmit",
     "deploy": "wrangler deploy"
   },
