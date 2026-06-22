@@ -83,7 +83,15 @@ const DANGER = [
 
 function run() {
   const raw = readFileSync(DATA_PATH, "utf-8");
-  const data = Schema.parse(JSON.parse(raw));
+  // safeParse + prettifyError keeps failure output readable and consistent
+  // with validate-messages.ts (Schema.parse would throw on the first issue).
+  const parsed = Schema.safeParse(JSON.parse(raw));
+  if (!parsed.success) {
+    console.error("❌ fullstack-prep.json failed schema validation:");
+    console.error(z.prettifyError(parsed.error));
+    process.exit(1);
+  }
+  const data = parsed.data;
   const errors: Array<string> = [];
 
   // Quiz color allowlist + answer-position distribution.
@@ -134,13 +142,13 @@ function run() {
   }
   for (const [k, v] of Object.entries(data.quizzes)) {
     v.questions.forEach((q, i) => {
-      blobs.push([`quizzes.${k}[${i}].q`, q.q]);
-      // Options are also rendered via dangerouslySetInnerHTML (see Option in
-      // src/fullstack-prep.tsx), so they must be scanned too.
+      blobs.push([`quizzes.${k}.questions[${i}].q`, q.q]);
+      // The quiz question, every option, and the explanation are all rendered
+      // via dangerouslySetInnerHTML in src/fullstack-prep.tsx, so scan them all.
       q.options.forEach((opt, j) => {
-        blobs.push([`quizzes.${k}[${i}].options[${j}]`, opt]);
+        blobs.push([`quizzes.${k}.questions[${i}].options[${j}]`, opt]);
       });
-      blobs.push([`quizzes.${k}[${i}].explain`, q.explain]);
+      blobs.push([`quizzes.${k}.questions[${i}].explain`, q.explain]);
     });
   }
   blobs.push(["tips", data.tips]);
