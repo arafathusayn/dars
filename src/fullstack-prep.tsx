@@ -107,6 +107,13 @@ function buildHash(
   return "";
 }
 
+// First token of a title for compact summaries. Splits on whitespace OR comma
+// so titles like "Browser, Network ও Rendering" yield "Browser" (not "Browser,")
+// and don't produce a double comma when joined with ", ".
+function firstWord(title: string): string {
+  return title.split(/[\s,]+/).filter(Boolean)[0] ?? title;
+}
+
 export default function FullstackPrep() {
   const [tab, setTab] = useState<TabKey>("home");
   const [fundKey, setFundKey] = useState<FundamentalKey>(
@@ -413,11 +420,11 @@ function Home({
   const quizCategoryCount = Object.keys(data.quizzes).length;
   const fundTitles = Object.values(data.fundamentals)
     .slice(0, 6)
-    .map((f) => f.title.split(" ")[0])
+    .map((f) => firstWord(f.title))
     .join(", ");
   const qaTitles = Object.values(data.questions)
     .slice(0, 6)
-    .map((q) => q.title.split(" ")[0])
+    .map((q) => firstWord(q.title))
     .join(", ");
 
   return (
