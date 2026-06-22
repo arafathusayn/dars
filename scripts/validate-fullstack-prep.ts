@@ -96,7 +96,9 @@ function run() {
     if (cat.questions.length >= 10) {
       const counts = [0, 0, 0, 0];
       for (const q of cat.questions) counts[q.correct]++;
-      const cap = Math.ceil(cat.questions.length * 0.5);
+      // True half so the rule reads as a strict "> 50%" for odd lengths too
+      // (e.g. 6/11 = 54.5% is flagged; 6/12 = 50% is allowed).
+      const cap = cat.questions.length / 2;
       counts.forEach((n, pos) => {
         if (n === 0) {
           errors.push(
@@ -126,8 +128,8 @@ function run() {
   }
   for (const [k, v] of Object.entries(data.questions)) {
     v.items.forEach(([q, a], i) => {
-      blobs.push([`questions.${k}[${i}].q`, q]);
-      blobs.push([`questions.${k}[${i}].a`, a]);
+      blobs.push([`questions.${k}.items[${i}].q`, q]);
+      blobs.push([`questions.${k}.items[${i}].a`, a]);
     });
   }
   for (const [k, v] of Object.entries(data.quizzes)) {
