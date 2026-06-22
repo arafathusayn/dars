@@ -152,9 +152,22 @@ function run() {
     });
   }
   blobs.push(["tips", data.tips]);
+  // A complete valid tag from the allowed set (open/close, with attributes).
+  // After removing these, any remaining raw `<`/`>` is an unescaped operator
+  // in a code sample (e.g. `i < 3`, `() => x`, `<uuid>`) that must be entity-
+  // escaped, since the string is injected via dangerouslySetInnerHTML.
+  const VALID_TAG =
+    /<\/?(?:table|thead|tbody|tr|th|td|strong|code|em|pre|ul|ol|li|p|h[2-5]|div|br|span|a|b|i)(?:\s[^>]*)?\/?>/gi;
   for (const [where, html] of blobs) {
     for (const { re, name } of DANGER) {
       if (re.test(html)) errors.push(`${where}: contains ${name}`);
+    }
+    const residue = html.replace(VALID_TAG, "");
+    const stray = residue.match(/[<>]/g);
+    if (stray) {
+      errors.push(
+        `${where}: ${stray.length} unescaped ${stray.includes("<") ? "'<'" : "'>'"}/operator char(s) in HTML — escape as &lt;/&gt; (breaks dangerouslySetInnerHTML rendering)`,
+      );
     }
   }
 

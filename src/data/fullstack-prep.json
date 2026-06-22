@@ -338,7 +338,7 @@
         ],
         [
           "<code>infer</code> কীভাবে কাজ করে?",
-          "Conditional-এর extends clause-এ নতুন type variable bind করে pattern match। <code>T extends (...a: infer P) => infer R ? ... : ...</code> - <code>Parameters</code>/<code>ReturnType</code>-এর backbone।"
+          "Conditional-এর extends clause-এ নতুন type variable bind করে pattern match। <code>T extends (...a: infer P) =&gt; infer R ? ... : ...</code> - <code>Parameters</code>/<code>ReturnType</code>-এর backbone।"
         ],
         [
           "<code>never</code> type কোথায় ব্যবহার হয়?",
@@ -1020,7 +1020,7 @@
         ],
         [
           "Idempotency key কীভাবে implement?",
-          "(1) Client-generated UUID request-এ, (2) Server-এ Redis <code>SETNX key:<uuid> EX 24h</code>, (3) first hit → process + cache result, (4) duplicate → return cached। Stripe-এর Idempotency-Key header pattern।"
+          "(1) Client-generated UUID request-এ, (2) Server-এ Redis <code>SETNX key:&lt;uuid&gt; EX 24h</code>, (3) first hit → process + cache result, (4) duplicate → return cached। Stripe-এর Idempotency-Key header pattern।"
         ],
         [
           "Outbox pattern কখন এবং কেন?",
@@ -1223,7 +1223,7 @@
         ],
         [
           "Closures কী এবং classic loop bug কীভাবে কাজ করে?",
-          "<p><strong>Closure</strong> হলো একটা function যেটা তার surrounding lexical state-এর references সহ bundled — outer function return করার পরেও সেই outer scope access করতে পারে। Use cases: data privacy (private counter), factory functions, callbacks/handlers, partial application।</p><pre><code>for (var i = 0; i < 3; i++)\n  setTimeout(() => console.log(i), 0);\n// prints 3, 3, 3\n\nfor (let i = 0; i < 3; i++)\n  setTimeout(() => console.log(i), 0);\n// prints 0, 1, 2</code></pre><p><strong>Gotcha:</strong> <code>var</code> function-scoped হওয়ায় তিনটা closure একই shared lexical environment-এর একটাই <code>i</code> share করে (final 3, 3, 3); <code>let</code> block-scoped হওয়ায় প্রতি iteration-এ fresh binding দেয় (0, 1, 2)।</p>"
+          "<p><strong>Closure</strong> হলো একটা function যেটা তার surrounding lexical state-এর references সহ bundled — outer function return করার পরেও সেই outer scope access করতে পারে। Use cases: data privacy (private counter), factory functions, callbacks/handlers, partial application।</p><pre><code>for (var i = 0; i &lt; 3; i++)\n  setTimeout(() =&gt; console.log(i), 0);\n// prints 3, 3, 3\n\nfor (let i = 0; i &lt; 3; i++)\n  setTimeout(() =&gt; console.log(i), 0);\n// prints 0, 1, 2</code></pre><p><strong>Gotcha:</strong> <code>var</code> function-scoped হওয়ায় তিনটা closure একই shared lexical environment-এর একটাই <code>i</code> share করে (final 3, 3, 3); <code>let</code> block-scoped হওয়ায় প্রতি iteration-এ fresh binding দেয় (0, 1, 2)।</p>"
         ],
         [
           "Call stack কী?",
@@ -1301,11 +1301,11 @@
       "items": [
         [
           "<code>Array.prototype.map</code> কী করে এবং নিজে implement করো।",
-          "<p><code>map</code> একই length-এর একটা <strong>নতুন array</strong> return করে, প্রতিটা element-এ callback <code>(element, index, array)</code> call করে; original array mutate করে না।</p><pre><code>Array.prototype.myMap = function(cb) {\n  const out = [];\n  for (let i = 0; i < this.length; i++)\n    out.push(cb(this[i], i, this));\n  return out;\n};</code></pre><p><strong>Gotcha:</strong> সবসময় নতুন array return করে (তাই chaining কাজ করে); callback-এর return value-ই নতুন element হয়। <strong>নোট:</strong> এটা simplified version — spec-correct native <code>map</code> sparse hole skip করে (hole preserve করে), optional <code>thisArg</code> নেয়, callback validate করে আর শুরুতে <code>length</code> snapshot করে।</p>"
+          "<p><code>map</code> একই length-এর একটা <strong>নতুন array</strong> return করে, প্রতিটা element-এ callback <code>(element, index, array)</code> call করে; original array mutate করে না।</p><pre><code>Array.prototype.myMap = function(cb) {\n  const out = [];\n  for (let i = 0; i &lt; this.length; i++)\n    out.push(cb(this[i], i, this));\n  return out;\n};</code></pre><p><strong>Gotcha:</strong> সবসময় নতুন array return করে (তাই chaining কাজ করে); callback-এর return value-ই নতুন element হয়। <strong>নোট:</strong> এটা simplified version — spec-correct native <code>map</code> sparse hole skip করে (hole preserve করে), optional <code>thisArg</code> নেয়, callback validate করে আর শুরুতে <code>length</code> snapshot করে।</p>"
         ],
         [
           "<code>Array.prototype.filter</code> কী করে এবং নিজে implement করো।",
-          "<p><code>filter</code> একটা <strong>নতুন array</strong> return করে যেখানে শুধু সেই element-গুলো থাকে যাদের জন্য callback truthy return করে।</p><pre><code>Array.prototype.myFilter = function(cb) {\n  const out = [];\n  for (let i = 0; i < this.length; i++)\n    if (cb(this[i], i, this)) out.push(this[i]);\n  return out;\n};</code></pre><p><strong>নোট:</strong> এটাও simplified — native <code>filter</code> sparse hole skip করে, optional <code>thisArg</code> নেয় আর callback validate করে।</p>"
+          "<p><code>filter</code> একটা <strong>নতুন array</strong> return করে যেখানে শুধু সেই element-গুলো থাকে যাদের জন্য callback truthy return করে।</p><pre><code>Array.prototype.myFilter = function(cb) {\n  const out = [];\n  for (let i = 0; i &lt; this.length; i++)\n    if (cb(this[i], i, this)) out.push(this[i]);\n  return out;\n};</code></pre><p><strong>নোট:</strong> এটাও simplified — native <code>filter</code> sparse hole skip করে, optional <code>thisArg</code> নেয় আর callback validate করে।</p>"
         ],
         [
           "Prototype এবং prototype chain কী?",
@@ -1317,7 +1317,7 @@
         ],
         [
           "<code>this</code> binding rules গুলো priority অনুযায়ী বলো।",
-          "<p>Priority high → low:</p><ol><li><strong>new binding</strong> — <code>new Fn()</code> → freshly created object।</li><li><strong>Explicit</strong> — <code>call</code>/<code>apply</code>/<code>bind</code> → provided value।</li><li><strong>Implicit</strong> — <code>obj.method()</code> → obj (dot-এর আগের object)।</li><li><strong>Default</strong> — plain <code>fn()</code> → global object (non-strict) বা <code>undefined</code> (strict)।</li><li><strong>Arrow functions</strong> — নিজের <code>this</code> নেই; enclosing scope থেকে lexically capture করে; call/apply/bind এটা override করতে পারে না।</li></ol><p><code>this</code> ঠিক হয় function কীভাবে call হলো তার উপরে, কোথায় define হলো তার উপরে নয় (arrow ছাড়া)।</p><pre><code>setTimeout(o.greet, 0);          // undefined (bare call)\nsetTimeout(() => o.greet(), 0);  // preserved\nsetTimeout(o.greet.bind(o), 0);  // bound</code></pre><p><strong>Gotcha:</strong> object-এ arrow method একটা trap — <code>{ greet: () => this.name }</code> বাইরের (প্রায়ই global) this capture করে, object-এর নয়; this-dependent logic-এ shorthand method ব্যবহার করো।</p>"
+          "<p>Priority high → low:</p><ol><li><strong>new binding</strong> — <code>new Fn()</code> → freshly created object।</li><li><strong>Explicit</strong> — <code>call</code>/<code>apply</code>/<code>bind</code> → provided value।</li><li><strong>Implicit</strong> — <code>obj.method()</code> → obj (dot-এর আগের object)।</li><li><strong>Default</strong> — plain <code>fn()</code> → global object (non-strict) বা <code>undefined</code> (strict)।</li><li><strong>Arrow functions</strong> — নিজের <code>this</code> নেই; enclosing scope থেকে lexically capture করে; call/apply/bind এটা override করতে পারে না।</li></ol><p><code>this</code> ঠিক হয় function কীভাবে call হলো তার উপরে, কোথায় define হলো তার উপরে নয় (arrow ছাড়া)।</p><pre><code>setTimeout(o.greet, 0);          // undefined (bare call)\nsetTimeout(() =&gt; o.greet(), 0);  // preserved\nsetTimeout(o.greet.bind(o), 0);  // bound</code></pre><p><strong>Gotcha:</strong> object-এ arrow method একটা trap — <code>{ greet: () =&gt; this.name }</code> বাইরের (প্রায়ই global) this capture করে, object-এর নয়; this-dependent logic-এ shorthand method ব্যবহার করো।</p>"
         ],
         [
           "<code>call</code> vs <code>apply</code> vs <code>bind</code> — পার্থক্য কী?",
@@ -1366,7 +1366,7 @@
         ],
         [
           "Stale state / stale closure কী এবং fix কী?",
-          "<code>setState</code>-এর ঠিক পরে state পড়লে পুরোনো value পাবেন কারণ update schedule হয়, synchronously apply হয় না, আর current render-এর variable গুলো closure দিয়ে capture থাকে। Fix হলো functional updater: <code>setCount(prev => prev + 1)</code>, যা সবসময় সর্বশেষ value-এর উপর কাজ করে — previous state-এর উপর ভিত্তি করে update বা increment batch করার সময় অপরিহার্য। যেমন <code>setCount(count+1); setCount(count+1)</code> → মোট +1 (stale); কিন্তু <code>setCount(c=&gt;c+1); setCount(c=&gt;c+1)</code> → +2।"
+          "<code>setState</code>-এর ঠিক পরে state পড়লে পুরোনো value পাবেন কারণ update schedule হয়, synchronously apply হয় না, আর current render-এর variable গুলো closure দিয়ে capture থাকে। Fix হলো functional updater: <code>setCount(prev =&gt; prev + 1)</code>, যা সবসময় সর্বশেষ value-এর উপর কাজ করে — previous state-এর উপর ভিত্তি করে update বা increment batch করার সময় অপরিহার্য। যেমন <code>setCount(count+1); setCount(count+1)</code> → মোট +1 (stale); কিন্তু <code>setCount(c=&gt;c+1); setCount(c=&gt;c+1)</code> → +2।"
         ],
         [
           "Functional vs class component; lifecycle কীভাবে <code>useEffect</code>-এ map হয়?",
@@ -1815,7 +1815,7 @@
           "explain": "<code>{...a}</code>, <code>Object.assign</code> shallow। Deep-এর জন্য <code>structuredClone(obj)</code>, lodash cloneDeep।"
         },
         {
-          "q": "Output?<br><code>console.log(1);<br>setTimeout(()=>console.log(2),0);<br>Promise.resolve().then(()=>console.log(3));<br>console.log(4);</code>",
+          "q": "Output?<br><code>console.log(1);<br>setTimeout(()=&gt;console.log(2),0);<br>Promise.resolve().then(()=&gt;console.log(3));<br>console.log(4);</code>",
           "options": ["1,4,3,2", "1,2,3,4", "1,3,4,2", "1,4,2,3"],
           "correct": 0,
           "explain": "Sync প্রথম (1,4)। তারপর microtask drain (3)। তারপর macrotask (2)। Output: 1,4,3,2। Microtask queue সবসময় macrotask-এর আগে flush হয়।"
@@ -5320,7 +5320,7 @@
           "q": "0-based array-এ valid index range?",
           "options": ["1..length", "0..length-1", "0..length", "1..length-1"],
           "correct": 1,
-          "explain": "0-based, তাই 0..length-1; off-by-one প্রায়ই <= vs < থেকে আসে।"
+          "explain": "0-based, তাই 0..length-1; off-by-one প্রায়ই &lt;= vs &lt; থেকে আসে।"
         }
       ]
     },
